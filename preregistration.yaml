@@ -1,0 +1,86 @@
+schema_version: 1
+proposal_id: R22-P19
+title: LIBERO action-subspace oracle responsibility preliminary validation
+registered_before_method_results: true
+accepted: false
+
+claim_boundary:
+  positive_result_supports: >-
+    Counterfactual responsibility machinery can recover phase-dependent and
+    gain-sensitive causal influence between action subspaces in a single-arm
+    LIBERO manipulation task.
+  positive_result_does_not_support:
+    - left-to-right bimanual responsibility transfer
+    - multi-effector command conservation
+    - a deployable learned responsibility estimator
+    - VLA generality
+    - real-robot efficacy
+
+primary_task: libero_goal/put_the_bowl_on_the_plate
+gate_off_control: libero_goal/push_the_plate_to_the_front_of_the_stove
+primary_demo_count: 30
+control_demo_count: 20
+manual_event_audit_count: 10
+
+events:
+  P0: approach before object contact
+  P1: first gripper-object contact
+  P2: stable grasp with sustained contact and object lift
+  P3: transport after planar object displacement
+  P4: first opening command after transport
+  P5: actual gripper-object contact loss after opening
+  P6: object supported at target or task success
+
+branches:
+  FULL: replay all recorded action coordinates
+  ARM: replay arm-pose coordinates and hold current gripper closure
+  GRIPPER: hold current arm pose and replay gripper commands
+  ZERO: hold current arm pose and current gripper closure
+  horizons_control_steps: [5, 10]
+  stride_control_steps: 5
+
+hard_kill_conditions:
+  - repeated snapshot replay exceeds a registered deterministic tolerance
+  - fewer than 80 percent of primary demonstrations have an ordered P1-P6 chain
+  - two branches with the same normalized hidden-state contract diverge
+  - outputs contain non-finite state, action, outcome, or responsibility values
+
+pre_method_smoke_amendment:
+  applied_before_responsibility_results: true
+  reason: >-
+    LIBERO HDF5 flat states omit PandaGripper.current_action and OSC Python
+    controller state, so exact state[t] plus action[t] reconstruction is not an
+    identifiable gate. The first smoke exposed this before any responsibility
+    metric was computed.
+  branch_hidden_state_contract: >-
+    restore per-demo MuJoCo state and model body poses, anchor OSC to restored
+    joint and end-effector state, and set the gripper actuator target to the
+    restored finger qpos (hold-current-closure intervention)
+  deterministic_gate: repeated identical branch final flat state is exact
+  next_recorded_state_comparison: retained as a non-gating diagnostic
+
+registered_statistics:
+  phase_auc:
+    population: branch points labeled grasp_close versus transport
+    score: arm motion responsibility share
+    baseline: mean arm-pose action L2 magnitude over the same horizon
+  shuffle_control:
+    repeats: 200
+    seed: 2219
+    gate_statistic: p95 shuffled-label AUC
+  phase_shift:
+    statistic: mean arm share in transport minus mean arm share in grasp_close
+  authority_swap:
+    population: >-
+      transport branches at H=10 where cumulative absolute x and y commands
+      are each at least 0.02
+    correct_response: >-
+      x responsibility increases and y responsibility decreases when gains
+      change from (x=0.70,y=1.30) to (x=1.30,y=0.70)
+  gate_off_activation: >-
+    fraction of push-task branches with gripper share above 0.25 and gripper
+    motion magnitude above 1e-4
+
+conditional_act_rule: >-
+  ACT preparation and PAI training are allowed only after the LIBERO substrate
+  gate passes. This remains weaker than the original R22-P19 bimanual Signal GO.

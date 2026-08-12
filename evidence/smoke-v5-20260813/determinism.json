@@ -1,0 +1,78 @@
+{
+  "one_step_alignment": {
+    "diagnostic_only": true,
+    "non_identifiable_hidden_state": [
+      "PandaGripper.current_action",
+      "OSC Python controller buffers"
+    ],
+    "pass": false,
+    "rows": [
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 0,
+        "max_sim_state_error": 0.00947111899211607,
+        "object_position_error_m": 3.348533977855147e-08,
+        "pass": false,
+        "step_id": 0
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 0,
+        "max_sim_state_error": 0.0016241310429396078,
+        "object_position_error_m": 9.55915549003751e-06,
+        "pass": false,
+        "step_id": 88
+      }
+    ],
+    "tolerances": {
+      "max_sim_state_error": 5e-05,
+      "object_position_error_m": 5e-06
+    }
+  },
+  "pass": true,
+  "repeated_branch": {
+    "hidden_state_contract": "hold_restored_finger_qpos_and_anchor_osc",
+    "pass": true,
+    "rows": [
+      {
+        "demo_id": 0,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 0,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 88
+      }
+    ],
+    "tolerance": 1e-09
+  },
+  "repeated_restore": {
+    "pass": true,
+    "rows": [
+      {
+        "demo_id": 0,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 0,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 88
+      }
+    ],
+    "tolerances": {
+      "max_sim_state_error": 1e-09,
+      "object_position_error_m": 1e-09,
+      "object_rotation_error_rad": 1e-09
+    }
+  }
+}

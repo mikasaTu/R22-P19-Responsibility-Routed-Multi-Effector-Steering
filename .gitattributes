@@ -1,0 +1,3 @@
+evidence/**/*.jsonl -diff linguist-generated=true
+evidence/**/*.json linguist-generated=true
+results/**/*.json linguist-generated=true

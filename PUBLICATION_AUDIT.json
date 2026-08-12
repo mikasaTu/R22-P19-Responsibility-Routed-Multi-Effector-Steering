@@ -1,0 +1,84 @@
+{
+  "accepted": false,
+  "evidence_runs": [
+    "signal-v1-20260813",
+    "smoke-v1-20260813",
+    "smoke-v2-20260813",
+    "smoke-v3-20260813",
+    "smoke-v4-20260813",
+    "smoke-v5-20260813"
+  ],
+  "file_count_before_sha256sums": 64,
+  "forbidden_dataset_or_weight_files": [],
+  "generated_at_unix": 1786557062.7361288,
+  "github": {
+    "gh_available": false,
+    "publication_method": "direct git SSH to user-specified empty repository",
+    "remote_initially_empty": true,
+    "ssh_identity": "mikasaTu"
+  },
+  "json_or_jsonl_files_checked": 41,
+  "jsonl_rows_checked": 4420,
+  "largest_files": [
+    {
+      "path": "evidence/signal-v1-20260813/primary_responsibility.jsonl",
+      "size_bytes": 16379165
+    },
+    {
+      "path": "evidence/signal-v1-20260813/authority_swap.jsonl",
+      "size_bytes": 11681956
+    },
+    {
+      "path": "evidence/signal-v1-20260813/expert_traces.jsonl",
+      "size_bytes": 10104495
+    },
+    {
+      "path": "evidence/signal-v1-20260813/control_responsibility.jsonl",
+      "size_bytes": 8840279
+    },
+    {
+      "path": "evidence/smoke-v3-20260813/expert_trace.jsonl",
+      "size_bytes": 321179
+    },
+    {
+      "path": "evidence/smoke-v4-20260813/expert_trace.jsonl",
+      "size_bytes": 321179
+    },
+    {
+      "path": "evidence/smoke-v5-20260813/expert_trace.jsonl",
+      "size_bytes": 321179
+    },
+    {
+      "path": "evidence/signal-v1-20260813/manual_event_audit.json",
+      "size_bytes": 42553
+    },
+    {
+      "path": "evidence/smoke-v5-20260813/smoke_branch.json",
+      "size_bytes": 34506
+    },
+    {
+      "path": "evidence/smoke-v4-20260813/smoke_branch.json",
+      "size_bytes": 33599
+    }
+  ],
+  "max_file_below_github_100mib": true,
+  "pai_job_created": false,
+  "publication_target": "git@github.com:mikasaTu/R22-P19-Responsibility-Routed-Multi-Effector-Steering.git",
+  "result_hash_contract_ok": true,
+  "schema_version": 1,
+  "secret_scan_findings": [],
+  "suspicious_filenames": [],
+  "symlinks": [],
+  "total_bytes_before_sha256sums": 48313331,
+  "validation": {
+    "compileall": true,
+    "pytest_actual_libero_runtime": {
+      "failed": 0,
+      "output": "3 passed in 0.41s",
+      "passed": 3
+    },
+    "sha256_manifest_file_count": 65,
+    "sha256_manifest_readback": true,
+    "shell_syntax": true
+  }
+}

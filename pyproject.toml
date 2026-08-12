@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "r22p19-libero-phase1"
+version = "0.1.0"
+description = "LIBERO substrate pilot for R22-P19 counterfactual responsibility"
+requires-python = ">=3.8"
+dependencies = ["h5py", "numpy", "PyYAML"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["r22p19_libero*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

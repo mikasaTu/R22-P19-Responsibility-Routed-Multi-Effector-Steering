@@ -1,0 +1,8 @@
+{
+  "accepted": false,
+  "error": "'SingleArm' object has no attribute '_gripper_qpos'",
+  "error_type": "AttributeError",
+  "failed_at_utc": "2026-08-12T16:57:38.254517+00:00",
+  "status": "FAILURE",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/r22p19_libero/audit.py\", line 713, in main\n    result = run_smoke(config, output) if args.mode == \"smoke\" else run_signal(config, output)\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/r22p19_libero/audit.py\", line 561, in run_smoke\n    deterministic = deterministic_audit(env, config, config.primary, [demo_id], 2)\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/r22p19_libero/audit.py\", line 165, in deterministic_audit\n    first = env.snapshot()\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/r22p19_libero/env.py\", line 313, in snapshot\n    \"eef\": self.eef_state(),\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/r22p19_libero/env.py\", line 264, in eef_state\n    \"gripper_qpos\": _json_vector(robot._gripper_qpos),\nAttributeError: 'SingleArm' object has no attribute '_gripper_qpos'\n"
+}

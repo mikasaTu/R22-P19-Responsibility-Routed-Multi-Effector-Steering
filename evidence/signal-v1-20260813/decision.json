@@ -1,0 +1,18 @@
+{
+  "accepted": false,
+  "act_pai_authorized_by_gate": false,
+  "all_registered_gates_pass": false,
+  "claim_boundary": {
+    "deployable_responsibility_learned": false,
+    "original_bimanual_signal_go": "not_tested",
+    "pi05_used": false,
+    "video_world_model_used": false,
+    "vla_generality_proven": false
+  },
+  "decision": "LIBERO_SUBSTRATE_NO_GO",
+  "failed_gates": [
+    "gate_off_control",
+    "phase_auc_over_action_magnitude"
+  ],
+  "original_bimanual_signal_go": "not_tested"
+}

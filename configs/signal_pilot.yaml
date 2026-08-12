@@ -1,0 +1,71 @@
+schema_version: 1
+proposal_id: R22-P19
+evidence_kind: libero_single_arm_action_subspace_preliminary
+accepted: false
+
+sources:
+  steering_execution_base_commit: 3ccc651085e17aebd6341ebc5bdebea21eaf9d9a
+  steering_proposal_snapshot_commit: f0f0abe412f6e5926e798cafec8db17e75e184ad
+  libero_commit: 8f1084e3132a39270c3a13ebe37270a43ece2a01
+  lerobot_act_commit: 0cf864870cf29f4738d3ade893e6fd13fbd7cdb5
+
+runtime:
+  control_frequency_hz: 20
+  action_representation: "7D OSC_POSE delta: xyz, axis-angle rotation, binary Panda gripper"
+  camera_names: [agentview, robot0_eye_in_hand]
+  camera_shape: [128, 128, 3]
+  deterministic_state_tolerance: 1.0e-9
+  deterministic_object_position_tolerance_m: 1.0e-9
+  deterministic_object_rotation_tolerance_rad: 1.0e-9
+  # Diagnostic only: HDF5 omits Python-side controller and gripper targets.
+  one_step_state_tolerance: 5.0e-5
+  one_step_object_position_tolerance_m: 5.0e-6
+  branch_horizons: [5, 10]
+  branch_stride: 5
+
+tasks:
+  primary:
+    suite: libero_goal
+    name: put_the_bowl_on_the_plate
+    object_body: akita_black_bowl_1_main
+    target_body: plate_1_main
+    demo_ids: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  gate_off_control:
+    suite: libero_goal
+    name: push_the_plate_to_the_front_of_the_stove
+    object_body: plate_1_main
+    target_body: null
+    demo_ids: [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49]
+
+counterfactuals:
+  primary_groups:
+    arm_pose: [0, 1, 2, 3, 4, 5]
+    gripper: [6]
+  authority_stress_groups:
+    x_translation: [0]
+    y_translation: [1]
+    background_dims: [2, 3, 4, 5, 6]
+  authority_gain_pairs:
+    - [1.30, 0.70]
+    - [0.70, 1.30]
+
+signal_gate:
+  valid_primary_event_fraction_min: 0.80
+  phase_auc_min: 0.75
+  shuffled_auc_max: 0.60
+  phase_auc_over_action_magnitude_min: 0.05
+  arm_share_transport_minus_grasp_min: 0.15
+  relative_conservation_error_max: 0.10
+  authority_swap_response_accuracy_min: 0.80
+  authority_swap_eligible_min: 20
+  authority_eligibility_action_l1_min: 0.02
+  control_gripper_gate_activation_max: 0.05
+  control_gripper_gate_threshold: 0.25
+  control_effect_norm_floor: 1.0e-4
+
+boundary:
+  original_bimanual_signal_go: not_tested
+  deployable_responsibility_learned: false
+  pi05_used: false
+  video_world_model_used: false
+  vla_generality_proven: false

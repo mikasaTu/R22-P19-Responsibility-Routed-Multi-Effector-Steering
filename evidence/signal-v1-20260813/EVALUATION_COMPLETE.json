@@ -1,0 +1,9 @@
+{
+  "accepted": false,
+  "act_pai_authorized_by_gate": false,
+  "completed_at_utc": "2026-08-12T17:33:18.624633+00:00",
+  "decision": "LIBERO_SUBSTRATE_NO_GO",
+  "method_performance_evidence": true,
+  "original_bimanual_signal_go": "not_tested",
+  "status": "EVALUATION_COMPLETE"
+}

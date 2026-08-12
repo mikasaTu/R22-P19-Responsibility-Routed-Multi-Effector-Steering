@@ -1,0 +1,445 @@
+任务名称：
+R22-P19 Phase-1 — RoboTwin Oracle Responsibility + ACT Pilot
+
+总目标：
+在 RoboTwin 2.0 中回答两个问题：
+
+A. 双臂交接期间是否存在可测量的“物体运动因果责任”？
+B. 在责任由仿真器 oracle 提供时，责任守恒命令转移是否能降低物体扰动？
+
+本阶段禁止：
+- 使用 π0.5；
+- 训练大型 VLA；
+- 训练视频世界模型；
+- 将 CPU/unit test 当成方法性能；
+- 生成复杂 formal activation；
+- 将结果标为 accepted idea。
+
+==================================================
+0. 冻结仓库与实验合同
+==================================================
+
+固定并记录：
+
+1. RoboTwin 2.0 exact commit。
+2. steering repo exact commit。
+3. ACT implementation exact commit。
+4. Python、PyTorch、CUDA、SAPIEN、CuRobo 版本。
+5. 机器人 embodiment、相机配置和 action representation。
+6. control frequency、action chunk length、执行前缀长度。
+7. 所有训练、验证和测试 seed。
+8. primary metrics 与 kill criteria。
+
+输出：
+
+phase1/
+  source_manifest.json
+  preregistration.yaml
+  configs/
+  logs/
+  results/
+
+==================================================
+1. 任务
+==================================================
+
+Primary:
+- handover_block
+
+Controls:
+- lift_pot
+- pick_dual_bottles
+
+Conditional extension:
+- handover_mic
+  只有 handover_block 的信号门通过后才运行。
+
+==================================================
+2. Expert signal audit
+==================================================
+
+先不训练 ACT。
+
+运行：
+
+- handover_block：30 个成功 expert episodes
+- lift_pot：20 个成功 expert episodes
+- pick_dual_bottles：20 个成功 expert episodes
+
+必须保存：
+
+- simulator state；
+- 左右 TCP pose/twist；
+- 左右 gripper state；
+- 物体 pose/twist；
+- 左右动作；
+- 接触对象与接触点；
+- 接触 impulse/wrench；
+- task progress；
+- success/drop/slip flags。
+
+定义交接事件：
+
+E0：donor 独立控制
+E1：receiver 首次接触
+E2：双臂共享接触开始
+E3：receiver 稳定抓住
+E4：donor 发出释放命令
+E5：donor 实际失去接触
+E6：receiver 独立控制
+
+人工检查至少 10 条 episode 的事件标注。
+
+==================================================
+3. 反事实分支
+==================================================
+
+在 E1–E6 之间，每隔固定控制步保存 branch state。
+
+每个 branch state 从完全相同的 simulator snapshot 运行：
+
+LR：
+  左右臂执行原动作。
+
+L：
+  左臂执行原动作；
+  右臂执行 neutral action。
+
+R：
+  右臂执行原动作；
+  左臂执行 neutral action。
+
+ZERO：
+  两臂都执行 neutral action。
+
+neutral action：
+
+- 末端增量为零；
+- 保持当前 gripper closure；
+- 不主动打开夹爪；
+- 保持相同低层 controller mode。
+
+默认 counterfactual horizon：
+
+H_cf = 5 control steps
+
+并额外用：
+
+H_cf = 10
+
+做敏感性分析。
+
+首先测试 snapshot deterministic replay：
+相同 state + 相同 action 重放两次，
+物体 pose/twist 超过 tolerance 则立即停止。
+
+==================================================
+4. Outcome 与责任
+==================================================
+
+每个反事实输出：
+
+y = [
+  object translation,
+  object rotation,
+  object linear velocity,
+  object angular velocity,
+  support height,
+  target progress,
+  slip probability/indicator,
+  drop indicator
+]
+
+同时计算：
+
+phi_L = 0.5 * [(y_L - y_ZERO) + (y_LR - y_R)]
+phi_R = 0.5 * [(y_R - y_ZERO) + (y_LR - y_L)]
+
+并记录 joint synergy：
+
+synergy = y_LR - y_L - y_R + y_ZERO
+
+分别生成：
+
+- signed motion contribution
+- support contribution
+- progress contribution
+- harmful/opposing contribution
+- joint synergy ratio
+
+不要一开始强行把所有 synergy 平分给两只手。
+
+==================================================
+5. 信号基线
+==================================================
+
+在同一批 branch states 上计算：
+
+1. fixed 50/50
+2. linear phase transfer
+3. gripper-object distance share
+4. contact-force share
+5. donor/receiver identity rule
+6. oracle counterfactual responsibility
+7. shuffled oracle responsibility
+
+最重要的 stress test：
+
+保持以下变量近似相同：
+
+- 左右臂位置；
+- 物体状态；
+- 当前 phase；
+- 初始接触预载荷；
+- 当前可见图像。
+
+但交换未来 command-to-object authority，例如：
+
+- 交换左右 actuator gain；
+- 改变单侧接触摩擦；
+- 改变单侧 compliance；
+- 让一只手动作主要进入 object-control direction，
+  另一只手主要进入 object-motion null direction。
+
+oracle responsibility 必须跟随实际 authority，
+而不是手臂身份、距离、力或 phase。
+
+==================================================
+6. Signal GO gate
+==================================================
+
+满足以下条件才训练 ACT：
+
+1. authority-swap accuracy ≥ 80%；
+2. oracle responsibility 预测高扰动的 AUROC ≥ 0.75；
+3. 相比最佳 force/distance/phase 基线，
+   AUROC 至少提高 0.05；
+4. handover 中 receiver responsibility
+   从 E2 到 E5 平均增加至少 0.4；
+5. relative responsibility conservation error < 0.10；
+6. shuffled responsibility 失去主要预测能力；
+7. pick_dual_bottles 中 shared-object gate 激活率 < 5%。
+
+若个体责任不稳定但 joint synergy 很强：
+
+将模型升级为：
+
+rho_L, rho_R, rho_joint
+
+不得硬判 signal 失败，也不得硬把 synergy 平分。
+
+==================================================
+7. ACT baseline
+==================================================
+
+只有 Signal GO 后继续。
+
+数据：
+
+- 100 个 handover_block expert demonstrations
+- 训练/验证严格分离
+- 首先训练 1 个 ACT seed 做 smoke
+- baseline 通过后再扩到 3 个 seed
+
+第一轮评测 50 个固定 test seeds。
+
+Baseline success 处理：
+
+- <30%：
+  先排查数据、动作维度、gripper 和控制频率；
+  若仍过低，改用 Diffusion Policy 或 expert action replay，
+  不直接测试 steering。
+
+- 40%–85%：
+  最理想，进入 oracle operator。
+
+- >90%：
+  增加 receiver gain、release timing、friction 和 COM stress。
+
+==================================================
+8. Oracle responsibility-conserving operator
+==================================================
+
+ACT 先输出：
+
+u_L_base, u_R_base
+
+使用 simulator finite differences 估计局部 effect Jacobian：
+
+B_L = d(object effect) / d(u_L)
+B_R = d(object effect) / d(u_R)
+
+基础策略想产生的效果：
+
+d_base = B_L u_L_base + B_R u_R_base
+
+使用 oracle rho_L / rho_R 求：
+
+min over u_L_new, u_R_new:
+
+  ||B_L u_L_new - rho_L d_base||²
++ ||B_R u_R_new - rho_R d_base||²
++ lambda * ||u_new - u_base||²
+
+subject to:
+
+  B_L u_L_new + B_R u_R_new ≈ d_base
+  action bounds
+  velocity/acceleration bounds
+  no premature gripper release
+  collision constraints
+
+若 synergy ratio 高于预注册阈值：
+- 不强制责任转移；
+- 进入 joint-support mode；
+- 保留共同控制，只抑制相互冲突分量。
+
+==================================================
+9. Oracle operator baselines
+==================================================
+
+比较：
+
+A0. Base ACT
+A1. Linear time blending
+A2. Distance-based blending
+A3. Force-based blending
+A4. Oracle responsibility，直接缩放动作，不守恒
+A5. Oracle responsibility + effect conservation（proposed）
+A6. Shuffled responsibility + effect conservation
+A7. Correct responsibility + operator-null
+A8. Oracle responsibility + conservation-null
+
+所有方法使用：
+
+- 相同 ACT checkpoint；
+- 相同 test seeds；
+- 相同 observation；
+- 相同 base actions；
+- 相同控制频率；
+- 相同额外优化预算。
+
+==================================================
+10. Perturbations
+==================================================
+
+handover_block：
+
+- receiver actuator gain：0.7 / 1.0 / 1.3
+- donor release offset：-4 / 0 / +4 steps
+- unilateral friction：low / nominal / high
+- object COM：left / center / right
+- unilateral action delay：0 / 2 / 4 steps
+- receiver grasp offset：small / medium
+
+lift_pot：
+
+- 左右 gain 不平衡
+- COM 偏移
+- 单侧短时延迟
+
+期望：
+方法保留 joint responsibility，
+不能强行把锅完全交给一只手。
+
+pick_dual_bottles：
+
+期望：
+shared-object responsibility router 保持关闭，
+动作和成功率应基本等于 Base ACT。
+
+==================================================
+11. 主要指标
+==================================================
+
+Task metrics：
+- success rate
+- drop rate
+- slip rate
+- release success
+
+Handoff metrics：
+- peak object linear jerk
+- peak angular velocity
+- pose deviation
+- overlap duration
+- receiver takeover delay
+- donor residual influence after release
+
+Mechanism metrics：
+- responsibility conservation error
+- authority-swap accuracy
+- responsibility total variation
+- joint synergy ratio
+- responsibility mismatch vs disturbance AUROC
+- routing activation outside shared-object phase
+
+Cost metrics：
+- additional simulator/model calls
+- QP latency
+- wall-clock latency
+- action deviation from base ACT
+
+==================================================
+12. Oracle operator GO gate
+==================================================
+
+进入 learned responsibility model 的条件：
+
+1. proposed 相比最佳 heuristic：
+   peak disturbance 相对下降 ≥15%；
+2. handover success 不下降，
+   或绝对提升 ≥5 个百分点；
+3. 95% paired bootstrap CI 对主要扰动指标不跨 0；
+4. shuffled responsibility 失去收益；
+5. conservation-null 明显差于完整方法；
+6. lift_pot 不出现错误单臂接管；
+7. pick_dual_bottles clean success 下降不超过 3 个百分点；
+8. routing 收益主要集中于 E2–E5 双臂重叠阶段。
+
+若 oracle operator 无收益：
+立即停止，不训练 responsibility estimator。
+
+==================================================
+13. 交付物
+==================================================
+
+phase1/
+  configs/
+  source_manifest.json
+  preregistration.yaml
+  wrappers/
+    responsibility_trace_wrapper.py
+    counterfactual_brancher.py
+    event_detector.py
+  responsibility/
+    oracle_responsibility.py
+    synergy.py
+  operator/
+    local_effect_jacobian.py
+    responsibility_projection_qp.py
+  baselines/
+    phase_blend.py
+    distance_blend.py
+    force_blend.py
+  tests/
+  results/
+    expert_signal/
+    act_baseline/
+    oracle_operator/
+    traces.parquet
+    metrics.csv
+    summary.json
+    plots/
+  PHASE1_REPORT.md
+  GO_NO_GO.json
+
+必须在报告开头声明：
+
+- expert/simulator privileged evidence
+- ACT oracle-operator evidence
+- 尚未学习 deployable responsibility
+- 尚未使用 π0.5
+- 尚未使用真实世界模型
+- 尚未证明 VLA 通用性
+- accepted=false

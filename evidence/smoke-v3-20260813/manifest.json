@@ -1,0 +1,697 @@
+{
+  "accepted": false,
+  "claim_boundary": {
+    "deployable_responsibility_learned": false,
+    "original_bimanual_signal_go": "not_tested",
+    "pi05_used": false,
+    "video_world_model_used": false,
+    "vla_generality_proven": false
+  },
+  "config_path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/r22p19-libero-phase1-20260813/experiments/r22p19_libero_phase1/configs/signal_pilot.yaml",
+  "config_sha256": "784f42f9cb819aafbfbbc84897cccf62f8f07c25ea05accbec7958c68eff0509",
+  "control_dataset": {
+    "available_demo_count": 50,
+    "path": "/mnt/cpfs/zbl-cpfs-new/dataset/leon/libero/libero_goal/push_the_plate_to_the_front_of_the_stove_demo.hdf5",
+    "selected_demo_count": 20,
+    "selected_demos": [
+      {
+        "action_shape": [
+          142,
+          7
+        ],
+        "demo_id": 30,
+        "length": 142,
+        "state_shape": [
+          142,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          135,
+          7
+        ],
+        "demo_id": 31,
+        "length": 135,
+        "state_shape": [
+          135,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          115,
+          7
+        ],
+        "demo_id": 32,
+        "length": 115,
+        "state_shape": [
+          115,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          126,
+          7
+        ],
+        "demo_id": 33,
+        "length": 126,
+        "state_shape": [
+          126,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          154,
+          7
+        ],
+        "demo_id": 34,
+        "length": 154,
+        "state_shape": [
+          154,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          169,
+          7
+        ],
+        "demo_id": 35,
+        "length": 169,
+        "state_shape": [
+          169,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          145,
+          7
+        ],
+        "demo_id": 36,
+        "length": 145,
+        "state_shape": [
+          145,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          203,
+          7
+        ],
+        "demo_id": 37,
+        "length": 203,
+        "state_shape": [
+          203,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          134,
+          7
+        ],
+        "demo_id": 38,
+        "length": 134,
+        "state_shape": [
+          134,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          146,
+          7
+        ],
+        "demo_id": 39,
+        "length": 146,
+        "state_shape": [
+          146,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          128,
+          7
+        ],
+        "demo_id": 40,
+        "length": 128,
+        "state_shape": [
+          128,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          188,
+          7
+        ],
+        "demo_id": 41,
+        "length": 188,
+        "state_shape": [
+          188,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          130,
+          7
+        ],
+        "demo_id": 42,
+        "length": 130,
+        "state_shape": [
+          130,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          182,
+          7
+        ],
+        "demo_id": 43,
+        "length": 182,
+        "state_shape": [
+          182,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          143,
+          7
+        ],
+        "demo_id": 44,
+        "length": 143,
+        "state_shape": [
+          143,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          132,
+          7
+        ],
+        "demo_id": 45,
+        "length": 132,
+        "state_shape": [
+          132,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          138,
+          7
+        ],
+        "demo_id": 46,
+        "length": 138,
+        "state_shape": [
+          138,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          141,
+          7
+        ],
+        "demo_id": 47,
+        "length": 141,
+        "state_shape": [
+          141,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          183,
+          7
+        ],
+        "demo_id": 48,
+        "length": 183,
+        "state_shape": [
+          183,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          118,
+          7
+        ],
+        "demo_id": 49,
+        "length": 118,
+        "state_shape": [
+          118,
+          79
+        ],
+        "terminal_reward": 1
+      }
+    ],
+    "sha256": "36b4e1bced49d2f4ff6b2fce6b1596a63978e14199e2513cd0df71e127bf47a6"
+  },
+  "created_at_utc": "2026-08-12T16:59:47.199710+00:00",
+  "evidence_kind": "libero_single_arm_action_subspace_preliminary",
+  "executable": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/envs/libero-original/bin/python",
+  "gid": 2254,
+  "host": "dsw-925252-7796557db6-j84nn",
+  "libero_commit_actual": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "libero_commit_expected": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "libero_dirty": false,
+  "libero_root": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/LIBERO-r16p19-official-8f1084e",
+  "mode": "smoke",
+  "pid": 178955,
+  "platform": "Linux-5.10.134-013.9.kangaroo.al8.x86_64-x86_64-with-glibc2.10",
+  "primary_dataset": {
+    "available_demo_count": 50,
+    "path": "/mnt/cpfs/zbl-cpfs-new/dataset/leon/libero/libero_goal/put_the_bowl_on_the_plate_demo.hdf5",
+    "selected_demo_count": 30,
+    "selected_demos": [
+      {
+        "action_shape": [
+          90,
+          7
+        ],
+        "demo_id": 0,
+        "length": 90,
+        "state_shape": [
+          90,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          88,
+          7
+        ],
+        "demo_id": 1,
+        "length": 88,
+        "state_shape": [
+          88,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          92,
+          7
+        ],
+        "demo_id": 2,
+        "length": 92,
+        "state_shape": [
+          92,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          94,
+          7
+        ],
+        "demo_id": 3,
+        "length": 94,
+        "state_shape": [
+          94,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          80,
+          7
+        ],
+        "demo_id": 4,
+        "length": 80,
+        "state_shape": [
+          80,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          89,
+          7
+        ],
+        "demo_id": 5,
+        "length": 89,
+        "state_shape": [
+          89,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          105,
+          7
+        ],
+        "demo_id": 6,
+        "length": 105,
+        "state_shape": [
+          105,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          92,
+          7
+        ],
+        "demo_id": 7,
+        "length": 92,
+        "state_shape": [
+          92,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          84,
+          7
+        ],
+        "demo_id": 8,
+        "length": 84,
+        "state_shape": [
+          84,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          90,
+          7
+        ],
+        "demo_id": 9,
+        "length": 90,
+        "state_shape": [
+          90,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          112,
+          7
+        ],
+        "demo_id": 10,
+        "length": 112,
+        "state_shape": [
+          112,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          85,
+          7
+        ],
+        "demo_id": 11,
+        "length": 85,
+        "state_shape": [
+          85,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          88,
+          7
+        ],
+        "demo_id": 12,
+        "length": 88,
+        "state_shape": [
+          88,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          98,
+          7
+        ],
+        "demo_id": 13,
+        "length": 98,
+        "state_shape": [
+          98,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          87,
+          7
+        ],
+        "demo_id": 14,
+        "length": 87,
+        "state_shape": [
+          87,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          84,
+          7
+        ],
+        "demo_id": 15,
+        "length": 84,
+        "state_shape": [
+          84,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          95,
+          7
+        ],
+        "demo_id": 16,
+        "length": 95,
+        "state_shape": [
+          95,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          88,
+          7
+        ],
+        "demo_id": 17,
+        "length": 88,
+        "state_shape": [
+          88,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          93,
+          7
+        ],
+        "demo_id": 18,
+        "length": 93,
+        "state_shape": [
+          93,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          95,
+          7
+        ],
+        "demo_id": 19,
+        "length": 95,
+        "state_shape": [
+          95,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          95,
+          7
+        ],
+        "demo_id": 20,
+        "length": 95,
+        "state_shape": [
+          95,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          106,
+          7
+        ],
+        "demo_id": 21,
+        "length": 106,
+        "state_shape": [
+          106,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          80,
+          7
+        ],
+        "demo_id": 22,
+        "length": 80,
+        "state_shape": [
+          80,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          107,
+          7
+        ],
+        "demo_id": 23,
+        "length": 107,
+        "state_shape": [
+          107,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          90,
+          7
+        ],
+        "demo_id": 24,
+        "length": 90,
+        "state_shape": [
+          90,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          103,
+          7
+        ],
+        "demo_id": 25,
+        "length": 103,
+        "state_shape": [
+          103,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          96,
+          7
+        ],
+        "demo_id": 26,
+        "length": 96,
+        "state_shape": [
+          96,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          87,
+          7
+        ],
+        "demo_id": 27,
+        "length": 87,
+        "state_shape": [
+          87,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          87,
+          7
+        ],
+        "demo_id": 28,
+        "length": 87,
+        "state_shape": [
+          87,
+          79
+        ],
+        "terminal_reward": 1
+      },
+      {
+        "action_shape": [
+          103,
+          7
+        ],
+        "demo_id": 29,
+        "length": 103,
+        "state_shape": [
+          103,
+          79
+        ],
+        "terminal_reward": 1
+      }
+    ],
+    "sha256": "e69528b0cf10dfc59b20698e12ec2affc03f3887309034d3eb74cac3ec929406"
+  },
+  "proposal_id": "R22-P19",
+  "python": "3.8.13 | packaged by conda-forge | (default, Mar 25 2022, 06:04:18) \n[GCC 10.3.0]",
+  "uid": 2254,
+  "versions": {
+    "h5py": "3.11.0",
+    "numpy": "1.22.4"
+  }
+}

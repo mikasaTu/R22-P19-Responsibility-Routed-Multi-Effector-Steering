@@ -1,0 +1,1622 @@
+[
+  {
+    "demo_id": 0,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.07219624016317508,
+          0.036918796415422145,
+          0.9598490998067113
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.03957402213685257,
+          -0.03959983791556282
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.07684965618779657,
+          -0.008989574460502213,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 29
+      },
+      "P1": {
+        "eef_position": [
+          -0.09755636612654744,
+          0.032932563243440856,
+          0.9191644234861787
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.037112334977314934,
+          -0.037145648517578005
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.07684916635805122,
+          -0.009040258645719446,
+          0.8983819557165231
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 34
+      },
+      "P2": {
+        "eef_position": [
+          -0.09978806996132576,
+          0.02812443205603815,
+          0.9494269546480574
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0027382728534257983,
+          -0.003056016447916043
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09862067304797033,
+          -0.008474620809382294,
+          0.9074320697108094
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 45
+      },
+      "P3": {
+        "eef_position": [
+          -0.0700741498461602,
+          0.027182028207967335,
+          1.0003308417143377
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.002627361851028435,
+          -0.0028647434071370184
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.07238322233817529,
+          -0.010684472345094762,
+          0.9594145734260026
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 50
+      },
+      "P4": {
+        "eef_position": [
+          0.044274711185545074,
+          0.01208541163057395,
+          0.9342646242281334
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0060619968326363766,
+          -0.006088361735187884
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.048601309089388554,
+          -0.03799384257243789,
+          0.9112011155828104
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 76
+      },
+      "P5": {
+        "eef_position": [
+          0.045787893237899724,
+          0.012531991482511728,
+          0.9395126629059593
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.006055171915454593,
+          -0.0057153830612015925
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04798860551908978,
+          -0.03744910219756708,
+          0.91051320250331
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 78
+      },
+      "P6": {
+        "eef_position": [
+          0.045787893237899724,
+          0.012531991482511728,
+          0.9395126629059593
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.006055171915454593,
+          -0.0057153830612015925
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04798860551908978,
+          -0.03744910219756708,
+          0.91051320250331
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 78
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 1,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.08988523882067284,
+          0.04283404187538663,
+          0.9511948972122054
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.03964809585471285,
+          -0.03965850608671756
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09845523682998245,
+          0.008007827804607069,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 33
+      },
+      "P1": {
+        "eef_position": [
+          -0.10990653159799812,
+          0.04396813672838893,
+          0.9173644574418317
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.037149905059524944,
+          -0.03715746617670929
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09842894059640188,
+          0.007956950062944931,
+          0.8979985623556304
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 38
+      },
+      "P2": {
+        "eef_position": [
+          -0.10885184660935526,
+          0.04281408321815877,
+          0.9478654261442733
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0018823920832351851,
+          -0.00350348438204865
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.11144417147678774,
+          0.005390339546745182,
+          0.9160343125112992
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 52
+      },
+      "P3": {
+        "eef_position": [
+          -0.08192928398464873,
+          0.039991400041307926,
+          0.9852796427093972
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0020183539183874456,
+          -0.0031743145710177115
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.08509410665884055,
+          0.0019918266270658254,
+          0.9537894236916015
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 56
+      },
+      "P4": {
+        "eef_position": [
+          0.0500513317725892,
+          0.0311212696852514,
+          0.9268245139943405
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.005038708171258637,
+          -0.007768153559164969
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.043731226319628,
+          -0.012945904262453165,
+          0.9065734401880418
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 81
+      },
+      "P5": {
+        "eef_position": [
+          0.0499950972493529,
+          0.03175634672996558,
+          0.9297684357383125
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.006231798317935408,
+          -0.007850537959260672
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.043566552019458145,
+          -0.012751568788163362,
+          0.9067378488349684
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 83
+      },
+      "P6": {
+        "eef_position": [
+          0.0499950972493529,
+          0.03175634672996558,
+          0.9297684357383125
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.006231798317935408,
+          -0.007850537959260672
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.043566552019458145,
+          -0.012751568788163362,
+          0.9067378488349684
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 83
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 2,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.0932939652321194,
+          0.04808178038315432,
+          0.9460181502320177
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.039638936484637774,
+          -0.03975273721195611
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.10408035367155581,
+          0.013003707896844732,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 36
+      },
+      "P1": {
+        "eef_position": [
+          -0.1040246732395438,
+          0.04246990877099356,
+          0.91982355616789
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.025142779009675004,
+          -0.02522838364935283
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.1040813281786855,
+          0.012971425190061673,
+          0.8982863478776875
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 41
+      },
+      "P2": {
+        "eef_position": [
+          -0.10198344929374475,
+          0.052367569726703395,
+          0.9508180680648004
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0013473410465239244,
+          -0.0038830913520164507
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.10431751867483635,
+          0.013178536156069414,
+          0.919111467296408
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 52
+      },
+      "P3": {
+        "eef_position": [
+          -0.07197751061673485,
+          0.05233439920730356,
+          0.9960443359828076
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0015321455051632352,
+          -0.0034783631262954116
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.07735861203101167,
+          0.01257765782189638,
+          0.9649584443149336
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 57
+      },
+      "P4": {
+        "eef_position": [
+          0.050163094166236065,
+          0.04010949781191109,
+          0.928749723752792
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.00399976450658992,
+          -0.007418146082001639
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.04673242041121735,
+          -0.004437423770772285,
+          0.9066978576765201
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 87
+      },
+      "P5": {
+        "eef_position": [
+          0.05072135680440984,
+          0.03954015377894484,
+          0.9402772870043704
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007350606466112554,
+          -0.00842885345978308
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04685565410156325,
+          -0.004356686229736008,
+          0.9062586020135002
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 90
+      },
+      "P6": {
+        "eef_position": [
+          0.05072135680440984,
+          0.03954015377894484,
+          0.9402772870043704
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007350606466112554,
+          -0.00842885345978308
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04685565410156325,
+          -0.004356686229736008,
+          0.9062586020135002
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 90
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 3,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.09033470517500482,
+          0.046687883874283735,
+          0.9339462557339085
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.029581560380936792,
+          -0.029758446361370226
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.10107655927807707,
+          0.0006725342739087875,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 37
+      },
+      "P1": {
+        "eef_position": [
+          -0.09201698391558717,
+          0.044488163003342025,
+          0.932706800565993
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.006474225203636812,
+          -0.006919933281802977
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.10110982009360693,
+          0.00017610318560998042,
+          0.8985142066014156
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 42
+      },
+      "P2": {
+        "eef_position": [
+          -0.09314149042784196,
+          0.04407390153110376,
+          0.9568401878685324
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0026211652002103756,
+          -0.0028245243786298355
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09303403456362327,
+          0.004834326256364703,
+          0.9128891704995377
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 47
+      },
+      "P3": {
+        "eef_position": [
+          -0.06494518217151816,
+          0.03991130294016855,
+          1.0109959138191889
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.002504790208082104,
+          -0.0027338357172834496
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.06650435241296211,
+          -0.0012070064624337574,
+          0.9687399651906461
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 52
+      },
+      "P4": {
+        "eef_position": [
+          0.037592373780154384,
+          0.023625863930225137,
+          0.9390806967025238
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0034470042149651785,
+          -0.004512844976414439
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.03593644086706033,
+          -0.024370916774699044,
+          0.9097475831987573
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 83
+      },
+      "P5": {
+        "eef_position": [
+          0.03737018867356162,
+          0.02158630719793949,
+          0.9406711171997468
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.003215569384768964,
+          -0.0041755647949275375
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.03639301359937601,
+          -0.023764495200576982,
+          0.9077421475858567
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 84
+      },
+      "P6": {
+        "eef_position": [
+          0.03737018867356162,
+          0.02158630719793949,
+          0.9406711171997468
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.003215569384768964,
+          -0.0041755647949275375
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.03639301359937601,
+          -0.023764495200576982,
+          0.9077421475858567
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 84
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 4,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.08338843092642399,
+          0.03281093626397081,
+          0.945552487177823
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.039603806607317306,
+          -0.03964485729279181
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09223464941634986,
+          -0.009563027336311015,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 31
+      },
+      "P1": {
+        "eef_position": [
+          -0.08669194455802254,
+          0.027409244120100408,
+          0.919270207703001
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.025156672025292894,
+          -0.025204405785191748
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09223640648994842,
+          -0.009570065058658837,
+          0.8983425464207488
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 36
+      },
+      "P2": {
+        "eef_position": [
+          -0.07514986825413364,
+          0.030902703606947288,
+          0.9648580480531618
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0014675903318380242,
+          -0.004619883610813983
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.07740498191086273,
+          -0.004848594135200034,
+          0.9247920814652936
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 47
+      },
+      "P3": {
+        "eef_position": [
+          -0.04684140982658007,
+          0.0328523873496256,
+          1.0058194403020115
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0017004087825642745,
+          -0.0034143483136790747
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.05096064510433071,
+          -0.006579510282408117,
+          0.9687504892238925
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 51
+      },
+      "P4": {
+        "eef_position": [
+          0.0621573875352012,
+          0.008654024352132108,
+          0.9288170020888055
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.005492733624934123,
+          -0.005778382376195553
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.058414331534781636,
+          -0.04015565174044347,
+          0.9088300131882889
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 72
+      },
+      "P5": {
+        "eef_position": [
+          0.06288036892009612,
+          0.010758016824980558,
+          0.933770031386679
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.01132925871155499,
+          -0.011402079988985351
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.0565948327331624,
+          -0.03884140249344503,
+          0.9062508600165928
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 76
+      },
+      "P6": {
+        "eef_position": [
+          0.06288036892009612,
+          0.010758016824980558,
+          0.933770031386679
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.01132925871155499,
+          -0.011402079988985351
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.0565948327331624,
+          -0.03884140249344503,
+          0.9062508600165928
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 76
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 5,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.07109545169780497,
+          0.052553871955731316,
+          0.9649618626752607
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.039590833347970214,
+          -0.039583471125121956
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09046252920743238,
+          0.0048691205498631466,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 29
+      },
+      "P1": {
+        "eef_position": [
+          -0.10085710771749754,
+          0.05313033618628456,
+          0.9209545482123818
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.039665704140379794,
+          -0.038572313076059316
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09048327858518229,
+          0.004830013056464398,
+          0.8984173812128735
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 34
+      },
+      "P2": {
+        "eef_position": [
+          -0.08789433068563693,
+          0.05403713859408747,
+          0.9460112712512109
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.005652830296218726,
+          -0.005579892772277865
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.08674675226730269,
+          0.007581822614244975,
+          0.9122363876905665
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 46
+      },
+      "P3": {
+        "eef_position": [
+          -0.05937057401274798,
+          0.04608056040468325,
+          0.9949659400915666
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.005590153871586371,
+          -0.005565814758920319
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.06005159950932879,
+          -0.0003144931861016147,
+          0.9609989770545084
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 51
+      },
+      "P4": {
+        "eef_position": [
+          0.06369676644255509,
+          0.023551743115890242,
+          0.9473389854221649
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0032330750524078946,
+          -0.005599547433471267
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.05713972894161943,
+          -0.02855469716212083,
+          0.9084926859364768
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 76
+      },
+      "P5": {
+        "eef_position": [
+          0.0671174327570632,
+          0.02813071024217396,
+          0.9548769788585815
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007257857918948051,
+          -0.007910015621455152
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.05841106959662783,
+          -0.024011890688782345,
+          0.9062096683000507
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 79
+      },
+      "P6": {
+        "eef_position": [
+          0.0671174327570632,
+          0.02813071024217396,
+          0.9548769788585815
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007257857918948051,
+          -0.007910015621455152
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.05841106959662783,
+          -0.024011890688782345,
+          0.9062096683000507
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 79
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 6,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.08227515994449909,
+          0.04604364754761233,
+          0.9456914998093372
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.02966691667021113,
+          -0.02970526966441061
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09951108438965892,
+          0.006139954440238304,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 47
+      },
+      "P1": {
+        "eef_position": [
+          -0.08778970478223275,
+          0.045769159244327305,
+          0.9422617429356316
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.006548854014193424,
+          -0.007824836567281735
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.1004994275959068,
+          3.1885303208894004e-05,
+          0.8981684397538121
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 52
+      },
+      "P2": {
+        "eef_position": [
+          -0.08699982053618142,
+          0.04498276838547764,
+          0.9635505495203935
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.002450413910860778,
+          -0.002720702335486269
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09097378745362918,
+          0.008820766789677373,
+          0.906926357464424
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 56
+      },
+      "P3": {
+        "eef_position": [
+          -0.05743768201235425,
+          0.04702256952516521,
+          1.0264799770553699
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0022861763253988225,
+          -0.002505484089136278
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.06549931814067286,
+          0.006899180884790236,
+          0.9729595728458675
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 62
+      },
+      "P4": {
+        "eef_position": [
+          0.07516531987807495,
+          0.028622337959555863,
+          0.9462460300573574
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0015116459006318604,
+          -0.009908977152232504
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.07692498467268684,
+          -0.02348533501073028,
+          0.9118806030179031
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 91
+      },
+      "P5": {
+        "eef_position": [
+          0.06769303231578122,
+          0.029879674817068953,
+          0.9486110323003719
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.010704896140404674,
+          -0.012854376844088555
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.07927819170607378,
+          -0.022384843328272647,
+          0.908873459109003
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 95
+      },
+      "P6": {
+        "eef_position": [
+          0.06769303231578122,
+          0.029879674817068953,
+          0.9486110323003719
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.010704896140404674,
+          -0.012854376844088555
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.07927819170607378,
+          -0.022384843328272647,
+          0.908873459109003
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 95
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 7,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.07956666294667837,
+          0.0338247977446926,
+          0.9681716726057039
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0396705249800067,
+          -0.03972276994592848
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.08488370429306363,
+          -0.009651164981029673,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 36
+      },
+      "P1": {
+        "eef_position": [
+          -0.10551092802175353,
+          0.032391148598928166,
+          0.9168755321505218
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.03972786473447221,
+          -0.03978485787466301
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.08485196077521623,
+          -0.009700793515138369,
+          0.8981069515422881
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 41
+      },
+      "P2": {
+        "eef_position": [
+          -0.09522316632981663,
+          0.0352402060000692,
+          0.9485867169504927
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0020955495217448885,
+          -0.0021500239762158612
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.09511200691821581,
+          -0.004734001966191096,
+          0.9098939355779468
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 55
+      },
+      "P3": {
+        "eef_position": [
+          -0.06760540132749306,
+          0.035312554162485264,
+          1.0126707273732465
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0020573195697116456,
+          -0.0021370466665921054
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.06708725782569287,
+          -0.0047338437528444645,
+          0.9738723227709565
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 61
+      },
+      "P4": {
+        "eef_position": [
+          0.047343822089042524,
+          0.018715450954702624,
+          0.9253892398831598
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.005328529929284791,
+          -0.005605984259145169
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.0436628833796616,
+          -0.029259654242356093,
+          0.9075426354420477
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 86
+      },
+      "P5": {
+        "eef_position": [
+          0.04773761103750898,
+          0.018757641257613786,
+          0.9293653355081001
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007987732235695743,
+          -0.007962562599274609
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.043940794262357204,
+          -0.02967023465155684,
+          0.9079801618875216
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 89
+      },
+      "P6": {
+        "eef_position": [
+          0.04773761103750898,
+          0.018757641257613786,
+          0.9293653355081001
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.007987732235695743,
+          -0.007962562599274609
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.043940794262357204,
+          -0.02967023465155684,
+          0.9079801618875216
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 89
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 8,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.11090113374693486,
+          0.044161210334786434,
+          0.9243358152057752
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.03368255596441432,
+          -0.033881850425206875
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09102882970789655,
+          0.0019096551326467023,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 36
+      },
+      "P1": {
+        "eef_position": [
+          -0.10643489312615925,
+          0.0361258357027226,
+          0.920265790914882
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.010638651793932323,
+          -0.013534062677396336
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.08989880969669933,
+          0.0004657936112079038,
+          0.8984835878682663
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 41
+      },
+      "P2": {
+        "eef_position": [
+          -0.09604405562399254,
+          0.028124699024745167,
+          0.9414751156999025
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0017912421480903108,
+          -0.0038798814847650228
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.0942039035415438,
+          -0.008858765824601144,
+          0.9082272016888073
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 48
+      },
+      "P3": {
+        "eef_position": [
+          -0.0687329788322931,
+          0.02558076248416688,
+          0.992083861154408
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0018708351503336793,
+          -0.0030001814787629305
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.06806399858671588,
+          -0.013254252179831953,
+          0.9606956978002413
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 54
+      },
+      "P4": {
+        "eef_position": [
+          0.038578307434074144,
+          0.02387337006407555,
+          0.9282036028214087
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.004120516916728012,
+          -0.004113664545561392
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.040866584881310515,
+          -0.02221678907362747,
+          0.9072292289672901
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 78
+      },
+      "P5": {
+        "eef_position": [
+          0.03922485627156188,
+          0.024679275646142456,
+          0.929732763313023
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.005118972180960329,
+          -0.0051460590288171905
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04119130050646046,
+          -0.02213145689419339,
+          0.9071535824510035
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 80
+      },
+      "P6": {
+        "eef_position": [
+          0.03922485627156188,
+          0.024679275646142456,
+          0.929732763313023
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.005118972180960329,
+          -0.0051460590288171905
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04119130050646046,
+          -0.02213145689419339,
+          0.9071535824510035
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 80
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  },
+  {
+    "demo_id": 9,
+    "events": {
+      "P0": {
+        "eef_position": [
+          -0.10348778766488155,
+          0.04951927522048266,
+          0.928657167118227
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.03375986866773206,
+          -0.033790812195324434
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          -0.09589086403764756,
+          0.00915143356000595,
+          0.8984041653006754
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 41
+      },
+      "P1": {
+        "eef_position": [
+          -0.10557043721617569,
+          0.04944102144422622,
+          0.9231691812966937
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.01071418935989053,
+          -0.010951889714049923
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.0957700648683434,
+          0.007100043871437161,
+          0.8985171947286523
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 46
+      },
+      "P2": {
+        "eef_position": [
+          -0.0977350856833872,
+          0.05027761358322405,
+          0.9470821608126575
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0025860650340847223,
+          -0.0026375622571762508
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.10566374315634505,
+          0.01365413009932022,
+          0.9085074628357935
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 52
+      },
+      "P3": {
+        "eef_position": [
+          -0.06750722447247386,
+          0.04964563652420837,
+          0.995645929673995
+        ],
+        "gripper_action": 1.0,
+        "gripper_qpos": [
+          0.0025215129351860064,
+          -0.0025764819697050847
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          -0.07871666101983706,
+          0.012657330455484093,
+          0.95818510184111
+        ],
+        "object_target_contact": false,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 57
+      },
+      "P4": {
+        "eef_position": [
+          0.0483194885176049,
+          0.030765210822467977,
+          0.9286880589895232
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.004085356173356292,
+          -0.007277032790918549
+        ],
+        "object_gripper_contact": true,
+        "object_position": [
+          0.04225450158654633,
+          -0.013551361567317151,
+          0.9067650588175827
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": true,
+        "reward": 0,
+        "step_id": 82
+      },
+      "P5": {
+        "eef_position": [
+          0.04824932750317912,
+          0.030395762051971417,
+          0.930337325164006
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0051824265776184535,
+          -0.007413190380489272
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04196664439069389,
+          -0.013959444138840297,
+          0.9069465580613607
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 84
+      },
+      "P6": {
+        "eef_position": [
+          0.04824932750317912,
+          0.030395762051971417,
+          0.930337325164006
+        ],
+        "gripper_action": -1.0,
+        "gripper_qpos": [
+          0.0051824265776184535,
+          -0.007413190380489272
+        ],
+        "object_gripper_contact": false,
+        "object_position": [
+          0.04196664439069389,
+          -0.013959444138840297,
+          0.9069465580613607
+        ],
+        "object_target_contact": true,
+        "object_two_finger_contact": false,
+        "reward": 0,
+        "step_id": 84
+      }
+    },
+    "ordered_complete": true,
+    "reason": "ordered_complete",
+    "review_mode": "agent_numeric_trace_manual_check"
+  }
+]

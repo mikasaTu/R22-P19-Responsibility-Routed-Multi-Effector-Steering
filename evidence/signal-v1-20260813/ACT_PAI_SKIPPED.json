@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "cleanup_target_count": 0,
+  "failed_gates": [
+    "gate_off_control",
+    "phase_auc_over_action_magnitude"
+  ],
+  "inference_started": false,
+  "note": "This is a scientific stage stop, not an infrastructure failure.",
+  "original_bimanual_signal_go": "not_tested",
+  "pai_job_created": false,
+  "pai_job_id": null,
+  "reason": "LIBERO_SUBSTRATE_NO_GO",
+  "schema_version": 1,
+  "stage": "ACT_PAI",
+  "status": "SKIPPED_BY_PREREGISTERED_SIGNAL_GATE",
+  "superseded_targets": [],
+  "training_started": false
+}

@@ -1,0 +1,65 @@
+{
+  "decision": "LIBERO_SUBSTRATE_NO_GO",
+  "failed_gates": [
+    "gate_off_control",
+    "phase_auc_over_action_magnitude"
+  ],
+  "files_before_verification": {
+    "EVALUATION_COMPLETE.json": {
+      "sha256": "3b33c5de8ae1b522a9c323ea47420e802cdbed3538e2e8d7936c28fd8787f3ad",
+      "size_bytes": 282
+    },
+    "authority_swap.jsonl": {
+      "sha256": "39e988d3f56c4bca4111d2818f69bb23be3e7c99bc8f832824ef50a2dc463f6e",
+      "size_bytes": 11681956
+    },
+    "control_responsibility.jsonl": {
+      "sha256": "9e575a630c7b3b4bc6563d54ea6c0c622590340bb0a4eb9c6ae3740298231ccc",
+      "size_bytes": 8840279
+    },
+    "decision.json": {
+      "sha256": "06b90e08ede5645dfd88fd2fd0d195a5f933b0e6f94b7f94179e8fb36f696507",
+      "size_bytes": 495
+    },
+    "determinism.json": {
+      "sha256": "2f11e7b3dfcbcaafb65c4694330e73a9360c6a3adf91d74662de41f60614994e",
+      "size_bytes": 5728
+    },
+    "event_audits.jsonl": {
+      "sha256": "6ac1241b0daf448153122d460711fc407b5e340629419218880604030869b4e0",
+      "size_bytes": 5041
+    },
+    "expert_traces.jsonl": {
+      "sha256": "c27e0eba8bc1d0df6da65c958ce8071afc1d293a6061aa5c24667d281bd78adb",
+      "size_bytes": 10104495
+    },
+    "frozen_config.json": {
+      "sha256": "ebf3a964d5598442054b6c4d3a34c2a0a21737ad53fd5766fbe1ecebda15ec2e",
+      "size_bytes": 3374
+    },
+    "manifest.json": {
+      "sha256": "866739c956586b734d28e771bdcac21eccec7bdac515a0a0bcaae375b791ac5d",
+      "size_bytes": 13105
+    },
+    "manual_event_audit.json": {
+      "sha256": "bd2bb179934b754e33757d1e5c78959dc47bad557d3439f662ffb0422f1d768a",
+      "size_bytes": 42553
+    },
+    "metrics.json": {
+      "sha256": "693da04b14d6bbebe757ad769a7aef6fcaf7a13336d0f94dab1a93b223864dff",
+      "size_bytes": 2274
+    },
+    "primary_responsibility.jsonl": {
+      "sha256": "222fe72b820bd1749dd99e3c6986e131e97ff3d093e3d6f52ec7fb4e3230fafb",
+      "size_bytes": 16379165
+    }
+  },
+  "independent_readback": true,
+  "manual_numeric_event_audit_count": 10,
+  "manual_numeric_event_audit_pass": true,
+  "metric_gate_count": 9,
+  "metric_gate_fail_count": 2,
+  "metric_gate_pass_count": 7,
+  "schema_version": 1,
+  "verified_at_unix": 1786556276.8376985
+}

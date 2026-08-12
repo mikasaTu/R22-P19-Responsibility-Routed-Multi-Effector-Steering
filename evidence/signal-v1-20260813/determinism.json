@@ -1,0 +1,232 @@
+{
+  "one_step_alignment": {
+    "diagnostic_only": true,
+    "non_identifiable_hidden_state": [
+      "PandaGripper.current_action",
+      "OSC Python controller buffers"
+    ],
+    "pass": false,
+    "rows": [
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 0,
+        "max_sim_state_error": 0.00947111899211607,
+        "object_position_error_m": 3.348533977855147e-08,
+        "pass": false,
+        "step_id": 0
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 0,
+        "max_sim_state_error": 2.3871957296659874,
+        "object_position_error_m": 0.0035988695972472068,
+        "pass": false,
+        "step_id": 44
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 0,
+        "max_sim_state_error": 0.0016241310429396078,
+        "object_position_error_m": 9.55915549003751e-06,
+        "pass": false,
+        "step_id": 88
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 1,
+        "max_sim_state_error": 0.00950123220684574,
+        "object_position_error_m": 3.348533977855147e-08,
+        "pass": false,
+        "step_id": 0
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 1,
+        "max_sim_state_error": 0.19764462268930372,
+        "object_position_error_m": 0.0003030812746271635,
+        "pass": false,
+        "step_id": 43
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 1,
+        "max_sim_state_error": 0.09487912248564086,
+        "object_position_error_m": 4.874588430849975e-06,
+        "pass": false,
+        "step_id": 86
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 2,
+        "max_sim_state_error": 0.009443279504264102,
+        "object_position_error_m": 3.348533977855147e-08,
+        "pass": false,
+        "step_id": 0
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 2,
+        "max_sim_state_error": 0.20262690721620286,
+        "object_position_error_m": 0.00042590020800009875,
+        "pass": false,
+        "step_id": 45
+      },
+      {
+        "compared_to": "states[t+1]",
+        "demo_id": 2,
+        "max_sim_state_error": 0.056312767228631704,
+        "object_position_error_m": 7.615621102067843e-06,
+        "pass": false,
+        "step_id": 90
+      }
+    ],
+    "tolerances": {
+      "max_sim_state_error": 5e-05,
+      "object_position_error_m": 5e-06
+    }
+  },
+  "pass": true,
+  "repeated_branch": {
+    "hidden_state_contract": "hold_restored_finger_qpos_and_anchor_osc",
+    "pass": true,
+    "rows": [
+      {
+        "demo_id": 0,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 0,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 44
+      },
+      {
+        "demo_id": 0,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 88
+      },
+      {
+        "demo_id": 1,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 1,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 43
+      },
+      {
+        "demo_id": 1,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 86
+      },
+      {
+        "demo_id": 2,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 2,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 45
+      },
+      {
+        "demo_id": 2,
+        "max_final_sim_state_error": 0.0,
+        "pass": true,
+        "step_id": 90
+      }
+    ],
+    "tolerance": 1e-09
+  },
+  "repeated_restore": {
+    "pass": true,
+    "rows": [
+      {
+        "demo_id": 0,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 0,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 44
+      },
+      {
+        "demo_id": 0,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 88
+      },
+      {
+        "demo_id": 1,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 1,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 43
+      },
+      {
+        "demo_id": 1,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 86
+      },
+      {
+        "demo_id": 2,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 0
+      },
+      {
+        "demo_id": 2,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 45
+      },
+      {
+        "demo_id": 2,
+        "max_sim_state_error": 0.0,
+        "object_position_error_m": 0.0,
+        "object_rotation_error_rad": 0.0,
+        "pass": true,
+        "step_id": 90
+      }
+    ],
+    "tolerances": {
+      "max_sim_state_error": 1e-09,
+      "object_position_error_m": 1e-09,
+      "object_rotation_error_rad": 1e-09
+    }
+  }
+}

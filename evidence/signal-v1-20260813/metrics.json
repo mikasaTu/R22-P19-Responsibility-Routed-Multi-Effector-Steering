@@ -1,0 +1,77 @@
+{
+  "action_magnitude_baseline_auc_best_direction": 0.7935474937690391,
+  "arm_share_grasp_close": {
+    "count": 138,
+    "max": 0.9999753773635324,
+    "mean": 0.555955063462768,
+    "median": 0.4989201329295642,
+    "min": 0.09865522162729612,
+    "p25": 0.480229301263595,
+    "p75": 0.5779791785666917,
+    "std": 0.17966348074233104
+  },
+  "arm_share_transport": {
+    "count": 471,
+    "max": 0.9977392900866049,
+    "mean": 0.859121922674089,
+    "median": 0.9782527708908745,
+    "min": 0.12040969608458844,
+    "p25": 0.787340376077122,
+    "p75": 0.9912497801677875,
+    "std": 0.20595317135200925
+  },
+  "arm_share_transport_minus_grasp": 0.303166859211321,
+  "authority_swap_eligible_count": 225,
+  "authority_swap_response_accuracy": 0.9333333333333333,
+  "control_branch_count": 414,
+  "gate_off_control_activation_count": 47,
+  "gate_off_control_activation_fraction": 0.11352657004830918,
+  "gates": {
+    "authority_eligible_count": true,
+    "authority_swap_response": true,
+    "conservation": true,
+    "gate_off_control": false,
+    "phase_auc": true,
+    "phase_auc_over_action_magnitude": false,
+    "phase_shift": true,
+    "shuffle_control": true,
+    "valid_primary_event_fraction": true
+  },
+  "phase_auc": 0.8388719652912398,
+  "phase_auc_over_action_magnitude": 0.04532447152220065,
+  "phase_label_counts": {
+    "grasp_close": 138,
+    "transport": 471
+  },
+  "phase_population_count": 609,
+  "primary_branch_count": 698,
+  "primary_demo_count": 30,
+  "relative_conservation_error": {
+    "count": 1112,
+    "max": 3.0990244522383675e-14,
+    "mean": 1.0507599153735762e-16,
+    "median": 4.9230897149156035e-17,
+    "min": 0.0,
+    "p25": 9.79067415040863e-18,
+    "p75": 1.1212288001228314e-16,
+    "std": 9.419160047100929e-16
+  },
+  "relative_conservation_error_max": 3.0990244522383675e-14,
+  "shuffled_auc": {
+    "p95": 0.5497561463429644,
+    "repeats": 200,
+    "seed": 2219,
+    "summary": {
+      "count": 200,
+      "max": 0.5918335948798424,
+      "mean": 0.5009221052955476,
+      "median": 0.5045539862765007,
+      "min": 0.392919782147143,
+      "p25": 0.47688390412012677,
+      "p75": 0.5206544816763593,
+      "std": 0.030789164965316473
+    }
+  },
+  "valid_primary_event_count": 30,
+  "valid_primary_event_fraction": 1.0
+}

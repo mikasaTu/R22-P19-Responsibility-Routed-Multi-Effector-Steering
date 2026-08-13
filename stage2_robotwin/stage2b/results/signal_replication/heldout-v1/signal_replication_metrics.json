@@ -1,0 +1,950 @@
+{
+  "accepted": false,
+  "branch_points_used_as_independent_inference_samples": false,
+  "decision": {
+    "criteria": "supported: >=4/5 episodes with valid pairs, mean episode rate >=0.25, mean episode oracle accuracy >=0.8; partial: >=3 episodes and accuracy >=0.65",
+    "decision": "MULTISEED_SIGNAL_SUPPORTED",
+    "episode_joint_mode_occupancy": 0.0,
+    "episodes_with_valid_pairs": 5,
+    "heldout_episode_count": 5,
+    "mean_episode_oracle_accuracy_on_valid_pairs": 1.0,
+    "mean_episode_valid_pair_rate": 0.8705882352941178,
+    "selected_gamma": 0.6
+  },
+  "e4_relative_curve": [
+    {
+      "e4_relative_step": -250,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": null,
+      "rho_joint_abs_median_valid": null,
+      "valid_pair_rate_across_episodes": 0.0
+    },
+    {
+      "e4_relative_step": -250,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": null,
+      "rho_joint_abs_median_valid": null,
+      "valid_pair_rate_across_episodes": 0.0
+    },
+    {
+      "e4_relative_step": -225,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": null,
+      "rho_joint_abs_median_valid": null,
+      "valid_pair_rate_across_episodes": 0.0
+    },
+    {
+      "e4_relative_step": -225,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": null,
+      "rho_joint_abs_median_valid": null,
+      "valid_pair_rate_across_episodes": 0.0
+    },
+    {
+      "e4_relative_step": -200,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -200,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -175,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 6.2419495002033824e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -175,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -150,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -150,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 6.299235011804607e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -125,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 3.648740813340951e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -125,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 7.261611818821544e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -100,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 9.006337194557181e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -100,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -75,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 7.274262165320865e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -75,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -50,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 2.6219450163464177e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -50,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 1.0097121244631927e-17,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -25,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": -25,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 7.724752463478034e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 0,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 4.1806815169772506e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 0,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 7.952664881018476e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 25,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 25,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 4.6262664310707146e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 50,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 6.9188595340741026e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 50,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 5.4633789153811964e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 75,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 75,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 0.0,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 100,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 5.9425132400711916e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 100,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 3.290228286676591e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 125,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 3.6032265471074225e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 125,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 8.30887447729174e-18,
+      "valid_pair_rate_across_episodes": 1.0
+    },
+    {
+      "e4_relative_step": 150,
+      "episode_count": 5,
+      "horizon": 5,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 2.2029558785324304e-17,
+      "valid_pair_rate_across_episodes": 0.6
+    },
+    {
+      "e4_relative_step": 150,
+      "episode_count": 5,
+      "horizon": 10,
+      "oracle_margin_median_valid": 2.0,
+      "rho_joint_abs_median_valid": 1.0000543574437674e-17,
+      "valid_pair_rate_across_episodes": 1.0
+    }
+  ],
+  "evidence_boundary": "simulator privileged oracle; not deployable",
+  "frozen_config": {
+    "accepted": false,
+    "calibration_input_sha256": {
+      "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_00_seed_0000.jsonl": "d5545cf67e7b6fe5afe58b7d6059f356b8252da43e531de3fb69b63338403981",
+      "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_01_seed_0001.jsonl": "a0b76acaaa59a200cd14216d1a8c28f8d47e43c4e367d203c0daad1faf32a675"
+    },
+    "calibration_seeds": [
+      0,
+      1
+    ],
+    "dominance_margin_threshold_m": 1e-06,
+    "eligible_non_extreme_gammas": [
+      0.6,
+      0.4,
+      0.2
+    ],
+    "frozen": true,
+    "frozen_at_utc": "2026-08-13T18:17:36.347178+00:00",
+    "heldout_seeds": [
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "horizons": [
+      5,
+      10
+    ],
+    "motion_effect_threshold_m": 1e-06,
+    "no_heldout_retuning": true,
+    "pai_job_created": false,
+    "selected_gamma": 0.6,
+    "selected_gamma_is_diagnostic_only": false,
+    "selection_basis": "largest non-extreme gamma meeting the preregistered per-episode rate",
+    "synergy_threshold": 0.2,
+    "task_direction": "horizontal target displacement in object task frame",
+    "window": "[E4-250,min(E5,E4+150)] stride 25"
+  },
+  "gamma_sensitivity": {
+    "0.05": {
+      "episode_count": 5,
+      "episodes_with_valid_pairs": 5,
+      "oracle_orientation_accuracy": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "episode_count": 5,
+        "mean": 1.0,
+        "statistical_unit": "episode"
+      },
+      "per_episode": [
+        {
+          "episode": 2,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.05,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 7.404376253222993e-18,
+          "seed": 2,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 3,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.05,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 0.0,
+          "seed": 3,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 4,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.05,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 3.5595356868723876e-18,
+          "seed": 5,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 5,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.05,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 8.019836690367497e-18,
+          "seed": 6,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 6,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.05,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 7.561190877498855e-18,
+          "seed": 7,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        }
+      ],
+      "valid_pair_rate": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          0.8588235294117647,
+          0.8823529411764707
+        ],
+        "episode_count": 5,
+        "mean": 0.8705882352941178,
+        "statistical_unit": "episode"
+      }
+    },
+    "0.2": {
+      "episode_count": 5,
+      "episodes_with_valid_pairs": 5,
+      "oracle_orientation_accuracy": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "episode_count": 5,
+        "mean": 1.0,
+        "statistical_unit": "episode"
+      },
+      "per_episode": [
+        {
+          "episode": 2,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.2,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 8.809725183086113e-18,
+          "seed": 2,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 3,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.2,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 5.7874614754946736e-18,
+          "seed": 3,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 4,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.2,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 3.511208226182151e-18,
+          "seed": 5,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 5,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.2,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 3.059059152322781e-18,
+          "seed": 6,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 6,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.2,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 6.600693248825344e-18,
+          "seed": 7,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        }
+      ],
+      "valid_pair_rate": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          0.8588235294117647,
+          0.8823529411764707
+        ],
+        "episode_count": 5,
+        "mean": 0.8705882352941178,
+        "statistical_unit": "episode"
+      }
+    },
+    "0.4": {
+      "episode_count": 5,
+      "episodes_with_valid_pairs": 5,
+      "oracle_orientation_accuracy": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "episode_count": 5,
+        "mean": 1.0,
+        "statistical_unit": "episode"
+      },
+      "per_episode": [
+        {
+          "episode": 2,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.4,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 6.754393664948615e-18,
+          "seed": 2,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 3,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.4,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 5.071289364114519e-18,
+          "seed": 3,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 4,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.4,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 3.477646471428285e-18,
+          "seed": 5,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 5,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.4,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 7.61540358568916e-18,
+          "seed": 6,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 6,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.4,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 4.184666058862661e-18,
+          "seed": 7,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        }
+      ],
+      "valid_pair_rate": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          0.8588235294117647,
+          0.8823529411764707
+        ],
+        "episode_count": 5,
+        "mean": 0.8705882352941178,
+        "statistical_unit": "episode"
+      }
+    },
+    "0.6": {
+      "episode_count": 5,
+      "episodes_with_valid_pairs": 5,
+      "oracle_orientation_accuracy": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "episode_count": 5,
+        "mean": 1.0,
+        "statistical_unit": "episode"
+      },
+      "per_episode": [
+        {
+          "episode": 2,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.6,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 7.01039031197887e-18,
+          "seed": 2,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 3,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.6,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 0.0,
+          "seed": 3,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 4,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.6,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 7.580244805949765e-19,
+          "seed": 5,
+          "valid_pair_count": 29,
+          "valid_pair_rate": 0.8529411764705882
+        },
+        {
+          "episode": 5,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.6,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 6.780423415313076e-18,
+          "seed": 6,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        },
+        {
+          "episode": 6,
+          "episode_responsibility_margin_median": 2.0,
+          "gamma": 0.6,
+          "harmful_opposing_min": 0.0,
+          "oracle_orientation_accuracy": 1.0,
+          "paired_state_horizon_count": 34,
+          "rho_joint_abs_median": 8.233875570130988e-18,
+          "seed": 7,
+          "valid_pair_count": 30,
+          "valid_pair_rate": 0.8823529411764706
+        }
+      ],
+      "valid_pair_rate": {
+        "bootstrap_repetitions": 10000,
+        "bootstrap_seed": 22019,
+        "ci95": [
+          0.8588235294117647,
+          0.8823529411764707
+        ],
+        "episode_count": 5,
+        "mean": 0.8705882352941178,
+        "statistical_unit": "episode"
+      }
+    }
+  },
+  "invalid_pair_policy": "intervention failure only; excluded from oracle accuracy",
+  "mode": "evaluate",
+  "pai_job_created": false,
+  "paired_state_horizon_count": 680,
+  "per_episode": [
+    {
+      "episode": 2,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.05,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 7.404376253222993e-18,
+      "seed": 2,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 2,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.2,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 8.809725183086113e-18,
+      "seed": 2,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 2,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.4,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 6.754393664948615e-18,
+      "seed": 2,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 2,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.6,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 7.01039031197887e-18,
+      "seed": 2,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 3,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.05,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 0.0,
+      "seed": 3,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 3,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.2,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 5.7874614754946736e-18,
+      "seed": 3,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 3,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.4,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 5.071289364114519e-18,
+      "seed": 3,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 3,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.6,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 0.0,
+      "seed": 3,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 4,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.05,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 3.5595356868723876e-18,
+      "seed": 5,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 4,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.2,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 3.511208226182151e-18,
+      "seed": 5,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 4,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.4,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 3.477646471428285e-18,
+      "seed": 5,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 4,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.6,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 7.580244805949765e-19,
+      "seed": 5,
+      "valid_pair_count": 29,
+      "valid_pair_rate": 0.8529411764705882
+    },
+    {
+      "episode": 5,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.05,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 8.019836690367497e-18,
+      "seed": 6,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 5,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.2,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 3.059059152322781e-18,
+      "seed": 6,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 5,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.4,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 7.61540358568916e-18,
+      "seed": 6,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 5,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.6,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 6.780423415313076e-18,
+      "seed": 6,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 6,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.05,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 7.561190877498855e-18,
+      "seed": 7,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 6,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.2,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 6.600693248825344e-18,
+      "seed": 7,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 6,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.4,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 4.184666058862661e-18,
+      "seed": 7,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    },
+    {
+      "episode": 6,
+      "episode_responsibility_margin_median": 2.0,
+      "gamma": 0.6,
+      "harmful_opposing_min": 0.0,
+      "oracle_orientation_accuracy": 1.0,
+      "paired_state_horizon_count": 34,
+      "rho_joint_abs_median": 8.233875570130988e-18,
+      "seed": 7,
+      "valid_pair_count": 30,
+      "valid_pair_rate": 0.8823529411764706
+    }
+  ],
+  "profile_blind_baseline_control": {
+    "all_force_distance_phase_features_identical_across_matched_profiles": true,
+    "expected_orientation_accuracy": 0.5,
+    "reason": "force, distance, and E4 phase are measured at the shared pre-intervention snapshot and cannot observe randomized LEFT/RIGHT profile assignment"
+  },
+  "raw_input_sha256": {
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_02_seed_0002.jsonl": "ce3d0f32bc825e8853604fb906e6adaedee31ac2af4599557d8734fb01880156",
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_03_seed_0003.jsonl": "961abf90117bc1b64320d49283578a08b23330018f18786c9e565b8ff9780529",
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_04_seed_0005.jsonl": "af411fa71bf6a07a126d572f6c714ba2d64c0c0242065fb8730287e962f63874",
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_05_seed_0006.jsonl": "165ef1f05ddb8fba1ba1c2eed5b7844de64e90f7ed7a94d1d5541c457b68ca7c",
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_06_seed_0007.jsonl": "c7ae765dc8cd3f692a002c134276d0572e5355b08a6738e3e399fc7876f7f0fc"
+  },
+  "record_count": 1360,
+  "shuffled_orientation_control": {
+    "correct_orientation_accuracy": 1.0,
+    "episode_count": 5,
+    "shuffle_repetitions": 4096,
+    "shuffle_seed": 22019,
+    "shuffle_unit": "episode profile orientation",
+    "shuffled_orientation_accuracy": 0.5000976562499999
+  },
+  "statistical_unit": "episode"
+}

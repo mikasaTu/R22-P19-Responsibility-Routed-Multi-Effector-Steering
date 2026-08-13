@@ -1,0 +1,53 @@
+{
+  "accepted": false,
+  "code_sha256": {
+    "stage2_robotwin/stage2b/intervention/follower_mode.py": "1991a47f5ba26d0f9be3f330b2ea4844a13d05b3f1ab57b72912c765a070c363",
+    "stage2_robotwin/stage2b/intervention/paired_authority_profiles.py": "0ee7612b221f360967902c7d79b9960c6981e952b18cfc755cc83300b0824755",
+    "stage2_robotwin/stage2b/intervention/task_frame.py": "bffe95fbf9960f1914690ab7e434ff9ccedb5673d73a98ae7dda3509772addf4",
+    "stage2_robotwin/stage2b/scripts/run_signal_replication.py": "67e8383648b646b32a0650405992d8f9b1f79410ea25018ea974e958b2e0210f"
+  },
+  "controller": "RoboTwin expert with MPLib explicit adapter",
+  "cuda_visible_devices": "3",
+  "driver_amplitude_m": 0.004,
+  "evidence_boundary": "simulator privileged oracle; not deployable",
+  "experiment": "R22-P19-Stage2B-I",
+  "frozen_config": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/frozen_signal_config.json",
+  "frozen_config_sha256": "30e80b4811c17ceafd9c928cd583ac8505ebb764a8cc8f19b57db7917e08a3b1",
+  "frozen_primary_gamma": 0.6,
+  "gammas": [
+    0.6,
+    0.4,
+    0.2,
+    0.05
+  ],
+  "horizons": [
+    5,
+    10
+  ],
+  "intervention": "task-frame follower target; scalar joint drives unchanged",
+  "no_heldout_retuning": true,
+  "numpy": "1.26.4",
+  "pai_job_created": false,
+  "physics_hz": 250,
+  "planner": "mplib_screw",
+  "platform": "Linux-5.10.134-013.9.kangaroo.al8.x86_64-x86_64-with-glibc2.35",
+  "python": "3.10.19 (main, Nov 28 2025, 10:11:47) [GCC 11.4.0]",
+  "reference_smoke_summary": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/results/smoke/final-10/smoke_summary.json",
+  "reference_smoke_summary_sha256": "98de8e318bba8e2487a318f9d92ed48c0d5ffd7a2cdb2457df51fdfe4889e212",
+  "repo_commit_at_launch": "b6eac5c5e16c6d5df11ae00017748ac5b0e7ff6a",
+  "repo_dirty_at_launch": true,
+  "requested_seeds": [
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+  "sapien": "3.0.0b1",
+  "split": "heldout",
+  "stride": 25,
+  "torch": "2.4.1+cpu",
+  "torch_cuda": null,
+  "xpolicylab_pinned_commit": "c37109c500be67d0dea6b36bf7337bbd26e763cd"
+}

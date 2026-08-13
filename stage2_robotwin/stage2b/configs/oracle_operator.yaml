@@ -1,0 +1,47 @@
+experiment: R22-P19-Stage2B-II
+task: handover_block
+heldout_seeds: [2, 3, 5, 6, 7]
+methods: [B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11]
+conditions:
+  clean: {}
+  receiver_gain_0p7: {receiver_gain: 0.7}
+  receiver_delay_2: {receiver_delay_steps: 2}
+  receiver_friction_0p7: {receiver_friction_scale: 0.7}
+
+operator:
+  active_window: frozen_base_E2_through_E5
+  task_direction_only: true
+  oracle_refresh_stride: 25
+  oracle_horizon_steps: 5
+  finite_difference_delta_m: 0.0005
+  ridge_lambda: 0.05
+  trust_region_m: 0.002
+  scalar_action_bound_m: 0.02
+  effect_tolerance_m: 0.000001
+  synergy_threshold_from: ../results/signal_replication/calibration-v2/frozen_signal_config.json
+
+release_guard:
+  receiver_contact_stable_steps: 15
+  min_receiver_responsibility: 0.50
+  max_predicted_slip_m: 0.01
+  preserve_receiver_contact: true
+
+pairing:
+  same_expert_tape: true
+  same_E2_snapshot: true
+  same_seed: true
+  same_condition: true
+  same_control_frequency_hz: 250
+  estimator_branches_run_for_all_methods: true
+  method_order_rotated_by_seed_and_condition: true
+  hidden_state_boundary: PhysX_solver_warm_start_cache_not_exposed
+
+statistics:
+  unit: episode
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 22019
+
+evidence_boundary: simulator_privileged_oracle_operator_pilot_not_deployable
+accepted: false
+pai_job_created: false
+

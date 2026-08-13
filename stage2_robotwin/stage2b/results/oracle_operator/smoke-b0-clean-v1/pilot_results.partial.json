@@ -1,0 +1,33 @@
+[
+  {
+    "accepted": false,
+    "condition": "clean",
+    "donor_contact_loss_step": 4418,
+    "donor_release_step": 3967,
+    "drop": false,
+    "effect_conservation_error_max_abs_m": 0.0,
+    "effect_conservation_error_mean_abs_m": 0.0,
+    "episode": 2,
+    "estimator_wall_time_s": 1.4358221691800281,
+    "extra_simulated_physics_steps": 1840,
+    "extra_simulator_rollouts": 368,
+    "handover_completion": true,
+    "mean_action_deviation_m": 0.0,
+    "method": "B0",
+    "method_name": "base_expert",
+    "min_object_height_m": 0.846051812171936,
+    "operator_log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/oracle_operator/smoke-b0-clean-v1/operator_logs/seed_0002__clean__B0.jsonl.gz",
+    "operator_log_count": 1144,
+    "peak_object_angular_velocity": 1.4538929462432861,
+    "peak_object_linear_jerk": 190.838134765625,
+    "premature_release": false,
+    "raw_trace": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/oracle_operator/smoke-b0-clean-v1/raw_replays/seed_0002__clean__B0.npz",
+    "receiver_takeover_delay_steps": 451,
+    "routing_activation_outside_E2_E5": 0,
+    "seed": 2,
+    "solver_feasible_rate": 1.0,
+    "solver_wall_time_s": 0.017632962262723595,
+    "success": true,
+    "total_replay_wall_time_s": 3.000011269992683
+  }
+]

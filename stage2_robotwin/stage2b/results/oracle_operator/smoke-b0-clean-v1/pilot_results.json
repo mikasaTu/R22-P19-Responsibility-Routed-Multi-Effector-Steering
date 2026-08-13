@@ -1,0 +1,181 @@
+{
+  "accepted": false,
+  "attempts": [
+    {
+      "condition_method_order": {
+        "clean": [
+          "B0"
+        ]
+      },
+      "episode": 2,
+      "events": {
+        "E0": 1038,
+        "E1": 3255,
+        "E2": 3255,
+        "E3": 3269,
+        "E4": 3927,
+        "E5": 4423,
+        "E6": 4437
+      },
+      "expert_receipt": {
+        "contact_actor_ids_readable": true,
+        "determinism": {
+          "contact_flags_repeatable": true,
+          "gripper_values_held": true,
+          "hidden_state_boundary": "PhysX solver warm-start caches are not exposed",
+          "horizon_steps": 10,
+          "max_abs_difference": {
+            "angular_velocity": 0.0,
+            "linear_velocity": 0.0,
+            "pose": 0.0
+          },
+          "neutral_contract": "unchanged joint drive targets and held normalized gripper closure",
+          "pose_equal_at_1e-8": true,
+          "replay_contacts": [
+            {
+              "left": true,
+              "right": true
+            },
+            {
+              "left": true,
+              "right": true
+            }
+          ],
+          "replay_grippers": [
+            {
+              "left": 0.0,
+              "right": 1.0
+            },
+            {
+              "left": 0.0,
+              "right": 1.0
+            }
+          ],
+          "snapshot_event": "E3",
+          "snapshot_step": 3269,
+          "start_contacts": {
+            "left": true,
+            "right": true
+          },
+          "start_grippers": {
+            "left": 0.0,
+            "right": 1.0
+          },
+          "twist_equal_at_1e-8": true
+        },
+        "donor": "left",
+        "episode": 2,
+        "event_audit": {
+          "donor": "left",
+          "events": {
+            "E0": {
+              "event": "E0",
+              "reason": "donor-only object contact",
+              "step": 1038,
+              "time_s": 4.152
+            },
+            "E1": {
+              "event": "E1",
+              "reason": "receiver first object contact",
+              "step": 3255,
+              "time_s": 13.02
+            },
+            "E2": {
+              "event": "E2",
+              "reason": "first simultaneous object contact",
+              "step": 3255,
+              "time_s": 13.02
+            },
+            "E3": {
+              "event": "E3",
+              "reason": "receiver contact held for 15 physics steps",
+              "step": 3269,
+              "time_s": 13.076
+            },
+            "E4": {
+              "event": "E4",
+              "reason": "donor open command issued",
+              "step": 3927,
+              "time_s": 15.708
+            },
+            "E5": {
+              "event": "E5",
+              "reason": "donor contact lost after open command",
+              "step": 4423,
+              "time_s": 17.692
+            },
+            "E6": {
+              "event": "E6",
+              "reason": "receiver-only contact held for 15 physics steps",
+              "step": 4437,
+              "time_s": 17.748
+            }
+          },
+          "missing": [],
+          "nondecreasing": true,
+          "receiver": "right",
+          "strict_stage_boundaries": true,
+          "valid": true
+        },
+        "oracle_branch_record_count": 0,
+        "receiver": "right",
+        "seed": 2,
+        "steps": 4983,
+        "task_success": true,
+        "video": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/oracle_operator/smoke-b0-clean-v1/expert_videos/episode_02_seed_0002.mp4"
+      },
+      "seed": 2,
+      "status": "COMPLETE",
+      "tape_end_step": 4982,
+      "tape_start_step": 3256,
+      "tape_step_count": 1727
+    }
+  ],
+  "completed_paired_runs": 1,
+  "conditions": [
+    "clean"
+  ],
+  "expected_paired_runs": 1,
+  "methods": [
+    "B0"
+  ],
+  "pai_job_created": false,
+  "results": [
+    {
+      "accepted": false,
+      "condition": "clean",
+      "donor_contact_loss_step": 4418,
+      "donor_release_step": 3967,
+      "drop": false,
+      "effect_conservation_error_max_abs_m": 0.0,
+      "effect_conservation_error_mean_abs_m": 0.0,
+      "episode": 2,
+      "estimator_wall_time_s": 1.4358221691800281,
+      "extra_simulated_physics_steps": 1840,
+      "extra_simulator_rollouts": 368,
+      "handover_completion": true,
+      "mean_action_deviation_m": 0.0,
+      "method": "B0",
+      "method_name": "base_expert",
+      "min_object_height_m": 0.846051812171936,
+      "operator_log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/oracle_operator/smoke-b0-clean-v1/operator_logs/seed_0002__clean__B0.jsonl.gz",
+      "operator_log_count": 1144,
+      "peak_object_angular_velocity": 1.4538929462432861,
+      "peak_object_linear_jerk": 190.838134765625,
+      "premature_release": false,
+      "raw_trace": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/oracle_operator/smoke-b0-clean-v1/raw_replays/seed_0002__clean__B0.npz",
+      "receiver_takeover_delay_steps": 451,
+      "routing_activation_outside_E2_E5": 0,
+      "seed": 2,
+      "solver_feasible_rate": 1.0,
+      "solver_wall_time_s": 0.017632962262723595,
+      "success": true,
+      "total_replay_wall_time_s": 3.000011269992683
+    }
+  ],
+  "same_snapshot_and_expert_tape": true,
+  "seeds": [
+    2
+  ],
+  "status": "OPERATOR_PILOT_COMPLETE"
+}

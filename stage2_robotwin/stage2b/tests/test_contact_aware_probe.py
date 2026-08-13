@@ -58,7 +58,12 @@ def test_probe_uses_e4_anchored_inclusive_window_and_matched_profiles():
     assert probe.contract()["both_grippers_held"] is True
 
 
+def test_window_end_is_e4_plus_150_when_contact_loss_is_later():
+    probe = ContactAwareAuthorityProbe(reference_e4=4083, reference_e5=4555)
+    assert probe.window_start == 3833
+    assert probe.window_end == 4233
+
+
 def test_gamma_label_is_stable_for_artifact_names():
     assert gamma_label(0.6) == "0p6"
     assert gamma_label(0.05) == "0p05"
-

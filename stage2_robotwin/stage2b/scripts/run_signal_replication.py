@@ -204,9 +204,26 @@ def main() -> int:
             actual_events = _event_steps(receipt)
             receipt["reference_event_steps"] = reference_events
             receipt["actual_event_steps"] = actual_events
-            receipt["reference_window_reproduced"] = all(
+            receipt["reference_event_anchor_reproduced"] = all(
                 actual_events.get(name) == reference_events[name]
-                for name in ("E2", "E3", "E4", "E5")
+                for name in ("E2", "E3", "E4")
+            )
+            actual_window_end = min(
+                actual_events.get("E5", probe.window_end),
+                actual_events["E4"] + 150,
+            )
+            receipt["reference_sampling_window_reproduced"] = (
+                receipt["reference_event_anchor_reproduced"]
+                and actual_events["E4"] - 250 == probe.window_start
+                and actual_window_end == probe.window_end
+            )
+            receipt["post_window_e5_drift_steps"] = (
+                actual_events.get("E5", reference_events["E5"])
+                - reference_events["E5"]
+            )
+            receipt["hidden_state_boundary"] = (
+                "PhysX solver warm-start cache is not exposed; E5 drift is reported "
+                "separately and is allowed only when the frozen sampling window is unchanged"
             )
             stem = f"episode_{episode_index:02d}_seed_{seed:04d}"
             receipt["trace"] = persist_trace(
@@ -228,7 +245,7 @@ def main() -> int:
             valid = (
                 receipt["task_success"]
                 and receipt["event_audit"]["valid"]
-                and receipt["reference_window_reproduced"]
+                and receipt["reference_sampling_window_reproduced"]
                 and receipt["branch_record_count_matches_contract"]
             )
             receipt["episode_contract_valid"] = bool(valid)

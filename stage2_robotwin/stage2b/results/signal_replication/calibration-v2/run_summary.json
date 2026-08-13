@@ -1,0 +1,377 @@
+{
+  "accepted": false,
+  "attempt_count": 2,
+  "capability_audit": {
+    "arm_joint_count_audited": 12,
+    "mutated_controller_properties": false,
+    "native_cartesian_stiffness_matrix": false,
+    "per_joint_scalar_drive_properties": true,
+    "reason": "RoboTwin Robot.set_arm_joints writes joint drive position/velocity targets; SAPIEN exposes scalar stiffness and damping per joint, not a task-frame K matrix",
+    "selected_fallback": "task_frame_follower_target"
+  },
+  "episodes": [
+    {
+      "actual_event_steps": {
+        "E0": 1148,
+        "E1": 3411,
+        "E2": 3411,
+        "E3": 3425,
+        "E4": 4083,
+        "E5": 4557,
+        "E6": 4571
+      },
+      "branch_record_count_matches_contract": true,
+      "branches": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_00_seed_0000.jsonl",
+      "contact_actor_ids_readable": true,
+      "determinism": {
+        "contact_flags_repeatable": true,
+        "gripper_values_held": true,
+        "hidden_state_boundary": "PhysX solver warm-start caches are not exposed",
+        "horizon_steps": 10,
+        "max_abs_difference": {
+          "angular_velocity": 0.0,
+          "linear_velocity": 0.0,
+          "pose": 0.0
+        },
+        "neutral_contract": "unchanged joint drive targets and held normalized gripper closure",
+        "pose_equal_at_1e-8": true,
+        "replay_contacts": [
+          {
+            "left": true,
+            "right": true
+          },
+          {
+            "left": true,
+            "right": true
+          }
+        ],
+        "replay_grippers": [
+          {
+            "left": 0.0,
+            "right": 1.0
+          },
+          {
+            "left": 0.0,
+            "right": 1.0
+          }
+        ],
+        "snapshot_event": "E3",
+        "snapshot_step": 3425,
+        "start_contacts": {
+          "left": true,
+          "right": true
+        },
+        "start_grippers": {
+          "left": 0.0,
+          "right": 1.0
+        },
+        "twist_equal_at_1e-8": true
+      },
+      "donor": "left",
+      "episode": 0,
+      "episode_contract_valid": true,
+      "event_audit": {
+        "donor": "left",
+        "events": {
+          "E0": {
+            "event": "E0",
+            "reason": "donor-only object contact",
+            "step": 1148,
+            "time_s": 4.592
+          },
+          "E1": {
+            "event": "E1",
+            "reason": "receiver first object contact",
+            "step": 3411,
+            "time_s": 13.644
+          },
+          "E2": {
+            "event": "E2",
+            "reason": "first simultaneous object contact",
+            "step": 3411,
+            "time_s": 13.644
+          },
+          "E3": {
+            "event": "E3",
+            "reason": "receiver contact held for 15 physics steps",
+            "step": 3425,
+            "time_s": 13.7
+          },
+          "E4": {
+            "event": "E4",
+            "reason": "donor open command issued",
+            "step": 4083,
+            "time_s": 16.332
+          },
+          "E5": {
+            "event": "E5",
+            "reason": "donor contact lost after open command",
+            "step": 4557,
+            "time_s": 18.228
+          },
+          "E6": {
+            "event": "E6",
+            "reason": "receiver-only contact held for 15 physics steps",
+            "step": 4571,
+            "time_s": 18.284
+          }
+        },
+        "missing": [],
+        "nondecreasing": true,
+        "receiver": "right",
+        "strict_stage_boundaries": true,
+        "valid": true
+      },
+      "expected_branch_record_count": 272,
+      "hidden_state_boundary": "PhysX solver warm-start cache is not exposed; E5 drift is reported separately and is allowed only when the frozen sampling window is unchanged",
+      "oracle_branch_record_count": 272,
+      "plan_success": true,
+      "post_window_e5_drift_steps": 2,
+      "probe_contract": {
+        "accepted": false,
+        "both_grippers_held": true,
+        "driver_amplitude_m": 0.004,
+        "gammas": [
+          0.6,
+          0.4,
+          0.2,
+          0.05
+        ],
+        "horizons": [
+          5,
+          10
+        ],
+        "intervention": "contact-aware task-frame follower target",
+        "profile_count": 8,
+        "reference_e4": 4083,
+        "reference_e5": 4555,
+        "sample_steps": [
+          3833,
+          3858,
+          3883,
+          3908,
+          3933,
+          3958,
+          3983,
+          4008,
+          4033,
+          4058,
+          4083,
+          4108,
+          4133,
+          4158,
+          4183,
+          4208,
+          4233
+        ],
+        "stride": 25,
+        "window_end": 4233,
+        "window_start": 3833
+      },
+      "receiver": "right",
+      "reference_event_anchor_reproduced": true,
+      "reference_event_steps": {
+        "E0": 1148,
+        "E1": 3411,
+        "E2": 3411,
+        "E3": 3425,
+        "E4": 4083,
+        "E5": 4555,
+        "E6": 4569
+      },
+      "reference_sampling_window_reproduced": true,
+      "seed": 0,
+      "steps": 5155,
+      "task_success": true,
+      "trace": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/traces/episode_00_seed_0000.parquet",
+      "video": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/videos/episode_00_seed_0000.mp4"
+    },
+    {
+      "actual_event_steps": {
+        "E0": 793,
+        "E1": 2738,
+        "E2": 2738,
+        "E3": 2752,
+        "E4": 3400,
+        "E5": 3881,
+        "E6": 3895
+      },
+      "branch_record_count_matches_contract": true,
+      "branches": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_01_seed_0001.jsonl",
+      "contact_actor_ids_readable": true,
+      "determinism": {
+        "contact_flags_repeatable": true,
+        "gripper_values_held": true,
+        "hidden_state_boundary": "PhysX solver warm-start caches are not exposed",
+        "horizon_steps": 10,
+        "max_abs_difference": {
+          "angular_velocity": 0.0,
+          "linear_velocity": 0.0,
+          "pose": 0.0
+        },
+        "neutral_contract": "unchanged joint drive targets and held normalized gripper closure",
+        "pose_equal_at_1e-8": true,
+        "replay_contacts": [
+          {
+            "left": true,
+            "right": true
+          },
+          {
+            "left": true,
+            "right": true
+          }
+        ],
+        "replay_grippers": [
+          {
+            "left": 0.0,
+            "right": 1.0
+          },
+          {
+            "left": 0.0,
+            "right": 1.0
+          }
+        ],
+        "snapshot_event": "E3",
+        "snapshot_step": 2752,
+        "start_contacts": {
+          "left": true,
+          "right": true
+        },
+        "start_grippers": {
+          "left": 0.0,
+          "right": 1.0
+        },
+        "twist_equal_at_1e-8": true
+      },
+      "donor": "left",
+      "episode": 1,
+      "episode_contract_valid": true,
+      "event_audit": {
+        "donor": "left",
+        "events": {
+          "E0": {
+            "event": "E0",
+            "reason": "donor-only object contact",
+            "step": 793,
+            "time_s": 3.172
+          },
+          "E1": {
+            "event": "E1",
+            "reason": "receiver first object contact",
+            "step": 2738,
+            "time_s": 10.952
+          },
+          "E2": {
+            "event": "E2",
+            "reason": "first simultaneous object contact",
+            "step": 2738,
+            "time_s": 10.952
+          },
+          "E3": {
+            "event": "E3",
+            "reason": "receiver contact held for 15 physics steps",
+            "step": 2752,
+            "time_s": 11.008
+          },
+          "E4": {
+            "event": "E4",
+            "reason": "donor open command issued",
+            "step": 3400,
+            "time_s": 13.6
+          },
+          "E5": {
+            "event": "E5",
+            "reason": "donor contact lost after open command",
+            "step": 3881,
+            "time_s": 15.524
+          },
+          "E6": {
+            "event": "E6",
+            "reason": "receiver-only contact held for 15 physics steps",
+            "step": 3895,
+            "time_s": 15.58
+          }
+        },
+        "missing": [],
+        "nondecreasing": true,
+        "receiver": "right",
+        "strict_stage_boundaries": true,
+        "valid": true
+      },
+      "expected_branch_record_count": 272,
+      "hidden_state_boundary": "PhysX solver warm-start cache is not exposed; E5 drift is reported separately and is allowed only when the frozen sampling window is unchanged",
+      "oracle_branch_record_count": 272,
+      "plan_success": true,
+      "post_window_e5_drift_steps": -3,
+      "probe_contract": {
+        "accepted": false,
+        "both_grippers_held": true,
+        "driver_amplitude_m": 0.004,
+        "gammas": [
+          0.6,
+          0.4,
+          0.2,
+          0.05
+        ],
+        "horizons": [
+          5,
+          10
+        ],
+        "intervention": "contact-aware task-frame follower target",
+        "profile_count": 8,
+        "reference_e4": 3400,
+        "reference_e5": 3884,
+        "sample_steps": [
+          3150,
+          3175,
+          3200,
+          3225,
+          3250,
+          3275,
+          3300,
+          3325,
+          3350,
+          3375,
+          3400,
+          3425,
+          3450,
+          3475,
+          3500,
+          3525,
+          3550
+        ],
+        "stride": 25,
+        "window_end": 3550,
+        "window_start": 3150
+      },
+      "receiver": "right",
+      "reference_event_anchor_reproduced": true,
+      "reference_event_steps": {
+        "E0": 793,
+        "E1": 2738,
+        "E2": 2738,
+        "E3": 2752,
+        "E4": 3400,
+        "E5": 3884,
+        "E6": 3898
+      },
+      "reference_sampling_window_reproduced": true,
+      "seed": 1,
+      "steps": 4465,
+      "task_success": true,
+      "trace": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/traces/episode_01_seed_0001.parquet",
+      "video": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/videos/episode_01_seed_0001.mp4"
+    }
+  ],
+  "pai_job_created": false,
+  "requested_seeds": [
+    0,
+    1
+  ],
+  "split": "calibration",
+  "status": "SIGNAL_REPLAY_COMPLETE",
+  "successful_contract_seeds": [
+    0,
+    1
+  ]
+}

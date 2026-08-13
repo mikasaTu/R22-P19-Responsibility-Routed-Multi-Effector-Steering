@@ -1,0 +1,39 @@
+{
+  "accepted": false,
+  "calibration_input_sha256": {
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_00_seed_0000.jsonl": "d5545cf67e7b6fe5afe58b7d6059f356b8252da43e531de3fb69b63338403981",
+    "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/branches/episode_01_seed_0001.jsonl": "a0b76acaaa59a200cd14216d1a8c28f8d47e43c4e367d203c0daad1faf32a675"
+  },
+  "calibration_seeds": [
+    0,
+    1
+  ],
+  "dominance_margin_threshold_m": 1e-06,
+  "eligible_non_extreme_gammas": [
+    0.6,
+    0.4,
+    0.2
+  ],
+  "frozen": true,
+  "frozen_at_utc": "2026-08-13T18:17:36.347178+00:00",
+  "heldout_seeds": [
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "horizons": [
+    5,
+    10
+  ],
+  "motion_effect_threshold_m": 1e-06,
+  "no_heldout_retuning": true,
+  "pai_job_created": false,
+  "selected_gamma": 0.6,
+  "selected_gamma_is_diagnostic_only": false,
+  "selection_basis": "largest non-extreme gamma meeting the preregistered per-episode rate",
+  "synergy_threshold": 0.2,
+  "task_direction": "horizontal target displacement in object task frame",
+  "window": "[E4-250,min(E5,E4+150)] stride 25"
+}

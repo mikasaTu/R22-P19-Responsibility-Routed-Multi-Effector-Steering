@@ -88,6 +88,7 @@ def main() -> int:
     parser.add_argument("--robotwin-root", required=True)
     parser.add_argument("--output", required=True)
     parser.add_argument("--reference-smoke-summary", required=True)
+    parser.add_argument("--frozen-config")
     parser.add_argument("--split", choices=("calibration", "heldout"), required=True)
     parser.add_argument("--seeds", type=int, nargs="+", required=True)
     parser.add_argument("--gammas", type=float, nargs="+", required=True)
@@ -110,6 +111,20 @@ def main() -> int:
     missing = sorted(set(args.seeds) - set(references))
     if missing:
         raise ValueError(f"seeds absent from successful reference smoke: {missing}")
+    frozen_path = Path(args.frozen_config).resolve() if args.frozen_config else None
+    frozen = None
+    if args.split == "heldout":
+        if frozen_path is None or not frozen_path.is_file():
+            raise ValueError("heldout split requires --frozen-config")
+        frozen = json.loads(frozen_path.read_text(encoding="utf-8"))
+        if not frozen.get("frozen") or not frozen.get("no_heldout_retuning"):
+            raise ValueError("heldout config is not frozen against retuning")
+        if sorted(args.seeds) != sorted(int(value) for value in frozen["heldout_seeds"]):
+            raise ValueError("requested heldout seeds differ from frozen split")
+        if float(frozen["selected_gamma"]) not in set(args.gammas):
+            raise ValueError("frozen primary gamma is absent from requested sensitivity set")
+    elif frozen_path is not None:
+        raise ValueError("calibration split must not consume a frozen config")
 
     import sapien
     import torch
@@ -141,6 +156,10 @@ def main() -> int:
         },
         "reference_smoke_summary": str(reference_path),
         "reference_smoke_summary_sha256": sha256_file(reference_path),
+        "frozen_config": str(frozen_path) if frozen_path else None,
+        "frozen_config_sha256": sha256_file(frozen_path) if frozen_path else None,
+        "frozen_primary_gamma": frozen["selected_gamma"] if frozen else None,
+        "no_heldout_retuning": bool(frozen and frozen["no_heldout_retuning"]),
         "robotwin_commit": git_head(robotwin_root),
         "xpolicylab_pinned_commit": subprocess.check_output(
             ["git", "-C", str(robotwin_root), "rev-parse", "HEAD:XPolicyLab"],

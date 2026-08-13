@@ -1,0 +1,21 @@
+{
+  "accepted": false,
+  "attempt_count": 2,
+  "capability_audit": {
+    "arm_joint_count_audited": 12,
+    "mutated_controller_properties": false,
+    "native_cartesian_stiffness_matrix": false,
+    "per_joint_scalar_drive_properties": true,
+    "reason": "RoboTwin Robot.set_arm_joints writes joint drive position/velocity targets; SAPIEN exposes scalar stiffness and damping per joint, not a task-frame K matrix",
+    "selected_fallback": "task_frame_follower_target"
+  },
+  "episodes": [],
+  "pai_job_created": false,
+  "requested_seeds": [
+    0,
+    1
+  ],
+  "split": "calibration",
+  "status": "SIGNAL_REPLAY_INCOMPLETE",
+  "successful_contract_seeds": []
+}

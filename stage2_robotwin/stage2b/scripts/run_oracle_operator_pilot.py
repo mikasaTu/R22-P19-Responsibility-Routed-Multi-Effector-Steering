@@ -586,6 +586,11 @@ def replay(
         )
         for side in ("left", "right")
     }
+    contact_array = np.asarray(contacts, dtype=bool)
+    contact_slip = {
+        "left": slip_arrays["left"][contact_array[:, 0]],
+        "right": slip_arrays["right"][contact_array[:, 1]],
+    }
     jerk = np.diff(linear_array, axis=0) * 250.0 if len(linear_array) > 1 else np.zeros((0, 3))
     raw_path.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(
@@ -597,7 +602,7 @@ def replay(
         right_tcp_position=tcp_arrays["right"],
         left_relative_slip=slip_arrays["left"],
         right_relative_slip=slip_arrays["right"],
-        contacts=np.asarray(contacts, dtype=bool),
+        contacts=contact_array,
         grippers=np.asarray(grippers),
     )
     log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -621,9 +626,19 @@ def replay(
             if donor_release_step is not None and donor_contact_loss_step is not None
             else None
         ),
-        "peak_relative_slip_left_m": float(slip_arrays["left"].max(initial=0.0)),
-        "peak_relative_slip_right_m": float(slip_arrays["right"].max(initial=0.0)),
+        "peak_relative_slip_left_m": float(contact_slip["left"].max(initial=0.0)),
+        "peak_relative_slip_right_m": float(contact_slip["right"].max(initial=0.0)),
         "peak_relative_slip_m": float(
+            max(
+                contact_slip["left"].max(initial=0.0),
+                contact_slip["right"].max(initial=0.0),
+            )
+        ),
+        "slip_contract": (
+            "max norm change of object-minus-TCP relative position, evaluated only "
+            "on physics steps where that gripper remains in object contact"
+        ),
+        "peak_unmasked_relative_separation_m": float(
             max(
                 slip_arrays["left"].max(initial=0.0),
                 slip_arrays["right"].max(initial=0.0),

@@ -1,0 +1,8 @@
+{
+  "accepted": false,
+  "invalid": true,
+  "reason": "peak_relative_slip included normal post-release donor separation instead of contact-only slip",
+  "treatment": "retained as incomplete invalid-metric lineage; excluded from all analysis",
+  "completed_partial_replays_at_stop": 31,
+  "replacement_run": "pilot-v3-contact-slip"
+}

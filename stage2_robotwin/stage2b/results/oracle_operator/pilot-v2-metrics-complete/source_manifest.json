@@ -1,0 +1,48 @@
+{
+  "accepted": false,
+  "conditions": [
+    "clean",
+    "receiver_gain_0p7",
+    "receiver_delay_2",
+    "receiver_friction_0p7"
+  ],
+  "config": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/configs/oracle_operator.yaml",
+  "config_sha256": "27df89fd78b419c22e46a1308daee15f847513a9103e095958433472313043a3",
+  "cuda_visible_devices": "3",
+  "experiment": "R22-P19-Stage2B-II",
+  "frozen_signal_config": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/stage2b/results/signal_replication/calibration-v2/frozen_signal_config.json",
+  "frozen_signal_config_sha256": "30e80b4811c17ceafd9c928cd583ac8505ebb764a8cc8f19b57db7917e08a3b1",
+  "hidden_state_boundary": "PhysX_solver_warm_start_cache_not_exposed",
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11"
+  ],
+  "numpy": "1.26.4",
+  "pai_job_created": false,
+  "paired_replay": "same in-memory E2 snapshot and exact expert low-level tape",
+  "platform": "Linux-5.10.134-013.9.kangaroo.al8.x86_64-x86_64-with-glibc2.35",
+  "python": "3.10.19 (main, Nov 28 2025, 10:11:47) [GCC 11.4.0]",
+  "repo_commit_at_launch": "ad8314bb78e2687020952a5b573ed88d220a8f72",
+  "repo_dirty_at_launch": true,
+  "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+  "sapien": "3.0.0b1",
+  "seeds": [
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "torch": "2.4.1+cpu",
+  "torch_cuda": null
+}

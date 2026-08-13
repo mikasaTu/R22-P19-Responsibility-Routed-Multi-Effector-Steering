@@ -8,6 +8,12 @@ from stage2_robotwin.stage2b.operator.effect_conserving_transfer_1d import (
 )
 from stage2_robotwin.stage2b.operator.joint_support_mode import responsibility_weights
 from stage2_robotwin.stage2b.operator.release_guard import ResponsibilityReleaseGuard
+from stage2_robotwin.stage2b.scripts.analyze_operator_pilot import (
+    bootstrap_mean,
+    improvement,
+    index_rows,
+    paired_improvements,
+)
 
 
 def test_transfer_conserves_local_effect_and_moves_toward_responsibility():
@@ -71,3 +77,37 @@ def test_profile_blind_baselines_are_normalized():
         assert np.isclose(weights.sum(), 1.0)
         assert np.all(weights >= 0.0)
 
+
+def test_operator_improvement_sign_is_metric_aware():
+    assert improvement(2.0, 3.0, "peak_relative_slip_m") == 1.0
+    assert improvement(1.0, 0.0, "success") == 1.0
+
+
+def test_operator_pairing_averages_conditions_within_episode():
+    rows = []
+    for seed in (2, 3):
+        for condition, base, method in (("a", 3.0, 2.0), ("b", 5.0, 3.0)):
+            rows.extend(
+                [
+                    {
+                        "seed": seed,
+                        "condition": condition,
+                        "method": "B0",
+                        "peak_relative_slip_m": base,
+                    },
+                    {
+                        "seed": seed,
+                        "condition": condition,
+                        "method": "B11",
+                        "peak_relative_slip_m": method,
+                    },
+                ]
+            )
+    values = paired_improvements(
+        index_rows(rows), [2, 3], ["a", "b"], "B11", "B0", "peak_relative_slip_m"
+    )
+    assert values == [1.5, 1.5]
+    summary = bootstrap_mean(values, repetitions=100, seed=3)
+    assert summary["episode_count"] == 2
+    assert summary["mean"] == 1.5
+    assert summary["statistical_unit"] == "episode"

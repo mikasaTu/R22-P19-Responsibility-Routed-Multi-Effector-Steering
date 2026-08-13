@@ -3,15 +3,25 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "r22p19-libero-phase1"
-version = "0.1.0"
-description = "LIBERO substrate pilot for R22-P19 counterfactual responsibility"
+name = "r22p19-responsibility-steering"
+version = "0.2.0"
+description = "R22-P19 staged counterfactual responsibility validation"
 requires-python = ">=3.8"
 dependencies = ["h5py", "numpy", "PyYAML"]
 
+[project.optional-dependencies]
+robotwin-analysis = [
+  "imageio",
+  "imageio-ffmpeg",
+  "matplotlib",
+  "opencv-python-headless",
+  "pandas",
+  "pyarrow",
+]
+
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["r22p19_libero*"]
+include = ["r22p19_libero*", "stage2_robotwin*"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "stage2_robotwin/tests"]

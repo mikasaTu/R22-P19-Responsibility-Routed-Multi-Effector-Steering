@@ -1,0 +1,5 @@
+--- a/mplib/planner.py
++++ b/mplib/planner.py
+@@ -807,1 +807,1 @@ class Planner:
+-            if np.linalg.norm(delta_twist) < 1e-4 or collide or not within_joint_limit:
++            if np.linalg.norm(delta_twist) < 1e-4 or not within_joint_limit:

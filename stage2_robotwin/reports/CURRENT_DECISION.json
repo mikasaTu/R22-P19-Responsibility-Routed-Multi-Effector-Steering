@@ -1,0 +1,53 @@
+{
+  "accepted": false,
+  "act_status": "NOT_STARTED",
+  "formal_signal_classification": null,
+  "formal_signal_status": "NOT_ASSIGNED_INSUFFICIENT_EPISODES_AND_CONTROLS",
+  "latest_pilot": {
+    "authority_profile_mode": "direction_diagnostic",
+    "branch_state_count": 46,
+    "diagnostic_compliance_scale": 0.05,
+    "diagnostic_valid_pair_oracle_accuracy": 1.0,
+    "diagnostic_valid_pair_oracle_informative_count": 21,
+    "diagnostic_valid_paired_state_count": 21,
+    "diagnostic_valid_unique_physics_steps": 12,
+    "horizons": [
+      5,
+      10
+    ],
+    "ordinary_direction_valid_paired_state_count": 0,
+    "ordinary_direction_paired_state_count": 92,
+    "record_count": 460,
+    "run": "pilot-v6-dense-transition",
+    "successful_episode_count": 1,
+    "valid_transition_step_max": 4150,
+    "valid_transition_step_min": 3850
+  },
+  "operator_status": "NOT_TESTED",
+  "original_bimanual_signal_tested": true,
+  "pai_job_created": false,
+  "policy_used": "RoboTwin expert controller only",
+  "signal_status": "PILOT_LOCALIZED_SIGNAL_FORMAL_PENDING",
+  "stage2a_contract_progress": {
+    "handover_block_perturbed_episodes": "0/20",
+    "handover_block_signal_episodes": "1/30",
+    "handover_mic_episodes": "0/20-30",
+    "lift_pot_episodes": "0/20",
+    "pick_dual_bottles_episodes": "0/20"
+  },
+  "tasks_completed": [
+    "handover_block 10-success expert smoke",
+    "E0-E6 detector and 10/10 manual visual audit",
+    "SAPIEN snapshot deterministic replay",
+    "real LR/L/R/ZERO branching at H=5 and H=10",
+    "H=25 and H=50 sensitivity diagnosis",
+    "Jacobian-validated direction/null commands",
+    "dense one-seed compliance-assisted transition-window pilot"
+  ],
+  "why_not_formal_signal": [
+    "only one signal episode was evaluated instead of at least 30",
+    "ordinary direction/null produced zero valid object-authority swaps in 92 paired state-horizon comparisons",
+    "the positive 21-pair result requires a diagnostic 0.05 compliance intervention and is not the formal profile",
+    "perturbation episodes and all three control/secondary tasks are absent"
+  ]
+}

@@ -1,0 +1,1 @@
+"""Responsibility-conserving action operators."""

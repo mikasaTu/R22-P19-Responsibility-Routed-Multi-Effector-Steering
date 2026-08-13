@@ -1,0 +1,9 @@
+[
+  {
+    "episode": 0,
+    "error": "target_pose cannot be None for move action.",
+    "error_type": "AssertionError",
+    "seed": 0,
+    "traceback": "Traceback (most recent call last):\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/scripts/run_smoke.py\", line 105, in main\n    task.play_once()\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin/envs/handover_block.py\", line 81, in play_once\n    self.grasp_actor(\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin/envs/_base_task.py\", line 1212, in grasp_actor\n    Action(arm_tag, \"move\", target_pose=pre_grasp_pose),\n  File \"/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin/envs/utils/action.py\", line 76, in __init__\n    assert (target_pose is not None), \"target_pose cannot be None for move action.\"\nAssertionError: target_pose cannot be None for move action.\n"
+  }
+]

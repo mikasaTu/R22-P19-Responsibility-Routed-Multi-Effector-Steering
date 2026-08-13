@@ -1,0 +1,20 @@
+[
+  {
+    "episode": 0,
+    "error": "'MplibPlanner' object has no attribute 'plan_batch'",
+    "error_type": "AttributeError",
+    "seed": 0
+  },
+  {
+    "episode": 0,
+    "error": "'MplibPlanner' object has no attribute 'plan_batch'",
+    "error_type": "AttributeError",
+    "seed": 1
+  },
+  {
+    "episode": 0,
+    "error": "'MplibPlanner' object has no attribute 'plan_batch'",
+    "error_type": "AttributeError",
+    "seed": 2
+  }
+]

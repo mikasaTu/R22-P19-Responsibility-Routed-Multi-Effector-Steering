@@ -1,0 +1,66 @@
+schema_version: 1
+stage: stage2a_oracle_signal_audit
+task: handover_block
+accepted: false
+evidence_boundary: simulator_privileged_oracle_not_deployable
+planner: mplib_screw
+formal_contract:
+  successful_expert_episodes_minimum: 30
+  perturbed_episodes_minimum: 20
+  branch_stride_physics_steps: 5
+  counterfactual_horizons: [5, 10]
+pilot_contract:
+  successful_expert_episodes: 1
+  branch_stride_physics_steps: 50
+  authority_swap_stride_physics_steps: 250
+  purpose: runtime_and_signal_direction_validation_only
+diagnostic_sensitivity_contract:
+  counterfactual_horizons: [5, 10, 25, 50]
+  purpose: distinguish an intervention bug from an H5_H10 actuation_timescale mismatch
+  excluded_from_preregistered_H5_H10_claim: true
+branches:
+  - LR
+  - L
+  - R
+  - ZERO
+neutral_action:
+  arm_position: hold_current_measured_joint_position
+  arm_velocity: zero
+  gripper: preserve_snapshot_drive_target_and_normalized_closure
+  low_level_mode: unchanged_joint_drive_controller
+authority_profiles:
+  gain:
+    - {left: 1.3, right: 0.7}
+    - {left: 0.7, right: 1.3}
+  delay_steps:
+    - {left: 2, right: 0}
+    - {left: 0, right: 2}
+    - {left: 4, right: 0}
+    - {left: 0, right: 4}
+  friction_scale:
+    - {left: 1.4, right: 0.6}
+    - {left: 0.6, right: 1.4}
+  compliance_scale:
+    - {left: 0.5, right: 1.0}
+    - {left: 1.0, right: 0.5}
+  direction_null: pending_separate_jacobian_validated_implementation
+  direction_compliance_diagnostic:
+    low_compliance_scale: 0.05
+    status: diagnostic_only_excluded_from_formal_profile
+outcomes:
+  - object_translation
+  - object_rotation_vector
+  - object_linear_velocity
+  - object_angular_velocity
+  - support_height_delta
+  - task_progress
+  - per_arm_slip
+  - drop
+  - per_arm_contact_retention
+responsibility_channels:
+  - motion
+  - support
+  - task_progress
+  - harmful_opposing
+  - joint_synergy
+  - rho_left_rho_right_rho_joint_unconstrained

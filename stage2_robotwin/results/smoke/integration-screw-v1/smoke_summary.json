@@ -1,0 +1,20 @@
+{
+  "accepted": false,
+  "all_event_chains_valid": false,
+  "all_snapshot_replays_deterministic": false,
+  "attempt_count": 1,
+  "capability_audit": {
+    "left_friction_shapes_tested": 2,
+    "unilateral_delay": true,
+    "unilateral_friction": true,
+    "unilateral_gain": true
+  },
+  "episodes": [],
+  "next": "Stage-2A Oracle signal audit only after all 10 videos are manually inspected",
+  "original_bimanual_signal_tested": false,
+  "requested_episodes": 1,
+  "selected_seeds": [],
+  "status": "SMOKE_INCOMPLETE",
+  "successful_valid_event_episodes": 0,
+  "task": "handover_block"
+}

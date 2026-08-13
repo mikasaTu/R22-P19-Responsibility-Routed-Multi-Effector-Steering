@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "checked_at": "2026-08-13T16:24:57+08:00",
+  "created_job_id": null,
+  "pai_probe_created": false,
+  "registry_commit": "ff63a1d1a19126f211efa23b261dba270ab854cc",
+  "registry_dirty": true,
+  "registry_modified_tracked_files": [
+    "bin/pai-job",
+    "config/resources.json",
+    "config/toolchain.json"
+  ],
+  "status": "PAI_SUBMISSION_BLOCKED_TOOLCHAIN_DRIFT",
+  "superseded_cleanup_targets": 0,
+  "tooling": {
+    "dlc_binary_sha256": "09fac825e088dfeee7f55919d6ad8421d4f46c2a6554da1827b664a08518473c",
+    "dlc_binary_sha256_matches_contract": true,
+    "live_idle_helper_sha256": "f99687fc7ad276ef087d1c1062673554141a48696b223001d75f0622fef54fa9",
+    "skill_required_idle_helper_sha256": "c2547ed9e90e52612b1334f7336543c2faba0b24460baa26f73467f0cfeafb7c",
+    "skill_required_idle_helper_sha256_matches": false
+  },
+  "why_fail_closed": "The controller worktree belongs to concurrent work and its pinned helper contract disagrees with the active skill. No registry files were modified and no CreateJob call was made."
+}

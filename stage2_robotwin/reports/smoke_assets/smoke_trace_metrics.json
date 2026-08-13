@@ -1,0 +1,82 @@
+[
+  {
+    "episode": 0,
+    "minimum_object_height_m": 0.8399999141693115,
+    "overlap_E2_to_E5_s": 4.576,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 0,
+    "stable_overlap_E3_to_E4_s": 2.632
+  },
+  {
+    "episode": 1,
+    "minimum_object_height_m": 0.8400000333786011,
+    "overlap_E2_to_E5_s": 4.584,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 1,
+    "stable_overlap_E3_to_E4_s": 2.592
+  },
+  {
+    "episode": 2,
+    "minimum_object_height_m": 0.8399999141693115,
+    "overlap_E2_to_E5_s": 4.672,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 2,
+    "stable_overlap_E3_to_E4_s": 2.632
+  },
+  {
+    "episode": 3,
+    "minimum_object_height_m": 0.8399999737739563,
+    "overlap_E2_to_E5_s": 4.724,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 3,
+    "stable_overlap_E3_to_E4_s": 2.624
+  },
+  {
+    "episode": 4,
+    "minimum_object_height_m": 0.8399999737739563,
+    "overlap_E2_to_E5_s": 4.808,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 5,
+    "stable_overlap_E3_to_E4_s": 2.708
+  },
+  {
+    "episode": 5,
+    "minimum_object_height_m": 0.8400000333786011,
+    "overlap_E2_to_E5_s": 4.756,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 6,
+    "stable_overlap_E3_to_E4_s": 2.676
+  },
+  {
+    "episode": 6,
+    "minimum_object_height_m": 0.8399999141693115,
+    "overlap_E2_to_E5_s": 4.644,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 7,
+    "stable_overlap_E3_to_E4_s": 2.644
+  },
+  {
+    "episode": 7,
+    "minimum_object_height_m": 0.8399999737739563,
+    "overlap_E2_to_E5_s": 4.84,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 8,
+    "stable_overlap_E3_to_E4_s": 2.844
+  },
+  {
+    "episode": 8,
+    "minimum_object_height_m": 0.8399999737739563,
+    "overlap_E2_to_E5_s": 4.796,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 9,
+    "stable_overlap_E3_to_E4_s": 2.724
+  },
+  {
+    "episode": 9,
+    "minimum_object_height_m": 0.8400000333786011,
+    "overlap_E2_to_E5_s": 4.748,
+    "receiver_only_E5_to_E6_s": 0.056,
+    "seed": 10,
+    "stable_overlap_E3_to_E4_s": 2.672
+  }
+]

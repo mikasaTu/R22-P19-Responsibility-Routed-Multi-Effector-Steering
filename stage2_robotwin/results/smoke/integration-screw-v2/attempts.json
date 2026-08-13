@@ -1,0 +1,81 @@
+[
+  {
+    "contact_actor_ids_readable": true,
+    "determinism": {
+      "hidden_state_boundary": "PhysX solver warm-start caches are not exposed",
+      "horizon_steps": 10,
+      "max_abs_difference": {
+        "angular_velocity": 0.6571785807609558,
+        "linear_velocity": 0.03872301056981087,
+        "pose": 0.0012940233573317528
+      },
+      "neutral_contract": "unchanged joint drive targets and held normalized gripper closure",
+      "pose_equal_at_1e-8": false,
+      "snapshot_event": "E3",
+      "snapshot_step": 3425,
+      "twist_equal_at_1e-8": false
+    },
+    "donor": "left",
+    "episode": 0,
+    "event_audit": {
+      "donor": "left",
+      "events": {
+        "E0": {
+          "event": "E0",
+          "reason": "donor-only object contact",
+          "step": 1148,
+          "time_s": 4.592
+        },
+        "E1": {
+          "event": "E1",
+          "reason": "receiver first object contact",
+          "step": 3411,
+          "time_s": 13.644
+        },
+        "E2": {
+          "event": "E2",
+          "reason": "first simultaneous object contact",
+          "step": 3411,
+          "time_s": 13.644
+        },
+        "E3": {
+          "event": "E3",
+          "reason": "receiver contact held for 15 physics steps",
+          "step": 3425,
+          "time_s": 13.7
+        },
+        "E4": {
+          "event": "E4",
+          "reason": "donor open command issued",
+          "step": 4083,
+          "time_s": 16.332
+        },
+        "E5": {
+          "event": "E5",
+          "reason": "donor contact lost after open command",
+          "step": 4551,
+          "time_s": 18.204
+        },
+        "E6": {
+          "event": "E6",
+          "reason": "receiver-only contact held for 15 physics steps",
+          "step": 4565,
+          "time_s": 18.26
+        }
+      },
+      "missing": [],
+      "nondecreasing": true,
+      "receiver": "right",
+      "strict_stage_boundaries": true,
+      "valid": true
+    },
+    "plan_success": true,
+    "planner_constraint_requests_ignored": 2,
+    "receiver": "right",
+    "seed": 0,
+    "steps": 5155,
+    "task_success": true,
+    "trace": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/results/smoke/integration-screw-v2/traces/episode_00_seed_0000.parquet",
+    "video": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/code/R22-P19-Responsibility-Routed-Multi-Effector-Steering/stage2_robotwin/results/smoke/integration-screw-v2/videos/episode_00_seed_0000.mp4"
+  }
+]

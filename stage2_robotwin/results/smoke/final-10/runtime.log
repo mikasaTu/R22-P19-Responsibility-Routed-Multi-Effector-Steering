@@ -1,0 +1,13 @@
+/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/lib/python3.10/site-packages/sapien/_vulkan_tricks.py:21: UserWarning: Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.
+  warn("Failed to find system libvulkan. Fallback to SAPIEN builtin libvulkan.")
+/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/lib/python3.10/site-packages/sapien/_vulkan_tricks.py:37: UserWarning: Failed to find Vulkan ICD file. This is probably due to an incorrect or partial installation of the NVIDIA driver. SAPIEN will attempt to provide an ICD file anyway but it may not work.
+  warn(
+[planner.py]: Something wrong happened when importing CuroboPlanner! Please check if Curobo is installed correctly. If the problem still exists, you can install Curobo from https://github.com/NVlabs/curobo manually.
+Exception traceback:
+Traceback (most recent call last):
+  File "/mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin/envs/robot/planner.py", line 19, in <module>
+    from curobo.types.math import Pose as CuroboPose
+ModuleNotFoundError: No module named 'curobo'
+missing pytorch3d
+
+ left arm planning wrong! (step = 2690)

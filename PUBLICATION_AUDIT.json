@@ -1,83 +1,103 @@
 {
   "accepted": false,
-  "evidence_runs": [
-    "signal-v1-20260813",
-    "smoke-v1-20260813",
-    "smoke-v2-20260813",
-    "smoke-v3-20260813",
-    "smoke-v4-20260813",
-    "smoke-v5-20260813"
-  ],
-  "file_count_before_sha256sums": 64,
-  "forbidden_dataset_or_weight_files": [],
-  "generated_at_unix": 1786557062.7361288,
+  "current_result": "PILOT_LOCALIZED_SIGNAL_FORMAL_PENDING",
+  "evidence_runs": {
+    "phase1": [
+      "signal-v1-20260813",
+      "smoke-v1-20260813",
+      "smoke-v2-20260813",
+      "smoke-v3-20260813",
+      "smoke-v4-20260813",
+      "smoke-v5-20260813"
+    ],
+    "stage2_oracle_signal": [
+      "pilot-v1",
+      "pilot-v2-neutral-qpos",
+      "pilot-v3-horizon-sensitivity",
+      "pilot-v4-direction-null",
+      "pilot-v5-compliance-assisted",
+      "pilot-v6-dense-transition"
+    ],
+    "stage2_smoke": [
+      "integration-v1",
+      "integration-v2",
+      "integration-v3",
+      "integration-screw-v1",
+      "integration-screw-v2",
+      "integration-screw-v3",
+      "final-10"
+    ]
+  },
+  "generated_at": "2026-08-13T17:51:57+08:00",
   "github": {
-    "gh_available": false,
-    "publication_method": "direct git SSH to user-specified empty repository",
-    "remote_initially_empty": true,
+    "publication_branch": "main",
+    "publication_method": "direct git SSH through dev14",
+    "publication_target": "git@github.com:mikasaTu/R22-P19-Responsibility-Routed-Multi-Effector-Steering.git",
     "ssh_identity": "mikasaTu"
   },
-  "json_or_jsonl_files_checked": 41,
-  "jsonl_rows_checked": 4420,
-  "largest_files": [
-    {
+  "max_file_below_github_100mib": true,
+  "pai": {
+    "act_training_or_inference_started": false,
+    "created_job_id": null,
+    "job_created": false,
+    "preflight_status": "PAI_SUBMISSION_BLOCKED_TOOLCHAIN_DRIFT"
+  },
+  "publication_payload_scan": {
+    "excluded_self_referential_files": [
+      "PUBLICATION_AUDIT.json",
+      "SHA256SUMS"
+    ],
+    "file_count": 235,
+    "largest_file": {
       "path": "evidence/signal-v1-20260813/primary_responsibility.jsonl",
       "size_bytes": 16379165
     },
-    {
-      "path": "evidence/signal-v1-20260813/authority_swap.jsonl",
-      "size_bytes": 11681956
-    },
-    {
-      "path": "evidence/signal-v1-20260813/expert_traces.jsonl",
-      "size_bytes": 10104495
-    },
-    {
-      "path": "evidence/signal-v1-20260813/control_responsibility.jsonl",
-      "size_bytes": 8840279
-    },
-    {
-      "path": "evidence/smoke-v3-20260813/expert_trace.jsonl",
-      "size_bytes": 321179
-    },
-    {
-      "path": "evidence/smoke-v4-20260813/expert_trace.jsonl",
-      "size_bytes": 321179
-    },
-    {
-      "path": "evidence/smoke-v5-20260813/expert_trace.jsonl",
-      "size_bytes": 321179
-    },
-    {
-      "path": "evidence/signal-v1-20260813/manual_event_audit.json",
-      "size_bytes": 42553
-    },
-    {
-      "path": "evidence/smoke-v5-20260813/smoke_branch.json",
-      "size_bytes": 34506
-    },
-    {
-      "path": "evidence/smoke-v4-20260813/smoke_branch.json",
-      "size_bytes": 33599
-    }
-  ],
-  "max_file_below_github_100mib": true,
-  "pai_job_created": false,
-  "publication_target": "git@github.com:mikasaTu/R22-P19-Responsibility-Routed-Multi-Effector-Steering.git",
-  "result_hash_contract_ok": true,
-  "schema_version": 1,
-  "secret_scan_findings": [],
-  "suspicious_filenames": [],
-  "symlinks": [],
-  "total_bytes_before_sha256sums": 48313331,
+    "secret_scan_findings": [],
+    "suspicious_filenames": [],
+    "symlinks": [],
+    "total_bytes": 95808392
+  },
+  "schema_version": 2,
+  "source_contract": {
+    "repository_base_commit": "28f835af5a54a50ab7e3c9e1ad9d763356ad8c60",
+    "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+    "xpolicylab_gitlink": "c37109c500be67d0dea6b36bf7337bbd26e763cd"
+  },
   "validation": {
     "compileall": true,
-    "pytest_actual_libero_runtime": {
-      "failed": 0,
-      "output": "3 passed in 0.41s",
-      "passed": 3
+    "git_diff_check": true,
+    "json": {
+      "files_checked": 84,
+      "parse_ok": true
     },
-    "sha256_manifest_file_count": 65,
+    "jsonl": {
+      "files_checked": 14,
+      "parse_ok": true,
+      "rows_checked": 6896
+    },
+    "media": {
+      "decode_ok": true,
+      "mp4_files": 20,
+      "mp4_frames": 3951,
+      "png_files": 26
+    },
+    "parquet": {
+      "files_checked": 20,
+      "finite_ok": true,
+      "numeric_scalars_checked": 3553813,
+      "rows_checked": 96049
+    },
+    "pytest_full_repository": {
+      "failed": 0,
+      "output": "22 passed in 1.40s",
+      "passed": 22
+    },
+    "pytest_stage2": {
+      "failed": 0,
+      "output": "19 passed in 2.94s",
+      "passed": 19
+    },
+    "sha256_manifest_expected_file_count": 236,
     "sha256_manifest_readback": true,
     "shell_syntax": true
   }

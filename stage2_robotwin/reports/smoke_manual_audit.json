@@ -1,0 +1,78 @@
+{
+  "accepted": false,
+  "audit_method": "Manual visual inspection of every generated E0-E6 montage, cross-checked against 250 Hz contact/event traces",
+  "audited_episode_count": 10,
+  "auditor": "Codex",
+  "completed_at": "2026-08-13T16:24:57+08:00",
+  "episodes": [
+    {
+      "episode": 0,
+      "event_steps": [1148, 3411, 3411, 3425, 4083, 4555, 4569],
+      "seed": 0,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 1,
+      "event_steps": [793, 2738, 2738, 2752, 3400, 3884, 3898],
+      "seed": 1,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 2,
+      "event_steps": [1038, 3255, 3255, 3269, 3927, 4423, 4437],
+      "seed": 2,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 3,
+      "event_steps": [757, 2880, 2880, 2894, 3550, 4061, 4075],
+      "seed": 3,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 4,
+      "event_steps": [783, 2982, 2982, 2996, 3673, 4184, 4198],
+      "seed": 5,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 5,
+      "event_steps": [870, 2892, 2892, 2906, 3575, 4081, 4095],
+      "seed": 6,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 6,
+      "event_steps": [897, 2797, 2797, 2811, 3472, 3958, 3972],
+      "seed": 7,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 7,
+      "event_steps": [1048, 3178, 3178, 3192, 3903, 4388, 4402],
+      "seed": 8,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 8,
+      "event_steps": [1021, 3386, 3386, 3400, 4081, 4585, 4599],
+      "seed": 9,
+      "verdict": "PASS"
+    },
+    {
+      "episode": 9,
+      "event_steps": [972, 3050, 3050, 3064, 3732, 4237, 4251],
+      "seed": 10,
+      "verdict": "PASS"
+    }
+  ],
+  "event_semantics": {
+    "E0": "Visible left-donor-only grasp of the red block",
+    "E1_E2": "Receiver first contact and simultaneous contact occur in the same discrete physics step; both grippers visibly surround the block",
+    "E3": "Both grippers visibly remain engaged after the 15-step stability requirement",
+    "E4": "Donor open command occurs while receiver visibly holds the block",
+    "E5_E6": "Left donor is visibly disengaged/retracting and the right receiver alone retains the block"
+  },
+  "overall_verdict": "PASS",
+  "visual_limit": "Montages validate gross contact geometry and arm identity; exact contact state comes from simulator actor IDs and impulses"
+}

@@ -1,0 +1,42 @@
+schema_version: 1
+stage: stage2a_smoke
+task: handover_block
+task_config: demo_clean
+embodiment: aloha-agilex
+episode_count: 10
+seed_candidate_start: 0
+seed_candidate_stop_exclusive: 100
+planner: mplib_screw
+planner_note: official Aloha config exposes mplib_screw as the non-CuRobo fallback
+physics_hz: 250
+trace_hz: 250
+video_hz: 10
+event_stable_steps: 15
+determinism_horizon_steps: 10
+determinism_pose_atol: 1.0e-8
+determinism_twist_atol: 1.0e-8
+camera_keys:
+  - head_camera
+  - left_camera
+  - right_camera
+action_contract:
+  learned_policy_vector: left_arm_6,left_gripper_1,right_arm_6,right_gripper_1
+  learned_policy_dim: 14
+  expert_low_level: joint_position_and_velocity_targets
+  action_chunk_size: 1
+event_contract:
+  donor_rule: left_if_initial_object_x_negative_else_right
+  E0: donor_contact_and_no_receiver_contact
+  E1: first_receiver_contact
+  E2: first_both_arm_contact
+  E3: receiver_contact_stable_for_event_stable_steps_while_donor_contact
+  E4: donor_open_command_issued
+  E5: donor_contact_lost_after_E4_while_receiver_contact
+  E6: receiver_only_contact_stable_for_event_stable_steps
+perturbation_contract:
+  neutral_arm: hold_current_joint_drive_target
+  neutral_gripper: hold_current_normalized_closure
+  unilateral_gain: supported_by_dense_target_adapter
+  unilateral_delay: supported_by_per_arm_fifo
+  unilateral_friction: supported_by_per_gripper_collision_material_clone
+accepted: false

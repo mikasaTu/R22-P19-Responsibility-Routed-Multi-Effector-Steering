@@ -1,0 +1,9 @@
+diff --git a/envs/robot/planner.py b/envs/robot/planner.py
+index e7af253..a662b62 100644
+--- a/envs/robot/planner.py
++++ b/envs/robot/planner.py
+@@ -10,0 +11,4 @@
++# Keep the optional symbol importable when CuRobo is unavailable.  Runtime
++# adapters must still reject a requested CuRobo planner in that situation.
++CuroboPlanner = None
++

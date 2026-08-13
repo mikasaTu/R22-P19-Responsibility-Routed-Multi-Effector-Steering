@@ -1,0 +1,5375 @@
+{
+  "accepted": false,
+  "authority_swap": {
+    "aggregate": {
+      "accuracy": 0.5271739130434783,
+      "accuracy_informative_only": 0.578125,
+      "informative_state_count": 64,
+      "paired_state_count": 184,
+      "shuffle_repetitions": 4096,
+      "shuffle_seed": 22019,
+      "shuffled_orientation_accuracy": 0.500380806300951,
+      "tie_count": 120,
+      "tie_tolerance": 1e-09
+    },
+    "compliance": {
+      "accuracy": null,
+      "accuracy_informative_only": null,
+      "informative_state_count": 0,
+      "mean_oriented_margin": null,
+      "median_oriented_margin": null,
+      "paired_state_count": 0,
+      "tie_count": 0
+    },
+    "delay_2": {
+      "accuracy": null,
+      "accuracy_informative_only": null,
+      "informative_state_count": 0,
+      "mean_oriented_margin": null,
+      "median_oriented_margin": null,
+      "paired_state_count": 0,
+      "tie_count": 0
+    },
+    "delay_4": {
+      "accuracy": null,
+      "accuracy_informative_only": null,
+      "informative_state_count": 0,
+      "mean_oriented_margin": null,
+      "median_oriented_margin": null,
+      "paired_state_count": 0,
+      "tie_count": 0
+    },
+    "direction_compliance_diagnostic": {
+      "accuracy": 0.6739130434782609,
+      "accuracy_informative_only": 1.0,
+      "informative_state_count": 32,
+      "mean_oriented_margin": 0.5138725729730377,
+      "median_oriented_margin": 0.0,
+      "paired_state_count": 92,
+      "tie_count": 60
+    },
+    "direction_null": {
+      "accuracy": 0.3804347826086957,
+      "accuracy_informative_only": 0.15625,
+      "informative_state_count": 32,
+      "mean_oriented_margin": -0.16984727970556415,
+      "median_oriented_margin": 0.0,
+      "paired_state_count": 92,
+      "tie_count": 60
+    },
+    "friction": {
+      "accuracy": null,
+      "accuracy_informative_only": null,
+      "informative_state_count": 0,
+      "mean_oriented_margin": null,
+      "median_oriented_margin": null,
+      "paired_state_count": 0,
+      "tie_count": 0
+    },
+    "gain": {
+      "accuracy": null,
+      "accuracy_informative_only": null,
+      "informative_state_count": 0,
+      "mean_oriented_margin": null,
+      "median_oriented_margin": null,
+      "paired_state_count": 0,
+      "tie_count": 0
+    }
+  },
+  "authority_swap_by_horizon": {
+    "H10": {
+      "aggregate": {
+        "accuracy": 0.532608695652174,
+        "accuracy_informative_only": 0.59375,
+        "informative_state_count": 32,
+        "paired_state_count": 92,
+        "shuffle_repetitions": 4096,
+        "shuffle_seed": 22019,
+        "shuffled_orientation_accuracy": 0.5002521017323369,
+        "tie_count": 60,
+        "tie_tolerance": 1e-09
+      },
+      "compliance": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "delay_2": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "delay_4": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "direction_compliance_diagnostic": {
+        "accuracy": 0.6739130434782609,
+        "accuracy_informative_only": 1.0,
+        "informative_state_count": 16,
+        "mean_oriented_margin": 0.5309056145619265,
+        "median_oriented_margin": 0.0,
+        "paired_state_count": 46,
+        "tie_count": 30
+      },
+      "direction_null": {
+        "accuracy": 0.391304347826087,
+        "accuracy_informative_only": 0.1875,
+        "informative_state_count": 16,
+        "mean_oriented_margin": -0.1510305155465487,
+        "median_oriented_margin": 0.0,
+        "paired_state_count": 46,
+        "tie_count": 30
+      },
+      "friction": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "gain": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      }
+    },
+    "H5": {
+      "aggregate": {
+        "accuracy": 0.5217391304347826,
+        "accuracy_informative_only": 0.5625,
+        "informative_state_count": 32,
+        "paired_state_count": 92,
+        "shuffle_repetitions": 4096,
+        "shuffle_seed": 22019,
+        "shuffled_orientation_accuracy": 0.5001406462296195,
+        "tie_count": 60,
+        "tie_tolerance": 1e-09
+      },
+      "compliance": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "delay_2": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "delay_4": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "direction_compliance_diagnostic": {
+        "accuracy": 0.6739130434782609,
+        "accuracy_informative_only": 1.0,
+        "informative_state_count": 16,
+        "mean_oriented_margin": 0.4968395313841489,
+        "median_oriented_margin": 0.0,
+        "paired_state_count": 46,
+        "tie_count": 30
+      },
+      "direction_null": {
+        "accuracy": 0.3695652173913043,
+        "accuracy_informative_only": 0.125,
+        "informative_state_count": 16,
+        "mean_oriented_margin": -0.18866404386457966,
+        "median_oriented_margin": 0.0,
+        "paired_state_count": 46,
+        "tie_count": 30
+      },
+      "friction": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      },
+      "gain": {
+        "accuracy": null,
+        "accuracy_informative_only": null,
+        "informative_state_count": 0,
+        "mean_oriented_margin": null,
+        "median_oriented_margin": null,
+        "paired_state_count": 0,
+        "tie_count": 0
+      }
+    }
+  },
+  "branch_state_count": 46,
+  "channel_effect_audit": {
+    "contact_retention_H10": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 2,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 1.0,
+      "total_effect_norm_median": 0.0
+    },
+    "contact_retention_H5": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 1,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 1.0,
+      "total_effect_norm_median": 0.0
+    },
+    "motion_H10": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 2.6469779601696886e-23,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 0.00020499957123142849,
+      "total_effect_norm_median": 0.0
+    },
+    "motion_H5": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 7.154978922887781e-05,
+      "total_effect_norm_median": 0.0
+    },
+    "negative_slip_H10": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 38,
+      "synergy_norm_max": 3.7947076036992655e-19,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 0.006919301204518563,
+      "total_effect_norm_median": 6.863153289036426e-05
+    },
+    "negative_slip_H5": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 38,
+      "synergy_norm_max": 1.6263032587282567e-19,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 0.0030678519120927008,
+      "total_effect_norm_median": 2.4224833791452586e-05
+    },
+    "support_H10": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 3.3974647521972656e-05,
+      "total_effect_norm_median": 0.0
+    },
+    "support_H5": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 1.4543533325195312e-05,
+      "total_effect_norm_median": 0.0
+    },
+    "task_progress_H10": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 0.0002001053227541627,
+      "total_effect_norm_median": 0.0
+    },
+    "task_progress_H5": {
+      "count": 46,
+      "nonzero_effect_count_at_1e-12": 12,
+      "synergy_norm_max": 0.0,
+      "synergy_norm_median": 0.0,
+      "total_effect_norm_max": 4.430320774728713e-05,
+      "total_effect_norm_median": 0.0
+    }
+  },
+  "direction_intervention_validity": {
+    "by_family": {
+      "direction_compliance_diagnostic": {
+        "paired_state_count": 92,
+        "profile_count": 184,
+        "valid_pair_oracle_accuracy": 1.0,
+        "valid_pair_oracle_accuracy_informative_only": 1.0,
+        "valid_pair_oracle_informative_count": 21,
+        "valid_paired_state_count": 21,
+        "valid_profile_count": 113
+      },
+      "direction_null": {
+        "paired_state_count": 92,
+        "profile_count": 184,
+        "valid_pair_oracle_accuracy": null,
+        "valid_pair_oracle_accuracy_informative_only": null,
+        "valid_pair_oracle_informative_count": 0,
+        "valid_paired_state_count": 0,
+        "valid_profile_count": 92
+      }
+    },
+    "details": [
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013931425708952672,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.1171175031295815e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3425
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00033912352251256776,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.675286298613326e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3425
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013910046225875563,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.058242798694363e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3450
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003479052050852956,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.588072573765115e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3450
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001415382188346368,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.009761296377602e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3475
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034927493396629634,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.41337641312691e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3475
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001412528059695412,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.006844280660633e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3500
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003500274320829809,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.385101866404857e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3500
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014160991631069524,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.003949440507542e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3525
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00035006477403952125,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.427784528517591e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3525
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014087401140733803,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.96239517610617e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3550
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034870273075899097,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.350157804369909e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3550
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014061348384249658,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.9413725026481854e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3575
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034890716691364596,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.309145372971697e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3575
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001402697471721425,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.9414713019050044e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3600
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003485728593944262,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.262840399750492e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3600
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014026514888065573,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.927957590412939e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3625
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034911315683422233,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.272772095566353e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3625
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.000140144912835187,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.9269218773197426e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3650
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003488584442554767,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.354724861248104e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3650
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014060803289298585,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.009082631809835e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3675
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034908202320358355,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.338580519758617e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3675
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001404598172696187,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.013442566497589e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3700
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.000349261167829626,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.371041335198038e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3700
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001402834702404822,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.0061817633124516e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3725
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034967691390689617,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.42980033235941e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3725
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014035536385857743,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.017879763262635e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3750
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034932024076377537,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.4145170838526e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3750
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001398972289635282,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.988708566773069e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3775
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003495043116095638,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.449016074227989e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3775
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013987083608047425,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.989862499797975e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3800
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034908172119587234,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.433318568180882e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3800
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014016325005011652,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.011748347380192e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3825
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003491846381481504,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.416640090180658e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3825
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.13292451501336378,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00010205790732901738,
+              "right": 3.422695007531916e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.2690274829248044e-05,
+              "right": -1.686047251653862e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3850
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.040745610882274,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00032270889084413034,
+              "right": 3.147555466191296e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00012380701392635261,
+              "right": 3.600884517629686e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3850
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.16318955018367998,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.869354597105097e-05,
+              "right": 3.1776300511934465e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.1372901298744524e-05,
+              "right": -1.581349857479656e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3875
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.6819184605784314,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.000265647546704021,
+              "right": -8.881464764307077e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.6685480934255384e-05,
+              "right": -2.5201859624678072e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3875
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.8384635508774255,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.9609945027733125e-05,
+              "right": -4.464923440917542e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.6489567174439668e-05,
+              "right": 1.5867122456812833e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3900
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.8518580287651478,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.388007701351133e-05,
+              "right": 9.985014892641502e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.10483927892212e-05,
+              "right": 3.631544864041376e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3900
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.8451133127692276,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.050411845539282e-05,
+              "right": -6.775176569192842e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.5796636776525402e-05,
+              "right": 1.1187228351251651e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3925
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.438331924244493,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 6.867739957645909e-05,
+              "right": 2.279774504031974e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.1094162858699687e-05,
+              "right": 1.0624384647721193e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3925
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.8055173152914065,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.1040000691881964e-05,
+              "right": -7.953673562756677e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.5695802354780748e-05,
+              "right": 1.1634658687978516e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3950
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.8756482420065828,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.458368111093889e-05,
+              "right": 5.97383962278484e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.218177073988437e-05,
+              "right": 2.506069277311411e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3950
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.7989645560019591,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.23206258011804e-05,
+              "right": -7.420138282876599e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.654775335521329e-05,
+              "right": 1.0520186122755404e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3975
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.883300544585343,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.685055381850596e-05,
+              "right": 4.8294116780489095e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.312981319943165e-05,
+              "right": 2.127971399470531e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3975
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.7946048794650755,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.0850483310130135e-05,
+              "right": -8.547027067850815e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.3982918922256528e-05,
+              "right": 8.806307807979802e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4000
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.8342808213894659,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.50826595737769e-05,
+              "right": 2.5708173474393483e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.959527052321051e-05,
+              "right": 1.9633658132591065e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4000
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.7757832334277421,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.104877339578064e-05,
+              "right": -8.714779004551756e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.4768624003694522e-05,
+              "right": 7.464322003974882e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4025
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.8306203410280795,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.59975715731646e-05,
+              "right": 1.7236094453847168e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.0571961840327554e-05,
+              "right": 1.759097420698853e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4025
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.7534487020083311,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.1521716741871365e-05,
+              "right": -8.599133909971414e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.497947391603518e-05,
+              "right": 7.458982751650595e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4050
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.8157106808253324,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.628368148102543e-05,
+              "right": 7.999341022941458e-07
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.061518973281092e-05,
+              "right": 1.7302664399997456e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4050
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.7252203859281247,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.184074847980118e-05,
+              "right": -8.401484125430398e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.4987264589403766e-05,
+              "right": 6.516616256171857e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4075
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.7960536266258849,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.615270052160687e-05,
+              "right": 2.4616754170111004e-07
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.013123196651275e-05,
+              "right": 1.6527530597739363e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4075
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.6340728489950351,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.278754177299268e-05,
+              "right": -8.463807417829985e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.476490283551875e-05,
+              "right": 4.967607365332797e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4100
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.7357857705669433,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.616692079129377e-05,
+              "right": -3.963536514464872e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.8337379298012346e-05,
+              "right": 1.3723665391082592e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4100
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.6042890427146741,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.2114150595009476e-05,
+              "right": -9.510622680195915e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.3549680282275344e-05,
+              "right": 2.427223517375578e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4125
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.6369310438394233,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.769288633797236e-05,
+              "right": -9.27331083404211e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.504338314073691e-05,
+              "right": 9.314640516320383e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4125
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.5433265431347901,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.3091516291545946e-05,
+              "right": -9.767215857741532e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.3849382965112585e-05,
+              "right": 8.429607551566518e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4150
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.4404867669103749,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.978030675420019e-05,
+              "right": -1.3334373108594505e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.36460352248353e-05,
+              "right": 6.624856672120456e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4150
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.4155396213878599,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.2871103577332005e-05,
+              "right": -1.0748207010654989e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.3726214331989282e-05,
+              "right": -9.123392575831655e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4175
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.34510014328121325,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.56487265769738e-05,
+              "right": 8.298191718527399e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.246712775950891e-05,
+              "right": 4.846976066273059e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4175
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": -0.3698244732420841,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.3350603047863176e-05,
+              "right": 6.237540974717448e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2759280802043707e-05,
+              "right": 4.4699036801391195e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4200
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": -0.3048263523833896,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00010303901500586244,
+              "right": 4.3341213430236386e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.133916085913364e-05,
+              "right": 5.46662194108268e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4200
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.19535741230275616,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.8076303315539203e-05,
+              "right": 2.880332806806711e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": -8.531589987606433e-07,
+              "right": 4.841468322629697e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4225
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.11886649984972952,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 7.398100713851936e-05,
+              "right": 9.466191590565611e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2111465998955159e-05,
+              "right": 1.48205146099443e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4225
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.607216055624875e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.693998161629849e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4250
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.753506032503887e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8458683529363695e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4250
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.8744257695978534e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6411372098813248e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4275
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.8548941433687494e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7750911906674623e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4275
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.430918934429347e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.625442095963943e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4300
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.7295768960875654e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7539117848002355e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4300
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.48995098040635e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6472286436082007e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4325
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.685468811009145e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8379146364036624e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4325
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.920861957963641e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5972756366173492e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4350
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.594956751744201e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.768179170013276e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4350
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.911812522095198e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5940246582007908e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4375
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.607020146377738e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7649443225476465e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4375
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.848136716918816e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5859590706785185e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4400
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.59021279238546e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8026897164812113e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4400
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -7.024049852625937e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6225564538644644e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4425
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.591581685677456e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.840846417036457e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4425
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -6.9583701667172045e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6241687934903622e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4450
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.6098123133986167e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8754420090871705e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4450
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -7.323097489023976e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6000094924218892e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4475
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.5833666376627056e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8868199466718176e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4475
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -7.416130573337246e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5972394177808086e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4500
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.575204084526163e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8925720953251764e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4500
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -7.259929902553153e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6237967102185247e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4525
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.5867517428488185e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.9184588648087926e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4525
+      },
+      {
+        "family": "direction_null",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -7.2664583710735586e-06
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5992722219355554e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4550
+      },
+      {
+        "family": "direction_null",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 4.606829940268377e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.9221583473308023e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4550
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013931425708952672,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2157512157937018e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3425
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00033912352251256776,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.857873721795755e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3425
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013910046225875563,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2325507073810183e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3450
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003479052050852956,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.826298385177743e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3450
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001415382188346368,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1877426360044575e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3475
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034927493396629634,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6962323369609834e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3475
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001412528059695412,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2303135211949143e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3500
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003500274320829809,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.7818345651520383e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3500
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014160991631069524,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.2217990702253983e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3525
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00035006477403952125,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.832344871763921e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3525
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014087401140733803,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1999772999286394e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3550
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034870273075899097,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.723044529608864e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3550
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014061348384249658,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.169031664054034e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3575
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034890716691364596,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.7122622828068463e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3575
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001402697471721425,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.154338188480355e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3600
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003485728593944262,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.5993182875818696e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3600
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014026514888065573,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1434306543649172e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3625
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034911315683422233,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6241107571935424e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3625
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.000140144912835187,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1406333073967037e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3650
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003488584442554767,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6651399368360505e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3650
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014060803289298585,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1609195100122166e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3675
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034908202320358355,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6313592578289816e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3675
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001404598172696187,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.184506571216485e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3700
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.000349261167829626,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.67112822446688e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3700
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001402834702404822,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1736155160969225e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3725
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034967691390689617,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.7282039027725686e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3725
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014035536385857743,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.187421462401833e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3750
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034932024076377537,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.684244562089281e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3750
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0001398972289635282,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1614829377838316e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3775
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003495043116095638,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6737323435810634e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3775
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00013987083608047425,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1502104717096415e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3800
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00034908172119587234,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.7048380688413734e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3800
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00014016325005011652,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.1312670333355402e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3825
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003491846381481504,
+              "right": 0.0
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.673658604446264e-05,
+              "right": 0.0
+            },
+            "valid": false
+          }
+        ],
+        "step": 3825
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.062928093838162,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00010217752082296593,
+              "right": -1.1749009141410177e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.3387006940040852e-05,
+              "right": -1.6917484875542224e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3850
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.6790110924745743,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0003226657819532169,
+              "right": -2.4828571811750957e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.8872899621906227e-05,
+              "right": 3.5973803586897365e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3850
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.0455741589472742,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.859916328071428e-05,
+              "right": -8.11609166506294e-07
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.381663435313381e-05,
+              "right": -1.5718252880630326e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3875
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.383809100380606,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00026616483128486093,
+              "right": 1.6861455538825967e-06
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.937673250652666e-05,
+              "right": -2.4619129476802322e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 3875
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.5103916463638416,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.97733352483583e-05,
+              "right": -1.86244165814777e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.8970748041402986e-06,
+              "right": 1.5900877327308824e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3900
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.6139304975189468,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.397053010385446e-05,
+              "right": -3.898684649638768e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.3705607437524646e-06,
+              "right": 3.5938759463068525e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3900
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4554465114484305,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.036277028754827e-05,
+              "right": -1.9183059795815095e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.8881633259491703e-06,
+              "right": 1.1193597690460248e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3925
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 2.0768678596103918,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 6.855709313433502e-05,
+              "right": -3.830371965072893e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.795742605545588e-06,
+              "right": 1.0830348970403733e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3925
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4968348633160526,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.1258825259057236e-05,
+              "right": -1.865322495732527e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6399027606392877e-06,
+              "right": 1.1649930028919354e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3950
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5922579281434783,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.52932317986222e-05,
+              "right": -3.9270029962967e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.117999541420283e-06,
+              "right": 2.5526157412350847e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3950
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4958559431016851,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.222465596477274e-05,
+              "right": -1.7855333080508034e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.133640136504837e-06,
+              "right": 1.0336687551226037e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3975
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5605704347782168,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.677283602954049e-05,
+              "right": -3.8754787389797645e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.674760489959859e-06,
+              "right": 2.15505659727829e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 3975
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4870408919136688,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.088316550871616e-05,
+              "right": -1.915076060088606e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.409497900928216e-06,
+              "right": 8.75189988309316e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4000
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5614597027393642,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.572542022065142e-05,
+              "right": -3.982775298954424e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.7659091560633215e-06,
+              "right": 1.9674380136028132e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4000
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4826724066954973,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.102162277230905e-05,
+              "right": -1.9066695084253955e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.241502395222821e-06,
+              "right": 7.15270191930098e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4025
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.546724216170716,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.681407396606145e-05,
+              "right": -3.9728225752444655e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.697565247652166e-06,
+              "right": 1.8120774495083507e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4025
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.5118071947025418,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.136390906508227e-05,
+              "right": -1.8572610687182045e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.123317513214554e-06,
+              "right": 7.581941664242953e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4050
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.543118485086998,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.65831242590867e-05,
+              "right": -3.9701925813112485e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.563140371030021e-06,
+              "right": 1.7530027398153326e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4050
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4877443858737966,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.194126090364472e-05,
+              "right": -1.7858238801925107e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.704775644054322e-06,
+              "right": 6.369184341259469e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4075
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5094347994190844,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.645625225648744e-05,
+              "right": -3.880218352603934e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.2592197587147885e-06,
+              "right": 1.669063572092452e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4075
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4920855846229413,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.2985166535257315e-05,
+              "right": -1.8314696764877838e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.640170893035097e-06,
+              "right": 4.8769925754598075e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4100
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5378310816146312,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.649618122096757e-05,
+              "right": -3.983768843759486e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.538182083168965e-06,
+              "right": 1.3738258883020332e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4100
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.510583416807152,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.228842204056614e-05,
+              "right": -1.9014777262152936e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.235123621762203e-06,
+              "right": 2.3057625568846765e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4125
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.562852611253326,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 8.82010278724521e-05,
+              "right": -3.958172213774915e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 4.723780339530639e-06,
+              "right": 9.202856528313922e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4125
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.5107080756549394,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.290908121574075e-05,
+              "right": -1.818090566950602e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.936017286627796e-06,
+              "right": 8.029107981223208e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4150
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.4429736435719385,
+        "pair_valid": true,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.00826981042583e-05,
+              "right": -3.8898071930388084e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.538463149933229e-06,
+              "right": 6.540490169776706e-06
+            },
+            "valid": true
+          }
+        ],
+        "step": 4150
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.512527057781937,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.303503328334309e-05,
+              "right": -1.8627256145782122e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.6647647914272436e-06,
+              "right": -9.004118460747928e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4175
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.6409087865037115,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 9.666644575652745e-05,
+              "right": -3.818316845337654e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.1368300826151155e-06,
+              "right": 4.7705611877348346e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4175
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.4068495145432038,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 3.3399902972213884e-05,
+              "right": -1.8853738067086256e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.817678769822626e-06,
+              "right": 5.275954324932723e-07
+            },
+            "valid": false
+          }
+        ],
+        "step": 4200
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.5943378814362215,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.00010300256012063847,
+              "right": -3.952815610679356e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 5.143156959326484e-06,
+              "right": 5.133679693972891e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4200
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 1.3855686980597248,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 2.7862971166151704e-05,
+              "right": -1.8919674544533385e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 7.261140361241503e-06,
+              "right": 4.656602381135646e-06
+            },
+            "valid": false
+          }
+        ],
+        "step": 4225
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 1.575570149146416,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 7.66282449482673e-05,
+              "right": -3.775642813738421e-05
+            },
+            "valid": true
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 1.6134401077299297e-05,
+              "right": 1.473392300751876e-05
+            },
+            "valid": false
+          }
+        ],
+        "step": 4225
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2060899634707962e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.693998161629849e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4250
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.107701672428856e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8458683529363695e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4250
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2207320499020484e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6411372098813248e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4275
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.157741238105055e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7750911906674623e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4275
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.221695693424263e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.625442095963943e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4300
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.165097178362964e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7539117848002355e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4300
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2295083043262106e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6472286436082007e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4325
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.20436372767993e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8379146364036624e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4325
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2347642462795744e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5972756366173492e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4350
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.2527254127256585e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.768179170013276e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4350
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.262952132013649e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5940246582007908e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4375
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.292744735560473e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.7649443225476465e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4375
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2722336730291562e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5859590706785185e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4400
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.352593351854253e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8026897164812113e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4400
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2817721168486936e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6225564538644644e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4425
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.307825626941975e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.840846417036457e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4425
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2587695238877952e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6241687934903622e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4450
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.253438205532339e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8754420090871705e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4450
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2757748952054128e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6000094924218892e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4475
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.2559521809425865e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8868199466718176e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4475
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2770876457558277e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5972394177808086e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4500
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.253995188079807e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.8925720953251764e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4500
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2506930185605717e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.6237967102185247e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4525
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.2148209296545884e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.9184588648087926e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4525
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 5,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -2.2418338591675755e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 1.5992722219355554e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4550
+      },
+      {
+        "family": "direction_compliance_diagnostic",
+        "horizon": 10,
+        "oracle_oriented_margin": 0.0,
+        "pair_valid": false,
+        "profiles": [
+          {
+            "expected_authority": "left",
+            "profile": "direction_compliance_left_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": -5.218602003956471e-05
+            },
+            "valid": false
+          },
+          {
+            "expected_authority": "right",
+            "profile": "direction_compliance_right_authority",
+            "singleton_task_direction_effect_m": {
+              "left": 0.0,
+              "right": 2.9221583473308023e-05
+            },
+            "valid": true
+          }
+        ],
+        "step": 4550
+      }
+    ],
+    "oracle_direction_accuracy_interpretable": true,
+    "paired_state_count": 184,
+    "positive_dominance_tolerance_m": 1e-06,
+    "profile_count": 368,
+    "valid_paired_state_count": 21,
+    "valid_profile_count": 205
+  },
+  "direction_null_record_count": 368,
+  "direction_null_status": "DIAGNOSTIC_COMPLIANCE_ASSISTED_SWAP_VALIDATED",
+  "evidence_boundary": "simulator privileged oracle; not deployable",
+  "phase_curve": {
+    "donor_release_H10": {
+      "count": 19,
+      "nonzero_responsibility_count_at_1e-12": 6,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": 0.0,
+      "rho_left_mean": 0.3157894736842105,
+      "rho_right_mean": 0.0
+    },
+    "donor_release_H5": {
+      "count": 19,
+      "nonzero_responsibility_count_at_1e-12": 6,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": 0.0,
+      "rho_left_mean": 0.3157894736842105,
+      "rho_right_mean": 0.0
+    },
+    "early_overlap_H10": {
+      "count": 1,
+      "nonzero_responsibility_count_at_1e-12": 0,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": 0.0,
+      "rho_left_mean": 0.0,
+      "rho_right_mean": 0.0
+    },
+    "early_overlap_H5": {
+      "count": 1,
+      "nonzero_responsibility_count_at_1e-12": 0,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": 0.0,
+      "rho_left_mean": 0.0,
+      "rho_right_mean": 0.0
+    },
+    "stable_overlap_H10": {
+      "count": 26,
+      "nonzero_responsibility_count_at_1e-12": 6,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": -2.680520850907072e-22,
+      "rho_left_mean": 0.0,
+      "rho_right_mean": 0.23076923076923078
+    },
+    "stable_overlap_H5": {
+      "count": 26,
+      "nonzero_responsibility_count_at_1e-12": 6,
+      "rho_joint_abs_median": 0.0,
+      "rho_joint_mean": 0.0,
+      "rho_left_mean": 0.0,
+      "rho_right_mean": 0.23076923076923078
+    }
+  },
+  "reconstruction": {
+    "all_at_or_below_1e-12": true,
+    "max_abs_error": 1.0842021724855044e-19,
+    "value_count": 2300
+  },
+  "record_count": 460,
+  "status": "PILOT_ONLY_INSUFFICIENT_N",
+  "successful_episode_count": 1
+}

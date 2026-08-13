@@ -1,0 +1,20 @@
+[
+  {
+    "episode": 0,
+    "error": "target_pose cannot be None for move action.",
+    "error_type": "AssertionError",
+    "seed": 0
+  },
+  {
+    "episode": 0,
+    "error": "target_pose cannot be None for move action.",
+    "error_type": "AssertionError",
+    "seed": 1
+  },
+  {
+    "episode": 0,
+    "error": "target_pose cannot be None for move action.",
+    "error_type": "AssertionError",
+    "seed": 2
+  }
+]

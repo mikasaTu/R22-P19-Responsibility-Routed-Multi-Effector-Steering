@@ -1,0 +1,31 @@
+{
+  "accepted": false,
+  "branch_points_used_as_independent_inference_samples": false,
+  "calibration_seeds": [0, 1],
+  "decision": "MULTISEED_SIGNAL_SUPPORTED",
+  "evidence_boundary": "simulator privileged contact-aware authority intervention; not deployable",
+  "frozen_config_sha256": "30e80b4811c17ceafd9c928cd583ac8505ebb764a8cc8f19b57db7917e08a3b1",
+  "heldout": {
+    "episode_count": 5,
+    "episode_joint_mode_occupancy": 0.0,
+    "mean_episode_oracle_accuracy": 1.0,
+    "mean_episode_oracle_accuracy_ci95": [1.0, 1.0],
+    "mean_episode_valid_pair_rate": 0.8705882352941178,
+    "mean_episode_valid_pair_rate_ci95": [0.8588235294117647, 0.8823529411764707],
+    "per_episode": [
+      {"seed": 2, "valid_pair_count": 30, "candidate_pair_count": 34, "valid_pair_rate": 0.8823529411764706, "oracle_accuracy": 1.0},
+      {"seed": 3, "valid_pair_count": 29, "candidate_pair_count": 34, "valid_pair_rate": 0.8529411764705882, "oracle_accuracy": 1.0},
+      {"seed": 5, "valid_pair_count": 29, "candidate_pair_count": 34, "valid_pair_rate": 0.8529411764705882, "oracle_accuracy": 1.0},
+      {"seed": 6, "valid_pair_count": 30, "candidate_pair_count": 34, "valid_pair_rate": 0.8823529411764706, "oracle_accuracy": 1.0},
+      {"seed": 7, "valid_pair_count": 30, "candidate_pair_count": 34, "valid_pair_rate": 0.8823529411764706, "oracle_accuracy": 1.0}
+    ],
+    "seeds": [2, 3, 5, 6, 7],
+    "shuffled_orientation_accuracy": 0.5000976562499999
+  },
+  "intervention": "task-frame follower target with unchanged gripper drives",
+  "native_cartesian_anisotropic_stiffness_available": false,
+  "pai_job_created": false,
+  "selected_gamma": 0.6,
+  "selected_gamma_is_diagnostic_only": false,
+  "statistical_unit": "episode"
+}

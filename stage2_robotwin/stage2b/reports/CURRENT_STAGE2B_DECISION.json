@@ -1,0 +1,28 @@
+{
+  "accepted": false,
+  "act_status": "SKIPPED_BY_ORACLE_OPERATOR_GATE",
+  "current_decision": "SIGNAL_VALID_OPERATOR_WEAK",
+  "deployability": "NOT_TESTED_SIMULATOR_ORACLE_ONLY",
+  "evidence_boundary": "RoboTwin handover_block simulator; contact-aware counterfactual signal plus privileged oracle 1-D operator",
+  "operator": {
+    "decision": "WEAK_NOT_DEMONSTRATED",
+    "full_matrix_complete": true,
+    "matrix_count": 240,
+    "operator_positive_trend": false,
+    "specificity": "NOT_DEMONSTRATED",
+    "stress_condition_count_beating_all_heuristics_on_all_primary_metrics": 0,
+    "stress_condition_count": 3,
+    "stress_success_target_met": false
+  },
+  "pai_job_created": false,
+  "policy_compatibility": "NOT_TESTED",
+  "signal": {
+    "decision": "MULTISEED_SIGNAL_SUPPORTED",
+    "heldout_episode_count": 5,
+    "mean_episode_oracle_accuracy": 1.0,
+    "mean_episode_valid_pair_rate": 0.8705882352941178,
+    "selected_gamma": 0.6
+  },
+  "specificity": "NOT_DEMONSTRATED",
+  "training_authorized_by_current_gate": false
+}

@@ -1,0 +1,18 @@
+{
+  "accepted": false,
+  "act_training": "NOT_RUN",
+  "decision": "NO_PAI_JOB_REQUIRED_OR_AUTHORIZED",
+  "pai_job_created": false,
+  "pai_skills_reviewed": [
+    "pai-vla-training",
+    "pai-spot-autoresume",
+    "pai-web-training-orchestrator"
+  ],
+  "reasons": [
+    "The frozen Stage 2B plan explicitly says not to create a PAI job before the oracle-operator gate.",
+    "The completed oracle pilot is SIGNAL_VALID_OPERATOR_WEAK and has no stable operator-positive trend.",
+    "The plan permits ACT only after a positive oracle-operator trend."
+  ],
+  "simulator_execution": "dev14 bounded RoboTwin smoke/pilot only",
+  "training_authorized_by_current_gate": false
+}

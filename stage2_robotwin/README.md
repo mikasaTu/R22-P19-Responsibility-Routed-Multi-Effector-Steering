@@ -1,10 +1,11 @@
 # Stage 2: RoboTwin bimanual oracle validation
 
-This subtree continues R22-P19 on a real dual-arm `handover_block` task. The
-current outcome is `PILOT_LOCALIZED_SIGNAL_FORMAL_PENDING`; see
-[`reports/SIGNAL_PILOT_REPORT.md`](reports/SIGNAL_PILOT_REPORT.md).
-Final code and artifact checks are recorded in
-[`reports/STAGE2_TEST_RESULTS.md`](reports/STAGE2_TEST_RESULTS.md).
+This subtree continues R22-P19 on the dual-arm `handover_block` simulator task.
+The current Stage 2B outcome is `SIGNAL_VALID_OPERATOR_WEAK`; see the
+[`signal report`](stage2b/reports/SIGNAL_REPLICATION_REPORT.md),
+[`operator report`](stage2b/reports/ORACLE_OPERATOR_REPORT.md), and
+[`machine decision`](stage2b/reports/CURRENT_STAGE2B_DECISION.json).
+Historical Stage 2A evidence remains unchanged under `reports/` and `results/`.
 
 ## Reproduce the bounded runs on dev14
 
@@ -43,3 +44,36 @@ stage2_robotwin/scripts/run_signal_pilot.sh
 The default signal runner is deliberately a one-episode pilot. Do not call it
 a formal Stage 2A audit without meeting the episode, perturbation, and control
 task contract in `configs/signal_audit_handover_block.yaml`.
+
+## Reproduce Stage 2B analyses
+
+The retained simulator runs are already complete. Recompute their metrics
+without rerunning physics:
+
+```bash
+PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python \
+  -m stage2_robotwin.stage2b.scripts.analyze_stage2b \
+  --mode evaluate \
+  --inputs stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/*.jsonl \
+  --config stage2_robotwin/stage2b/configs/contact_aware_signal.yaml \
+  --run-summary stage2_robotwin/stage2b/results/signal_replication/heldout-v1/run_summary.json \
+  --frozen-config stage2_robotwin/stage2b/results/signal_replication/calibration-v2/frozen_signal_config.json \
+  --output /tmp/r22p19_signal_metrics.json \
+  --plot /tmp/r22p19_signal_curve.png
+
+PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python \
+  -m stage2_robotwin.stage2b.scripts.analyze_operator_pilot \
+  --input stage2_robotwin/stage2b/results/oracle_operator/pilot-v3-contact-slip/pilot_results.json \
+  --output /tmp/r22p19_operator_metrics.json \
+  --plot /tmp/r22p19_operator_improvement.png
+```
+
+The Stage 2B test command is:
+
+```bash
+PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python \
+  -m pytest -q stage2_robotwin/tests stage2_robotwin/stage2b/tests
+```
+
+The current gate explicitly skips ACT and PAI training because the simulator
+oracle operator did not show a stable positive trend.

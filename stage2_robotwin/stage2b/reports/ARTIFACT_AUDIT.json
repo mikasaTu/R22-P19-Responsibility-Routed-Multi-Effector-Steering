@@ -1,0 +1,26 @@
+{
+  "accepted": false,
+  "artifact_status": "STAGE2B_ARTIFACT_SCAN_OK",
+  "counts": {
+    "expected_gripper_nan_sentinels": 62840,
+    "json_files_in_result_set_before_report_receipts": 28,
+    "jsonl_files": 523,
+    "jsonl_rows": 596320,
+    "mp4_files": 21,
+    "mp4_frames": 4130,
+    "npz_files": 526,
+    "npz_numeric_scalars": 14426336,
+    "parquet_files": 9,
+    "parquet_numeric_scalars": 428830,
+    "parquet_rows": 42883,
+    "png_files": 3,
+    "symlinks": 0
+  },
+  "high_confidence_secret_findings": 0,
+  "largest_file": {
+    "bytes": 2123101,
+    "path": "stage2_robotwin/stage2b/results/signal_replication/heldout-v1/branches/episode_06_seed_0007.jsonl"
+  },
+  "nan_contract": "expert_tape gripper pairs use [NaN,NaN] only as a no-new-command sentinel; all other scanned numeric arrays are finite",
+  "scan_host": "dev14"
+}

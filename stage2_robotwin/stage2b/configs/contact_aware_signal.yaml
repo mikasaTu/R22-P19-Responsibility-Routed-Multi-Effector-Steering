@@ -1,0 +1,53 @@
+experiment: R22-P19-Stage2B-I
+task: handover_block
+robot: aloha-agilex-dual-arm
+planner: mplib_screw
+physics_hz: 250
+
+split_contract:
+  calibration_seeds: [0, 1]
+  heldout_seeds: [2, 3, 5, 6, 7]
+  reference_smoke_summary: stage2_robotwin/results/smoke/final-10/smoke_summary.json
+  no_heldout_retuning: true
+
+sampling:
+  start: E4-250
+  end: min(E5,E4+150)
+  stride_physics_steps: 25
+  horizons_physics_steps: [5, 10]
+
+task_frame:
+  e_parallel: horizontal_projection(target_functional_point-object_functional_point)
+  e_vertical: world_up
+  e_perp: cross(e_vertical,e_parallel)
+  rotation_target: snapshot
+
+intervention:
+  implementation: task_frame_follower_target
+  native_cartesian_anisotropic_stiffness_available: false
+  driver_amplitude_m: 0.004
+  gamma_candidates: [0.6, 0.4, 0.2]
+  diagnostic_positive_control_gamma: 0.05
+  gamma_semantics: retained_parallel_position_error_ratio
+  other_task_frame_axes: snapshot_target_with_nominal_joint_drives
+  grippers: held_closed_unchanged_drive_targets
+
+calibration_selection_rule:
+  motion_effect_threshold_m: 0.000001
+  dominance_margin_threshold_m: 0.000001
+  min_valid_pair_rate_each_calibration_episode: 0.25
+  choose: largest_non_extreme_gamma_meeting_rate_in_both_calibration_episodes
+  fallback: diagnostic_gamma_0.05_only
+  synergy_threshold_rule: clamp(calibration_valid_pair_abs_rho_joint_p75,0.20,0.50)
+
+statistics:
+  unit: episode
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 22019
+  confidence: 0.95
+  branch_points_are_not_independent_samples: true
+
+evidence_boundary: simulator_privileged_oracle_not_deployable
+accepted: false
+pai_job_created: false
+

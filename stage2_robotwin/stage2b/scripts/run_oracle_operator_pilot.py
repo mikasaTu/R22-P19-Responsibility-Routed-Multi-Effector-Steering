@@ -411,6 +411,8 @@ def replay(
     latest_estimate = None
     operator_logs = []
     positions = []
+    left_tcp_positions = []
+    right_tcp_positions = []
     linear_velocities = []
     angular_velocities = []
     contacts = []
@@ -421,11 +423,22 @@ def replay(
     max_receiver_only_streak = 0
     donor_release_step = None
     donor_contact_loss_step = None
+    donor_contact_steps_after_release = 0
+    release_guard_request_steps = 0
+    release_guard_blocked_steps = 0
+    executed_donor_open_command_steps = 0
     estimator_wall = 0.0
     solver_wall = 0.0
     branch_rollouts = 0
     simulated_branch_steps = 0
     routed_outside_window = 0
+    start_object_position = object_state(task)["pose"][:3].copy()
+    start_tcp = {
+        side: _tcp_position(task, side).copy() for side in ("left", "right")
+    }
+    start_relative = {
+        side: start_object_position - start_tcp[side] for side in ("left", "right")
+    }
     friction_scale = float(condition.get("receiver_friction_scale", 1.0))
     friction_profile = AuthorityProfile(
         name=f"{condition_name}_friction",
@@ -487,6 +500,7 @@ def replay(
             donor_command = gripper_commands[donor]
             guard_enabled = method in {"B10", "B11"}
             if donor_command is not None and donor_command[0] > 0.2:
+                release_guard_request_steps += int(guard_enabled)
                 if donor_release_step is None:
                     donor_release_step = step
                 if guard_enabled and latest_estimate is not None:
@@ -504,6 +518,11 @@ def replay(
                     )
                     if not guard_audit["allow"]:
                         gripper_commands[donor] = None
+                        release_guard_blocked_steps += 1
+            executed_donor_open_command_steps += int(
+                gripper_commands[donor] is not None
+                and gripper_commands[donor][0] > 0.2
+            )
 
             before_position = object_state(task)["pose"][:3].copy()
             for side in ("left", "right"):
@@ -516,6 +535,8 @@ def replay(
             after_contacts = gripper_object_contacts(task)
             if donor_release_step is not None and not after_contacts[donor] and after_contacts[receiver]:
                 donor_contact_loss_step = donor_contact_loss_step or step
+            if donor_release_step is not None and after_contacts[donor]:
+                donor_contact_steps_after_release += 1
             receiver_only_streak = (
                 receiver_only_streak + 1
                 if after_contacts[receiver] and not after_contacts[donor]
@@ -529,6 +550,8 @@ def replay(
             )
             premature_release |= bool(donor_value > 0.2 and not after_contacts[receiver])
             positions.append(state["pose"][:3].copy())
+            left_tcp_positions.append(_tcp_position(task, "left").copy())
+            right_tcp_positions.append(_tcp_position(task, "right").copy())
             linear_velocities.append(state["linear_velocity"].copy())
             angular_velocities.append(state["angular_velocity"].copy())
             contacts.append([after_contacts["left"], after_contacts["right"]])
@@ -553,6 +576,16 @@ def replay(
     position_array = np.asarray(positions)
     linear_array = np.asarray(linear_velocities)
     angular_array = np.asarray(angular_velocities)
+    tcp_arrays = {
+        "left": np.asarray(left_tcp_positions),
+        "right": np.asarray(right_tcp_positions),
+    }
+    slip_arrays = {
+        side: np.linalg.norm(
+            (position_array - tcp_arrays[side]) - start_relative[side], axis=1
+        )
+        for side in ("left", "right")
+    }
     jerk = np.diff(linear_array, axis=0) * 250.0 if len(linear_array) > 1 else np.zeros((0, 3))
     raw_path.parent.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(
@@ -560,6 +593,10 @@ def replay(
         object_position=position_array,
         object_linear_velocity=linear_array,
         object_angular_velocity=angular_array,
+        left_tcp_position=tcp_arrays["left"],
+        right_tcp_position=tcp_arrays["right"],
+        left_relative_slip=slip_arrays["left"],
+        right_relative_slip=slip_arrays["right"],
         contacts=np.asarray(contacts, dtype=bool),
         grippers=np.asarray(grippers),
     )
@@ -584,6 +621,18 @@ def replay(
             if donor_release_step is not None and donor_contact_loss_step is not None
             else None
         ),
+        "peak_relative_slip_left_m": float(slip_arrays["left"].max(initial=0.0)),
+        "peak_relative_slip_right_m": float(slip_arrays["right"].max(initial=0.0)),
+        "peak_relative_slip_m": float(
+            max(
+                slip_arrays["left"].max(initial=0.0),
+                slip_arrays["right"].max(initial=0.0),
+            )
+        ),
+        "donor_contact_steps_after_release_request": donor_contact_steps_after_release,
+        "release_guard_request_steps": release_guard_request_steps,
+        "release_guard_blocked_steps": release_guard_blocked_steps,
+        "executed_donor_open_command_steps": executed_donor_open_command_steps,
         "peak_object_angular_velocity": float(np.linalg.norm(angular_array, axis=1).max(initial=0.0)),
         "peak_object_linear_jerk": float(np.linalg.norm(jerk, axis=1).max(initial=0.0)),
         "min_object_height_m": float(position_array[:, 2].min(initial=np.inf)),

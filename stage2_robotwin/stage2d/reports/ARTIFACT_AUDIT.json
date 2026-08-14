@@ -1,0 +1,22 @@
+{
+  "schema": "r22p19.stage2d.artifact_audit.v1",
+  "audit_date": "2026-08-15",
+  "file_count_excluding_cache_and_manifest": 147,
+  "total_bytes_excluding_cache_and_manifest": 4555237,
+  "largest_file_bytes": 1349695,
+  "symlink_count": 0,
+  "credential_pattern_hits": 0,
+  "patterns_checked": [
+    "AKIA",
+    "BEGIN PRIVATE KEY",
+    "password assignment",
+    "api key assignment",
+    "secret assignment",
+    "wandb"
+  ],
+  "raw_large_cpfs_logs_committed": false,
+  "model_weights_committed": false,
+  "datasets_committed": false,
+  "closed_loop_sha256": "15f02fcde953b7122d4492686d7fdea5ab7f3329e12833e6dcb02124e8d75bce",
+  "local_causal_sha256": "ea1e5a25d2f01afca25e9cc98d79f4b5c74bccfd714c0c679321bcfa66ea3735"
+}

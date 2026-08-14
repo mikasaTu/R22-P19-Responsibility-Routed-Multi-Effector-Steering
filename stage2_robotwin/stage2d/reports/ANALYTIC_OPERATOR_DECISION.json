@@ -1,0 +1,16 @@
+{
+  "literal_preregistered_gate": "ANALYTIC_GO",
+  "interpretation": "PARTIAL_ANALYTIC_ALLOCATOR_GO",
+  "seed_count": 256,
+  "correct_target_mae": 0.01372342788955034,
+  "correct_net_relative_error": 0.0013472410344398333,
+  "correct_feasibility": 1.0,
+  "correct_action_modification": 0.5877015684806757,
+  "swapped_mae": 0.6037395443140608,
+  "random_mae": 0.33831142164547734,
+  "reviewer_1": "BLOCK_FULL_V2_NOVELTY_INTERPRETATION",
+  "reviewer_2": "MECHANISM_IDENTIFIABILITY_NOT_ESTABLISHED",
+  "accepted": false,
+  "pai_job_created": false
+}
+

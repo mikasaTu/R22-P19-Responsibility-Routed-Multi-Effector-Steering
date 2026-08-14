@@ -1,0 +1,19 @@
+{
+  "schema": "r22p19.stage2d.provenance.v1",
+  "date": "2026-08-15",
+  "development_host": "dev14",
+  "repository_base_commit": "e31e1ddc78e8ffa22c5dba51d2988151ec7f755f",
+  "branch": "stage2d-takeover-capacity-v2",
+  "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+  "xpolicylab_commit": "c37109c500be67d0dea6b36bf7337bbd26e763cd",
+  "sapien_version": "3.0.0b1",
+  "hardware": "NVIDIA A800; at most GPU1 and GPU2 used",
+  "formal_roots": {
+    "local_causal": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/experiments/r22p19/stage2d/local-causal-formal-v2",
+    "closed_loop": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/experiments/r22p19/stage2d/closed-loop-formal-v1",
+    "pre4d_rerun": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/experiments/r22p19/stage2d/pre4d-rerun-v1",
+    "c5_actual_rerun": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/experiments/r22p19/stage2d/closed-loop-c5-actual-v1"
+  },
+  "pai_job_created": false,
+  "evidence_boundary": "privileged RoboTwin/SAPIEN oracle mechanism audit; no learned policy or real robot"
+}

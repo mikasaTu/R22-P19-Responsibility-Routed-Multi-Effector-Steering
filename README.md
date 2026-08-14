@@ -5,8 +5,8 @@ the continuing Stage-2 RoboTwin dual-arm validation.
 
 ## Current result
 
-The current Stage-2C decision is
-**`RESPONSIBILITY_MECHANISM_NOT_SUPPORTED`** with `accepted=false`.
+The current Stage-2D / Step5 decision is
+**`ORACLE_V2_NOT_SUPPORTED`** with `accepted=false` and policy gate `BLOCK`.
 
 - Fresh-prefix independent-process replay reduced every exact-null median,
   P95, and maximum floor to zero; the Stage-2B floor was caused by restoring
@@ -23,11 +23,19 @@ The current Stage-2C decision is
   conditions, and fourteen methods. Correct responsibility beat swapped and
   shuffled in 0/3 stresses; full routing beat conservation-only in 0/3; C13
   improved 0/3 stresses by the preregistered rule.
+- Stage 2D completed 320/320 fresh-process closed-loop cells after its gates
+  failed. Full V2 was -80/-60/-80/-80 success points versus base on
+  clean/T1/T2/T3, while correct versus swapped/shuffled/time-shifted was 0
+  points in every condition. The local causal decision was `LOCAL_NO_GO` and
+  no calibrated stress was eligible.
 - ACT remains blocked. No PAI job, learned estimator, VLA training, deployable
   closed loop, or real-robot result was produced.
 
 Detailed reports:
 
+- [`STEP5_EXPERIMENT_REPORT.md`](stage2_robotwin/stage2d/reports/STEP5_EXPERIMENT_REPORT.md)
+- [`ORACLE_V2_REPORT.md`](stage2_robotwin/stage2d/reports/ORACLE_V2_REPORT.md)
+- [`CURRENT_STAGE2D_DECISION.json`](stage2_robotwin/stage2d/reports/CURRENT_STAGE2D_DECISION.json)
 - [`STEP4_EXPERIMENT_REPORT.md`](stage2_robotwin/stage2c/reports/STEP4_EXPERIMENT_REPORT.md)
 - [`CLOSED_LOOP_REPORT.md`](stage2_robotwin/stage2c/reports/CLOSED_LOOP_REPORT.md)
 - [`MECHANISM_REVERSE_EXPLANATION.md`](stage2_robotwin/stage2c/reports/MECHANISM_REVERSE_EXPLANATION.md)

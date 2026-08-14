@@ -1,0 +1,30 @@
+{
+  "schema": "r22p19.stage2d.final_decision.v1",
+  "stage": "Stage 2D / Step5",
+  "decision": "ORACLE_V2_NOT_SUPPORTED",
+  "mechanism_decision": "TAKEOVER_CAPACITY_V2_NOT_SUPPORTED",
+  "policy_gate": "BLOCK",
+  "accepted": false,
+  "analytic_decision": "PARTIAL_ANALYTIC_ALLOCATOR_GO",
+  "capacity_decision": "NO_ELIGIBLE_STRESS",
+  "local_causal_decision": "LOCAL_NO_GO",
+  "closed_loop": {
+    "expected_cells": 320,
+    "completed_cells": 320,
+    "runtime_failures": 0,
+    "full_vs_base_success_pp": {
+      "clean": -80.0,
+      "T1_gain_0p4": -60.0,
+      "T2_accel_high": -80.0,
+      "T3_com_30mm": -80.0
+    },
+    "correct_vs_each_wrong_target_success_pp": 0.0
+  },
+  "novelty_reviews": [
+    "BLOCK_FULL_V2_NOVELTY_INTERPRETATION",
+    "MECHANISM_IDENTIFIABILITY_NOT_ESTABLISHED"
+  ],
+  "pai_job_created": false,
+  "learned_policy_trained": false,
+  "real_robot_evidence": false
+}

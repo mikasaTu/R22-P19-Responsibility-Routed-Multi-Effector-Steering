@@ -1,0 +1,37 @@
+experiment: R22-P19-Stage2D
+task: active_handover_block
+seeds: [2, 3, 5, 6, 7]
+methods: [C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15]
+conditions:
+  clean:
+    parameters: {}
+    active_amplitude_m: 0.015
+    capacity_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2d/active-capacity-clean-v1
+    eligible: false
+    reason: clean_reference
+  T1_gain_0p4:
+    parameters: {receiver_gain: 0.4}
+    active_amplitude_m: 0.015
+    capacity_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2d/capacity-heldout-h200-v1/gain_0p4
+    eligible: false
+    reason: INELIGIBLE_STRESS_OVERRIDE
+  T2_accel_high:
+    parameters: {}
+    active_amplitude_m: 0.025
+    capacity_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2d/capacity-heldout-h200-v1/accel_high
+    eligible: false
+    reason: INELIGIBLE_STRESS_OVERRIDE
+  T3_com_30mm:
+    parameters: {object_com_shift_mm: 30}
+    active_amplitude_m: 0.015
+    capacity_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2d/capacity-heldout-h200-v1/com_30mm
+    eligible: false
+    reason: INELIGIBLE_STRESS_OVERRIDE
+operator:
+  correction_amplitude_m: 0.012
+  max_share_slew: 0.08
+  refresh_stride: 25
+evidence_boundary: simulator_replay_with_privileged_persisted_capacity
+continue_after_failed_gate: true
+pai_job_created: false
+

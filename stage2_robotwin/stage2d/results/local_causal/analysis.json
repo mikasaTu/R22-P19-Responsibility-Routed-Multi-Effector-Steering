@@ -1,0 +1,101 @@
+{
+  "accepted": false,
+  "decision": "LOCAL_NO_GO",
+  "gates": {
+    "action_modification_5_to_30pct": false,
+    "contact_unchanged": true,
+    "correct_beats_shuffled_shifted": false,
+    "effect_exceeds_null_floor": true,
+    "internal_not_above_base": true,
+    "net_error_le_0p10": false,
+    "receiver_movement_ge_0p15": true,
+    "swapped_opposite_rate_ge_0p8": true,
+    "tracking_mae_le_0p15": false
+  },
+  "pai_job_created": false,
+  "rows": 225,
+  "summary": {
+    "L0": {
+      "action_modification_ratio": 0.0,
+      "contact": 1.0,
+      "movement": 0.0,
+      "net_error": 0.0,
+      "states": 25,
+      "synergy": 3.6095638723822055e-05,
+      "target_mae": 0.40532576154439204
+    },
+    "L1": {
+      "action_modification_ratio": 0.6198168854860954,
+      "contact": 1.0,
+      "movement": -0.04403739129872225,
+      "net_error": 0.1799519892545299,
+      "states": 25,
+      "synergy": 4.238471166423021e-05,
+      "target_mae": 0.2127013052375442
+    },
+    "L2": {
+      "action_modification_ratio": 0.6198168854860954,
+      "contact": 1.0,
+      "movement": -0.04403739129872225,
+      "net_error": 0.1799519892545299,
+      "states": 25,
+      "synergy": 4.238471166423021e-05,
+      "target_mae": 0.2127013052375442
+    },
+    "L3": {
+      "action_modification_ratio": 0.7910568799030525,
+      "contact": 1.0,
+      "movement": -0.20678814098464457,
+      "net_error": 0.25133855398576727,
+      "states": 25,
+      "synergy": 9.819597157683557e-06,
+      "target_mae": 0.16146237944025252
+    },
+    "L4": {
+      "action_modification_ratio": 0.7053796205280797,
+      "contact": 1.0,
+      "movement": 0.042978488789675515,
+      "net_error": 0.3072474532689175,
+      "states": 25,
+      "synergy": 3.3094089341085554e-05,
+      "target_mae": 0.5961980335715351
+    },
+    "L5": {
+      "action_modification_ratio": 0.7910568799030525,
+      "contact": 1.0,
+      "movement": -0.20678814098464457,
+      "net_error": 0.25133855398576727,
+      "states": 25,
+      "synergy": 9.819597157683557e-06,
+      "target_mae": 0.16146237944025252
+    },
+    "L6": {
+      "action_modification_ratio": 0.7540736831265403,
+      "contact": 1.0,
+      "movement": -0.142357490514581,
+      "net_error": 0.3864089717715261,
+      "states": 25,
+      "synergy": 3.982036626521099e-05,
+      "target_mae": 0.28933650822741963
+    },
+    "L7": {
+      "action_modification_ratio": 1.0216656995006264,
+      "contact": 1.0,
+      "movement": 0.07374469489416302,
+      "net_error": 0.5677420029976706,
+      "states": 25,
+      "synergy": 3.293136876500045e-05,
+      "target_mae": 0.07564224293104763
+    },
+    "L8": {
+      "action_modification_ratio": 0.6443381386066663,
+      "contact": 1.0,
+      "movement": -0.1814532814892851,
+      "net_error": 0.20591071056587942,
+      "states": 25,
+      "synergy": 2.131992488302415e-05,
+      "target_mae": 0.14727429083097376
+    }
+  },
+  "swapped_opposite_rate": 0.92
+}

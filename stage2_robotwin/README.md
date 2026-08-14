@@ -1,11 +1,11 @@
 # Stage 2: RoboTwin bimanual oracle validation
 
 This subtree continues R22-P19 on the dual-arm `handover_block` simulator task.
-The current Stage 2C outcome is `RESPONSIBILITY_MECHANISM_NOT_SUPPORTED`; see
-the [`Step4 report`](stage2c/reports/STEP4_EXPERIMENT_REPORT.md),
-[`mechanism explanation`](stage2c/reports/MECHANISM_REVERSE_EXPLANATION.md), and
-[`machine decision`](stage2c/reports/CURRENT_STAGE2C_DECISION.json). Historical
-Stage 2A/2B evidence and negative lineage remain unchanged.
+The current Stage 2D outcome is `ORACLE_V2_NOT_SUPPORTED`; see the
+[`Step5 report`](stage2d/reports/STEP5_EXPERIMENT_REPORT.md),
+[`mechanism explanation`](stage2d/reports/MECHANISM_REVERSE_EXPLANATION.md), and
+[`machine decision`](stage2d/reports/CURRENT_STAGE2D_DECISION.json). Historical
+Stage 2A/2B/2C evidence and negative lineage remain unchanged.
 
 ## Reproduce the bounded runs on dev14
 
@@ -94,3 +94,14 @@ PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/pytho
 
 The current gate explicitly blocks ACT and PAI training because correct
 responsibility did not beat wrong/shuffled controls or conservation-only.
+
+## Reproduce Stage 2D compact checks
+
+Stage 2D's external-runtime contract, retained CPFS roots, 4D allocator,
+same-state donor-fade audit, local four-branch audit, and 320-cell launcher are
+documented in [`stage2d/README.md`](stage2d/README.md). Run its unit tests with:
+
+```bash
+PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python \
+  -m pytest -q stage2_robotwin/stage2d/tests
+```

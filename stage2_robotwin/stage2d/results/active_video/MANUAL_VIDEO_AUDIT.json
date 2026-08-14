@@ -1,0 +1,31 @@
+{
+  "decision": "ACTIVE_VIDEO_AUDIT_PASS",
+  "videos_reviewed": 10,
+  "seeds": [0, 1, 2, 3, 5, 6, 7, 8, 9, 10],
+  "sampling": "first, middle, and last overlap frame from every video",
+  "checks": {
+    "object_visible_all_samples": "10/10",
+    "bimanual_overlap_visible_first_or_middle": "10/10",
+    "object_pose_changes_visible": "10/10",
+    "no_visible_drop_in_overlap": "10/10",
+    "donor_exit_progression_visible": "10/10"
+  },
+  "numeric_cross_check": {
+    "active_valid": "10/10",
+    "task_success_after_active_reference": "10/10",
+    "mean_moving_fraction": 0.8124057851628533,
+    "mean_speed_mps": 0.0057732676174790405,
+    "mean_overlap_contact_fraction": 0.9524851438158711
+  },
+  "fresh_process_repeat_seed": 2,
+  "fresh_process_repeat_exact_equal": [
+    "active_window",
+    "overlap_contact_fraction",
+    "task_success_after_active_reference"
+  ],
+  "montage": "active_overlap_montage.jpg",
+  "limitation": "videos cover the overlap window; full-episode placement success is taken from numeric replay",
+  "accepted": false,
+  "pai_job_created": false
+}
+

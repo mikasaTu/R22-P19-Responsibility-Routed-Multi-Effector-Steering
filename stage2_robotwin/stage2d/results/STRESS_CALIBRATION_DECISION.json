@@ -1,0 +1,15 @@
+{
+  "decision": "NO_ELIGIBLE_STRESS",
+  "continue_by_user_override": true,
+  "horizon_50_states": 96,
+  "horizon_50_capable_rate": 1.0,
+  "horizon_200_states": 70,
+  "horizon_200_capable_rate": 0.9857142857142858,
+  "capacity_auroc_horizon_200": 0.4782608695652174,
+  "phase_auroc_horizon_200": 0.9057971014492754,
+  "eligible_stresses": [],
+  "diagnostic_overrides": ["T1_gain_0p4", "T2_accel_high", "T3_com_30mm"],
+  "accepted": false,
+  "pai_job_created": false
+}
+

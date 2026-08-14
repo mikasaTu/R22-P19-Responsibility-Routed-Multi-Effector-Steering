@@ -1,0 +1,25 @@
+stage: "2D"
+frozen_parent_commit: "e31e1ddc78e8ffa22c5dba51d2988151ec7f755f"
+seeds: {start: 0, count: 256}
+analytic:
+  effects: [task_parallel, lateral, vertical_support, yaw]
+  baselines: [A0, A1, A2, A3, A4, A5, A6, A7]
+  gates:
+    tracking_mae_max: 0.15
+    net_effect_relative_error_max: 0.05
+    feasibility_min: 0.90
+    require_correct_beats_swapped_random: true
+    require_swapped_opposite_direction: true
+    require_internal_not_above_conservation: true
+    require_v1_fails_transfer: true
+execution:
+  continue_after_failed_gate: true
+  downstream_failure_label: INELIGIBLE_UPSTREAM_GATE
+  dev14_max_gpus: 2
+  prefer_cpu: true
+  pai_allowed: false
+  learned_policy_allowed_before_oracle_gate: false
+publication:
+  target_branch: main
+  preserve_negative_results: true
+

@@ -1,0 +1,26 @@
+{
+  "schema": "r22p19.stage2d.local_causal_decision.v1",
+  "decision": "LOCAL_NO_GO",
+  "accepted": false,
+  "seeds": 5,
+  "states_per_seed": 5,
+  "methods": 9,
+  "branches_per_method_state": 4,
+  "method_state_evaluations": 225,
+  "actual_sapien_branches": 900,
+  "l3": {
+    "contribution_movement": -0.206788,
+    "desired_target_mae": 0.161462,
+    "net_effect_relative_error": 0.251339,
+    "contact_retention": 1.0,
+    "internal_force_proxy": 0.0000098196,
+    "action_modification_ratio": 0.791057
+  },
+  "failed_gates": [
+    "desired_target_mae",
+    "net_effect_relative_error",
+    "correct_vs_shuffled_or_time_shifted",
+    "actual_joint_action_modification"
+  ],
+  "pai_job_created": false
+}

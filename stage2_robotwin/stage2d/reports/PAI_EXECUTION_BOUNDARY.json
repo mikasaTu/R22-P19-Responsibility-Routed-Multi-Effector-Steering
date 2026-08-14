@@ -1,0 +1,17 @@
+{
+  "pai_job_created": false,
+  "reason": "Stage 2D resource contract explicitly says no PAI and no learned policy before ORACLE_V2_SUPPORTED",
+  "pai_vla_training_skill_action": "validated prohibition; no launch command emitted",
+  "pai_spot_autoresume_skill_action": "not applicable because no PAI job is authorized",
+  "pai_web_orchestrator_skill_action": "no submit, clone, monitor, stop, or delete action",
+  "learned_models_trained": [],
+  "gpu_contract": {
+    "host": "dev14",
+    "maximum_distinct_gpus": 2,
+    "indices": [1, 2],
+    "model": "NVIDIA A800-SXM4-80GB",
+    "purpose": "SAPIEN rendering and physics only"
+  },
+  "accepted": false
+}
+

@@ -1,0 +1,1566 @@
+{
+  "accepted": false,
+  "all_frozen_stresses_eligible": false,
+  "all_preregistered_candidates_tested": true,
+  "candidate_count_including_clean": 24,
+  "candidates": [
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460007011890411,
+        "median_peak_object_angular_velocity": 1.2315723896026611,
+        "median_peak_object_linear_jerk": 171.74398040771484,
+        "median_peak_relative_slip_m": 0.08468046835059385,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.21275778038090137,
+        "peak_object_linear_jerk": -0.0005892719978701804,
+        "peak_relative_slip_m": -0.0012843683882300641
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 1.0,
+        "peak_object_angular_velocity": 1.0,
+        "peak_object_linear_jerk": 1.0,
+        "peak_relative_slip_m": 1.0
+      },
+      "eligible": false,
+      "factor": "clean",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460057377815247,
+        "median_peak_object_angular_velocity": 1.493598997592926,
+        "median_peak_object_linear_jerk": 171.84518432617188,
+        "median_peak_relative_slip_m": 0.08478922926724387,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0,
+      "maximum_disturbance_ratio_vs_clean": 1.0,
+      "name": "clean",
+      "parameters": {},
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460052013397217,
+        "median_peak_object_angular_velocity": 1.7010427713394165,
+        "median_peak_object_linear_jerk": 171.57981872558594,
+        "median_peak_relative_slip_m": 0.08428706129392213,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.10088619120899497,
+        "peak_object_linear_jerk": -0.003142959921847313,
+        "peak_relative_slip_m": 0.005216311017363364
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.3811959294477358,
+        "peak_object_linear_jerk": 0.9990441488444649,
+        "peak_relative_slip_m": 0.9953542172789723
+      },
+      "eligible": false,
+      "factor": "receiver_gain",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460010290145874,
+        "median_peak_object_angular_velocity": 1.5294310450553894,
+        "median_peak_object_linear_jerk": 172.11908721923828,
+        "median_peak_relative_slip_m": 0.08384739376747347,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": true,
+      "maximum_continuous_relative_reduction": 0.10088619120899497,
+      "maximum_disturbance_ratio_vs_clean": 1.3811959294477358,
+      "name": "receiver_gain_0p7",
+      "parameters": {
+        "receiver_gain": 0.7
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460028171539307,
+        "median_peak_object_angular_velocity": 1.5647188425064087,
+        "median_peak_object_linear_jerk": 172.7159194946289,
+        "median_peak_relative_slip_m": 0.08278011053607001,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.0,
+        "peak_object_linear_jerk": 0.0001345070356897744,
+        "peak_relative_slip_m": -0.002706235536959976
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.2705049704883606,
+        "peak_object_linear_jerk": 1.005659232332957,
+        "peak_relative_slip_m": 0.9775584871985358
+      },
+      "eligible": false,
+      "factor": "receiver_gain",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460007607936859,
+        "median_peak_object_angular_velocity": 1.5647188425064087,
+        "median_peak_object_linear_jerk": 172.69268798828125,
+        "median_peak_relative_slip_m": 0.0830041330129562,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0001345070356897744,
+      "maximum_disturbance_ratio_vs_clean": 1.2705049704883606,
+      "name": "receiver_gain_0p55",
+      "parameters": {
+        "receiver_gain": 0.55
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460004031658173,
+        "median_peak_object_angular_velocity": 1.4591056108474731,
+        "median_peak_object_linear_jerk": 171.76426696777344,
+        "median_peak_relative_slip_m": 0.08354296104427358,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.0024125674588731166,
+        "peak_object_linear_jerk": -7.06243360090925e-06,
+        "peak_relative_slip_m": 0.0016591864681122779
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.184750180473127,
+        "peak_object_linear_jerk": 1.0001181209379824,
+        "peak_relative_slip_m": 0.9865670640647526
+      },
+      "eligible": false,
+      "factor": "receiver_gain",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460045158863068,
+        "median_peak_object_angular_velocity": 1.462625801563263,
+        "median_peak_object_linear_jerk": 171.7654800415039,
+        "median_peak_relative_slip_m": 0.0834043476938029,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0016591864681122779,
+      "maximum_disturbance_ratio_vs_clean": 1.184750180473127,
+      "name": "receiver_gain_0p4",
+      "parameters": {
+        "receiver_gain": 0.4
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459998965263367,
+        "median_peak_object_angular_velocity": 1.2268211841583252,
+        "median_peak_object_linear_jerk": 171.76616668701172,
+        "median_peak_relative_slip_m": 0.08436124795704786,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.5608038014941132,
+        "peak_object_linear_jerk": -0.0027745285266971473,
+        "peak_relative_slip_m": -0.004470974209181467
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.9961421630718201,
+        "peak_object_linear_jerk": 1.0001291822819305,
+        "peak_relative_slip_m": 0.9962302948984132
+      },
+      "eligible": false,
+      "factor": "receiver_delay_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460029065608978,
+        "median_peak_object_angular_velocity": 1.9148271679878235,
+        "median_peak_object_linear_jerk": 172.24273681640625,
+        "median_peak_relative_slip_m": 0.08473842492091818,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0,
+      "maximum_disturbance_ratio_vs_clean": 1.0001291822819305,
+      "name": "receiver_delay_steps_4",
+      "parameters": {
+        "receiver_delay_steps": 4
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459978997707367,
+        "median_peak_object_angular_velocity": 1.7932777404785156,
+        "median_peak_object_linear_jerk": 171.98441314697266,
+        "median_peak_relative_slip_m": 0.08430037022017697,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.2667143363497321,
+        "peak_object_linear_jerk": 0.0005338398527464384,
+        "peak_relative_slip_m": -0.007508117288698594
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.4560879698326754,
+        "peak_object_linear_jerk": 1.0013999485669718,
+        "peak_relative_slip_m": 0.9955113837013372
+      },
+      "eligible": false,
+      "factor": "receiver_delay_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460009098052979,
+        "median_peak_object_angular_velocity": 1.3149848580360413,
+        "median_peak_object_linear_jerk": 171.8926010131836,
+        "median_peak_relative_slip_m": 0.08493330728727078,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": true,
+      "maximum_continuous_relative_reduction": 0.2667143363497321,
+      "maximum_disturbance_ratio_vs_clean": 1.4560879698326754,
+      "name": "receiver_delay_steps_8",
+      "parameters": {
+        "receiver_delay_steps": 8
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460001647472382,
+        "median_peak_object_angular_velocity": 1.8690628409385681,
+        "median_peak_object_linear_jerk": 170.12891387939453,
+        "median_peak_relative_slip_m": 0.08440443705535983,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.2467068105918963,
+        "peak_object_linear_jerk": -1.946263660338066e-05,
+        "peak_relative_slip_m": -0.008245715600874011
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.5176232081181835,
+        "peak_object_linear_jerk": 0.9905960807215124,
+        "peak_relative_slip_m": 0.9967403192186987
+      },
+      "eligible": false,
+      "factor": "receiver_delay_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460024893283844,
+        "median_peak_object_angular_velocity": 2.330173373222351,
+        "median_peak_object_linear_jerk": 170.1322250366211,
+        "median_peak_relative_slip_m": 0.0851004120387702,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0,
+      "maximum_disturbance_ratio_vs_clean": 1.5176232081181835,
+      "name": "receiver_delay_steps_12",
+      "parameters": {
+        "receiver_delay_steps": 12
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460029363632202,
+        "median_peak_object_angular_velocity": 1.7404096722602844,
+        "median_peak_object_linear_jerk": 171.671142578125,
+        "median_peak_relative_slip_m": 0.08486848313864787,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": -13103716238978.904,
+        "peak_object_angular_velocity": -2.496380127023217,
+        "peak_object_linear_jerk": -0.0812356008191534,
+        "peak_relative_slip_m": -0.2428428013664255
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.4131606773206309,
+        "peak_object_linear_jerk": 0.9995758929691921,
+        "peak_relative_slip_m": 1.002220285169841
+      },
+      "eligible": false,
+      "factor": "receiver_friction",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 13.103716238978905,
+        "median_min_object_height_m": 0.8479166924953461,
+        "median_peak_object_angular_velocity": 6.085133790969849,
+        "median_peak_object_linear_jerk": 185.61695098876953,
+        "median_peak_relative_slip_m": 0.10547818333175636,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": -0.0812356008191534,
+      "maximum_disturbance_ratio_vs_clean": 1.4131606773206309,
+      "name": "receiver_friction_0p7",
+      "parameters": {
+        "receiver_friction": 0.7
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460023105144501,
+        "median_peak_object_angular_velocity": 1.8845707178115845,
+        "median_peak_object_linear_jerk": 171.78543853759766,
+        "median_peak_relative_slip_m": 0.08518980693085235,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.322394153935198,
+        "peak_object_linear_jerk": -0.000119735687910173,
+        "peak_relative_slip_m": -0.0011154466538075899
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.5302151410032816,
+        "peak_object_linear_jerk": 1.0002413949518603,
+        "peak_relative_slip_m": 1.006014829513575
+      },
+      "eligible": false,
+      "factor": "receiver_friction",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.846001923084259,
+        "median_peak_object_angular_velocity": 1.27699613571167,
+        "median_peak_object_linear_jerk": 171.8060073852539,
+        "median_peak_relative_slip_m": 0.08528483161593188,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": true,
+      "maximum_continuous_relative_reduction": 0.322394153935198,
+      "maximum_disturbance_ratio_vs_clean": 1.5302151410032816,
+      "name": "receiver_friction_0p5",
+      "parameters": {
+        "receiver_friction": 0.5
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460415899753571,
+        "median_peak_object_angular_velocity": 1.6027148365974426,
+        "median_peak_object_linear_jerk": 171.5391387939453,
+        "median_peak_relative_slip_m": 0.08608591599277601,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": -566258749609.6307,
+        "peak_object_angular_velocity": -0.3533799373597317,
+        "peak_object_linear_jerk": 0.0005577749631315241,
+        "peak_relative_slip_m": -0.008675866242561291
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.3013565829569484,
+        "peak_object_linear_jerk": 0.9988072850455472,
+        "peak_relative_slip_m": 1.016597069779578
+      },
+      "eligible": false,
+      "factor": "receiver_friction",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.5662587496096307,
+        "median_min_object_height_m": 0.8460303246974945,
+        "median_peak_object_angular_velocity": 2.1690821051597595,
+        "median_peak_object_linear_jerk": 171.4434585571289,
+        "median_peak_relative_slip_m": 0.0868327858852977,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0005577749631315241,
+      "maximum_disturbance_ratio_vs_clean": 1.3013565829569484,
+      "name": "receiver_friction_0p3",
+      "parameters": {
+        "receiver_friction": 0.3
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8461066782474518,
+        "median_peak_object_angular_velocity": 1.7518086433410645,
+        "median_peak_object_linear_jerk": 171.382080078125,
+        "median_peak_relative_slip_m": 0.08539248360272245,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.10261012480507288,
+        "peak_object_linear_jerk": -0.0025925737306280367,
+        "peak_relative_slip_m": 0.01022809822560195
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.4224163014130624,
+        "peak_object_linear_jerk": 0.9978927917663798,
+        "peak_relative_slip_m": 1.0084082583150191
+      },
+      "eligible": false,
+      "factor": "donor_release_advance_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460023105144501,
+        "median_peak_object_angular_velocity": 1.5720553398132324,
+        "median_peak_object_linear_jerk": 171.82640075683594,
+        "median_peak_relative_slip_m": 0.0845190808927057,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": true,
+      "maximum_continuous_relative_reduction": 0.10261012480507288,
+      "maximum_disturbance_ratio_vs_clean": 1.4224163014130624,
+      "name": "donor_release_advance_steps_10",
+      "parameters": {
+        "donor_release_advance_steps": 10
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460586965084076,
+        "median_peak_object_angular_velocity": 1.9788429141044617,
+        "median_peak_object_linear_jerk": 171.7449188232422,
+        "median_peak_relative_slip_m": 0.08541207236776907,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.03713664146797502,
+        "peak_object_linear_jerk": -0.0025565780209187085,
+        "peak_relative_slip_m": -0.0003282568035319688
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.6067613489962131,
+        "peak_object_linear_jerk": 1.000005464037372,
+        "peak_relative_slip_m": 1.00863958397285
+      },
+      "eligible": false,
+      "factor": "donor_release_advance_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.846000462770462,
+        "median_peak_object_angular_velocity": 1.9053553342819214,
+        "median_peak_object_linear_jerk": 172.18399810791016,
+        "median_peak_relative_slip_m": 0.08544010946162756,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.03713664146797502,
+      "maximum_disturbance_ratio_vs_clean": 1.6067613489962131,
+      "name": "donor_release_advance_steps_20",
+      "parameters": {
+        "donor_release_advance_steps": 20
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460938930511475,
+        "median_peak_object_angular_velocity": 1.4558029770851135,
+        "median_peak_object_linear_jerk": 171.8135223388672,
+        "median_peak_relative_slip_m": 0.08492838589106945,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.7564977138975532,
+        "peak_object_linear_jerk": -0.0011813529537509466,
+        "peak_relative_slip_m": -0.005625595514178663
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.182068540489768,
+        "peak_object_linear_jerk": 1.0004049162654043,
+        "peak_relative_slip_m": 1.0029276826794247
+      },
+      "eligible": false,
+      "factor": "donor_release_advance_steps",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460900485515594,
+        "median_peak_object_angular_velocity": 2.557114601135254,
+        "median_peak_object_linear_jerk": 172.01649475097656,
+        "median_peak_relative_slip_m": 0.08540615863776468,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0,
+      "maximum_disturbance_ratio_vs_clean": 1.182068540489768,
+      "name": "donor_release_advance_steps_30",
+      "parameters": {
+        "donor_release_advance_steps": 30
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460036516189575,
+        "median_peak_object_angular_velocity": 1.37913578748703,
+        "median_peak_object_linear_jerk": 170.57301330566406,
+        "median_peak_relative_slip_m": 0.08898199871741434,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.2186212335269782,
+        "peak_object_linear_jerk": 0.0031340482005332835,
+        "peak_relative_slip_m": -0.00645759221153145
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.1198170721673752,
+        "peak_object_linear_jerk": 0.9931819030904551,
+        "peak_relative_slip_m": 1.0507971962201639
+      },
+      "eligible": false,
+      "factor": "receiver_grasp_offset_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460955321788788,
+        "median_peak_object_angular_velocity": 1.680644154548645,
+        "median_peak_object_linear_jerk": 170.0384292602539,
+        "median_peak_relative_slip_m": 0.08955660817929842,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0031340482005332835,
+      "maximum_disturbance_ratio_vs_clean": 1.1198170721673752,
+      "name": "receiver_grasp_offset_mm_5",
+      "parameters": {
+        "receiver_grasp_offset_mm": 5
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460058867931366,
+        "median_peak_object_angular_velocity": 1.5097066760063171,
+        "median_peak_object_linear_jerk": 170.46263885498047,
+        "median_peak_relative_slip_m": 0.0923013569970332,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.12937281559339364,
+        "peak_object_linear_jerk": 0.010710526606709906,
+        "peak_relative_slip_m": 7.357281386000748e-05
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.2258367342039795,
+        "peak_object_linear_jerk": 0.9925392345647719,
+        "peak_relative_slip_m": 1.089995825423253
+      },
+      "eligible": false,
+      "factor": "receiver_grasp_offset_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460015654563904,
+        "median_peak_object_angular_velocity": 1.7050216794013977,
+        "median_peak_object_linear_jerk": 168.63689422607422,
+        "median_peak_relative_slip_m": 0.09229456612647582,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.010710526606709906,
+      "maximum_disturbance_ratio_vs_clean": 1.2258367342039795,
+      "name": "receiver_grasp_offset_mm_10",
+      "parameters": {
+        "receiver_grasp_offset_mm": 10
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460538387298584,
+        "median_peak_object_angular_velocity": 1.2927681803703308,
+        "median_peak_object_linear_jerk": 171.5934066772461,
+        "median_peak_relative_slip_m": 0.09229087910728428,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": -51982683319461.06,
+        "peak_object_angular_velocity": -6.288367296475996,
+        "peak_object_linear_jerk": -0.6062070088107331,
+        "peak_relative_slip_m": -0.46956888579664174
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.0496891545184877,
+        "peak_object_linear_jerk": 0.9991232663286871,
+        "peak_relative_slip_m": 1.0898720909901187
+      },
+      "eligible": false,
+      "factor": "receiver_grasp_offset_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 0.5,
+        "median_donor_residual_influence_impulse_sum": 51.98268331946106,
+        "median_min_object_height_m": 0.9233278334140778,
+        "median_peak_object_angular_velocity": 9.4221693277359,
+        "median_peak_object_linear_jerk": 275.6145324707031,
+        "median_peak_relative_slip_m": 0.13562780437888433,
+        "premature_release_rate": 0.5,
+        "receiver_takeover_failure_rate": 0.5,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 0.5
+      },
+      "handover_delta_full_minus_base": -0.5,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": -0.46956888579664174,
+      "maximum_disturbance_ratio_vs_clean": 1.0898720909901187,
+      "name": "receiver_grasp_offset_mm_15",
+      "parameters": {
+        "receiver_grasp_offset_mm": 15
+      },
+      "success_delta_full_minus_base": -0.5
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459990322589874,
+        "median_peak_object_angular_velocity": 1.9349738955497742,
+        "median_peak_object_linear_jerk": 171.72801971435547,
+        "median_peak_relative_slip_m": 0.0851833115828255,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.09970485291546885,
+        "peak_object_linear_jerk": 0.00017610940819197526,
+        "peak_relative_slip_m": 0.00032308188029829337
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.5711410160583816,
+        "peak_object_linear_jerk": 0.9999070669416099,
+        "peak_relative_slip_m": 1.0059381253083033
+      },
+      "eligible": false,
+      "factor": "object_com_shift_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.846002072095871,
+        "median_peak_object_angular_velocity": 2.127900183200836,
+        "median_peak_object_linear_jerk": 171.6977767944336,
+        "median_peak_relative_slip_m": 0.08515579039834928,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.00032308188029829337,
+      "maximum_disturbance_ratio_vs_clean": 1.5711410160583816,
+      "name": "object_com_shift_mm_10",
+      "parameters": {
+        "object_com_shift_mm": 10
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459983766078949,
+        "median_peak_object_angular_velocity": 2.165998935699463,
+        "median_peak_object_linear_jerk": 171.6628189086914,
+        "median_peak_relative_slip_m": 0.08513788605450001,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.06590075486045022,
+        "peak_object_linear_jerk": -8.92881388685224e-05,
+        "peak_relative_slip_m": 9.235843746007106e-05
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.7587264492006622,
+        "peak_object_linear_jerk": 0.9995274274019342,
+        "peak_relative_slip_m": 1.0054016907654828
+      },
+      "eligible": false,
+      "factor": "object_com_shift_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460041284561157,
+        "median_peak_object_angular_velocity": 2.0232579708099365,
+        "median_peak_object_linear_jerk": 171.6781463623047,
+        "median_peak_relative_slip_m": 0.08513002285237536,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.06590075486045022,
+      "maximum_disturbance_ratio_vs_clean": 1.7587264492006622,
+      "name": "object_com_shift_mm_20",
+      "parameters": {
+        "object_com_shift_mm": 20
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459999859333038,
+        "median_peak_object_angular_velocity": 1.466843068599701,
+        "median_peak_object_linear_jerk": 169.33505249023438,
+        "median_peak_relative_slip_m": 0.08512043017461618,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.10341662988215587,
+        "peak_object_linear_jerk": 0.0004109018014980254,
+        "peak_relative_slip_m": 0.00534151555268673
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.1910327650922286,
+        "peak_object_linear_jerk": 0.9859737272202393,
+        "peak_relative_slip_m": 1.0051955525588356
+      },
+      "eligible": false,
+      "factor": "object_com_shift_mm",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8463738262653351,
+        "median_peak_object_angular_velocity": 1.618539035320282,
+        "median_peak_object_linear_jerk": 169.26547241210938,
+        "median_peak_relative_slip_m": 0.08466575807298708,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.00534151555268673,
+      "maximum_disturbance_ratio_vs_clean": 1.1910327650922286,
+      "name": "object_com_shift_mm_30",
+      "parameters": {
+        "object_com_shift_mm": 30
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460034132003784,
+        "median_peak_object_angular_velocity": 1.9111257195472717,
+        "median_peak_object_linear_jerk": 172.14554595947266,
+        "median_peak_relative_slip_m": 0.08473907878413278,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.011665679922780416,
+        "peak_object_linear_jerk": -0.00039838746369628313,
+        "peak_relative_slip_m": -0.0004822987624049602
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.551777009359436,
+        "peak_object_linear_jerk": 1.0023381637644855,
+        "peak_relative_slip_m": 1.0006921363884795
+      },
+      "eligible": false,
+      "factor": "hidden_authority_gamma",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460079431533813,
+        "median_peak_object_angular_velocity": 1.8888311386108398,
+        "median_peak_object_linear_jerk": 172.21412658691406,
+        "median_peak_relative_slip_m": 0.0847799483369577,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.011665679922780416,
+      "maximum_disturbance_ratio_vs_clean": 1.551777009359436,
+      "name": "hidden_authority_gamma_0p8",
+      "parameters": {
+        "hidden_authority_gamma": 0.8
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460342884063721,
+        "median_peak_object_angular_velocity": 1.8079336881637573,
+        "median_peak_object_linear_jerk": 171.53688049316406,
+        "median_peak_relative_slip_m": 0.08438073611117419,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.24750536510931292,
+        "peak_object_linear_jerk": 0.00037600602961739097,
+        "peak_relative_slip_m": -0.0041085328812274285
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.4679881616597836,
+        "peak_object_linear_jerk": 0.9987941358174002,
+        "peak_relative_slip_m": 0.9964604324319664
+      },
+      "eligible": false,
+      "factor": "hidden_authority_gamma",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459993302822113,
+        "median_peak_object_angular_velocity": 2.255406975746155,
+        "median_peak_object_linear_jerk": 171.47238159179688,
+        "median_peak_relative_slip_m": 0.08472741714002913,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.00037600602961739097,
+      "maximum_disturbance_ratio_vs_clean": 1.4679881616597836,
+      "name": "hidden_authority_gamma_0p6",
+      "parameters": {
+        "hidden_authority_gamma": 0.6
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8459998071193695,
+        "median_peak_object_angular_velocity": 1.2270449995994568,
+        "median_peak_object_linear_jerk": 172.66580200195312,
+        "median_peak_relative_slip_m": 0.08372819421319791,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.10141700838500216,
+        "peak_object_linear_jerk": 0.00014161582194706777,
+        "peak_relative_slip_m": 0.0001327759833472952
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.9963238945258711,
+        "peak_object_linear_jerk": 1.0053674171988438,
+        "peak_relative_slip_m": 0.9887545008200316
+      },
+      "eligible": false,
+      "factor": "hidden_authority_gamma",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460007905960083,
+        "median_peak_object_angular_velocity": 1.3514882326126099,
+        "median_peak_object_linear_jerk": 172.64134979248047,
+        "median_peak_relative_slip_m": 0.08371707711987736,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.00014161582194706777,
+      "maximum_disturbance_ratio_vs_clean": 1.0053674171988438,
+      "name": "hidden_authority_gamma_0p4",
+      "parameters": {
+        "hidden_authority_gamma": 0.4
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460326790809631,
+        "median_peak_object_angular_velocity": 1.9405091404914856,
+        "median_peak_object_linear_jerk": 171.66948699951172,
+        "median_peak_relative_slip_m": 0.08489109736674083,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": -0.0024733737737911024,
+        "peak_object_linear_jerk": -0.0007228102956735866,
+        "peak_relative_slip_m": -0.0008828947624284615
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.5756354696434425,
+        "peak_object_linear_jerk": 0.9995662531634222,
+        "peak_relative_slip_m": 1.0024873388190878
+      },
+      "eligible": false,
+      "factor": "two_factor",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460786640644073,
+        "median_peak_object_angular_velocity": 1.9453087449073792,
+        "median_peak_object_linear_jerk": 171.79357147216797,
+        "median_peak_relative_slip_m": 0.08496604727198273,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.0,
+      "maximum_disturbance_ratio_vs_clean": 1.5756354696434425,
+      "name": "two_factor_01__donor_release_advance_steps_20__receiver_friction_0p5",
+      "parameters": {
+        "donor_release_advance_steps": 20,
+        "receiver_friction": 0.5
+      },
+      "success_delta_full_minus_base": 0.0
+    },
+    {
+      "base": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460041284561157,
+        "median_peak_object_angular_velocity": 1.782284438610077,
+        "median_peak_object_linear_jerk": 171.01544189453125,
+        "median_peak_relative_slip_m": 0.08304717165056379,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "base_disturbance_at_least_2x_clean": false,
+      "base_success_in_30_to_80_percent": false,
+      "binary_risk_reduction": 0.0,
+      "continuous_relative_reductions": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 0.007311339518987019,
+        "peak_object_linear_jerk": 0.0005842428594423032,
+        "peak_relative_slip_m": -0.0003603234806151054
+      },
+      "disturbance_ratios_vs_clean": {
+        "donor_residual_influence_impulse_sum": 0.0,
+        "peak_object_angular_velocity": 1.4471617370255356,
+        "peak_object_linear_jerk": 0.9957579968074918,
+        "peak_relative_slip_m": 0.9807122382310417
+      },
+      "eligible": false,
+      "factor": "two_factor",
+      "full": {
+        "completed_seeds": 2,
+        "drop_rate": 0.0,
+        "handover_completion_rate": 1.0,
+        "median_donor_residual_influence_impulse_sum": 0.0,
+        "median_min_object_height_m": 0.8460023403167725,
+        "median_peak_object_angular_velocity": 1.7692535519599915,
+        "median_peak_object_linear_jerk": 170.91552734375,
+        "median_peak_relative_slip_m": 0.08307709549650816,
+        "premature_release_rate": 0.0,
+        "receiver_takeover_failure_rate": 0.0,
+        "seeds": [
+          0,
+          1
+        ],
+        "success_rate": 1.0
+      },
+      "handover_delta_full_minus_base": 0.0,
+      "improvable": false,
+      "maximum_continuous_relative_reduction": 0.007311339518987019,
+      "maximum_disturbance_ratio_vs_clean": 1.4471617370255356,
+      "name": "two_factor_02__receiver_delay_steps_8__receiver_gain_0p55",
+      "parameters": {
+        "receiver_delay_steps": 8,
+        "receiver_gain": 0.55
+      },
+      "success_delta_full_minus_base": 0.0
+    }
+  ],
+  "clean": {
+    "C0": {
+      "completed_seeds": 2,
+      "drop_rate": 0.0,
+      "handover_completion_rate": 1.0,
+      "median_donor_residual_influence_impulse_sum": 0.0,
+      "median_min_object_height_m": 0.8460007011890411,
+      "median_peak_object_angular_velocity": 1.2315723896026611,
+      "median_peak_object_linear_jerk": 171.74398040771484,
+      "median_peak_relative_slip_m": 0.08468046835059385,
+      "premature_release_rate": 0.0,
+      "receiver_takeover_failure_rate": 0.0,
+      "seeds": [
+        0,
+        1
+      ],
+      "success_rate": 1.0
+    },
+    "C13": {
+      "completed_seeds": 2,
+      "drop_rate": 0.0,
+      "handover_completion_rate": 1.0,
+      "median_donor_residual_influence_impulse_sum": 0.0,
+      "median_min_object_height_m": 0.8460057377815247,
+      "median_peak_object_angular_velocity": 1.493598997592926,
+      "median_peak_object_linear_jerk": 171.84518432617188,
+      "median_peak_relative_slip_m": 0.08478922926724387,
+      "premature_release_rate": 0.0,
+      "receiver_takeover_failure_rate": 0.0,
+      "seeds": [
+        0,
+        1
+      ],
+      "success_rate": 1.0
+    }
+  },
+  "completed_cells": 96,
+  "config_sha256": "c530b6435ef3e108efe00cefb7c892abf0046c7bdca16621eb2e191de0b7b10d",
+  "decision": "DIAGNOSTIC_STRESSES_FROZEN_WITH_ELIGIBILITY_FAILURE",
+  "expected_cells": 96,
+  "frozen_selection": {
+    "S1_hidden_authority_mismatch": {
+      "base_success_rate": 1.0,
+      "eligible": false,
+      "improvable": false,
+      "maximum_disturbance_ratio_vs_clean": 1.551777009359436,
+      "source_candidate": "hidden_authority_gamma_0p8"
+    },
+    "S2_premature_release_risk": {
+      "base_success_rate": 1.0,
+      "eligible": false,
+      "improvable": true,
+      "maximum_disturbance_ratio_vs_clean": 1.4224163014130624,
+      "source_candidate": "donor_release_advance_steps_10"
+    },
+    "S3_contact_quality_degradation": {
+      "base_success_rate": 1.0,
+      "eligible": false,
+      "improvable": true,
+      "maximum_disturbance_ratio_vs_clean": 1.5302151410032816,
+      "source_candidate": "receiver_friction_0p5"
+    }
+  },
+  "methods": [
+    "C0",
+    "C13"
+  ],
+  "nonclean_candidate_count": 23,
+  "pai_job_created": false,
+  "status": "COMPLETE"
+}

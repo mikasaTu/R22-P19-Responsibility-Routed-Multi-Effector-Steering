@@ -1,0 +1,29 @@
+{
+  "accepted": false,
+  "criteria": {
+    "at_least_two_stress_conditions_improve": false,
+    "clean_degradation_at_most_3pp": true,
+    "complete_448_cell_matrix": true,
+    "correct_beats_swapped_and_shuffled_in_at_least_two_stresses": false,
+    "correct_control_stress_count": 0,
+    "effect_exceeds_null_floor_in_at_least_two_stresses": false,
+    "effect_exceeds_null_stress_count": 1,
+    "fresh_prefix_null_substrate_usable": true,
+    "full_beats_conservation_only_in_at_least_two_stresses": false,
+    "full_vs_conservation_stress_count": 0,
+    "natural_stable_or_hidden_authority_valid": false,
+    "operator_not_near_null": false,
+    "oracle_branch_budget_equal_where_applicable": true
+  },
+  "decision": "RESPONSIBILITY_MECHANISM_NOT_SUPPORTED",
+  "evidence_boundary": "RoboTwin simulator privileged oracle; not deployable",
+  "follow_up_ACT_gate": "BLOCK",
+  "pai_job_created": false,
+  "subdecisions": {
+    "local_operator_gate": "RESPONSIBILITY_NOT_CAUSAL",
+    "natural_responsibility": "RESPONSIBILITY_UNSTABLE",
+    "replay_noise": "USABLE",
+    "stress_calibration": "DIAGNOSTIC_STRESSES_FROZEN_WITH_ELIGIBILITY_FAILURE"
+  },
+  "user_override_completed_downstream_experiments_despite_gates": true
+}

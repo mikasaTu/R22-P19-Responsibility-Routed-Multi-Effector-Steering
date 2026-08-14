@@ -1,0 +1,1052 @@
+{
+  "accepted": false,
+  "completed_cells": 100,
+  "exact_null_within_numerical_tolerance": true,
+  "expected_cells": 100,
+  "fresh_prefix": {
+    "accepted": false,
+    "effect_gate": {
+      "donor_residual_influence_impulse_sum": 0.0,
+      "final_object_displacement_m": 0.0,
+      "min_object_height_m": 0.0,
+      "peak_object_angular_velocity": 0.0,
+      "peak_object_linear_jerk": 0.0,
+      "peak_relative_slip_m": 0.0
+    },
+    "episode_is_inference_unit": true,
+    "groups": {
+      "seed_0000__clean__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0000__clean__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0000__receiver_gain_0p7__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0000__receiver_gain_0p7__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0001__clean__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0001__clean__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0001__receiver_gain_0p7__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0001__receiver_gain_0p7__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0002__clean__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0002__clean__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0002__receiver_gain_0p7__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0002__receiver_gain_0p7__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0003__clean__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0003__clean__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0003__receiver_gain_0p7__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0003__receiver_gain_0p7__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0005__clean__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0005__clean__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0005__receiver_gain_0p7__B0": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      },
+      "seed_0005__receiver_gain_0p7__OPERATOR_NULL": {
+        "metrics": {
+          "donor_residual_influence_impulse_sum": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "final_object_displacement_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "min_object_height_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_angular_velocity": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_object_linear_jerk": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          },
+          "peak_relative_slip_m": {
+            "count": 10,
+            "max_absolute_pair_difference": 0.0,
+            "median_absolute_pair_difference": 0.0,
+            "p95_absolute_pair_difference": 0.0
+          }
+        },
+        "replicate_count": 5
+      }
+    },
+    "metric_contract": [
+      "peak_object_angular_velocity",
+      "peak_object_linear_jerk",
+      "peak_relative_slip_m",
+      "min_object_height_m",
+      "final_object_displacement_m",
+      "donor_residual_influence_impulse_sum"
+    ],
+    "paired_B0_vs_operator_null": {
+      "donor_residual_influence_impulse_sum": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "final_object_displacement_m": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "min_object_height_m": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_object_angular_velocity": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_object_linear_jerk": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_relative_slip_m": {
+        "count": 50,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      }
+    },
+    "pooled_within_method": {
+      "donor_residual_influence_impulse_sum": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "final_object_displacement_m": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "min_object_height_m": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_object_angular_velocity": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_object_linear_jerk": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      },
+      "peak_relative_slip_m": {
+        "count": 200,
+        "max_absolute_pair_difference": 0.0,
+        "median_absolute_pair_difference": 0.0,
+        "p95_absolute_pair_difference": 0.0
+      }
+    }
+  },
+  "main_scene_oracle_isolation": true,
+  "old_snapshot": {
+    "accepted": false,
+    "metrics": {
+      "donor_residual_influence_impulse_sum": {
+        "count": 0,
+        "max_absolute_pair_difference": null,
+        "median_absolute_pair_difference": null,
+        "p95_absolute_pair_difference": null
+      },
+      "final_object_displacement_m": {
+        "count": 0,
+        "max_absolute_pair_difference": null,
+        "median_absolute_pair_difference": null,
+        "p95_absolute_pair_difference": null
+      },
+      "min_object_height_m": {
+        "count": 20,
+        "max_absolute_pair_difference": 0.00025981664657592773,
+        "median_absolute_pair_difference": 1.665949821472168e-05,
+        "p95_absolute_pair_difference": 0.00018365681171417242
+      },
+      "peak_object_angular_velocity": {
+        "count": 20,
+        "max_absolute_pair_difference": 1.9958090782165527,
+        "median_absolute_pair_difference": 0.19234657287597656,
+        "p95_absolute_pair_difference": 1.2153432488441474
+      },
+      "peak_object_linear_jerk": {
+        "count": 20,
+        "max_absolute_pair_difference": 8.736907958984375,
+        "median_absolute_pair_difference": 0.29642486572265625,
+        "p95_absolute_pair_difference": 5.766070556640627
+      },
+      "peak_relative_slip_m": {
+        "count": 20,
+        "max_absolute_pair_difference": 0.0014920631312199811,
+        "median_absolute_pair_difference": 0.00012921680403713692,
+        "p95_absolute_pair_difference": 0.001290692666987075
+      }
+    },
+    "paired_cells": [
+      {
+        "condition": "clean",
+        "seed": 2
+      },
+      {
+        "condition": "receiver_delay_2",
+        "seed": 2
+      },
+      {
+        "condition": "receiver_friction_0p7",
+        "seed": 2
+      },
+      {
+        "condition": "receiver_gain_0p7",
+        "seed": 2
+      },
+      {
+        "condition": "clean",
+        "seed": 3
+      },
+      {
+        "condition": "receiver_delay_2",
+        "seed": 3
+      },
+      {
+        "condition": "receiver_friction_0p7",
+        "seed": 3
+      },
+      {
+        "condition": "receiver_gain_0p7",
+        "seed": 3
+      },
+      {
+        "condition": "clean",
+        "seed": 5
+      },
+      {
+        "condition": "receiver_delay_2",
+        "seed": 5
+      },
+      {
+        "condition": "receiver_friction_0p7",
+        "seed": 5
+      },
+      {
+        "condition": "receiver_gain_0p7",
+        "seed": 5
+      },
+      {
+        "condition": "clean",
+        "seed": 6
+      },
+      {
+        "condition": "receiver_delay_2",
+        "seed": 6
+      },
+      {
+        "condition": "receiver_friction_0p7",
+        "seed": 6
+      },
+      {
+        "condition": "receiver_gain_0p7",
+        "seed": 6
+      },
+      {
+        "condition": "clean",
+        "seed": 7
+      },
+      {
+        "condition": "receiver_delay_2",
+        "seed": 7
+      },
+      {
+        "condition": "receiver_friction_0p7",
+        "seed": 7
+      },
+      {
+        "condition": "receiver_gain_0p7",
+        "seed": 7
+      }
+    ],
+    "substrate": "Stage2B same E2 snapshot sequential restore"
+  },
+  "operator_performance_conclusion_paused": false,
+  "pai_job_created": false,
+  "status": "COMPLETE"
+}

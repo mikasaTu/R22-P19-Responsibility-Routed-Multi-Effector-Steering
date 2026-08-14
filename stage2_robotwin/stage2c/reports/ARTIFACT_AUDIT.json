@@ -1,0 +1,40 @@
+{
+  "accepted": false,
+  "audit_date": "2026-08-14",
+  "audit_scope": [
+    "README.md",
+    "stage2_robotwin/README.md",
+    "stage2_robotwin/stage2c"
+  ],
+  "audited_stage2c_bytes_excluding_this_receipt": 6298828,
+  "audited_stage2c_file_count_excluding_this_receipt": 64,
+  "forbidden_raw_or_runtime_artifact_matches": 0,
+  "forbidden_suffixes": [
+    ".avi",
+    ".bin",
+    ".ckpt",
+    ".log",
+    ".mov",
+    ".mp4",
+    ".npy",
+    ".npz",
+    ".pkl",
+    ".pt",
+    ".pth",
+    ".safetensors"
+  ],
+  "high_confidence_secret_matches": 0,
+  "json_parse_status": "OK",
+  "largest_file": {
+    "bytes": 1724453,
+    "path": "stage2_robotwin/stage2c/results/CLOSED_LOOP_DECISION.json",
+    "sha256": "c84a0198a96a2da8cb1eaa054041bef04648ecb7a3a7c6e1f6620aa4ebb6c7bb"
+  },
+  "pai_jobs_created": 0,
+  "raw_artifact_policy": "expert tapes, cell directories, trace NPZ, runtime logs, simulator assets, environments, datasets, weights, and credentials remain outside Git",
+  "symlink_count": 0,
+  "test_receipt": {
+    "combined_stage2_stage2b_stage2c": "52 passed in 11.01s",
+    "stage2c": "15 passed in 2.20s"
+  }
+}

@@ -1,11 +1,11 @@
 # Stage 2: RoboTwin bimanual oracle validation
 
 This subtree continues R22-P19 on the dual-arm `handover_block` simulator task.
-The current Stage 2B outcome is `SIGNAL_VALID_OPERATOR_WEAK`; see the
-[`signal report`](stage2b/reports/SIGNAL_REPLICATION_REPORT.md),
-[`operator report`](stage2b/reports/ORACLE_OPERATOR_REPORT.md), and
-[`machine decision`](stage2b/reports/CURRENT_STAGE2B_DECISION.json).
-Historical Stage 2A evidence remains unchanged under `reports/` and `results/`.
+The current Stage 2C outcome is `RESPONSIBILITY_MECHANISM_NOT_SUPPORTED`; see
+the [`Step4 report`](stage2c/reports/STEP4_EXPERIMENT_REPORT.md),
+[`mechanism explanation`](stage2c/reports/MECHANISM_REVERSE_EXPLANATION.md), and
+[`machine decision`](stage2c/reports/CURRENT_STAGE2C_DECISION.json). Historical
+Stage 2A/2B evidence and negative lineage remain unchanged.
 
 ## Reproduce the bounded runs on dev14
 
@@ -75,5 +75,22 @@ PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/pytho
   -m pytest -q stage2_robotwin/tests stage2_robotwin/stage2b/tests
 ```
 
-The current gate explicitly skips ACT and PAI training because the simulator
-oracle operator did not show a stable positive trend.
+## Reproduce Stage 2C
+
+Stage 2C uses one fresh process per seed × condition × method, plus a separate
+SAPIEN scene for every oracle branch. The exact launcher, frozen CPFS roots,
+config hashes, and raw-artifact exclusion contract are documented in
+[`stage2c/README.md`](stage2c/README.md). Recompute compact decisions from the
+retained formal roots with the `analyze` entry point; do not overwrite those
+roots.
+
+The combined Stage 2/2B/2C test command is:
+
+```bash
+PYTHONPATH=. /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python \
+  -m pytest -q stage2_robotwin/tests stage2_robotwin/stage2b/tests \
+  stage2_robotwin/stage2c/tests
+```
+
+The current gate explicitly blocks ACT and PAI training because correct
+responsibility did not beat wrong/shuffled controls or conservation-only.

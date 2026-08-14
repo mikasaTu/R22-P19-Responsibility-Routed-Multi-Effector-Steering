@@ -1,0 +1,134 @@
+experiment: R22-P19-Stage2C
+task: handover_block
+physics_hz: 250
+planner: mplib_screw
+accepted: false
+pai_job_created: false
+
+config_lineage:
+  source_config: stage2c.yaml
+  stage2c_A_B_source_sha256: 865f1f40a40d849e720291a33cb9712a048533febf829ae2d3937d1cf2282331
+  eta_calibration_artifact: local-eta-calibration-formal-v1/LOCAL_OPERATOR_GATE_DECISION.json
+  eta_calibration_seeds: [0, 1]
+  eta_selection_rule: closest_to_0p125_median_correction_among_0p05_to_0p20_feasible_candidates
+  selected_eta: 0.25
+
+runtime:
+  robotwin_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin
+  python: /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python
+  expected_robotwin_commit: 266f3aadf505a4f7fe9af0faa41a20f5f47cd123
+  expected_xpolicylab_commit: c37109c500be67d0dea6b36bf7337bbd26e763cd
+  process_contract: one_fresh_process_per_seed_condition_method_replicate
+
+seed_contract:
+  calibration: [0, 1]
+  heldout: [2, 3, 5, 6, 7, 8, 9, 10]
+  replay_noise: [0, 1, 2, 3, 5]
+  local_gate: [2, 3, 5, 6, 7]
+  episode_index:
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    5: 4
+    6: 5
+    7: 6
+    8: 7
+    9: 8
+    10: 9
+  replacement_candidates: [11, 12, 13, 14, 15]
+
+fresh_prefix:
+  tape_starts_at_episode_step: 0
+  method_difference_starts_at_event: E2
+  no_scene_snapshot_for_method_prefix: true
+  null_replicates: 5
+  null_methods: [B0, OPERATOR_NULL]
+  null_conditions:
+    clean: {}
+    receiver_gain_0p7: {receiver_gain: 0.7}
+  effect_threshold_multiplier_over_p95_null: 3.0
+
+natural_responsibility:
+  gammas: [0.8, 0.6, 0.4, 0.2]
+  profiles: [NATURAL, LEFT_HIDDEN_AUTHORITY, RIGHT_HIDDEN_AUTHORITY]
+  window_start_relative_to_E4: -250
+  window_end_relative_to_E4: 150
+  stop_at_E5: true
+  stride_steps: 25
+  horizons: [5, 10, 20]
+  min_motion_effect_m: 1.0e-6
+  min_dominance_margin: 1.0e-6
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 22019
+
+responsibility_control:
+  joint_threshold: 0.20
+  harmful_threshold: 0.02
+  joint_differential_scale: 0.35
+  temperature: 0.20
+  stateful_beta: 0.25
+  max_share_change_per_refresh: 0.08
+
+operator:
+  eta_candidates: [0.25, 0.5, 0.75, 1.0]
+  selected_eta: 0.25
+  eta_calibration:
+    seeds: [0, 1]
+    profiles: [clean, hidden_authority_gamma_0p6]
+    selection_rule: closest_to_0p125_median_correction_among_0p05_to_0p20_feasible_candidates
+  oracle_refresh_stride: 25
+  oracle_horizon_steps: 5
+  finite_difference_delta_m: 0.0005
+  relative_trust_region: 0.20
+  action_floor_m: 0.0005
+  scalar_action_bound_m: 0.02
+  effect_relative_tolerance: 0.05
+  min_contact_count: 1
+  min_support_height_m: 0.78
+  old_ridge_lambda: 0.05
+
+local_gate:
+  seeds: [2, 3, 5, 6, 7]
+  profiles: [clean, hidden_authority_gamma_0p6]
+  states_per_seed: 10
+  window_start_relative_to_E4: -225
+  window_end_relative_to_E4: 0
+  horizons: [10, 20]
+  methods: [L0, L1, L2, L3, L4, L5, L6, L7, L8]
+
+stress_calibration:
+  seeds: [0, 1]
+  candidates:
+    receiver_gain: [0.7, 0.55, 0.4]
+    receiver_delay_steps: [4, 8, 12]
+    receiver_friction: [0.7, 0.5, 0.3]
+    donor_release_advance_steps: [10, 20, 30]
+    receiver_grasp_offset_mm: [5, 10, 15]
+    object_com_shift_mm: [10, 20, 30]
+    hidden_authority_gamma: [0.8, 0.6, 0.4]
+  two_factor_candidates:
+    - {receiver_friction: 0.5, donor_release_advance_steps: 20}
+    - {receiver_gain: 0.55, receiver_delay_steps: 8}
+
+closed_loop:
+  seeds: [2, 3, 5, 6, 7, 8, 9, 10]
+  methods: [C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13]
+  conditions: [clean, S1_hidden_authority_mismatch, S2_premature_release_risk, S3_contact_quality_degradation]
+  oracle_shift_refreshes: 3
+  fresh_process_per_cell: true
+  user_override_complete_matrix_after_any_gate: true
+
+release_guard:
+  receiver_contact_stable_steps: 15
+  min_receiver_responsibility: 0.50
+  max_predicted_slip_m: 0.01
+
+statistics:
+  inference_unit: episode
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 22019
+  confidence: 0.95
+  branch_points_are_independent: false
+
+evidence_boundary: simulator_privileged_oracle_not_deployable

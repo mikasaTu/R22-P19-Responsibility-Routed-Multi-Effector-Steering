@@ -1,0 +1,56 @@
+{
+  "accepted": false,
+  "aggregate": {
+    "absolute_parallel_attenuation_rate": 0.6176470588235294,
+    "expert_sign_preservation_rate": 0.9411764705882353,
+    "follower_exceeds_expert_absolute_rate": 0.4852941176470588,
+    "median_soft_over_expert_absolute_ratio": 1.3224270274637753
+  },
+  "completed_cells": 4,
+  "expected_cells": 4,
+  "gamma": 0.8,
+  "pai_job_created": false,
+  "per_cell": [
+    {
+      "absolute_parallel_attenuation_rate": 0.35294117647058826,
+      "expert_sign_preservation_rate": 0.8235294117647058,
+      "follower_exceeds_expert_absolute_rate": 1.0,
+      "median_soft_over_expert_absolute_ratio": 1.489565131835441,
+      "profile": "LEFT_HIDDEN_AUTHORITY",
+      "seed": 0,
+      "soft_arm": "right",
+      "task_success": true
+    },
+    {
+      "absolute_parallel_attenuation_rate": 0.11764705882352941,
+      "expert_sign_preservation_rate": 0.9411764705882353,
+      "follower_exceeds_expert_absolute_rate": 0.8823529411764706,
+      "median_soft_over_expert_absolute_ratio": 2.3222284407958202,
+      "profile": "RIGHT_HIDDEN_AUTHORITY",
+      "seed": 0,
+      "soft_arm": "left",
+      "task_success": true
+    },
+    {
+      "absolute_parallel_attenuation_rate": 1.0,
+      "expert_sign_preservation_rate": 1.0,
+      "follower_exceeds_expert_absolute_rate": 0.058823529411764705,
+      "median_soft_over_expert_absolute_ratio": 0.7111141575782868,
+      "profile": "LEFT_HIDDEN_AUTHORITY",
+      "seed": 1,
+      "soft_arm": "right",
+      "task_success": true
+    },
+    {
+      "absolute_parallel_attenuation_rate": 1.0,
+      "expert_sign_preservation_rate": 1.0,
+      "follower_exceeds_expert_absolute_rate": 0.0,
+      "median_soft_over_expert_absolute_ratio": 0.7668003796455528,
+      "profile": "RIGHT_HIDDEN_AUTHORITY",
+      "seed": 1,
+      "soft_arm": "left",
+      "task_success": true
+    }
+  ],
+  "status": "COMPLETE"
+}

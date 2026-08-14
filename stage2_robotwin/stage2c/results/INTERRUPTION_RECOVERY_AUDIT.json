@@ -1,0 +1,46 @@
+{
+  "accepted": false,
+  "all_failure_artifacts_recovered": true,
+  "failure_artifact_count": 4,
+  "reason": "four-worker contention diagnostic was intentionally stopped; fresh-process reruns retained both interruption lineage and final results",
+  "records": [
+    {
+      "cell": "seed_0002__S1_hidden_authority_mismatch__C6",
+      "failure_error": "[Errno 32] Broken pipe",
+      "failure_error_type": "BrokenPipeError",
+      "recovered": true,
+      "result_present": true,
+      "result_sha256": "ec6c55d195334fdfbdc02681d3bee6f1f7e63bdfa7036d23c71ad059b5839887",
+      "result_status": "COMPLETE"
+    },
+    {
+      "cell": "seed_0003__S1_hidden_authority_mismatch__C6",
+      "failure_error": "[Errno 32] Broken pipe",
+      "failure_error_type": "BrokenPipeError",
+      "recovered": true,
+      "result_present": true,
+      "result_sha256": "de416731c7fafd65c7f971cbd3ad0699e029f69cd66cec5319c0b8e222fad565",
+      "result_status": "COMPLETE"
+    },
+    {
+      "cell": "seed_0005__S1_hidden_authority_mismatch__C6",
+      "failure_error": "[Errno 32] Broken pipe",
+      "failure_error_type": "BrokenPipeError",
+      "recovered": true,
+      "result_present": true,
+      "result_sha256": "5474ce5f7b5da960bcb13714f34fb305b4d1891c30336cca17140e83b844b6d2",
+      "result_status": "COMPLETE"
+    },
+    {
+      "cell": "seed_0006__S1_hidden_authority_mismatch__C6",
+      "failure_error": "[Errno 32] Broken pipe",
+      "failure_error_type": "BrokenPipeError",
+      "recovered": true,
+      "result_present": true,
+      "result_sha256": "fcd8256f81546ccf1f30f22adf6d140c6cfe68c0dc22817e1db3103baf5ab502",
+      "result_status": "COMPLETE"
+    }
+  ],
+  "recovered_count": 4,
+  "unrecovered_count": 0
+}

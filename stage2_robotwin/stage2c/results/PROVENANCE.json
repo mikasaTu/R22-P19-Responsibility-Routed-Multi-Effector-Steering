@@ -1,0 +1,68 @@
+{
+  "accepted": false,
+  "branch": "stage2c-natural-effectful-transfer-v1",
+  "config": {
+    "formal_eta0p25_sha256": "c530b6435ef3e108efe00cefb7c892abf0046c7bdca16621eb2e191de0b7b10d",
+    "frozen_stress_sha256": "6d6297e94ca80fe6be7d7414465104582ff11ffd3d4bef4890b6f670a8a6b953",
+    "stage2c_A_B_source_sha256": "865f1f40a40d849e720291a33cb9712a048533febf829ae2d3937d1cf2282331",
+    "stage2c_with_eta_lineage_sha256": "b07c2792c546602642a9a7838cf7db10acf4a34dd40f029d823c6b188a47aabb"
+  },
+  "decision_code": {
+    "analyze_stage2c_sha256": "35343521c48380292899d40949e4767805bf2d323ef6d9e763c76e35263e30f4",
+    "calibrate_stress_sha256": "1b472327506a4a7ce9a5c619e6416652abf97112809cb2a36228279981152b99"
+  },
+  "date": "2026-08-14",
+  "formal_artifact_sha256": {
+    "closed_loop_completion": "88117251f693c0bc9759ff3ea64bf67d7faa1817372fa47d959a45b56eb40c95",
+    "closed_loop_decision": "c84a0198a96a2da8cb1eaa054041bef04648ecb7a3a7c6e1f6620aa4ebb6c7bb",
+    "current_stage2c_decision": "5c4cf24e81e4794f53f5a9ce2f18f1219df7e9619b592edb2f9c5f929bfacdd8",
+    "expert_tape_manifest": "87c87148d037dfc03b4402de663768aa1f9b5ff1cf118139636e566140af28aa",
+    "interruption_recovery_audit": "ac94d2a5994a061be0113bd50f713dd5561cd52c49f3dcdb553efa13eb0942f2",
+    "local_operator_gate_decision": "443bc7a205dd0b29e7f3aba70482b66630332fe16b842edd9fb44b216b78ca24",
+    "natural_responsibility_decision": "3351b97261a2359b451486c13c70817d2c2df01d8544a0a20bae0d134be2bfda",
+    "replay_noise_decision": "9cf6e9f50ec1aaba54ee7b1f833382df7d7de112a3cb4af171a533e93dfe8b7f",
+    "stress_calibration_decision": "8cb6add926d8f0bee05ed23e907a6c3d9b73cb932b1e7392d2d05bbbb9f84226"
+  },
+  "formal_completion": {
+    "closed_loop_cells": 448,
+    "closed_loop_expected_cells": 448,
+    "fresh_process_cells": 448,
+    "interruption_failures_recovered": 4,
+    "interruption_failures_unrecovered": 0
+  },
+  "formal_cpfs_roots": {
+    "closed_loop": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/closed-loop-formal-v1",
+    "eta_calibration": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/local-eta-calibration-formal-v1",
+    "expert_tapes": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1",
+    "local_gate": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/local-gate-formal-v1",
+    "natural_responsibility": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/natural-formal-v1",
+    "replay_noise": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/replay-noise-formal-v1",
+    "soft_authority_audit": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/soft-authority-audit-formal-v1",
+    "stress_calibration": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/stress-calibration-formal-v1"
+  },
+  "hardware": {
+    "execution_host": "dev14",
+    "formal_gpu_indices": [0, 1, 2, 3],
+    "gpu": "NVIDIA A800-SXM4-80GB",
+    "gpu_driver": "580.95.05"
+  },
+  "pai_jobs_created": 0,
+  "repository_base_commit": "8b63ef5ef47037ab31c7c1e60e4da0df174fb04a",
+  "runtime": {
+    "mplib": "0.2.1",
+    "numpy": "1.26.4",
+    "python": "3.10.19",
+    "pyyaml": "6.0.3",
+    "sapien": "3.0.0b1",
+    "scipy": "1.10.1"
+  },
+  "runtime_patch": {
+    "apply_runtime_patches_sha256": "f7a79c188c1ba379b13a90c24d91fefaae1b3efd0c6d5b6e52849d15b1b35f37",
+    "patched_planner_sha256": "9182896664b997fdb297b715a2cd72aaf5f95903eab28a3a0b4beaf2ca647cf0"
+  },
+  "simulator": {
+    "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+    "xpolicylab_gitlink": "c37109c500be67d0dea6b36bf7337bbd26e763cd"
+  },
+  "task": "handover_block"
+}

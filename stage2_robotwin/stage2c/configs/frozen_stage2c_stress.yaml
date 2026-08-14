@@ -1,0 +1,33 @@
+experiment: R22-P19-Stage2C
+source: preregistered_calibration_seeds_0_1
+selection_rule: base success 30-80 percent, or disturbance >=2x clean with C13-improvable
+  space; deterministic diagnostic fallback retained
+conditions:
+  clean: {}
+  S1_hidden_authority_mismatch:
+    hidden_authority_gamma: 0.8
+  S2_premature_release_risk:
+    donor_release_advance_steps: 10
+  S3_contact_quality_degradation:
+    receiver_friction: 0.5
+selection_audit:
+  S1_hidden_authority_mismatch:
+    source_candidate: hidden_authority_gamma_0p8
+    eligible: false
+    base_success_rate: 1.0
+    maximum_disturbance_ratio_vs_clean: 1.551777009359436
+    improvable: false
+  S2_premature_release_risk:
+    source_candidate: donor_release_advance_steps_10
+    eligible: false
+    base_success_rate: 1.0
+    maximum_disturbance_ratio_vs_clean: 1.4224163014130624
+    improvable: true
+  S3_contact_quality_degradation:
+    source_candidate: receiver_friction_0p5
+    eligible: false
+    base_success_rate: 1.0
+    maximum_disturbance_ratio_vs_clean: 1.5302151410032816
+    improvable: true
+accepted: false
+pai_job_created: false

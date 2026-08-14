@@ -1,0 +1,11 @@
+{
+  "ACT_trained": false,
+  "accepted": false,
+  "deployable_estimator_trained": false,
+  "inference_jobs": 0,
+  "pai_jobs_created": 0,
+  "pi0_5_used": false,
+  "reason": "the frozen Stage2C plan explicitly prohibits creating a PAI job; all simulator cells ran on dev14",
+  "stage": "R22-P19-Stage2C",
+  "training_runs": 0
+}

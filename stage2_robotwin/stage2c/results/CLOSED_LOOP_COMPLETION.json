@@ -1,0 +1,44 @@
+{
+  "accepted": false,
+  "completed_cells": 448,
+  "conditions": [
+    "clean",
+    "S1_hidden_authority_mismatch",
+    "S2_premature_release_risk",
+    "S3_contact_quality_degradation"
+  ],
+  "config_sha256": "c530b6435ef3e108efe00cefb7c892abf0046c7bdca16621eb2e191de0b7b10d",
+  "expected_cells": 448,
+  "failure_artifact_count": 4,
+  "fresh_process_per_cell": true,
+  "frozen_stress_sha256": "6d6297e94ca80fe6be7d7414465104582ff11ffd3d4bef4890b6f670a8a6b953",
+  "methods": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13"
+  ],
+  "pai_job_created": false,
+  "seeds": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "status": "COMPLETE",
+  "user_override_completed_matrix_after_gates": true
+}

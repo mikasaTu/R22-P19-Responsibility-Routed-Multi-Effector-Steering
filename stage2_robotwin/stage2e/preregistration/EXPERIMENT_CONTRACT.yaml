@@ -1,0 +1,27 @@
+schema: r22p19.stage2e.withdrawal_contract.v1
+base_commit: 05600234df39367424fcb8036533b5e111d2a0aa
+accepted: false
+scope:
+  execute: [conformance, withdrawal, branch_order_null_audit, three_episode_monotonicity]
+  forbidden: [capacity_classifier, allocator, closed_loop, pai, act, pi0_5]
+episodes: [0, 1, 2]
+fade_levels: [1.0, 0.75, 0.5, 0.25, 0.0]
+channels: [motion, support, rotation, retention]
+repeats: 2
+horizon_steps: 60
+active_reference_amplitude_m: 0.015
+branch_contract:
+  fresh_process_per_branch: true
+  replay_from_episode_start: true
+  snapshot_restore: false
+  randomized_launch_order: true
+  max_concurrent_gpus: 2
+withdrawal_gates:
+  targeted_effect_monotone: true
+  fade_zero_over_fade_one_max: 0.10
+  nonwithdrawn_effect_retention_min: 0.80
+  receiver_command_identical: true
+  duplicate_relative_error_max: 0.05
+  retention_fade_zero_contact_ratio_max: 0.10
+decision_if_failed: WITHDRAWAL_NOT_IMPLEMENTABLE
+evidence_boundary: privileged RoboTwin/SAPIEN physical diagnostic; no learned policy

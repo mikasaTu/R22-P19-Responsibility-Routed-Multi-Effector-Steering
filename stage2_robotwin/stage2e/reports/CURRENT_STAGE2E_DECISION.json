@@ -1,0 +1,17 @@
+{
+  "accepted": false,
+  "conformance_decision": "CONFORMANCE_NO_GO",
+  "current_scope": "immediate_stage2e_conformance_and_withdrawal_only",
+  "decision": "STAGE2E_DIRECTION_STOPPED",
+  "downstream_authorized": false,
+  "pai_job_created": false,
+  "physical_diagnostic_label": "DIAGNOSTIC_AFTER_CONFORMANCE_NO_GO",
+  "physical_groups_complete": 12,
+  "physical_groups_expected": 12,
+  "physical_groups_valid": 0,
+  "physical_matrix_cells_complete": 120,
+  "physical_matrix_cells_expected": 120,
+  "schema": "r22p19.stage2e.current_decision.v1",
+  "withdrawal_decision": "WITHDRAWAL_NOT_IMPLEMENTABLE"
+}
+

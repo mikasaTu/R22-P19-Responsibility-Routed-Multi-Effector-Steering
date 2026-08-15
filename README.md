@@ -5,7 +5,22 @@ the continuing Stage-2 RoboTwin dual-arm validation.
 
 ## Current result
 
-The current Stage-2D / Step5 decision is
+The current Step6 / immediate Stage 2E decision is
+**`STAGE2E_DIRECTION_STOPPED`** with `accepted=false`. The conformance audit
+returned `CONFORMANCE_NO_GO`; despite that gate, the requested complete physical
+diagnostic finished 120/120 fresh-process cells and returned
+`WITHDRAWAL_NOT_IMPLEMENTABLE` with 0/12 valid seed-by-channel groups. Motion,
+support, and rotation target projections changed donor commands but left the
+corresponding physical contact effects at approximately 100% of baseline.
+Retention opening reduced donor wrench but collapsed all channels together.
+No PAI job, training, allocator, learned estimator, or closed-loop policy run was
+created.
+
+- [`WITHDRAWAL_VALIDITY_REPORT.md`](stage2_robotwin/stage2e/reports/WITHDRAWAL_VALIDITY_REPORT.md)
+- [`MECHANISM_REVERSE_EXPLANATION.md`](stage2_robotwin/stage2e/reports/MECHANISM_REVERSE_EXPLANATION.md)
+- [`CURRENT_STAGE2E_DECISION.json`](stage2_robotwin/stage2e/reports/CURRENT_STAGE2E_DECISION.json)
+
+The preceding Stage-2D / Step5 decision remains
 **`ORACLE_V2_NOT_SUPPORTED`** with `accepted=false` and policy gate `BLOCK`.
 
 - Fresh-prefix independent-process replay reduced every exact-null median,

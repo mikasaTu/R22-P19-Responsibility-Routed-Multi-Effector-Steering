@@ -1,0 +1,27 @@
+schema: r22p19.stage2e.hypothesis_code_map.v1
+hypothesis:
+  channel_specific_withdrawal:
+    code:
+      - stage2_robotwin/stage2e/withdrawal/common.py
+      - stage2_robotwin/stage2e/withdrawal/motion_withdrawal.py
+      - stage2_robotwin/stage2e/withdrawal/support_withdrawal.py
+      - stage2_robotwin/stage2e/withdrawal/rotation_withdrawal.py
+      - stage2_robotwin/stage2e/withdrawal/retention_withdrawal.py
+    evidence: results/withdrawal/analysis.json
+  fresh_process_isolation:
+    code:
+      - stage2_robotwin/stage2e/withdrawal/branch_isolation.py
+      - stage2_robotwin/stage2e/scripts/run_withdrawal_matrix.py
+    evidence: results/withdrawal/launch_manifest.json
+  method_conformance:
+    code:
+      - stage2_robotwin/stage2e/conformance/method_registry.py
+      - stage2_robotwin/stage2e/conformance/runtime_receipt.py
+      - stage2_robotwin/stage2e/scripts/audit_conformance.py
+    evidence: results/conformance/conformance.json
+deferred_not_implemented:
+  - capacity_classifier
+  - actual_4d_allocator
+  - desired_responsibility_state_machine
+  - release_timing
+  - closed_loop_pilot

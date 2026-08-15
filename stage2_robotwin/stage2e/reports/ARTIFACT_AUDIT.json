@@ -1,0 +1,11 @@
+{
+  "failure_files": 0,
+  "files_over_10mb": 0,
+  "json_parse_checks": true,
+  "pycache_directories": 0,
+  "schema": "r22p19.stage2e.artifact_audit.v1",
+  "secret_pattern_matches": 0,
+  "stage2e_total_bytes": 745472,
+  "symlinks": 0,
+  "whitespace_errors": 0
+}

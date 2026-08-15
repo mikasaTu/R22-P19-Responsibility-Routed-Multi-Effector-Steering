@@ -1,0 +1,12 @@
+{
+  "accepted": false,
+  "complete_groups": 12,
+  "decision": "WITHDRAWAL_NOT_IMPLEMENTABLE",
+  "expected_groups": 12,
+  "matrix_cells_complete": 120,
+  "matrix_cells_expected": 120,
+  "pai_job_created": false,
+  "schema": "r22p19.stage2e.withdrawal_validity_decision.v1",
+  "valid_groups": 0
+}
+

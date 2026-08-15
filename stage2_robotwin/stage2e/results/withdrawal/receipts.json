@@ -1,0 +1,842 @@
+[
+  {
+    "key": "seed0002_rotation_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_retention_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_retention_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_retention_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_support_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_support_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_support_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_motion_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_motion_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_motion_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_retention_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_retention_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_retention_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.75_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.75_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.75_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_rotation_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_rotation_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_rotation_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_retention_fade1.00_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_retention_fade1.00_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_retention_fade1.00_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.25_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.25_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.25_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_rotation_fade1.00_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_rotation_fade1.00_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_rotation_fade1.00_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_rotation_fade0.50_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_rotation_fade0.50_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_rotation_fade0.50_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_support_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_support_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_support_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0000_motion_fade0.25_r1",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0000_motion_fade0.25_r1.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0000_motion_fade0.25_r1.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0002_support_fade0.75_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0002_support_fade0.75_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0002_support_fade0.75_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  },
+  {
+    "key": "seed0001_motion_fade0.50_r0",
+    "log": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/logs/seed0001_motion_fade0.50_r0.log",
+    "output": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2e/withdrawal-formal-v1/branches/seed0001_motion_fade0.50_r0.json",
+    "returncode": 0,
+    "status": "COMPLETE"
+  }
+]

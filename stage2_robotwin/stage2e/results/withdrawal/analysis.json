@@ -1,0 +1,731 @@
+{
+  "accepted": false,
+  "audits": [
+    {
+      "channel": "motion",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.03969441924763302,
+          "retention": 0.04490108047910532,
+          "rotation": 0.008407391645459627,
+          "support": 0.018136137595774926
+        },
+        "0.25": {
+          "motion": 0.03968822281376424,
+          "retention": 0.04489978236600548,
+          "rotation": 0.008406698380588832,
+          "support": 0.01813664391193015
+        },
+        "0.5": {
+          "motion": 0.03968411396483727,
+          "retention": 0.044899376489801746,
+          "rotation": 0.00840599817503407,
+          "support": 0.01813691269080664
+        },
+        "0.75": {
+          "motion": 0.039682684023430725,
+          "retention": 0.0448998416548424,
+          "rotation": 0.008406473331085223,
+          "support": 0.018136794522433775
+        },
+        "1.0": {
+          "motion": 0.03968076376911479,
+          "retention": 0.04489991630779273,
+          "rotation": 0.008407085596262354,
+          "support": 0.01813668805789348
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "retention": 1.0000259281399237,
+        "rotation": 1.0000364037208578,
+        "support": 0.999969649248154
+      },
+      "retention_contact_ratio": null,
+      "seed": 0,
+      "selected_fade_zero_over_one": 1.0003441334596705,
+      "valid": false
+    },
+    {
+      "channel": "retention",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": true,
+        "nonwithdrawn_channels_ge_80pct": false,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": false,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.0025815179863455397,
+          "retention": 0.002921846065335835,
+          "rotation": 0.0009333919092556922,
+          "support": 0.0011610833450328428
+        },
+        "0.25": {
+          "motion": 0.0026141582660103853,
+          "retention": 0.0030410163401819942,
+          "rotation": 0.0009671196744296078,
+          "support": 0.001166685753239749
+        },
+        "0.5": {
+          "motion": 0.013746986308418375,
+          "retention": 0.01585052236624778,
+          "rotation": 0.006332833734346887,
+          "support": 0.006371457532698533
+        },
+        "0.75": {
+          "motion": 0.02702418870302656,
+          "retention": 0.029711921186742093,
+          "rotation": 0.006450339398235538,
+          "support": 0.0026183908679139334
+        },
+        "1.0": {
+          "motion": 0.03968076376911479,
+          "retention": 0.04489991630779273,
+          "rotation": 0.008407085596262354,
+          "support": 0.01813668805789348
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.06505716476039315,
+        "rotation": 0.1110244327321542,
+        "support": 0.0640184879028955
+      },
+      "retention_contact_ratio": 0.6333333333333333,
+      "seed": 0,
+      "selected_fade_zero_over_one": 0.065074643910388,
+      "valid": false
+    },
+    {
+      "channel": "rotation",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.03968395468341254,
+          "retention": 0.04490129080096847,
+          "rotation": 0.00841231137527813,
+          "support": 0.018135479759621376
+        },
+        "0.25": {
+          "motion": 0.0396834421098776,
+          "retention": 0.04490098043933766,
+          "rotation": 0.00841098360053709,
+          "support": 0.018136001594939444
+        },
+        "0.5": {
+          "motion": 0.03968234339681908,
+          "retention": 0.04490043471549368,
+          "rotation": 0.00840968539840767,
+          "support": 0.018136105331905128
+        },
+        "0.75": {
+          "motion": 0.039681410922187216,
+          "retention": 0.044900079840949784,
+          "rotation": 0.008408219684427717,
+          "support": 0.01813647495055193
+        },
+        "1.0": {
+          "motion": 0.03968076376911479,
+          "retention": 0.04489991630779273,
+          "rotation": 0.008407085596262354,
+          "support": 0.01813668805789348
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 1.0000804146391014,
+        "retention": 1.000030612377233,
+        "support": 0.9999333782293521
+      },
+      "retention_contact_ratio": null,
+      "seed": 0,
+      "selected_fade_zero_over_one": 1.0006215922219348,
+      "valid": false
+    },
+    {
+      "channel": "support",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.03968072844172613,
+          "retention": 0.04489987152814558,
+          "rotation": 0.008408559016222582,
+          "support": 0.018136318127744744
+        },
+        "0.25": {
+          "motion": 0.03968051253155727,
+          "retention": 0.044899900102367836,
+          "rotation": 0.008406569324282492,
+          "support": 0.018136912704903807
+        },
+        "0.5": {
+          "motion": 0.03968055264093293,
+          "retention": 0.04489986914685772,
+          "rotation": 0.008406031452164803,
+          "support": 0.018137018645120406
+        },
+        "0.75": {
+          "motion": 0.03968083928348047,
+          "retention": 0.04489994935314206,
+          "rotation": 0.008406177939368615,
+          "support": 0.018136951730411965
+        },
+        "1.0": {
+          "motion": 0.03968076376911479,
+          "retention": 0.04489991630779273,
+          "rotation": 0.008407085596262354,
+          "support": 0.01813668805789348
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.9999991097099628,
+        "retention": 0.9999990026786054,
+        "rotation": 1.0001752593028057
+      },
+      "retention_contact_ratio": null,
+      "seed": 0,
+      "selected_fade_zero_over_one": 0.9999796032137976,
+      "valid": false
+    },
+    {
+      "channel": "motion",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.023858446829707024,
+          "retention": 0.037029423816218064,
+          "rotation": 0.10117045491142057,
+          "support": 0.020684202834475585
+        },
+        "0.25": {
+          "motion": 0.023862794652980218,
+          "retention": 0.0370374865581864,
+          "rotation": 0.10119201567740514,
+          "support": 0.020687799735877643
+        },
+        "0.5": {
+          "motion": 0.02385954689666713,
+          "retention": 0.03703406761789198,
+          "rotation": 0.10118258891124494,
+          "support": 0.02068520067278845
+        },
+        "0.75": {
+          "motion": 0.023858266330307767,
+          "retention": 0.037034057787162115,
+          "rotation": 0.10118163989684549,
+          "support": 0.02068484671371218
+        },
+        "1.0": {
+          "motion": 0.023856660530170905,
+          "retention": 0.03703400811690826,
+          "rotation": 0.10118114583460497,
+          "support": 0.020686042575396968
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "retention": 0.9998762137580214,
+        "rotation": 0.9998943387812402,
+        "support": 0.9999110636597272
+      },
+      "retention_contact_ratio": null,
+      "seed": 1,
+      "selected_fade_zero_over_one": 1.0000748763446528,
+      "valid": false
+    },
+    {
+      "channel": "retention",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": true,
+        "nonwithdrawn_channels_ge_80pct": false,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": false,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.00150597857022604,
+          "retention": 0.0024583921202780876,
+          "rotation": 0.006572518991658481,
+          "support": 0.0013507995456091548
+        },
+        "0.25": {
+          "motion": 0.0015658195052352846,
+          "retention": 0.002570480651217702,
+          "rotation": 0.006601472623537209,
+          "support": 0.0013570278748645526
+        },
+        "0.5": {
+          "motion": 0.008429911232907103,
+          "retention": 0.013065225733182752,
+          "rotation": 0.03551516884728963,
+          "support": 0.007263494186395769
+        },
+        "0.75": {
+          "motion": 0.01598597590368685,
+          "retention": 0.024816009248295783,
+          "rotation": 0.0676816944116049,
+          "support": 0.013838012966489052
+        },
+        "1.0": {
+          "motion": 0.023856660530170905,
+          "retention": 0.03703400811690826,
+          "rotation": 0.10118114583460497,
+          "support": 0.020686042575396968
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.06312612648872074,
+        "rotation": 0.06495794189168605,
+        "support": 0.06530004667087623
+      },
+      "retention_contact_ratio": 0.6333333333333333,
+      "seed": 1,
+      "selected_fade_zero_over_one": 0.06638201602477058,
+      "valid": false
+    },
+    {
+      "channel": "rotation",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.023837769681377883,
+          "retention": 0.037033941193377516,
+          "rotation": 0.10117991214880839,
+          "support": 0.020687248128487434
+        },
+        "0.25": {
+          "motion": 0.023840541771237896,
+          "retention": 0.03703243560291054,
+          "rotation": 0.10118000571980451,
+          "support": 0.02068773192163076
+        },
+        "0.5": {
+          "motion": 0.0238424743971983,
+          "retention": 0.03703144627328408,
+          "rotation": 0.10118016907986425,
+          "support": 0.02068781909388795
+        },
+        "0.75": {
+          "motion": 0.023846207952922166,
+          "retention": 0.037032827985035315,
+          "rotation": 0.10118036168723506,
+          "support": 0.020688087734050065
+        },
+        "1.0": {
+          "motion": 0.023856660530170905,
+          "retention": 0.03703400811690826,
+          "rotation": 0.10118114583460497,
+          "support": 0.020686042575396968
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.9992081520056367,
+        "retention": 0.9999981929168851,
+        "support": 1.0000582785753278
+      },
+      "retention_contact_ratio": null,
+      "seed": 1,
+      "selected_fade_zero_over_one": 0.9999878071572881,
+      "valid": false
+    },
+    {
+      "channel": "support",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.02386254342789479,
+          "retention": 0.03703733888796494,
+          "rotation": 0.10118559729611079,
+          "support": 0.02067639983541103
+        },
+        "0.25": {
+          "motion": 0.0238607840024797,
+          "retention": 0.03703635648185026,
+          "rotation": 0.10118396601762622,
+          "support": 0.020679781567814137
+        },
+        "0.5": {
+          "motion": 0.023859230572941134,
+          "retention": 0.03703527477911481,
+          "rotation": 0.10118291054679045,
+          "support": 0.02068226413151031
+        },
+        "0.75": {
+          "motion": 0.023858010450958887,
+          "retention": 0.03703456432745086,
+          "rotation": 0.10118199767464078,
+          "support": 0.020684343087773893
+        },
+        "1.0": {
+          "motion": 0.023856660530170905,
+          "retention": 0.03703400811690826,
+          "rotation": 0.10118114583460497,
+          "support": 0.020686042575396968
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 1.000246593512803,
+        "retention": 1.00008993817375,
+        "rotation": 1.000043994970299
+      },
+      "retention_contact_ratio": null,
+      "seed": 1,
+      "selected_fade_zero_over_one": 0.9995338528405908,
+      "valid": false
+    },
+    {
+      "channel": "motion",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.02554563133286341,
+          "retention": 0.030907135853083842,
+          "rotation": 0.003359940492464945,
+          "support": 0.01567182867347583
+        },
+        "0.25": {
+          "motion": 0.02554841657448196,
+          "retention": 0.03090566729454287,
+          "rotation": 0.0033488872324519896,
+          "support": 0.015668652535168803
+        },
+        "0.5": {
+          "motion": 0.025549746739305018,
+          "retention": 0.030905252345341982,
+          "rotation": 0.0033475092419179365,
+          "support": 0.015668340371121303
+        },
+        "0.75": {
+          "motion": 0.02555044996145199,
+          "retention": 0.030904846462159817,
+          "rotation": 0.0033486713099897883,
+          "support": 0.015668796705540444
+        },
+        "1.0": {
+          "motion": 0.02555109736031355,
+          "retention": 0.03090491220667132,
+          "rotation": 0.0033473392502901623,
+          "support": 0.015668644013203448
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "retention": 1.0000719512289067,
+        "rotation": 1.0037645548396956,
+        "support": 1.0002032505346155
+      },
+      "retention_contact_ratio": null,
+      "seed": 2,
+      "selected_fade_zero_over_one": 0.9997860746498257,
+      "valid": false
+    },
+    {
+      "channel": "retention",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": true,
+        "nonwithdrawn_channels_ge_80pct": false,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": false,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.0016265274926495097,
+          "retention": 0.0020192194018476125,
+          "rotation": 0.0003495899504068149,
+          "support": 0.0010025830067075248
+        },
+        "0.25": {
+          "motion": 0.0016509889408944105,
+          "retention": 0.0021188492399302843,
+          "rotation": 0.00037213696837507025,
+          "support": 0.0010071327890406323
+        },
+        "0.5": {
+          "motion": 0.009040666100005102,
+          "retention": 0.010941321593292122,
+          "rotation": 0.002650535259854594,
+          "support": 0.005490922556887767
+        },
+        "0.75": {
+          "motion": 0.017126670649909827,
+          "retention": 0.0209093858662099,
+          "rotation": 0.0029976253326650664,
+          "support": 0.010476059050104958
+        },
+        "1.0": {
+          "motion": 0.02555109736031355,
+          "retention": 0.03090491220667132,
+          "rotation": 0.0033473392502901623,
+          "support": 0.015668644013203448
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.06365783315341528,
+        "rotation": 0.10443815946546527,
+        "support": 0.06398658402492782
+      },
+      "retention_contact_ratio": 0.6333333333333333,
+      "seed": 2,
+      "selected_fade_zero_over_one": 0.06533651959094489,
+      "valid": false
+    },
+    {
+      "channel": "rotation",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.025549309177134938,
+          "retention": 0.030907161130402597,
+          "rotation": 0.0033544030327847187,
+          "support": 0.015670121822950023
+        },
+        "0.25": {
+          "motion": 0.025550665865458483,
+          "retention": 0.0309060142471374,
+          "rotation": 0.0033521443080738577,
+          "support": 0.01566955579255591
+        },
+        "0.5": {
+          "motion": 0.025551717718533682,
+          "retention": 0.030904906684112145,
+          "rotation": 0.0033499096447145694,
+          "support": 0.015668854692194145
+        },
+        "0.75": {
+          "motion": 0.025553516220341268,
+          "retention": 0.03090441641103309,
+          "rotation": 0.0033474592001833973,
+          "support": 0.01566842473584984
+        },
+        "1.0": {
+          "motion": 0.02555109736031355,
+          "retention": 0.03090491220667132,
+          "rotation": 0.0033473392502901623,
+          "support": 0.015668644013203448
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.9999300154058592,
+        "retention": 1.000072769135089,
+        "support": 1.0000943163776859
+      },
+      "retention_contact_ratio": null,
+      "seed": 2,
+      "selected_fade_zero_over_one": 1.0021102678773728,
+      "valid": false
+    },
+    {
+      "channel": "support",
+      "checks": {
+        "all_fades_have_two_fresh_repeats": true,
+        "duplicate_relative_error_le_5pct": true,
+        "fade_zero_le_10pct": false,
+        "nonwithdrawn_channels_ge_80pct": true,
+        "receiver_command_identical": true,
+        "retention_zero_contact_valid": true,
+        "targeted_effect_monotone": true
+      },
+      "duplicate_relative_errors": {
+        "0.0": 0.0,
+        "0.25": 0.0,
+        "0.5": 0.0,
+        "0.75": 0.0,
+        "1.0": 0.0
+      },
+      "medians": {
+        "0.0": {
+          "motion": 0.025549970459594028,
+          "retention": 0.030905026988844744,
+          "rotation": 0.0033521950930061216,
+          "support": 0.015669837630412076
+        },
+        "0.25": {
+          "motion": 0.025551190301403563,
+          "retention": 0.0309050488565617,
+          "rotation": 0.0033480931762670586,
+          "support": 0.01566876078140922
+        },
+        "0.5": {
+          "motion": 0.025551385455454607,
+          "retention": 0.030905000498329206,
+          "rotation": 0.0033471288234993156,
+          "support": 0.01566849986284069
+        },
+        "0.75": {
+          "motion": 0.02555120290096242,
+          "retention": 0.030904821962727525,
+          "rotation": 0.0033471888638676142,
+          "support": 0.015668346468373784
+        },
+        "1.0": {
+          "motion": 0.02555109736031355,
+          "retention": 0.03090491220667132,
+          "rotation": 0.0033473392502901623,
+          "support": 0.015668644013203448
+        }
+      },
+      "nonwithdrawn_fade_zero_over_one": {
+        "motion": 0.9999558961909294,
+        "retention": 1.0000037140430187,
+        "rotation": 1.0014506574783355
+      },
+      "retention_contact_ratio": null,
+      "seed": 2,
+      "selected_fade_zero_over_one": 1.0000761787176748,
+      "valid": false
+    }
+  ],
+  "complete_groups": 12,
+  "decision": "WITHDRAWAL_NOT_IMPLEMENTABLE",
+  "expected_groups": 12,
+  "pai_job_created": false,
+  "schema": "r22p19.stage2e.withdrawal_analysis.v1",
+  "valid_groups": 0
+}

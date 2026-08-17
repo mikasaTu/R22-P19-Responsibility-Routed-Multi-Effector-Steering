@@ -1,0 +1,140 @@
+{
+  "document_count": 12,
+  "documents": [
+    {
+      "document_token": "HgWBdgg08od3nfx0HwPc5Dzgne6",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/PI66wvDlDi0KvkkQZx8csfVHn4z",
+      "kind": "plan",
+      "path": "step1/PLAN.md",
+      "revision_id": 2,
+      "source_character_count": 8675,
+      "source_content_sha256": "bcbd4772249158cf36d996d40deb883e9138ef0cd0b0ff9c8d24600c4ac77a27",
+      "step": "step1",
+      "wiki_node_token": "PI66wvDlDi0KvkkQZx8csfVHn4z"
+    },
+    {
+      "document_token": "QO3MdVLoOoFaDuxgUlScVVo4ngB",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/XRB7wg9pKin6rvk9WsYciEf6npe",
+      "kind": "experiment_report",
+      "path": "step1/EXPERIMENT_REPORT.md",
+      "revision_id": 2,
+      "source_character_count": 5912,
+      "source_content_sha256": "5220ccfe728fee04fffbe712964f81ba7be65ec6d1a3ec63c2c4ec941b2cefc8",
+      "step": "step1",
+      "wiki_node_token": "XRB7wg9pKin6rvk9WsYciEf6npe"
+    },
+    {
+      "document_token": "Km1FdY8PDoJwgExdkOJcBYyen9b",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/Eqlcw8WZniGSMtkOTuZc5gcgnMg",
+      "kind": "plan",
+      "path": "step2/PLAN.md",
+      "revision_id": 4,
+      "source_character_count": 11587,
+      "source_content_sha256": "8b1907614bbac3b72f05b9d862727ca255f5bc0eaa92e772dbe35244d7d716be",
+      "step": "step2",
+      "wiki_node_token": "Eqlcw8WZniGSMtkOTuZc5gcgnMg"
+    },
+    {
+      "document_token": "NYrJdegHSo2EcGxGPmwcwhQpnpc",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/BXZ6wKg28iGg1vkq5occ8CBrnmb",
+      "kind": "experiment_report",
+      "path": "step2/EXPERIMENT_REPORT.md",
+      "revision_id": 7,
+      "source_character_count": 5938,
+      "source_content_sha256": "adf797a674c54c67fd30b7b0e9144512a0e15a521a003e74e2d204acd179f7ca",
+      "step": "step2",
+      "wiki_node_token": "BXZ6wKg28iGg1vkq5occ8CBrnmb"
+    },
+    {
+      "document_token": "RT2rdhZESoWN7jx6XiVcg8qon8g",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/Rfy7wq6Tsi3pppkvqxFcjvPRnmf",
+      "kind": "plan",
+      "path": "step3/PLAN.md",
+      "revision_id": 7,
+      "source_character_count": 11807,
+      "source_content_sha256": "b4393dadfd0da2f85fecd8e775ebd92d3ce180b6f34e7715b65c649412e786a8",
+      "step": "step3",
+      "wiki_node_token": "Rfy7wq6Tsi3pppkvqxFcjvPRnmf"
+    },
+    {
+      "document_token": "ESwHd46MCohwINxWVVycwbOQn5D",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/LgRywtfpoiCeGlkfYsgc2X3Jnaf",
+      "kind": "experiment_report",
+      "path": "step3/EXPERIMENT_REPORT.md",
+      "revision_id": 5,
+      "source_character_count": 11138,
+      "source_content_sha256": "c7b66ffdec1ff3d012f1f219e1fa4de7441eda74780e1da7aa4436dcbd89b9e1",
+      "step": "step3",
+      "wiki_node_token": "LgRywtfpoiCeGlkfYsgc2X3Jnaf"
+    },
+    {
+      "document_token": "ZRY6dVxhfogbVJxov4EcxxaonLc",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/Jk1UwYrvyiQVphkxxuacHd1Cn5d",
+      "kind": "plan",
+      "path": "step4/PLAN.md",
+      "revision_id": 10,
+      "source_character_count": 11487,
+      "source_content_sha256": "b1d629c2b1f8ce3bcf65f6316f54fd73d0120b3bd5855f53cbcde581ff1d7693",
+      "step": "step4",
+      "wiki_node_token": "Jk1UwYrvyiQVphkxxuacHd1Cn5d"
+    },
+    {
+      "document_token": "MJkidLxlqo2w8Xx2R8ncKIpXnOe",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/QtmtwRJiki7DAqkWGA5cvhdInWf",
+      "kind": "experiment_report",
+      "path": "step4/EXPERIMENT_REPORT.md",
+      "revision_id": 4,
+      "source_character_count": 11449,
+      "source_content_sha256": "a32c3707e840840cc331361ca4afddca6159fe46328e0040395d7c411fb6be1e",
+      "step": "step4",
+      "wiki_node_token": "QtmtwRJiki7DAqkWGA5cvhdInWf"
+    },
+    {
+      "document_token": "PNBEdKW24oDrnNxJW3HcOnCQnEh",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/T5txw3KpPiEwQHk54uicU1BOnCd",
+      "kind": "plan",
+      "path": "step5/PLAN.md",
+      "revision_id": 2,
+      "source_character_count": 12641,
+      "source_content_sha256": "02cd80f5277295f8fdac286b0ab3489a2df9f82b13602ce9657011ff26119c6e",
+      "step": "step5",
+      "wiki_node_token": "T5txw3KpPiEwQHk54uicU1BOnCd"
+    },
+    {
+      "document_token": "AyAGdbV1EoWXncxWVM3c24bQnle",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/RtRJwMvOOi3L6okjymTciG86nMe",
+      "kind": "experiment_report",
+      "path": "step5/EXPERIMENT_REPORT.md",
+      "revision_id": 10,
+      "source_character_count": 4747,
+      "source_content_sha256": "05bb8a0a152b94b3c4fb45dea421b73577933779c0934cf6768ca3999b7de786",
+      "step": "step5",
+      "wiki_node_token": "RtRJwMvOOi3L6okjymTciG86nMe"
+    },
+    {
+      "document_token": "WLHLdVgkGoNSQpxkRL8cSYeSnOc",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/PYftwWBWpiN4cnkDKQ8czdvwnbb",
+      "kind": "plan",
+      "path": "step6/PLAN.md",
+      "revision_id": 6,
+      "source_character_count": 11413,
+      "source_content_sha256": "f8b62ed26ee19f05e3c07fa6afe2f498767e11368b2ee5cd7c34434e9f86aafb",
+      "step": "step6",
+      "wiki_node_token": "PYftwWBWpiN4cnkDKQ8czdvwnbb"
+    },
+    {
+      "document_token": "EhZydbZvQoVnmXxbkQTcx2R0nuh",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/WGOswYNN1ik5tlko5qfcvrWMncc",
+      "kind": "experiment_report",
+      "path": "step6/EXPERIMENT_REPORT.md",
+      "revision_id": 3,
+      "source_character_count": 6349,
+      "source_content_sha256": "209fe10625870d3b0be9ef2a165278060556edb61ecc5ac73d7e4d79a81372a4",
+      "step": "step6",
+      "wiki_node_token": "WGOswYNN1ik5tlko5qfcvrWMncc"
+    }
+  ],
+  "exported_at_utc": "2026-08-17T11:54:20+00:00",
+  "schema": "r22p19.feishu_experiment_planning_archive.v1",
+  "source_parent": "https://icnbwz7kd1ui.feishu.cn/wiki/D92uw83jKiuDPekbAuCclmE1nFe"
+}

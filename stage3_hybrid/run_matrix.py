@@ -8,7 +8,6 @@ import os
 import random
 import subprocess
 import sys
-import threading
 from pathlib import Path
 
 from stage2_robotwin.stage2c.scripts.run_natural_responsibility import discover_tapes
@@ -55,9 +54,13 @@ def main() -> int:
     p.add_argument("--phase", choices=("single", "two_factor", "heldout"), required=True)
     p.add_argument("--eligible", type=Path)
     p.add_argument("--gpus", type=int, nargs="+", required=True)
+    p.add_argument("--workers", type=int)
     args = p.parse_args()
     if not 1 <= len(args.gpus) <= 2:
         raise ValueError("Stage3A contract permits one or two GPUs only")
+    workers = len(args.gpus) if args.workers is None else int(args.workers)
+    if not len(args.gpus) <= workers <= 2 * len(args.gpus):
+        raise ValueError("workers must be one or two fresh scenes per selected GPU")
     repo = str(Path(__file__).resolve().parents[1])
     python = sys.executable
     tapes = discover_tapes(args.tape_root.resolve())
@@ -90,18 +93,15 @@ def main() -> int:
             f"seed{cell['seed']:04d}__{cell['condition']}__{cell['mode']}__r{cell['repeat']}.json")
     args.output.mkdir(parents=True, exist_ok=True)
     manifest = {"schema": "r22p19.stage3a.launch.v1", "phase": args.phase,
-                "cell_count": len(cells), "max_parallel": len(args.gpus), "gpus": args.gpus,
+                "cell_count": len(cells), "max_parallel": workers, "gpus": args.gpus,
+                "resumed_complete_at_launch": sum(Path(cell["output"]).is_file() for cell in cells),
                 "randomization_seed": 20260818 + {"single": 1, "two_factor": 2, "heldout": 3}[args.phase],
                 "cells": cells, "accepted": False, "pai_job_count": 0}
     manifest["contract_sha256"] = canonical_hash({key: value for key, value in manifest.items() if key != "contract_sha256"})
     write_json(args.output / "launch_manifest.json", manifest)
-    locks = {gpu: threading.Lock() for gpu in args.gpus}
     receipts = []
-    def locked(cell):
-        with locks[cell["gpu"]]:
-            return run_one(cell, python, repo, args.robotwin_root)
-    with concurrent.futures.ThreadPoolExecutor(max_workers=len(args.gpus)) as pool:
-        futures = {pool.submit(locked, cell): cell for cell in cells}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(run_one, cell, python, repo, args.robotwin_root): cell for cell in cells}
         for count, future in enumerate(concurrent.futures.as_completed(futures), 1):
             cell = futures[future]
             try:

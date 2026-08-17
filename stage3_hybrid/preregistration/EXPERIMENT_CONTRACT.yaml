@@ -35,6 +35,7 @@ eligibility:
   oracle_minus_base_min: 0.15
   oracle_success_min: 0.60
   required_stresses: 2
+  heldout_selection_if_more_than_two: lexicographically_first_two_condition_names
 stage3a1_gate:
   heldout_disagreement_min: 0.30
   success_gain_min: 0.15

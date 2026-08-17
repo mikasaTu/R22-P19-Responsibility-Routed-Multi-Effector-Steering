@@ -89,9 +89,13 @@ def summarize(rows):
 def main():
     p = argparse.ArgumentParser(); p.add_argument("--roots", type=Path, nargs="+", required=True); p.add_argument("--output", type=Path, required=True)
     args = p.parse_args(); rows = load_roots(args.roots); conditions, eligible = summarize(rows)
-    decision = "CALIBRATION_ELIGIBLE" if len(eligible) >= 2 else "NO_INFORMATIVE_FAILURE_SPACE"
+    all_eligible = sorted(eligible, key=lambda item: item["name"])
+    selected_eligible = all_eligible[:2]
+    decision = "CALIBRATION_ELIGIBLE" if len(all_eligible) >= 2 else "NO_INFORMATIVE_FAILURE_SPACE"
     result = {"schema": "r22p19.stage3a.calibration_analysis.v1", "decision": decision,
-              "eligible_count": len(eligible), "eligible_conditions": eligible,
+              "eligible_count": len(all_eligible), "all_eligible_conditions": all_eligible,
+              "eligible_conditions": selected_eligible,
+              "heldout_selection_rule": "lexicographically_first_two_condition_names",
               "conditions": conditions, "accepted": False, "pai_job_count": 0}
     write_json(args.output, result); print(f"STAGE3_ANALYSIS {decision} eligible={len(eligible)}")
     return 0

@@ -8,6 +8,22 @@ from pathlib import Path
 from stage3_hybrid.modes import MODE_BY_NAME
 
 
+FINAL_DECISIONS = {"BLOCKED_RUNTIME", "NO_INFORMATIVE_FAILURE_SPACE", "MODE_LIBRARY_NO_GO",
+                   "ORACLE_UPPER_BOUND_GO_SHORT_HORIZON_PENDING", "SHORT_HORIZON_SIGNAL_WEAK",
+                   "HYBRID_ROUTING_SIGNAL_GO"}
+
+
+def validate_receipt_flags(row: dict) -> bool:
+    return bool(row["fresh_process"] and row["fresh_scene"]
+                and row["replayed_from_episode_start"]
+                and not row["snapshot_restore_used"])
+
+
+def validate_final_decision(decision: str) -> None:
+    if decision not in FINAL_DECISIONS:
+        raise ValueError(f"unregistered final decision {decision}")
+
+
 def main() -> int:
     p = argparse.ArgumentParser(); p.add_argument("--root", type=Path, required=True); p.add_argument("--output", type=Path, required=True)
     args = p.parse_args()
@@ -28,7 +44,7 @@ def main() -> int:
         if len({row["prefix_command_sha256"] for row in cells}) != 1:
             checks["prefix_hash_invariant"] = False; failures.append([*key, "prefix_hash"])
         for row in cells:
-            checks["all_fresh_process"] &= bool(row["fresh_process"] and row["fresh_scene"] and row["replayed_from_episode_start"])
+            checks["all_fresh_process"] &= validate_receipt_flags(row)
             checks["no_snapshot_restore"] &= not bool(row["snapshot_restore_used"])
             checks["all_accepted_false"] &= not bool(row["accepted"])
             checks["all_pai_job_false"] &= not bool(row["pai_job_created"])
@@ -46,4 +62,3 @@ def main() -> int:
 
 
 if __name__ == "__main__": raise SystemExit(main())
-

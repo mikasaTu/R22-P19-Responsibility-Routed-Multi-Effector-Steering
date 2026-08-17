@@ -54,7 +54,10 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(len(set(hashes)), 1)
 
     def test_05_fresh_process_contract(self):
-        self.assertTrue(True)  # enforced by one subprocess per cell in run_matrix
+        from stage3_hybrid.audit import validate_receipt_flags
+        good={"fresh_process":True,"fresh_scene":True,"replayed_from_episode_start":True,"snapshot_restore_used":False}
+        self.assertTrue(validate_receipt_flags(good)); bad=dict(good,snapshot_restore_used=True)
+        self.assertFalse(validate_receipt_flags(bad))
 
     def test_06_outcome_independent_mode_definition(self):
         before = [(m.name, m.kind, m.offset) for m in MODES]
@@ -81,7 +84,9 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(RuntimeError): summarize([{"condition": "x", "seed": 0, "repeat": 0, "mode": "M0_BASE", "metrics": {}}])
 
     def test_11_fail_closed_decision(self):
-        self.assertNotIn("GO", {"BLOCKED_RUNTIME", "NO_INFORMATIVE_FAILURE_SPACE"})
+        from stage3_hybrid.audit import validate_final_decision
+        validate_final_decision("NO_INFORMATIVE_FAILURE_SPACE")
+        with self.assertRaises(ValueError): validate_final_decision("GO")
 
     def test_12_grid_and_baselines_exact(self):
         self.assertEqual(len(single_factor_conditions()), 14); self.assertEqual(len(two_factor_conditions()), 6)

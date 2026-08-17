@@ -63,10 +63,23 @@ def summarize(rows):
         base_rate, oracle_rate, disagree = map(float, (np.mean(base_success), np.mean(oracle_success), np.mean(disagreement)))
         parameters = values[0]["condition_parameters"]
         is_eligible = bool(name != "clean" and .30 <= base_rate <= .80 and disagree >= .30 and oracle_rate - base_rate >= .15 and oracle_rate >= .60)
+        mode_summaries = {}
+        for mode in MODES:
+            mode_rows = [item for item in values if item["mode"] == mode]
+            mode_summaries[mode] = {
+                "success_rate": float(np.mean([item["metrics"]["eventual_task_success"] for item in mode_rows])),
+                "handover_rate": float(np.mean([item["metrics"]["handover_complete"] for item in mode_rows])),
+                "drop_rate": float(np.mean([item["metrics"]["drop"] for item in mode_rows])),
+                "mean_peak_slip_m": float(np.mean([item["metrics"]["peak_relative_slip_m"] for item in mode_rows])),
+                "mean_peak_jerk": float(np.mean([item["metrics"]["peak_object_linear_jerk"] for item in mode_rows])),
+                "mean_action_deviation": float(np.mean([item["metrics"]["donor_action_deviation_mean"] for item in mode_rows])),
+                "mean_donor_residual_steps": float(np.mean([item["metrics"]["donor_residual_duration_steps"] for item in mode_rows])),
+            }
         row = {"name": name, "parameters": parameters, "episodes_x_repeats": len(instances),
                "base_success": base_rate, "oracle_success": oracle_rate,
                "oracle_minus_base": oracle_rate - base_rate, "candidate_disagreement": disagree,
-               "oracle_selection_counts": dict(selections), "eligible": is_eligible}
+               "oracle_selection_counts": dict(selections), "mode_summaries": mode_summaries,
+               "eligible": is_eligible}
         conditions.append(row)
         if is_eligible:
             eligible.append({"name": name, "parameters": parameters})

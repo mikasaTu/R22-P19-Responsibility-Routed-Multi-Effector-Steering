@@ -59,8 +59,8 @@ def main() -> int:
     if not 1 <= len(args.gpus) <= 2:
         raise ValueError("Stage3A contract permits one or two GPUs only")
     workers = len(args.gpus) if args.workers is None else int(args.workers)
-    if not len(args.gpus) <= workers <= 2 * len(args.gpus):
-        raise ValueError("workers must be one or two fresh scenes per selected GPU")
+    if not len(args.gpus) <= workers <= 4 * len(args.gpus):
+        raise ValueError("workers must be one to four fresh scenes per selected GPU")
     repo = str(Path(__file__).resolve().parents[1])
     python = sys.executable
     tapes = discover_tapes(args.tape_root.resolve())

@@ -71,7 +71,7 @@ def run(args) -> dict:
         override = ConditionOverride(task, receiver, condition, frame)
         grasp_delta = None
         positions, linear, angular, contacts, tcp_left, tcp_right = [], [], [], [], [], []
-        command_items, prefix_items = [], []
+        command_items, base_items, prefix_items = [], [], []
         donor_sources, deviations, release_steps = [], [], []
         donor_contact_steps, receiver_only_streak, max_receiver_only = [], 0, 0
         anchor_relative = None
@@ -87,6 +87,7 @@ def run(args) -> dict:
             for suffix in ("position", "velocity", "gripper"):
                 item[f"{receiver}_{suffix}"] = receiver_raw[f"{receiver}_{suffix}"]
             command_items.append(item)
+            base_items.append(tape.item(step))
             if step < anchor:
                 prefix_items.append(item)
             donor_sources.append(donor_source)
@@ -160,6 +161,8 @@ def run(args) -> dict:
             "fresh_process": True, "fresh_scene": True,
             "replayed_from_episode_start": True, "snapshot_restore_used": False,
             "receiver_command_sha256": command_hash(command_items, receiver),
+            "donor_base_command_sha256": command_hash(base_items, donor),
+            "donor_modified_command_sha256": command_hash(command_items, donor),
             "prefix_command_sha256": command_hash(prefix_items, "left") + ":" + command_hash(prefix_items, "right"),
             "tape_sha256": sha256_file(args.tape), "meta_sha256": sha256_file(args.meta),
             "donor_source_first_changed": next((i for i, value in enumerate(donor_sources) if i != value), None),
@@ -168,9 +171,12 @@ def run(args) -> dict:
                 "eventual_task_success": success,
                 "handover_complete": retention,
                 "receiver_only_retention_steps": max_receiver_only,
+                "receiver_only_retention": retention,
                 "drop": bool(np.min(pos[anchor:, 2]) < 0.78),
                 "takeover_failure": not retention,
                 "final_left_contact": bool(con[-1, 0]), "final_right_contact": bool(con[-1, 1]),
+                "donor_final_contact": bool(con[-1, 0 if donor == "left" else 1]),
+                "receiver_final_contact": bool(con[-1, 0 if receiver == "left" else 1]),
                 "donor_residual_duration_steps": max(0, max(donor_contact_steps, default=e4) - e4),
                 "takeover_delay_steps": None if first_takeover is None else first_takeover - e4,
                 "min_object_height_m": float(np.min(pos[anchor:, 2])),
@@ -180,6 +186,7 @@ def run(args) -> dict:
                 "peak_relative_slip_m": float(max(slip["left"].max(initial=0.0), slip["right"].max(initial=0.0))),
                 "donor_action_deviation_mean": float(np.mean(deviations[anchor:])),
                 "donor_release_step": min(release_steps) if release_steps else None,
+                "release_time": None if not release_steps else min(release_steps) / 250.0,
             },
             "short_horizon_features": short, "wall_time_s": time.perf_counter() - started,
             "accepted": False, "pai_job_created": False,

@@ -61,7 +61,7 @@ def main():
              "paired_episode_bootstrap_ci95":ci,"success_path":success_path,"disturbance_path":disturbance_path,"passed":passed,
              "episodes":episode_rows}
         results.append(row)
-        if passed: passing.append(condition)
+        if passed and condition != "clean": passing.append(condition)
     decision="ORACLE_UPPER_BOUND_GO_SHORT_HORIZON_PENDING" if len(passing)>=2 else "MODE_LIBRARY_NO_GO"
     output={"schema":"r22p19.stage3a.heldout.v1","decision":decision,"passing_stresses":passing,"conditions":results,
             "accepted":False,"pai_job_count":0}

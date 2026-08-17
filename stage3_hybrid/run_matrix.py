@@ -69,7 +69,7 @@ def main() -> int:
         if args.eligible is None:
             raise ValueError("heldout phase requires --eligible")
         payload = json.loads(args.eligible.read_text())
-        conditions = payload["eligible_conditions"]
+        conditions = [{"name": "clean", "parameters": {}}] + payload["eligible_conditions"]
         seeds = [2, 3, 5, 6, 7, 8, 9, 10]
     missing = sorted(set(seeds) - set(tapes))
     if missing:

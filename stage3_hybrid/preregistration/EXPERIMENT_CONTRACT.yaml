@@ -1,0 +1,51 @@
+schema: r22p19.stage3a.experiment_contract.v1
+accepted: false
+runtime:
+  benchmark: RoboTwin_handover_block
+  commit: 266f3aadf505a4f7fe9af0faa41a20f5f47cd123
+  planner: mplib_screw
+  max_gpus: 2
+  pai_jobs_permitted: 0
+  training_permitted: false
+calibration_seeds: [0, 1]
+heldout_seeds: [2, 3, 5, 6, 7, 8, 9, 10]
+repeats: 2
+single_factor_conditions: 14
+single_factor_cells: 336
+stress_grid:
+  receiver_gain: [1.0, 0.7, 0.5, 0.35]
+  receiver_delay_steps: [0, 4, 8, 12]
+  receiver_friction_scale: [1.0, 0.7, 0.5, 0.3]
+  object_com_shift_mm: [0, 15, 30]
+  receiver_grasp_offset_mm: [0, 5, 10]
+two_factor_candidates:
+  - {receiver_gain: 0.5, receiver_delay_steps: 8}
+  - {receiver_gain: 0.35, receiver_friction_scale: 0.5}
+  - {receiver_delay_steps: 8, receiver_friction_scale: 0.5}
+  - {receiver_gain: 0.5, object_com_shift_mm: 30}
+  - {receiver_friction_scale: 0.5, receiver_grasp_offset_mm: 10}
+  - {object_com_shift_mm: 30, receiver_grasp_offset_mm: 10}
+outcomes:
+  retention_steps: 50
+  drop_height_m: 0.78
+  disagreement_disturbance_spread_m: 0.02
+eligibility:
+  base_success: [0.30, 0.80]
+  disagreement_min: 0.30
+  oracle_minus_base_min: 0.15
+  oracle_success_min: 0.60
+  required_stresses: 2
+stage3a1_gate:
+  heldout_disagreement_min: 0.30
+  success_gain_min: 0.15
+  disturbance_reduction_min: 0.20
+  paired_ci_must_exclude_zero: true
+  no_success_degradation: true
+stage3a2_gate:
+  horizons: [50, 100, 200]
+  pairwise_accuracy_min: 0.70
+  recovered_oracle_gain_fraction_min: 0.70
+  success_gain_min: 0.10
+  clean_drop_max: 0.03
+  required_stresses: 2
+final_decisions: [BLOCKED_RUNTIME, NO_INFORMATIVE_FAILURE_SPACE, MODE_LIBRARY_NO_GO, ORACLE_UPPER_BOUND_GO_SHORT_HORIZON_PENDING, SHORT_HORIZON_SIGNAL_WEAK, HYBRID_ROUTING_SIGNAL_GO]

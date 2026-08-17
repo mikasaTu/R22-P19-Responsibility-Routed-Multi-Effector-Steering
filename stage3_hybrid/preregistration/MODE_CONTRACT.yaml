@@ -1,0 +1,17 @@
+schema: r22p19.stage3a.mode_contract.v1
+accepted: false
+donor_only: true
+receiver_command_must_be_byte_identical_across_modes: true
+paired_arm_velocity_gripper_shift: true
+modes:
+  M0_BASE: {kind: base, offset_steps: 0}
+  M1_EARLY_100: {kind: early, offset_steps: 100}
+  M2_EARLY_50: {kind: early, offset_steps: 50}
+  M3_DELAY_50: {kind: delay, offset_steps: 50}
+  M4_DELAY_100: {kind: delay, offset_steps: 100}
+  M5_ABORT_HOLD: {kind: abort_hold, offset_steps: 0}
+activation_event: E4
+anchor_formula: max(E3+25,E4-100)
+delay_hold_source: E4-1
+end_of_tape_policy: clamp_last
+

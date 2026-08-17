@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "audit_pass": true,
+  "cell_count": 336,
+  "checks": {
+    "activation_exact": true,
+    "all_accepted_false": true,
+    "all_fresh_process": true,
+    "all_pai_job_false": true,
+    "m0_noop": true,
+    "no_snapshot_restore": true,
+    "prefix_hash_invariant": true,
+    "receiver_hash_invariant": true
+  },
+  "failures": [],
+  "group_count": 56,
+  "pai_job_count": 0,
+  "schema": "r22p19.stage3a.audit.v1"
+}

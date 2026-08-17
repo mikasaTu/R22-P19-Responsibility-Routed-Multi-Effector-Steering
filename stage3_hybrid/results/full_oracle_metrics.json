@@ -1,0 +1,9 @@
+{
+  "accepted": false,
+  "calibration_only": true,
+  "eligible_stress_count": 0,
+  "maximum_oracle_success_gain": 0.0,
+  "privileged_label": "PRIVILEGED_CANDIDATE_SET_UPPER_BOUND",
+  "stage3a1_heldout_executed": false,
+  "stop_reason": "NO_INFORMATIVE_FAILURE_SPACE"
+}

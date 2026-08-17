@@ -1,0 +1,14 @@
+{
+  "accepted": false,
+  "decision": "NO_INFORMATIVE_FAILURE_SPACE",
+  "eligible_stress_count": 0,
+  "formal_cells_complete": 480,
+  "formal_cells_expected": 480,
+  "heldout_formal_executed": false,
+  "heldout_stop_reason": "calibration eligibility requires at least two stresses",
+  "pai_job_count": 0,
+  "ranker_executed": false,
+  "ranker_stop_reason": "Stage3A-2 is prohibited without an informative calibration space and Stage3A-1 GO",
+  "schema": "r22p19.stage3a.current_decision.v1",
+  "stage2_history_overridden": false
+}

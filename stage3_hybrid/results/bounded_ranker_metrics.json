@@ -1,0 +1,7 @@
+{
+  "accepted": false,
+  "executed": false,
+  "pai_job_count": 0,
+  "reason": "Stage3A-2 prohibited because eligible_stress_count=0 and Stage3A-1 did not run",
+  "status": "GATED_NOT_RUN"
+}

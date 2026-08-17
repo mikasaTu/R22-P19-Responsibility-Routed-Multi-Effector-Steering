@@ -1,6 +1,6 @@
 # Feishu Experiment Planning Archive
 
-This directory is a versioned Markdown export of all six `实验规划/stepN`
+This directory is a versioned Markdown export of all seven `实验规划/stepN`
 documents and their direct child `实验报告` documents. Each file preserves
 the full Feishu Markdown body and records its source URL, tokens, revision,
 export timestamp, and source-content SHA-256 in front matter.
@@ -13,6 +13,7 @@ export timestamp, and source-content SHA-256 in front matter.
 | step4 | [PLAN.md](step4/PLAN.md) | [EXPERIMENT_REPORT.md](step4/EXPERIMENT_REPORT.md) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/Jk1UwYrvyiQVphkxxuacHd1Cn5d) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/QtmtwRJiki7DAqkWGA5cvhdInWf) |
 | step5 | [PLAN.md](step5/PLAN.md) | [EXPERIMENT_REPORT.md](step5/EXPERIMENT_REPORT.md) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/T5txw3KpPiEwQHk54uicU1BOnCd) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/RtRJwMvOOi3L6okjymTciG86nMe) |
 | step6 | [PLAN.md](step6/PLAN.md) | [EXPERIMENT_REPORT.md](step6/EXPERIMENT_REPORT.md) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/PYftwWBWpiN4cnkDKQ8czdvwnbb) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/WGOswYNN1ik5tlko5qfcvrWMncc) |
+| step7 | [PLAN.md](step7/PLAN.md) | [EXPERIMENT_REPORT.md](step7/EXPERIMENT_REPORT.md) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/T4QIwhbwYipqGHkGiXOcQEiGnxB) | [source](https://icnbwz7kd1ui.feishu.cn/wiki/BrzNwMloVi5cZBkpR4ec7aLfn7e) |
 
 `SOURCE_MANIFEST.json` records the exact Feishu revision and hash for each
 source body. `SHA256SUMS` covers the generated archive files.

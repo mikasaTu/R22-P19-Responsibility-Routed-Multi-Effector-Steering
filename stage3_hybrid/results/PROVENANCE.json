@@ -1,0 +1,10 @@
+{
+  "accepted": false,
+  "host": "dsw-925252-7796557db6-j84nn",
+  "pai_job_count": 0,
+  "planner": "mplib_screw",
+  "python": "3.10.19",
+  "robotwin_commit": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+  "single_factor_raw_root": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage3a/calibration-single-v2",
+  "two_factor_raw_root": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage3a/calibration-twofactor-v1"
+}

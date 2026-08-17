@@ -1,0 +1,10 @@
+{
+  "accepted": false,
+  "formal_cells": 480,
+  "max_selected_gpus": 2,
+  "pai_job_count": 0,
+  "single_factor_cells": 336,
+  "single_factor_manifest_sha256": "3c5a28b6a23926a78f3a5dda4ce2e881384b78368d650328d5bdd4f83b825ec6",
+  "two_factor_cells": 144,
+  "two_factor_manifest_sha256": "355e87416aa4b88fe2e5982644815c9a04d5e6e92ef0edfe33ea763ad8646063"
+}

@@ -1,0 +1,11 @@
+{
+  "accepted": false,
+  "act_training_started": false,
+  "inference_started": false,
+  "job_ids": [],
+  "pai_job_count": 0,
+  "pi05_training_started": false,
+  "reason": "Stage3A contract prohibits every PAI job and all learned-policy or ranker-estimator training",
+  "responsibility_estimator_training_started": false,
+  "schema": "r22p19.stage3a.pai_boundary.v1"
+}

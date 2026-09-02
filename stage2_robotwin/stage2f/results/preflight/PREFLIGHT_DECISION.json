@@ -1,0 +1,45 @@
+{
+  "accepted": false,
+  "active_reference_sha256": "f1621b9e5497e8f909845315dd9674395fae37c6e3baad6eaa958c26b384d6e1",
+  "completed_smoke_cells": 2,
+  "decision": "PREFLIGHT_READY_AWAITING_USER_CONFIRMATION",
+  "expected_smoke_cells": 2,
+  "formal_144_plus_10_executed": false,
+  "counterfactual_oracle_aligned_at_every_sample": true,
+  "invalid_lineages": [
+    {
+      "cause": "live Jacobian active-reference generation indirectly changed the non-soft receiver target across gamma",
+      "disposition": "INVALID_RECEIVER_COMMAND_DRIFT_NOT_USED",
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-invalid-live-jacobian-v1"
+    },
+    {
+      "cause": "oracle branches started at episode-start rather than each sampled main state; physical trace only remains descriptive",
+      "disposition": "INVALID_COUNTERFACTUAL_START_STATE_NOT_USED",
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v2"
+    },
+    {
+      "cause": "preflight hardening code-order failure",
+      "disposition": "FAILED_NOT_USED",
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v3-aligned-oracle"
+    },
+    {
+      "cause": "missing explicit EGL/Vulkan environment",
+      "disposition": "FAILED_NOT_USED",
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v4-aligned-oracle"
+    },
+    {
+      "cause": "lockstep oracle diverged after branch rollout because PhysX warm-start state is not exposed",
+      "disposition": "INVALID_ORACLE_LOCKSTEP_DRIFT_NOT_USED",
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v5-aligned-oracle"
+    }
+  ],
+  "main_matrix_estimated_hours_single_gpu": 2.6241222551791,
+  "median_smoke_cell_wall_time_s": 65.6030563794775,
+  "pai_job_created": false,
+  "receiver_command_hash_equal": true,
+  "sample_count_per_cell": 17,
+  "stage2f_source_sha256": "1d310217545c6f2378edc6efa85eefe6aefe19cb4cd44d4299057ba0c48a25fe",
+  "superseded_valid_lineage": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v6-cross-scene-sync",
+  "total_154_estimated_hours_single_gpu": 2.806352967344315,
+  "valid_lineage": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v7-final-source"
+}

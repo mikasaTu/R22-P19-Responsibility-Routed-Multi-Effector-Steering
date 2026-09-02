@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "amplitude_m": 0.015,
+  "axis": "e_perp",
+  "both_arms_common_mode": true,
+  "command_count": 5154,
+  "episode": 0,
+  "events": {
+    "E0": 1148,
+    "E1": 3411,
+    "E2": 3411,
+    "E3": 3425,
+    "E4": 4083,
+    "E5": 4556,
+    "E6": 4570
+  },
+  "npz_sha256": "f1621b9e5497e8f909845315dd9674395fae37c6e3baad6eaa958c26b384d6e1",
+  "pai_job_created": false,
+  "schema": "r22p19.stage2f.frozen_active_reference.v1",
+  "seed": 0,
+  "source_tape_sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5",
+  "status": "COMPLETE"
+}

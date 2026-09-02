@@ -1,5 +1,5 @@
 {
-  "document_count": 14,
+  "document_count": 16,
   "documents": [
     {
       "document_token": "HgWBdgg08od3nfx0HwPc5Dzgne6",
@@ -154,9 +154,31 @@
       "source_content_sha256": "dd1def8b7299ca65936867997396da6572b229ecda9165147a79f29650bf708a",
       "step": "step7",
       "wiki_node_token": "BrzNwMloVi5cZBkpR4ec7aLfn7e"
+    },
+    {
+      "document_token": "RQ8MdECkLoFiY7xCkrlcjLIgnrg",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/UMTAwkrwsihre2k6ppjc4CXInOg",
+      "kind": "plan",
+      "path": "step8/PLAN.md",
+      "revision_id": 2,
+      "source_character_count": 5306,
+      "source_content_sha256": "fa7db89e84b50b5ffc21cb7d15de53c7c3e6a83057433e560e30d2924017d655",
+      "step": "step8",
+      "wiki_node_token": "UMTAwkrwsihre2k6ppjc4CXInOg"
+    },
+    {
+      "document_token": "A0ovdPzT1ooYWsxGCM3c8qKcn8g",
+      "feishu_url": "https://icnbwz7kd1ui.feishu.cn/wiki/EEM5w0qfNiTcgsk3dHzcvr8cnLg",
+      "kind": "experiment_report",
+      "path": "step8/EXPERIMENT_REPORT.md",
+      "revision_id": 8,
+      "source_character_count": 8505,
+      "source_content_sha256": "c49891f9bcfbad8fd333ea75ac30604d1dcedd5ce4534d800d99eb9b8ad3ca97",
+      "step": "step8",
+      "wiki_node_token": "EEM5w0qfNiTcgsk3dHzcvr8cnLg"
     }
   ],
-  "exported_at_utc": "2026-08-17T19:01:13+00:00",
+  "exported_at_utc": "2026-09-02T13:58:43+00:00",
   "schema": "r22p19.feishu_experiment_planning_archive.v1",
   "source_parent": "https://icnbwz7kd1ui.feishu.cn/wiki/D92uw83jKiuDPekbAuCclmE1nFe"
 }

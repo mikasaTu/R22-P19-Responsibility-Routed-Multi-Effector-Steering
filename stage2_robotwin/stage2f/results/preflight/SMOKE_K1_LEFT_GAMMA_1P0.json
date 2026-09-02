@@ -1,0 +1,1076 @@
+{
+  "accepted": false,
+  "active_reference_amplitude_m": 0.015,
+  "active_reference_axis": "e_perp",
+  "active_reference_both_arms_common_mode": true,
+  "available_sample_steps": [
+    3833,
+    3858,
+    3883,
+    3908,
+    3933,
+    3958,
+    3983,
+    4008,
+    4033,
+    4058,
+    4083,
+    4108,
+    4133,
+    4158,
+    4183,
+    4208,
+    4233
+  ],
+  "branch_count": 68,
+  "check_success": true,
+  "command_states": [
+    {
+      "actual_parallel_action_m": 0.001198488591411284,
+      "actual_soft_target": [
+        -0.39077843055894323,
+        1.90280910941056,
+        1.4236389733240318,
+        0.4676576975467327,
+        0.9947468509516114,
+        0.014665614957102472
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.0,
+          "rho_receiver": 0.0,
+          "rho_soft": 1.0
+        },
+        "20": {
+          "rho_joint": 0.0,
+          "rho_receiver": 0.0,
+          "rho_soft": 1.0
+        },
+        "5": {
+          "rho_joint": 0.0,
+          "rho_receiver": 0.0,
+          "rho_soft": 1.0
+        }
+      },
+      "expert_parallel_action_m": 0.001198488591411284,
+      "expert_soft_target": [
+        -0.39077843055894323,
+        1.90280910941056,
+        1.4236389733240318,
+        0.4676576975467327,
+        0.9947468509516114,
+        0.014665614957102472
+      ],
+      "parallel_action_abs": 0.001198488591411284,
+      "step": 3833
+    },
+    {
+      "actual_parallel_action_m": 0.001199036430453128,
+      "actual_soft_target": [
+        -0.3906123475501916,
+        1.9043090799120816,
+        1.4257436987466996,
+        0.4670611888417677,
+        0.9949351562107811,
+        0.014652545443282084
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.014555660842016727,
+          "rho_receiver": -0.052581938624789624,
+          "rho_soft": 1.038026277782773
+        },
+        "20": {
+          "rho_joint": 1.6964022391295848,
+          "rho_receiver": -1.6778777589940486,
+          "rho_soft": 0.9814755198644637
+        },
+        "5": {
+          "rho_joint": -0.012582720561237703,
+          "rho_receiver": 0.012582720561237703,
+          "rho_soft": 1.0
+        }
+      },
+      "expert_parallel_action_m": 0.001199036430453128,
+      "expert_soft_target": [
+        -0.3906123475501916,
+        1.9043090799120816,
+        1.4257436987466996,
+        0.4670611888417677,
+        0.9949351562107811,
+        0.014652545443282084
+      ],
+      "parallel_action_abs": 0.001199036430453128,
+      "step": 3858
+    },
+    {
+      "actual_parallel_action_m": 0.0011731934995444688,
+      "actual_soft_target": [
+        -0.390475708907953,
+        1.9055661889989457,
+        1.4275140220316687,
+        0.4665572372850364,
+        0.9950903419559878,
+        0.014638822193359598
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.07284876559298585,
+          "rho_receiver": 0.9188095544097925,
+          "rho_soft": 0.00834167999722143
+        },
+        "20": {
+          "rho_joint": 0.6983446868161961,
+          "rho_receiver": -0.0929402699870983,
+          "rho_soft": 0.39459558317090226
+        },
+        "5": {
+          "rho_joint": 0.004877759387639151,
+          "rho_receiver": 0.4114534879456108,
+          "rho_soft": 0.5836687526667501
+        }
+      },
+      "expert_parallel_action_m": 0.0011731934995444688,
+      "expert_soft_target": [
+        -0.390475708907953,
+        1.9055661889989457,
+        1.4275140220316687,
+        0.4665572372850364,
+        0.9950903419559878,
+        0.014638822193359598
+      ],
+      "parallel_action_abs": 0.0011731934995444688,
+      "step": 3883
+    },
+    {
+      "actual_parallel_action_m": 0.0012172393557507172,
+      "actual_soft_target": [
+        -0.39036946574633646,
+        1.906565411630457,
+        1.428945258126047,
+        0.46612918096993433,
+        0.9952112902692898,
+        0.014632078256406958
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.009989527861854778,
+          "rho_receiver": 0.5150428356929277,
+          "rho_soft": 0.47496763644521744
+        },
+        "20": {
+          "rho_joint": 0.048561409721002174,
+          "rho_receiver": 0.5375541217907909,
+          "rho_soft": 0.4138844684882071
+        },
+        "5": {
+          "rho_joint": 0.012293737780704682,
+          "rho_receiver": 0.502336612364137,
+          "rho_soft": 0.48536964985515824
+        }
+      },
+      "expert_parallel_action_m": 0.0012172393557507172,
+      "expert_soft_target": [
+        -0.39036946574633646,
+        1.906565411630457,
+        1.428945258126047,
+        0.46612918096993433,
+        0.9952112902692898,
+        0.014632078256406958
+      ],
+      "parallel_action_abs": 0.0012172393557507172,
+      "step": 3908
+    },
+    {
+      "actual_parallel_action_m": 0.0012545049502391463,
+      "actual_soft_target": [
+        -0.3902935480590389,
+        1.9073079012328578,
+        1.4300236635080847,
+        0.4657953545314115,
+        0.9952980847400139,
+        0.01462815887784471
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.01086486023468733,
+          "rho_receiver": 0.7710744996842361,
+          "rho_soft": 0.21806064008107648
+        },
+        "20": {
+          "rho_joint": 0.04018566573465456,
+          "rho_receiver": 0.6236722443692267,
+          "rho_soft": 0.3361420898961187
+        },
+        "5": {
+          "rho_joint": -0.002184800571359115,
+          "rho_receiver": 0.8153529651691306,
+          "rho_soft": 0.18683183540222864
+        }
+      },
+      "expert_parallel_action_m": 0.0012545049502391463,
+      "expert_soft_target": [
+        -0.3902935480590389,
+        1.9073079012328578,
+        1.4300236635080847,
+        0.4657953545314115,
+        0.9952980847400139,
+        0.01462815887784471
+      ],
+      "parallel_action_abs": 0.0012545049502391463,
+      "step": 3933
+    },
+    {
+      "actual_parallel_action_m": 0.001275856603600096,
+      "actual_soft_target": [
+        -0.39024800584915537,
+        1.907790473985441,
+        1.4307421990389266,
+        0.465560323121949,
+        0.9953506255487561,
+        0.014626209173248549
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.32620550093578987,
+          "rho_receiver": 0.7692571708476256,
+          "rho_soft": 0.5569483300881644
+        },
+        "20": {
+          "rho_joint": 0.212494533585658,
+          "rho_receiver": 0.9415770729859188,
+          "rho_soft": -0.1540716065715767
+        },
+        "5": {
+          "rho_joint": -0.0023058170000697558,
+          "rho_receiver": 1.0025128472542295,
+          "rho_soft": -0.00020703025415988642
+        }
+      },
+      "expert_parallel_action_m": 0.001275856603600096,
+      "expert_soft_target": [
+        -0.39024800584915537,
+        1.907790473985441,
+        1.4307421990389266,
+        0.465560323121949,
+        0.9953506255487561,
+        0.014626209173248549
+      ],
+      "parallel_action_abs": 0.001275856603600096,
+      "step": 3958
+    },
+    {
+      "actual_parallel_action_m": 0.0012761834990920496,
+      "actual_soft_target": [
+        -0.39023288252939115,
+        1.9080107072192254,
+        1.4310953315870918,
+        0.46542709584410447,
+        0.995368844768016,
+        0.014626347123772344
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.0019830102753813296,
+          "rho_receiver": 0.6616652079608365,
+          "rho_soft": 0.33635178176378216
+        },
+        "20": {
+          "rho_joint": 0.00870579001563873,
+          "rho_receiver": 0.6446498165361311,
+          "rho_soft": 0.3466443934482303
+        },
+        "5": {
+          "rho_joint": -0.00579613756274395,
+          "rho_receiver": 0.7956012185488109,
+          "rho_soft": 0.21019491901393303
+        }
+      },
+      "expert_parallel_action_m": 0.0012761834990920496,
+      "expert_soft_target": [
+        -0.39023288252939115,
+        1.9080107072192254,
+        1.4310953315870918,
+        0.46542709584410447,
+        0.995368844768016,
+        0.014626347123772344
+      ],
+      "parallel_action_abs": 0.0012761834990920496,
+      "step": 3983
+    },
+    {
+      "actual_parallel_action_m": 0.0012612390946804954,
+      "actual_soft_target": [
+        -0.39024729609747527,
+        1.9079664471944833,
+        1.4310821705350736,
+        0.46539595437040043,
+        0.9953535541699633,
+        0.014626700634430785
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.011318057743433821,
+          "rho_receiver": 0.10566608526041923,
+          "rho_soft": 0.8830158569961468
+        },
+        "20": {
+          "rho_joint": -0.0055653078774646515,
+          "rho_receiver": 0.30725518624199827,
+          "rho_soft": 0.6983101216354665
+        },
+        "5": {
+          "rho_joint": -0.012166169124025617,
+          "rho_receiver": 0.06519524899339693,
+          "rho_soft": 0.9469709201306286
+        }
+      },
+      "expert_parallel_action_m": 0.0012612390946804954,
+      "expert_soft_target": [
+        -0.39024729609747527,
+        1.9079664471944833,
+        1.4310821705350736,
+        0.46539595437040043,
+        0.9953535541699633,
+        0.014626700634430785
+      ],
+      "parallel_action_abs": 0.0012612390946804954,
+      "step": 4008
+    },
+    {
+      "actual_parallel_action_m": 0.0012419065038299373,
+      "actual_soft_target": [
+        -0.39029193464252737,
+        1.907658828747576,
+        1.4307034239196201,
+        0.4654653605533778,
+        0.9953041243855011,
+        0.014629657530540723
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.7486123260334565,
+          "rho_receiver": 0.7579728192990975,
+          "rho_soft": -0.5065851453325543
+        },
+        "20": {
+          "rho_joint": 0.4164260845042769,
+          "rho_receiver": 0.7474996216072993,
+          "rho_soft": -0.1639257061115761
+        },
+        "5": {
+          "rho_joint": 0.7004647717958173,
+          "rho_receiver": 0.8128623742022975,
+          "rho_soft": -0.5133271459981148
+        }
+      },
+      "expert_parallel_action_m": 0.0012419065038299373,
+      "expert_soft_target": [
+        -0.39029193464252737,
+        1.907658828747576,
+        1.4307034239196201,
+        0.4654653605533778,
+        0.9953041243855011,
+        0.014629657530540723
+      ],
+      "parallel_action_abs": 0.0012419065038299373,
+      "step": 4033
+    },
+    {
+      "actual_parallel_action_m": 0.001208520753158249,
+      "actual_soft_target": [
+        -0.3903666089118833,
+        1.9070885506605684,
+        1.4299601492891332,
+        0.4656360976440158,
+        0.9952207340329023,
+        0.0146338351659626
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.8601032321938478,
+          "rho_receiver": 0.8215600304161904,
+          "rho_soft": -0.6816632626100381
+        },
+        "20": {
+          "rho_joint": 0.5657158871979558,
+          "rho_receiver": 0.8254133252977873,
+          "rho_soft": -0.39112921249574323
+        },
+        "5": {
+          "rho_joint": 0.6427650505966718,
+          "rho_receiver": 0.8606059957551196,
+          "rho_soft": -0.5033710463517919
+        }
+      },
+      "expert_parallel_action_m": 0.001208520753158249,
+      "expert_soft_target": [
+        -0.3903666089118833,
+        1.9070885506605684,
+        1.4299601492891332,
+        0.4656360976440158,
+        0.9952207340329023,
+        0.0146338351659626
+      ],
+      "parallel_action_abs": 0.001208520753158249,
+      "step": 4058
+    },
+    {
+      "actual_parallel_action_m": 0.0011634465840890907,
+      "actual_soft_target": [
+        -0.39047087855039986,
+        1.9062580800784903,
+        1.4288551717031617,
+        0.465907668972277,
+        0.9951038660619432,
+        0.014639390680608995
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.0017088048229918038,
+          "rho_receiver": 0.8956085215455876,
+          "rho_soft": 0.10610028327740413
+        },
+        "20": {
+          "rho_joint": -0.001612575493549205,
+          "rho_receiver": 0.9161782456830304,
+          "rho_soft": 0.085434329810519
+        },
+        "5": {
+          "rho_joint": 0.005081580462576693,
+          "rho_receiver": 0.8734930028781865,
+          "rho_soft": 0.1214254166592367
+        }
+      },
+      "expert_parallel_action_m": 0.0011634465840890907,
+      "expert_soft_target": [
+        -0.39047087855039986,
+        1.9062580800784903,
+        1.4288551717031617,
+        0.465907668972277,
+        0.9951038660619432,
+        0.014639390680608995
+      ],
+      "parallel_action_abs": 0.0011634465840890907,
+      "step": 4083
+    },
+    {
+      "actual_parallel_action_m": 0.0010839128891385241,
+      "actual_soft_target": [
+        -0.3906042741707976,
+        1.9051719751532823,
+        1.427393666320319,
+        0.4662794722460033,
+        0.9949540626128063,
+        0.014646297139436642
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.006789753522499843,
+          "rho_receiver": 0.9685102782376536,
+          "rho_soft": 0.038279475284846445
+        },
+        "20": {
+          "rho_joint": -0.0016915674440710394,
+          "rho_receiver": 0.9950301909978684,
+          "rho_soft": 0.006661376446202753
+        },
+        "5": {
+          "rho_joint": -0.0056331800930836205,
+          "rho_receiver": 0.9025855423705701,
+          "rho_soft": 0.10304763772251364
+        }
+      },
+      "expert_parallel_action_m": 0.0010839128891385241,
+      "expert_soft_target": [
+        -0.3906042741707976,
+        1.9051719751532823,
+        1.427393666320319,
+        0.4662794722460033,
+        0.9949540626128063,
+        0.014646297139436642
+      ],
+      "parallel_action_abs": 0.0010839128891385241,
+      "step": 4108
+    },
+    {
+      "actual_parallel_action_m": 0.000955760807526689,
+      "actual_soft_target": [
+        -0.3907665276814603,
+        1.9038353130231307,
+        1.4255836742200818,
+        0.46674924601518275,
+        0.9947716508059212,
+        0.014653706598813725
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.0028829823154761887,
+          "rho_receiver": 0.9430553558293429,
+          "rho_soft": 0.05982762648613344
+        },
+        "20": {
+          "rho_joint": -0.02726369813599049,
+          "rho_receiver": 0.9594323634486264,
+          "rho_soft": 0.06783133468736394
+        },
+        "5": {
+          "rho_joint": 0.003551974437981718,
+          "rho_receiver": 0.8923117478623784,
+          "rho_soft": 0.10413627769963993
+        }
+      },
+      "expert_parallel_action_m": 0.000955760807526689,
+      "expert_soft_target": [
+        -0.3907665276814603,
+        1.9038353130231307,
+        1.4255836742200818,
+        0.46674924601518275,
+        0.9947716508059212,
+        0.014653706598813725
+      ],
+      "parallel_action_abs": 0.000955760807526689,
+      "step": 4133
+    },
+    {
+      "actual_parallel_action_m": 0.0007992350370418317,
+      "actual_soft_target": [
+        -0.3909567781766561,
+        1.9022540869175244,
+        1.4234345342589638,
+        0.46731325764895687,
+        0.9945575842884999,
+        0.014662069113468991
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.023785150771996406,
+          "rho_receiver": 1.0226762811881107,
+          "rho_soft": 0.0011088695838857357
+        },
+        "20": {
+          "rho_joint": 0.01077348201389667,
+          "rho_receiver": 0.9851473222229439,
+          "rho_soft": 0.004079195763159395
+        },
+        "5": {
+          "rho_joint": 0.656772013248332,
+          "rho_receiver": 0.23837695389565317,
+          "rho_soft": 0.10485103285601473
+        }
+      },
+      "expert_parallel_action_m": 0.0007992350370418317,
+      "expert_soft_target": [
+        -0.3909567781766561,
+        1.9022540869175244,
+        1.4234345342589638,
+        0.46731325764895687,
+        0.9945575842884999,
+        0.014662069113468991
+      ],
+      "parallel_action_abs": 0.0007992350370418317,
+      "step": 4158
+    },
+    {
+      "actual_parallel_action_m": 0.000626021151848513,
+      "actual_soft_target": [
+        -0.39117460185980024,
+        1.9004362368681538,
+        1.420958906577551,
+        0.46796633188566106,
+        0.9943124072746442,
+        0.014671927436019762
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": -0.33323603152107895,
+          "rho_receiver": 1.3441090018464712,
+          "rho_soft": -0.01087297032539231
+        },
+        "20": {
+          "rho_joint": 0.2121842746380313,
+          "rho_receiver": 0.8022564886921358,
+          "rho_soft": -0.014440763330167137
+        },
+        "5": {
+          "rho_joint": -0.02432785028156031,
+          "rho_receiver": 0.9309731235575042,
+          "rho_soft": 0.09335472672405619
+        }
+      },
+      "expert_parallel_action_m": 0.000626021151848513,
+      "expert_soft_target": [
+        -0.39117460185980024,
+        1.9004362368681538,
+        1.420958906577551,
+        0.46796633188566106,
+        0.9943124072746442,
+        0.014671927436019762
+      ],
+      "parallel_action_abs": 0.000626021151848513,
+      "step": 4183
+    },
+    {
+      "actual_parallel_action_m": 0.00042919773004856574,
+      "actual_soft_target": [
+        -0.391419804600177,
+        1.898391287090135,
+        1.4181723106092405,
+        0.46870299380965885,
+        0.994036436307509,
+        0.014682653428918604
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.0028963852028879803,
+          "rho_receiver": 1.0067108658814223,
+          "rho_soft": -0.009607251084310257
+        },
+        "20": {
+          "rho_joint": 0.6758703475385028,
+          "rho_receiver": 0.1680127399870313,
+          "rho_soft": 0.15611691247446588
+        },
+        "5": {
+          "rho_joint": 0.016649367091900867,
+          "rho_receiver": 1.018111980998911,
+          "rho_soft": -0.03476134809081193
+        }
+      },
+      "expert_parallel_action_m": 0.00042919773004856574,
+      "expert_soft_target": [
+        -0.391419804600177,
+        1.898391287090135,
+        1.4181723106092405,
+        0.46870299380965885,
+        0.994036436307509,
+        0.014682653428918604
+      ],
+      "parallel_action_abs": 0.00042919773004856574,
+      "step": 4208
+    },
+    {
+      "actual_parallel_action_m": 0.0002778872161052035,
+      "actual_soft_target": [
+        -0.39169051120935916,
+        1.89612789531187,
+        1.415088425206543,
+        0.4695139745856871,
+        0.9937317515854699,
+        0.014699332291904772
+      ],
+      "by_horizon": {
+        "10": {
+          "rho_joint": 0.010200665883178597,
+          "rho_receiver": 0.9196851368521946,
+          "rho_soft": 0.07011419726462689
+        },
+        "20": {
+          "rho_joint": 0.00402070131692496,
+          "rho_receiver": 0.9996885927696211,
+          "rho_soft": -0.0037092940865460443
+        },
+        "5": {
+          "rho_joint": 0.009989743953000486,
+          "rho_receiver": 0.9271521606285335,
+          "rho_soft": 0.06285809541846608
+        }
+      },
+      "expert_parallel_action_m": 0.0002778872161052035,
+      "expert_soft_target": [
+        -0.39169051120935916,
+        1.89612789531187,
+        1.415088425206543,
+        0.4695139745856871,
+        0.9937317515854699,
+        0.014699332291904772
+      ],
+      "parallel_action_abs": 0.0002778872161052035,
+      "step": 4233
+    }
+  ],
+  "disposition": "VALID_CELL",
+  "effect_vector_field_count": 160,
+  "effect_vector_sha256": "eb5430178d41b3e607a8c44494a6539d6415fcfe88eec73cfe94aaed743045cb",
+  "episode": 0,
+  "events": {
+    "E0": 1148,
+    "E1": 3411,
+    "E2": 3411,
+    "E3": 3425,
+    "E4": 4083,
+    "E5": 4556,
+    "E6": 4570
+  },
+  "evidence_valid": true,
+  "fresh_process": true,
+  "fresh_scene": true,
+  "frozen_active_reference_receipt": {
+    "accepted": false,
+    "amplitude_m": 0.015,
+    "axis": "e_perp",
+    "both_arms_common_mode": true,
+    "command_count": 5154,
+    "episode": 0,
+    "events": {
+      "E0": 1148,
+      "E1": 3411,
+      "E2": 3411,
+      "E3": 3425,
+      "E4": 4083,
+      "E5": 4556,
+      "E6": 4570
+    },
+    "npz_sha256": "f1621b9e5497e8f909845315dd9674395fae37c6e3baad6eaa958c26b384d6e1",
+    "pai_job_created": false,
+    "schema": "r22p19.stage2f.frozen_active_reference.v1",
+    "seed": 0,
+    "source_tape_sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5",
+    "status": "COMPLETE"
+  },
+  "frozen_active_reference_sha256": "f1621b9e5497e8f909845315dd9674395fae37c6e3baad6eaa958c26b384d6e1",
+  "gamma": 1.0,
+  "horizons": [
+    5,
+    10,
+    20
+  ],
+  "knob": "K1_drive_compliance",
+  "launch_index": 0,
+  "main_knob_receipt": {
+    "action_modification_count": 0,
+    "actuator_application_count": 1729,
+    "gamma": 1.0,
+    "knob": "K1_drive_compliance",
+    "modified_joint_count": 0,
+    "original_drive_properties": [
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      }
+    ],
+    "restoration_exact": true,
+    "restored_drive_properties": [
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      }
+    ],
+    "snapshot_covers_drive_properties": false,
+    "soft_arm": "left",
+    "target_modification_count": 0
+  },
+  "main_scene_capture_is_read_only": true,
+  "main_scene_restored": false,
+  "oracle_alignment_exact_at_all_samples": true,
+  "oracle_alignment_records": [
+    {
+      "exact": true,
+      "main_state_sha256": "f545d87653158bb52c91b99e5b80e7c54767b18438d687e12b9f9357a5eff0f7",
+      "oracle_state_sha256": "f545d87653158bb52c91b99e5b80e7c54767b18438d687e12b9f9357a5eff0f7",
+      "step": 3833
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "04b8db98212187692e35b1f50571e93e0c165cf507ea3c3872ec3159ed7029a3",
+      "oracle_state_sha256": "04b8db98212187692e35b1f50571e93e0c165cf507ea3c3872ec3159ed7029a3",
+      "step": 3858
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "e533b564369597f30284400d21c8034f08f307667e068472e911bd9b3ecf9d37",
+      "oracle_state_sha256": "e533b564369597f30284400d21c8034f08f307667e068472e911bd9b3ecf9d37",
+      "step": 3883
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "a276e3be91bc701d8bdb4994469f9af4328ce4ab3d56ee96ede7c46b24914793",
+      "oracle_state_sha256": "a276e3be91bc701d8bdb4994469f9af4328ce4ab3d56ee96ede7c46b24914793",
+      "step": 3908
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "526e49f738f71e9b05c8c6523859e88adf3e094fa2f686b90a2bf240506f713d",
+      "oracle_state_sha256": "526e49f738f71e9b05c8c6523859e88adf3e094fa2f686b90a2bf240506f713d",
+      "step": 3933
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "bbe9e7beecbd246feb165b0325300c53c2d81c73cce4a8421d6b1b06f103c3bf",
+      "oracle_state_sha256": "bbe9e7beecbd246feb165b0325300c53c2d81c73cce4a8421d6b1b06f103c3bf",
+      "step": 3958
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "01b921fffc43f3d5ab4b1a9abb98603028fa7c54d084e605fd61c6718865fb48",
+      "oracle_state_sha256": "01b921fffc43f3d5ab4b1a9abb98603028fa7c54d084e605fd61c6718865fb48",
+      "step": 3983
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "0569e529fc9477fe3f24d3c6df7879cf6e5925f1067905099d18a32fd8566021",
+      "oracle_state_sha256": "0569e529fc9477fe3f24d3c6df7879cf6e5925f1067905099d18a32fd8566021",
+      "step": 4008
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "0e17a5b241860afd9bb5995ad4391b4300f421f4c6116d25de53b9bcd6dafece",
+      "oracle_state_sha256": "0e17a5b241860afd9bb5995ad4391b4300f421f4c6116d25de53b9bcd6dafece",
+      "step": 4033
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "a690adea4a868b5da7df4aba9687b2efd84b8f24cb5c0dbecdb38e903cd2ec90",
+      "oracle_state_sha256": "a690adea4a868b5da7df4aba9687b2efd84b8f24cb5c0dbecdb38e903cd2ec90",
+      "step": 4058
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "5a402bed1a9e845185bc3d4fd4b7e6de6e4c7a693172e90aed22eca66fc1c6e6",
+      "oracle_state_sha256": "5a402bed1a9e845185bc3d4fd4b7e6de6e4c7a693172e90aed22eca66fc1c6e6",
+      "step": 4083
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "2be763c970cfe008fc41639ae63e96697dd0a9b761d8878dab1c782e662b7a85",
+      "oracle_state_sha256": "2be763c970cfe008fc41639ae63e96697dd0a9b761d8878dab1c782e662b7a85",
+      "step": 4108
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "d70ff884e5e7f9a46755f7194d44916148cdfab977881fa3d9ad5b25b341e809",
+      "oracle_state_sha256": "d70ff884e5e7f9a46755f7194d44916148cdfab977881fa3d9ad5b25b341e809",
+      "step": 4133
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "d7c9636921f693c79010ec82af68dccc3c4bc5aaa69c5d2176ba591615495278",
+      "oracle_state_sha256": "d7c9636921f693c79010ec82af68dccc3c4bc5aaa69c5d2176ba591615495278",
+      "step": 4158
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "038bb76a39192bc3b6179a05678c2389ab2647c977ec9a4520ba304da604dc98",
+      "oracle_state_sha256": "038bb76a39192bc3b6179a05678c2389ab2647c977ec9a4520ba304da604dc98",
+      "step": 4183
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "d5cb254e62a9997376c18ba21e2a7079abf1ffab4ac7b27e1e33fa74e09cb69e",
+      "oracle_state_sha256": "d5cb254e62a9997376c18ba21e2a7079abf1ffab4ac7b27e1e33fa74e09cb69e",
+      "step": 4208
+    },
+    {
+      "exact": true,
+      "main_state_sha256": "78632ce8445c3674fa60ab2a2a11d03c8da07a5549aba05d95fb89edb0eef563",
+      "oracle_state_sha256": "78632ce8445c3674fa60ab2a2a11d03c8da07a5549aba05d95fb89edb0eef563",
+      "step": 4233
+    }
+  ],
+  "oracle_branch_knob_exposure_steps": 1360,
+  "oracle_knob_receipt": {
+    "action_modification_count": 0,
+    "actuator_application_count": 0,
+    "gamma": 1.0,
+    "knob": "K1_drive_compliance",
+    "modified_joint_count": 0,
+    "original_drive_properties": [
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      }
+    ],
+    "restoration_exact": true,
+    "restored_drive_properties": [
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      },
+      {
+        "damping": 200.0,
+        "drive_mode": "force",
+        "force_limit": 3.4028234663852886e+38,
+        "stiffness": 1000.0
+      }
+    ],
+    "snapshot_covers_drive_properties": false,
+    "soft_arm": "left",
+    "target_modification_count": 0
+  },
+  "oracle_prefix_replayed_in_lockstep": false,
+  "oracle_sample_state_source": "explicit_copy_from_main_current_state",
+  "oracle_snapshot_restore_isolated_to_disjoint_scene": true,
+  "pai_job_created": false,
+  "physical_summary": {
+    "active_window_steps": 1132,
+    "donor_contact_duration_steps": 1120,
+    "donor_contact_not_early": false,
+    "donor_final_contact": false,
+    "dual_contact_fraction": 0.9690812720848057,
+    "object_displacement_m": [
+      0.008355566416867077,
+      0.006540078393300064,
+      -0.0005437135696411133
+    ],
+    "object_speed_mean_m_s": 0.009732497167925803,
+    "object_speed_peak_m_s": 0.09717108813799409,
+    "soft_parallel_impulse_integral": 0.4573193917616073,
+    "soft_parallel_impulse_share_mean": 0.45535517702073375,
+    "soft_vertical_impulse_integral": 0.1780127255402454
+  },
+  "pid": 1380424,
+  "plan_success": true,
+  "receiver_command_encoding": "canonical_C_order_little_endian_float64_no_rounding",
+  "receiver_command_sha256": "e993d484b262a809f3ce5ea91c0d98794c4344fb66a8b4a813695fb2a7a7ee1a",
+  "receiver_non_soft_arm": "right",
+  "repeat": 0,
+  "replayed_from_episode_start": true,
+  "robotwin_runtime": {
+    "dirty": true,
+    "dirty_diff_sha256": "972f85496f52227c41c48a81ca7cb1921ad4f5add446893aea9cfe1495d0e0b2",
+    "head": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+    "status_porcelain": [
+      " M envs/robot/planner.py"
+    ]
+  },
+  "sample_count": 17,
+  "sample_window": {
+    "end": 4233,
+    "start": 3833,
+    "stride": 25
+  },
+  "schema": "r22p19.stage2f.authority_knob_cell.v1",
+  "seed": 0,
+  "simulated_oracle_physics_steps": 1360,
+  "snapshot_restore_used_for_main_scene": false,
+  "soft_arm": "left",
+  "stage2f_source_sha256": "1d310217545c6f2378edc6efa85eefe6aefe19cb4cd44d4299057ba0c48a25fe",
+  "status": "COMPLETE",
+  "tape_sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5",
+  "task_donor": "left",
+  "task_success": true,
+  "trace_path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2f/preflight-smoke-v7-final-source/seed_0000__K1__left__gamma_1p0.trace.npz",
+  "wall_time_s": 65.59807217598427
+}

@@ -1,0 +1,60 @@
+{
+  "accepted": false,
+  "cells": [
+    {
+      "effect_vector_sha256": "eb5430178d41b3e607a8c44494a6539d6415fcfe88eec73cfe94aaed743045cb",
+      "gamma": 1.0,
+      "main_modified_joint_count": 0,
+      "main_restoration_exact": true,
+      "physical": {
+        "donor_contact_duration_steps": 1120,
+        "donor_contact_not_early": false,
+        "dual_contact_fraction": 0.9690812720848057,
+        "object_speed_mean_m_s": 0.009732497167925803,
+        "object_speed_peak_m_s": 0.09717108813799409,
+        "soft_parallel_impulse_integral": 0.4573193917616073,
+        "soft_parallel_impulse_share_mean": 0.45535517702073375,
+        "soft_vertical_impulse_integral": 0.1780127255402454
+      },
+      "receiver_command_sha256": "e993d484b262a809f3ce5ea91c0d98794c4344fb66a8b4a813695fb2a7a7ee1a",
+      "sample_count": 17,
+      "task_success": true,
+      "oracle_alignment_exact_at_all_samples": true,
+      "wall_time_s": 65.59807217598427
+    },
+    {
+      "effect_vector_sha256": "8dd4f195a4b2904318a14798f9e2362a4cc995d2b88316a112e581d7a5cb0059",
+      "gamma": 0.2,
+      "main_modified_joint_count": 6,
+      "main_restoration_exact": true,
+      "physical": {
+        "donor_contact_duration_steps": 1132,
+        "donor_contact_not_early": true,
+        "dual_contact_fraction": 0.980565371024735,
+        "object_speed_mean_m_s": 0.010726026049297373,
+        "object_speed_peak_m_s": 0.1780473103847601,
+        "soft_parallel_impulse_integral": 0.7897836602946019,
+        "soft_parallel_impulse_share_mean": 0.4505249938928517,
+        "soft_vertical_impulse_integral": 0.27468983200106617
+      },
+      "receiver_command_sha256": "e993d484b262a809f3ce5ea91c0d98794c4344fb66a8b4a813695fb2a7a7ee1a",
+      "sample_count": 17,
+      "task_success": true,
+      "oracle_alignment_exact_at_all_samples": true,
+      "wall_time_s": 65.60804058297072
+    }
+  ],
+  "frozen_active_reference_sha256": "f1621b9e5497e8f909845315dd9674395fae37c6e3baad6eaa958c26b384d6e1",
+  "knob": "K1_drive_compliance",
+  "oracle_rho_soft_all_horizons": {
+    "gamma_0p2": [0.41285912694404586, 0.5373374156125832, 0.48895285901491414],
+    "gamma_1p0": [0.23241427608551454, 0.21073023680582254, 0.2214058084170289],
+    "horizons": [5, 10, 20]
+  },
+  "pai_job_created": false,
+  "receiver_command_hash_equal": true,
+  "seed": 0,
+  "soft_arm": "left",
+  "stage2f_source_sha256": "1d310217545c6f2378edc6efa85eefe6aefe19cb4cd44d4299057ba0c48a25fe",
+  "statistical_note": "single calibration episode smoke; 95% CI is not estimable and no G1-G6 decision is made"
+}

@@ -1,0 +1,130 @@
+schema: r22p19.stage2f.authority_knob_contract.v1
+feishu_mapping: experiment_planning_step8
+repository_report_filenames_follow_frozen_plan: STEP7_PREFLIGHT.md_and_STEP7_EXPERIMENT_REPORT.md
+base_commit: 78111587f203a821f1bdbd80fdd2738af564c639
+accepted: false
+pai_job_created: false
+task:
+  benchmark: RoboTwin
+  name: handover_block
+  planner: mplib_screw
+  physics_hz: 250
+  substrate_change_forbidden: true
+runtime:
+  robotwin_root: /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/RoboTwin
+  python: /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/bin/python
+  expected_robotwin_commit: 266f3aadf505a4f7fe9af0faa41a20f5f47cd123
+  device: one_dev14_A800
+hypothesis: a_scalar_actuator_level_gamma_changes_the_soft_arm_physical_object_effect_monotonically_without_breaking_grasp_and_preserves_task_success
+knobs:
+  K1_drive_compliance:
+    implementation: authority_override_AuthorityProfile_side_compliance_equals_gamma
+    changes: [arm_joint_stiffness, arm_joint_damping]
+    fixed: [arm_joint_force_limit, drive_mode, gripper_joints, command_target]
+  K2_force_limit:
+    changes: [arm_joint_force_limit]
+    fixed: [arm_joint_stiffness, arm_joint_damping, drive_mode, gripper_joints, command_target]
+  K3_target_interpolation:
+    implementation: existing_SoftExpertAuthorityProfile_defect_control
+    source_modification_forbidden: true
+    semantics: gamma_times_expert_parallel_plus_one_minus_gamma_times_follower_parallel
+active_reference:
+  implementation: stage2d_run_capacity_audit__active_item
+  amplitude_m: 0.015
+  interval: E3_through_E5_inclusive
+  both_arms_common_mode: true
+  axis: e_perp
+seed_contract:
+  calibration: [0, 1]
+  heldout_forbidden: [2, 3, 5, 6, 7, 8, 9, 10]
+matrix:
+  seeds: [0, 1]
+  knobs: [K1_drive_compliance, K2_force_limit, K3_target_interpolation]
+  soft_arms: [left, right]
+  gammas: [1.0, 0.8, 0.6, 0.4, 0.2, 0.05]
+  repeats: 2
+  main_cells: 144
+  null_cells: 10
+  total_cells: 154
+  fresh_process_per_cell: true
+  randomized_launch_order: true
+  main_scene_snapshot_restore: false
+null_floor:
+  knob_effective: false
+  gamma_label: 1.0
+  allocation: {seed_0: 5, seed_1: 5}
+  soft_arm: none
+  use: matched_seed_shared_between_left_and_right_arms
+  spread: p95_of_absolute_pairwise_episode_effect_differences
+sample_window:
+  start: max_E3_or_E4_minus_250
+  end: min_E5_or_E4_plus_150
+  inclusive: true
+  stride_steps: 25
+  minimum_available_states: 8
+  stop_if_below_minimum: true
+counterfactual:
+  branches: [LR, L, R, ZERO]
+  estimator: NaturalResponsibilityEstimator
+  horizons: [5, 10, 20]
+  primary_horizon: 10
+  drive_property_knob_covers_entire_oracle_branch_rollout: true
+  receiver_non_soft_command_canonical_bytes_identical: true
+  oracle_sample_state_source: explicit_cross_scene_copy_from_main_current_state
+  main_scene_capture_is_read_only_and_never_restored: true
+  oracle_main_dynamic_state_sha256_exact_at_every_sample: true
+measurements:
+  command: [expert_parallel_action_m, actual_target, parallel_action_abs_ratio_to_matched_gamma_1]
+  physical: [soft_impulse_e_parallel, soft_impulse_e_vertical, soft_receiver_impulse_share, active_object_displacement, active_object_velocity, dual_contact_fraction, donor_contact_duration_steps]
+  counterfactual: [rho_soft_h5, rho_soft_h10, rho_soft_h20, rho_receiver_h5, rho_receiver_h10, rho_receiver_h20, rho_joint_h5, rho_joint_h10, rho_joint_h20]
+  task: [check_success, plan_success]
+  receipt: [knob, gamma, modified_joint_count, original_drive_properties, restored_drive_properties, receiver_command_sha256, action_modification_count, actuator_application_count]
+  parallel_action_abs_ratio_postprocess: matched_by_seed_soft_arm_repeat_and_sample_step_then_divided_by_gamma_1
+gates:
+  G1_physical_monotonic:
+    metric: spearman_gamma_vs_soft_e_parallel_contact_impulse
+    threshold: 0.9
+    every_seed_x_soft_arm_group: true
+  G2_counterfactual_monotonic:
+    metric: spearman_gamma_vs_rho_soft
+    h10_threshold: 0.9
+    h5_h20_same_nonnegative_sign: true
+  G3_amplitude:
+    gamma_0p2_over_gamma_1_max: 0.5
+    absolute_difference_over_null_p95_strictly_greater_than: 3.0
+  G4_nondegenerate:
+    gamma_min: 0.2
+    dual_contact_fraction_min: 0.90
+    donor_contact_must_not_end_early: true
+    donor_contact_not_early_definition: donor_contact_true_at_E5_inclusive
+    task_success_original_text: at_least_8_of_10
+    frozen_rate_interpretation: success_rate_at_least_0p80_using_actual_episode_denominator
+    actual_main_matrix_denominator_per_knob_gamma: 8
+  G5_command_monotonic:
+    state_fraction_strictly_greater_than: 0.95
+    monotonic_definition: weak_non_decrease_with_gamma_ties_allowed
+    report_strict_decrease_fraction_separately: true
+    warning: K1_and_K2_constant_targets_can_weak_pass_but_do_not_establish_command_attenuation
+  G6_isolation:
+    receiver_command_exact_canonical_float64_bytes: true
+    repeat_effect_vector_exact_ieee754_bytes: true
+    frozen_active_reference_sha_identical_across_all_arms_gammas_repeats_within_seed: true
+    exclude_from_effect_vector: [pid, wall_time, paths, log_order]
+    reject_nonfinite: true
+decision:
+  all_G1_through_G6: AUTHORITY_KNOB_SUPPORTED
+  G1_G2_G5_pass_but_G4_fails: AUTHORITY_KNOB_DEGENERATE
+  otherwise: AUTHORITY_KNOB_NOT_IMPLEMENTABLE
+  supported_freeze_rule: largest_non_extreme_gamma_passing_G1_through_G6
+statistics:
+  inference_unit: episode
+  branch_states_are_not_independent: true
+  confidence: 0.95
+  bootstrap_repetitions: 10000
+  bootstrap_seed: 22019
+execution_checkpoint:
+  delivery_1_now: [contract, three_knobs, unit_tests, two_cell_smoke, STEP7_PREFLIGHT]
+  delivery_2_requires_user_confirmation: [full_144_plus_10, final_report, decision_json, frozen_knob_if_supported]
+  do_not_stop_other_delivery_2_experiments_after_a_gate_failure: true
+forbidden: [pai_job, training, ACT, pi0_5, learned_estimator, closed_loop, heldout_seeds, overwrite_prior_results, modify_SoftExpertAuthorityProfile, change_substrate]
+evidence_boundary: privileged_RoboTwin_SAPIEN_calibration_diagnostic_not_deployable

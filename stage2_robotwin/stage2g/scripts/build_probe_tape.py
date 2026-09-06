@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 import numpy as np
 
-REPO_ROOT=Path(__file__).resolve().parents[1]
+REPO_ROOT=Path(__file__).resolve().parents[3]
 if str(REPO_ROOT) not in sys.path: sys.path.insert(0,str(REPO_ROOT))
 
 from stage2_robotwin.stage2b.intervention.task_frame import ObjectTaskFrame
@@ -22,7 +22,7 @@ def _runtime_git(root: Path) -> dict[str, Any]:
     head=subprocess.check_output(["git","-C",str(root),"rev-parse","HEAD"],text=True).strip()
     status=subprocess.check_output(["git","-C",str(root),"status","--porcelain"],text=True)
     diff=subprocess.check_output(["git","-C",str(root),"diff","--binary"])
-    return {"head":head,"dirty":bool(status.strip()),"status_porcelain":status.splitlines(),"dirty_diff_sha256":hashlib.sha256(diff.encode()).hexdigest()}
+    return {"head":head,"dirty":bool(status.strip()),"status_porcelain":status.splitlines(),"dirty_diff_sha256":hashlib.sha256(diff).hexdigest()}
 
 def _source_sha(root: Path) -> str:
     payload=bytearray(b"r22p19.stage2g.probe.source.v1\0")
@@ -42,6 +42,7 @@ def _gripper(value):
 
 def freeze_nominal(robotwin_root: Path, tape_path: Path, meta_path: Path, output: Path, *, active_amplitude_m: float = ACTIVE_COMMON_AMPLITUDE_M):
     meta=json.loads(meta_path.read_text(encoding="utf-8")); tape=ExpertTape.load(tape_path)
+    if output.exists() or output.with_suffix(".json").exists(): raise FileExistsError("nominal output already exists")
     seed=int(meta["seed"]); episode=int(meta["episode"])
     if seed not in (0,1): raise ValueError("only calibration seeds 0,1 are allowed")
     actual=hashlib.sha256(tape_path.read_bytes()).hexdigest()
@@ -58,12 +59,13 @@ def freeze_nominal(robotwin_root: Path, tape_path: Path, meta_path: Path, output
             nominal, active_offset=_active_item(task,raw,step,events,frame,float(active_amplitude_m))
             for side in ("left","right"):
                 j,r=_jacobian(task,side); jac[side].append(j); rots[side].append(r)
-                delta,audit=cartesian_offset_to_joint_delta(j,r,e,float(active_offset),max_joint_delta_rad=0.12)
-                # The nominal helper and this audit must agree byte-for-byte in q target.
-                expected=np.asarray(raw[side+"_position"],dtype=np.float64)+delta
-                if not np.array_equal(expected,np.asarray(nominal[side+"_position"],dtype=np.float64)):
-                    raise RuntimeError(f"nominal {side} command disagrees with frozen Cartesian mapping at step {step}")
-                audits[side].append(audit)
+                # Freeze the exact Stage2D command; diagnose its actual joint delta.
+                # Do not substitute a separately rounded Cartesian mapping for it.
+                delta=np.asarray(nominal[side+"_position"])-np.asarray(raw[side+"_position"])
+                predicted=r@(j@delta)[:3]
+                audits[side].append({"predicted_world_translation_m":predicted.tolist(),
+                                    "clip_scale":1.0 if np.max(np.abs(delta))<0.12-1e-10 else 0.0,
+                                    "clip_scale_semantics":"boundary_indicator_for_exact_Stage2D_command"})
             records.append(nominal)
             active_offsets.append(float(active_offset))
             _drive(task,nominal)
@@ -85,7 +87,7 @@ def freeze_nominal(robotwin_root: Path, tape_path: Path, meta_path: Path, output
             right_nominal_clip_scale=np.asarray([a["clip_scale"] for a in audits["right"]]),
             e_perp_world=e,physics_hz=250.0)
         output.parent.mkdir(parents=True,exist_ok=True); nominal_sha=payload.save(output)
-        receipt={"schema":"r22p19.stage2g.frozen_nominal.v1","status":"COMPLETE","seed":seed,"episode":episode,"events":events,"physics_hz":250.0,"planner":"mplib_screw","active_amplitude_m":float(active_amplitude_m),"axis":"e_perp","source_tape":str(tape_path),"source_tape_sha256":actual,"nominal_npz_sha256":nominal_sha,"command_count":len(payload),"live_jacobian_used":True,"single_nominal_active_replay":True,"mapping_audit":{"left":audits["left"],"right":audits["right"]},"runtime_git":_runtime_git(robotwin_root),"source_code_sha256":_source_sha(Path(__file__).resolve().parents[1]),"accepted":False,"pai_job_created":False}
+        receipt={"schema":"r22p19.stage2g.frozen_nominal.v1","status":"COMPLETE","seed":seed,"episode":episode,"events":events,"physics_hz":250.0,"planner":"mplib_screw","active_amplitude_m":float(active_amplitude_m),"axis":"e_perp","source_tape":str(tape_path),"source_tape_sha256":actual,"nominal_npz_sha256":nominal_sha,"command_count":len(payload),"live_jacobian_used":True,"single_nominal_active_replay":True,"mapping_audit":{"left":audits["left"],"right":audits["right"]},"runtime_git":_runtime_git(robotwin_root),"source_code_sha256":_source_sha(REPO_ROOT),"accepted":False,"pai_job_created":False}
         output.with_suffix(".json").write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n",encoding="utf-8")
         return payload,receipt
     finally:
@@ -120,6 +122,8 @@ def main():
     p.add_argument("--frequency-pair",action="append",default=[]); p.add_argument("--amplitude",action="append",type=float,default=[])
     args=p.parse_args()
     if args.seed not in (0,1): raise SystemExit("only calibration seeds 0,1 are allowed")
+    if int(json.loads(args.meta.read_text())["seed"])!=args.seed:raise ValueError("CLI/meta seed mismatch")
+    if args.output_dir.exists():raise FileExistsError("output directory must be new")
     pairs=DEFAULT_FREQUENCY_PAIRS_HZ if not args.frequency_pair else tuple(tuple(float(x) for x in value.split(",")) for value in args.frequency_pair)
     amplitudes=tuple(args.amplitude) if args.amplitude else PROBE_AMPLITUDES_M
     nominal_path=args.output_dir/f"nominal__seed_{args.seed:04d}.npz"

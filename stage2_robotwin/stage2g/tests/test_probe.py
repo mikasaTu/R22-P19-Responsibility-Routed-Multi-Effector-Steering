@@ -75,7 +75,7 @@ def test_runner_source_has_no_live_jacobian_or_snapshot_restore():
         assert forbidden not in text
 
 def test_full_trace_bytes_hash_excludes_metadata_and_detects_drift():
-    from scripts.run_probe_cell import _trace_hash
+    from stage2_robotwin.stage2g.scripts.run_probe_cell import effects_hash as _trace_hash
     payload={"object_xyz":np.zeros((4,3)),"object_velocity":np.ones((4,3)),"left_wrench":np.zeros((4,6)),"right_wrench":np.ones((4,6)),"dual_contact":np.ones(4,dtype=bool)}
     first=_trace_hash(payload); second=_trace_hash({k:v.copy() for k,v in payload.items()})
     assert first==second

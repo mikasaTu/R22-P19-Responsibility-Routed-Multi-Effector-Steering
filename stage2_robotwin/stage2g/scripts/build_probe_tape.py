@@ -102,14 +102,16 @@ def build_pairs(nominal, nominal_receipt, output_dir: Path, *, amplitudes=PROBE_
         for amplitude in amplitudes:
             pair,receipt=build_frequency_pair(nominal,frequency_left_hz=fleft,frequency_right_hz=fright,amplitude_m=amplitude,e3=int(nominal_receipt["events"]["E3"]),e5=int(nominal_receipt["events"]["E5"]))
             name=f"pair__fL_{_label(fleft)}__fR_{_label(fright)}__A_{_label(amplitude)}"
-            path=output_dir/(name+".npz"); pair_sha=pair.save(path)
+            path=output_dir/(name+".npz")
+            if path.exists() or path.with_suffix(".json").exists():raise FileExistsError("pair outputs are immutable")
+            pair_sha=pair.save(path)
             left_audit=receipt.pop("left_mapping_audit")
             right_audit=receipt.pop("right_mapping_audit")
             receipt["mapping_audit_summary"]={
                 "left_min_clip_scale":float(min(x["clip_scale"] for x in left_audit)),
                 "right_min_clip_scale":float(min(x["clip_scale"] for x in right_audit)),
-                "left_max_predicted_error_m":float(max(abs(x["predicted_offset_m"]-x["requested_offset_m"]) for x in left_audit)),
-                "right_max_predicted_error_m":float(max(abs(x["predicted_offset_m"]-x["requested_offset_m"]) for x in right_audit)),
+                "left_max_predicted_error_m":float(max(np.linalg.norm(np.asarray(x["predicted_world_translation_m"])-np.asarray(x["requested_world_translation_m"])) for x in left_audit)),
+                "right_max_predicted_error_m":float(max(np.linalg.norm(np.asarray(x["predicted_world_translation_m"])-np.asarray(x["requested_world_translation_m"])) for x in right_audit)),
             }
             receipt.update({"source_nominal_npz_sha256":nominal_receipt["nominal_npz_sha256"],"npz_sha256":pair_sha,"source_tape_sha256":nominal_receipt["source_tape_sha256"],"source_tape":nominal_receipt["source_tape"],"runtime_git":nominal_receipt["runtime_git"],"source_code_sha256":nominal_receipt["source_code_sha256"],"seed":nominal_receipt["seed"],"episode":nominal_receipt["episode"],"events":nominal_receipt["events"]})
             path.with_suffix(".json").write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n",encoding="utf-8"); out.append(path)

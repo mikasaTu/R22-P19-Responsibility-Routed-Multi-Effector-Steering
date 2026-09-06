@@ -1,0 +1,10 @@
+........................................................................ [ 58%]
+...................................................                      [100%]
+=============================== warnings summary ===============================
+stage2_robotwin/stage2d/tests/test_analytic.py::test_correct_and_swapped_move_oppositely
+stage2_robotwin/stage2d/tests/test_analytic.py::test_v1_self_target_is_near_identity
+  /mnt/cpfs/zbl-cpfs-new/USERS/leon/deps/r22p19_stage2/venv/lib/python3.10/site-packages/scipy/optimize/_optimize.py:353: RuntimeWarning: Values in x were outside bounds during a minimize step, clipping to bounds
+    warnings.warn("Values in x were outside bounds during a "
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+123 passed, 2 warnings in 28.19s

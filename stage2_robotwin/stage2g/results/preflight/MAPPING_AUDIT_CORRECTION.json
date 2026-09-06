@@ -1,0 +1,45 @@
+{
+  "status": "DIAGNOSTIC_LABEL_CORRECTION",
+  "reason": "original sidecar max_predicted_error subtracted a signed requested offset from an unsigned predicted norm; command arrays were unaffected and original sidecars are preserved",
+  "corrected_definition": "norm(predicted_world_translation - signed_requested_world_translation)",
+  "rows": [
+    {
+      "pair": "pair__fL_1p0__fR_2p5__A_0p003.npz",
+      "npz_sha256": "b6e60d6ed224483c54eaad6c218f8f3c41f3ca547427f45ccc9b530031490638",
+      "left_true_max_predicted_vector_error_m": 2.15074979226167e-17,
+      "right_true_max_predicted_vector_error_m": 1.7188517173787142e-17
+    },
+    {
+      "pair": "pair__fL_1p0__fR_2p5__A_0p005.npz",
+      "npz_sha256": "47ecb4cdaa04ad9321c5897a99a37a3bf6626e7136e203ad99c7e9243cffe5a6",
+      "left_true_max_predicted_vector_error_m": 3.417484371244686e-17,
+      "right_true_max_predicted_vector_error_m": 2.84963605347301e-17
+    },
+    {
+      "pair": "pair__fL_1p0__fR_2p5__A_0p008.npz",
+      "npz_sha256": "19d5a8536ad88e292a8d8b13a06dba2831e8b2427c142488a1b4219c59a54198",
+      "left_true_max_predicted_vector_error_m": 5.614660215637455e-17,
+      "right_true_max_predicted_vector_error_m": 4.529942287742108e-17
+    },
+    {
+      "pair": "pair__fL_2p5__fR_1p0__A_0p003.npz",
+      "npz_sha256": "23b610840e563f90b172d2e3f2e09e2d29386e06b1085f839ecac4ec55779ded",
+      "left_true_max_predicted_vector_error_m": 2.3777639745399255e-17,
+      "right_true_max_predicted_vector_error_m": 1.8055855300259087e-17
+    },
+    {
+      "pair": "pair__fL_2p5__fR_1p0__A_0p005.npz",
+      "npz_sha256": "912c5192141797b6b83b158c240d213ccbe847e12df90216707babdfbdf70450",
+      "left_true_max_predicted_vector_error_m": 3.3496414302423565e-17,
+      "right_true_max_predicted_vector_error_m": 3.18660003569667e-17
+    },
+    {
+      "pair": "pair__fL_2p5__fR_1p0__A_0p008.npz",
+      "npz_sha256": "5544550e05d3b31d34fcab4e95d9972978931122793c34dcee12c516fe6da730",
+      "left_true_max_predicted_vector_error_m": 6.617591321934014e-17,
+      "right_true_max_predicted_vector_error_m": 5.0902148626183406e-17
+    }
+  ],
+  "accepted": false,
+  "pai_job_created": false
+}

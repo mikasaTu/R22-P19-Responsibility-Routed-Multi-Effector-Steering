@@ -1,0 +1,257 @@
+{
+  "accepted": false,
+  "amplitude_selection": {
+    "accepted": false,
+    "eligible_amplitudes_m": [
+      0.008
+    ],
+    "full_instrument_gate_evaluation": false,
+    "pai_job_created": false,
+    "recommended_amplitude_m": 0.008,
+    "rows": [
+      {
+        "I5_smoke_proxy_pass": true,
+        "accepted": false,
+        "amplitude_m": 0.003,
+        "authority": {
+          "a_soft": 0.747673307966158,
+          "amplitude_receiver": 0.00017600713319528965,
+          "amplitude_soft": 0.0005215295870645059,
+          "coherence": {
+            "receiver": 0.4373296836043808,
+            "soft": 0.7013838527621611
+          },
+          "coherence_by_frequency": {
+            "1": 0.7013838527621611,
+            "2.5": 0.4373296836043808
+          },
+          "coherence_frequency_resolution_hz": {
+            "receiver": 0.9765625,
+            "soft": 0.9765625
+          },
+          "coherence_nperseg": {
+            "receiver": 256,
+            "soft": 256
+          },
+          "coherence_observed_frequency_hz": {
+            "receiver": 2.9296875,
+            "soft": 0.9765625
+          },
+          "coherence_reason": "ok",
+          "coherence_segments": 7,
+          "coherence_valid": true,
+          "frequency_receiver_hz": 2.429328621908127,
+          "frequency_resolution_hz": 0.22084805653710246,
+          "frequency_soft_hz": 1.1042402826855122,
+          "n_samples": 1132,
+          "noise_band_hz": [
+            0.3,
+            5.0
+          ],
+          "noise_bin_count": 13,
+          "noise_exclusion_radius_hz": 0.4416961130742049,
+          "noise_floor": 3.374642623040983e-05,
+          "noise_floor_valid": true,
+          "requested_frequency_receiver_hz": 2.5,
+          "requested_frequency_soft_hz": 1.0,
+          "sample_count": 1132,
+          "sample_rate_hz": 250.0,
+          "snr_reason": "ok",
+          "snr_receiver": 5.215578443583007,
+          "snr_soft": 15.454364960119578,
+          "snr_valid": true,
+          "valid": true,
+          "validity_reason": "ok"
+        },
+        "both_spectral_snr_pass": false,
+        "cell_path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2g/delivery1-20260907-v1/amplitude_003.json",
+        "cell_sha256": "3d8489092c9ebf2ed53cb920bf6e00ace264fffac8adc35525f375df30bc5db8",
+        "ci_reason": "one episode per smoke condition; repeat is deterministic replay, not independent episodes",
+        "confidence_interval_95": null,
+        "dual_contact_fraction": 0.9699646643109541,
+        "effect_vector_sha256": "b1184f4c27dc5cf46a5a76a71180dd36c46f9e56583e1531bb73eeb1aa6eee60",
+        "eligible": false,
+        "internal_wrench_ratio_mean": 0.3410073384900294,
+        "internal_wrench_valid_steps": 1132,
+        "mean_internal_wrench_norm": 0.5269053164044917,
+        "mean_net_wrench_norm": 1.0007809328146307,
+        "pai_job_created": false,
+        "spectral_snr": [
+          15.454364960119578,
+          5.215578443583007
+        ],
+        "task_success": true,
+        "window_samples": 1132
+      },
+      {
+        "I5_smoke_proxy_pass": true,
+        "accepted": false,
+        "amplitude_m": 0.005,
+        "authority": {
+          "a_soft": 0.7418130192656713,
+          "amplitude_receiver": 0.0003188004822963715,
+          "amplitude_soft": 0.0009159654280126902,
+          "coherence": {
+            "receiver": 0.43647634806685387,
+            "soft": 0.7202186746434367
+          },
+          "coherence_by_frequency": {
+            "1": 0.7202186746434367,
+            "2.5": 0.43647634806685387
+          },
+          "coherence_frequency_resolution_hz": {
+            "receiver": 0.9765625,
+            "soft": 0.9765625
+          },
+          "coherence_nperseg": {
+            "receiver": 256,
+            "soft": 256
+          },
+          "coherence_observed_frequency_hz": {
+            "receiver": 2.9296875,
+            "soft": 0.9765625
+          },
+          "coherence_reason": "ok",
+          "coherence_segments": 7,
+          "coherence_valid": true,
+          "frequency_receiver_hz": 2.429328621908127,
+          "frequency_resolution_hz": 0.22084805653710246,
+          "frequency_soft_hz": 1.1042402826855122,
+          "n_samples": 1132,
+          "noise_band_hz": [
+            0.3,
+            5.0
+          ],
+          "noise_bin_count": 13,
+          "noise_exclusion_radius_hz": 0.4416961130742049,
+          "noise_floor": 5.0254587452943505e-05,
+          "noise_floor_valid": true,
+          "requested_frequency_receiver_hz": 2.5,
+          "requested_frequency_soft_hz": 1.0,
+          "sample_count": 1132,
+          "sample_rate_hz": 250.0,
+          "snr_reason": "ok",
+          "snr_receiver": 6.343709071234228,
+          "snr_soft": 18.22650377680178,
+          "snr_valid": true,
+          "valid": true,
+          "validity_reason": "ok"
+        },
+        "both_spectral_snr_pass": false,
+        "cell_path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2g/delivery1-20260907-v1/amplitude_005.json",
+        "cell_sha256": "a5c1c249078bdab95b00998a7c9dc8f20a43ed14a25bb085b6e074e6172f7ce3",
+        "ci_reason": "one episode per smoke condition; repeat is deterministic replay, not independent episodes",
+        "confidence_interval_95": null,
+        "dual_contact_fraction": 0.9673144876325088,
+        "effect_vector_sha256": "1459aa008da231e8b1d2936ad71baff87936b7a5d52c58b11aa5ffe2ff65a224",
+        "eligible": false,
+        "internal_wrench_ratio_mean": 0.3356731766015038,
+        "internal_wrench_valid_steps": 1132,
+        "mean_internal_wrench_norm": 0.7620259713768682,
+        "mean_net_wrench_norm": 1.511401377974043,
+        "pai_job_created": false,
+        "spectral_snr": [
+          18.22650377680178,
+          6.343709071234228
+        ],
+        "task_success": true,
+        "window_samples": 1132
+      },
+      {
+        "I5_smoke_proxy_pass": true,
+        "accepted": false,
+        "amplitude_m": 0.008,
+        "authority": {
+          "a_soft": 0.7626485236664874,
+          "amplitude_receiver": 0.0006203935063652578,
+          "amplitude_soft": 0.001993424262745715,
+          "coherence": {
+            "receiver": 0.5186153789501212,
+            "soft": 0.7343561125724725
+          },
+          "coherence_by_frequency": {
+            "1": 0.7343561125724725,
+            "2.5": 0.5186153789501212
+          },
+          "coherence_frequency_resolution_hz": {
+            "receiver": 0.9765625,
+            "soft": 0.9765625
+          },
+          "coherence_nperseg": {
+            "receiver": 256,
+            "soft": 256
+          },
+          "coherence_observed_frequency_hz": {
+            "receiver": 2.9296875,
+            "soft": 0.9765625
+          },
+          "coherence_reason": "ok",
+          "coherence_segments": 7,
+          "coherence_valid": true,
+          "frequency_receiver_hz": 2.429328621908127,
+          "frequency_resolution_hz": 0.22084805653710246,
+          "frequency_soft_hz": 1.1042402826855122,
+          "n_samples": 1132,
+          "noise_band_hz": [
+            0.3,
+            5.0
+          ],
+          "noise_bin_count": 13,
+          "noise_exclusion_radius_hz": 0.4416961130742049,
+          "noise_floor": 5.223619077409023e-05,
+          "noise_floor_valid": true,
+          "requested_frequency_receiver_hz": 2.5,
+          "requested_frequency_soft_hz": 1.0,
+          "sample_count": 1132,
+          "sample_rate_hz": 250.0,
+          "snr_reason": "ok",
+          "snr_receiver": 11.876698839858367,
+          "snr_soft": 38.16174635257816,
+          "snr_valid": true,
+          "valid": true,
+          "validity_reason": "ok"
+        },
+        "both_spectral_snr_pass": true,
+        "cell_path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2g/delivery1-20260907-v1/amplitude_008.json",
+        "cell_sha256": "bc1030856c4de71442a83a24d493bd0d3bc2157c47c5d9b4c509d570e278faed",
+        "ci_reason": "one episode per smoke condition; repeat is deterministic replay, not independent episodes",
+        "confidence_interval_95": null,
+        "dual_contact_fraction": 0.9699646643109541,
+        "effect_vector_sha256": "0ccd56dc55fe20fccc56e9d312e10eeeb8560265590fd62f8e7b85c38fd58235",
+        "eligible": true,
+        "internal_wrench_ratio_mean": 0.33808249020717435,
+        "internal_wrench_valid_steps": 1132,
+        "mean_internal_wrench_norm": 1.0531915804263392,
+        "mean_net_wrench_norm": 2.0398107077422045,
+        "pai_job_created": false,
+        "spectral_snr": [
+          38.16174635257816,
+          11.876698839858367
+        ],
+        "task_success": true,
+        "window_samples": 1132
+      }
+    ],
+    "status": "AMPLITUDE_RECOMMENDED_AWAITING_CHECKPOINT"
+  },
+  "pai_job_created": false,
+  "phase_II_executed": false,
+  "phase_I_executed": false,
+  "repeatability": {
+    "bitwise_passed": true,
+    "hashes": [
+      "1459aa008da231e8b1d2936ad71baff87936b7a5d52c58b11aa5ffe2ff65a224",
+      "1459aa008da231e8b1d2936ad71baff87936b7a5d52c58b11aa5ffe2ff65a224"
+    ],
+    "input_probe_sha256": "47ecb4cdaa04ad9321c5897a99a37a3bf6626e7136e203ad99c7e9243cffe5a6",
+    "separate_pids": true,
+    "source_pids": [
+      2291714,
+      2291733
+    ]
+  },
+  "schema": "r22p19.stage2g.delivery1_preflight.v1",
+  "scientific_P1_decision": null,
+  "scientific_P2_decision": null,
+  "stage2f_retrospective_wrench": "NOT_RECOVERABLE_FROM_STORED_TRACES"
+}

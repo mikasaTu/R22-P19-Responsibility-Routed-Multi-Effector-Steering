@@ -1,0 +1,11 @@
+{
+  "order": [
+    "005",
+    "008",
+    "003"
+  ],
+  "seed": 22019,
+  "repeatability_passed_before_launch": true,
+  "accepted": false,
+  "pai_job_created": false
+}

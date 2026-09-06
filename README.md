@@ -3,9 +3,22 @@
 This repository preserves both the Phase-1 LIBERO action-subspace proxy and
 the continuing Stage-2 RoboTwin dual-arm validation.
 
-## Current result
+## Current result: Step9 preflight
+Delivery 1 is complete: five fresh-process calibration smoke cells; exact repeat
+hashes match; 8 mm is the only eligible probe amplitude. Stage I (24 cells) and
+conditional Stage II (48 cells) remain unrun pending the attachment's explicit
+confirmation checkpoint. accepted=false. No PAI or training was submitted.
+The old Stage2F 144+10 matrix is void.
 
-The current Step6 / immediate Stage 2E decision is
+- [Step9 preflight report](stage2_robotwin/stage2g/reports/STEP9_PREFLIGHT.md)
+- [Preregistered contract](stage2_robotwin/stage2g/preregistration/EXPERIMENT_CONTRACT.yaml)
+- [Machine-readable decision](stage2_robotwin/stage2g/results/preflight/PREFLIGHT_DECISION.json)
+- [Reproduction guide](stage2_robotwin/stage2g/README.md)
+- [Feishu experiment report](https://icnbwz7kd1ui.feishu.cn/wiki/RMacwbnw4iGkcikKHiLcTc89nRe)
+
+## Previous decisions
+
+The previous Step6 / immediate Stage 2E decision is
 **`STAGE2E_DIRECTION_STOPPED`** with `accepted=false`. The conformance audit
 returned `CONFORMANCE_NO_GO`; despite that gate, the requested complete physical
 diagnostic finished 120/120 fresh-process cells and returned

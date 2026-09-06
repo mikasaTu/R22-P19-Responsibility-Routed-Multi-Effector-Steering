@@ -1,0 +1,22 @@
+{
+  "accepted": false,
+  "capture_wall_time_s": 30.057336536003277,
+  "donor": "left",
+  "episode": 1,
+  "events": {
+    "E0": 793,
+    "E1": 2738,
+    "E2": 2738,
+    "E3": 2752,
+    "E4": 3400,
+    "E5": 3882,
+    "E6": 3896
+  },
+  "fresh_solver_history": true,
+  "receiver": "right",
+  "seed": 1,
+  "snapshot_restore_during_capture": false,
+  "steps": 4462,
+  "tape": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0001.npz",
+  "tape_sha256": "c8c39dff7cab457a2a7a161f02a9960e38415415d4fe71ce0d9df7bf2173028a"
+}

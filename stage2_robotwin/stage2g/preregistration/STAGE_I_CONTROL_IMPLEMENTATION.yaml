@@ -1,0 +1,15 @@
+schema: r22p19.stage2g.stage_I_control_implementation.v1
+prepared_after_delivery1_smoke_before_stage_I: true
+stage_I_run: false
+gates_changed: false
+locked_side_target: measured_joint_position_at_E3_constant_through_E5
+locked_side_probe: disabled
+unlocked_side_probe: retain_frozen_command
+locked_side_stiffness_multiplier: 100.0
+locked_side_damping_multiplier: 10.0
+force_limit_and_drive_mode: unchanged
+restoration: exact_original_drive_properties_in_finally
+validation: synthetic_exception_restoration_test_only
+physical_lock_receipt: record_maximum_measured_joint_drift_do_not_claim_kinematic_weld
+accepted: false
+pai_job_created: false

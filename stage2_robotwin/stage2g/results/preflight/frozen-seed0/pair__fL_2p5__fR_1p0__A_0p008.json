@@ -1,0 +1,50 @@
+{
+  "accepted": false,
+  "amplitude_m": 0.008,
+  "axis": "e_perp",
+  "episode": 0,
+  "event_window": {
+    "E3": 3425,
+    "E5": 4556
+  },
+  "events": {
+    "E0": 1148,
+    "E1": 3411,
+    "E2": 3411,
+    "E3": 3425,
+    "E4": 4083,
+    "E5": 4556,
+    "E6": 4570
+  },
+  "frequency_left_hz": 2.5,
+  "frequency_right_hz": 1.0,
+  "left_clip_count": 0,
+  "live_jacobian_used": false,
+  "mapping_audit_summary": {
+    "left_max_predicted_error_m": 0.016000000000000025,
+    "left_min_clip_scale": 1.0,
+    "right_max_predicted_error_m": 0.01599873670726107,
+    "right_min_clip_scale": 1.0
+  },
+  "max_joint_delta_rad": 0.12,
+  "npz_sha256": "5544550e05d3b31d34fcab4e95d9972978931122793c34dcee12c516fe6da730",
+  "offline_from_frozen_nominal": true,
+  "pai_job_created": false,
+  "physics_hz": 250.0,
+  "right_clip_count": 0,
+  "runtime_git": {
+    "dirty": true,
+    "dirty_diff_sha256": "972f85496f52227c41c48a81ca7cb1921ad4f5add446893aea9cfe1495d0e0b2",
+    "head": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+    "status_porcelain": [
+      " M envs/robot/planner.py"
+    ]
+  },
+  "schema": "r22p19.stage2g.probe_pair_tape.v1",
+  "seed": 0,
+  "source_code_sha256": "18316e394a0ffcfd2746077f3c7b609509c34fa1b58b1c08cbdea2332f4b86ba",
+  "source_nominal_npz_sha256": "5dab35cd38315f49382728822248c29beacd5f4b5f67f87db26d5b35e625fe36",
+  "source_tape": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0000.npz",
+  "source_tape_sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5",
+  "status": "COMPLETE"
+}

@@ -16,7 +16,7 @@ def _f64(x): return np.ascontiguousarray(np.asarray(x, dtype=np.float64))
 def _sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def _save(path, payload):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("wb") as f: np.savez_compressed(f, **payload)
+    with path.open("xb") as f: np.savez_compressed(f, **payload)
     return _sha(path)
 def _load(path):
     with np.load(Path(path), allow_pickle=False) as d: return {k: np.asarray(d[k]).copy() for k in d.files}

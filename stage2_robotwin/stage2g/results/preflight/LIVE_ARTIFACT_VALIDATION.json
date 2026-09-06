@@ -1,0 +1,66 @@
+{
+  "accepted": false,
+  "pai_job_created": false,
+  "source_commit_executed": "2cddb2b",
+  "runtime_owner": [
+    2254,
+    2254
+  ],
+  "cells": [
+    {
+      "cell": "repeat0",
+      "pid": 2291714,
+      "file_sha256": "5c7cdef20b47617dc676a189d174b53d3e84dc3d986be275d83115758b439778",
+      "artifact_owner": [
+        2254,
+        2254
+      ],
+      "nominal_hash_episode_seed_process_artifact_owner_binding": true,
+      "source_identity": "2cddb2b460685050e5802b8d55a94db90f0b1938"
+    },
+    {
+      "cell": "repeat1",
+      "pid": 2291733,
+      "file_sha256": "b0876aa7d7819ecf1804b660c3adca10cab5e8bea97d9dea2472f20c520d52bc",
+      "artifact_owner": [
+        2254,
+        2254
+      ],
+      "nominal_hash_episode_seed_process_artifact_owner_binding": true,
+      "source_identity": "2cddb2b460685050e5802b8d55a94db90f0b1938"
+    },
+    {
+      "cell": "amplitude_003",
+      "pid": 2351406,
+      "file_sha256": "3d8489092c9ebf2ed53cb920bf6e00ace264fffac8adc35525f375df30bc5db8",
+      "artifact_owner": [
+        2254,
+        2254
+      ],
+      "nominal_hash_episode_seed_process_artifact_owner_binding": true,
+      "source_identity": "2cddb2b460685050e5802b8d55a94db90f0b1938"
+    },
+    {
+      "cell": "amplitude_005",
+      "pid": 2339055,
+      "file_sha256": "a5c1c249078bdab95b00998a7c9dc8f20a43ed14a25bb085b6e074e6172f7ce3",
+      "artifact_owner": [
+        2254,
+        2254
+      ],
+      "nominal_hash_episode_seed_process_artifact_owner_binding": true,
+      "source_identity": "2cddb2b460685050e5802b8d55a94db90f0b1938"
+    },
+    {
+      "cell": "amplitude_008",
+      "pid": 2339056,
+      "file_sha256": "bc1030856c4de71442a83a24d493bd0d3bc2157c47c5d9b4c509d570e278faed",
+      "artifact_owner": [
+        2254,
+        2254
+      ],
+      "nominal_hash_episode_seed_process_artifact_owner_binding": true,
+      "source_identity": "2cddb2b460685050e5802b8d55a94db90f0b1938"
+    }
+  ]
+}

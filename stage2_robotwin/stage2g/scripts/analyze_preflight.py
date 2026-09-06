@@ -11,6 +11,7 @@ def analyze_cell(path):
     c=json.loads(path.read_text())
     if c["status"]!="COMPLETE":raise ValueError("incomplete cell")
     trace=Path(c["trace_path"])
+    if not trace.exists():trace=path.parent/trace.name
     if hashlib.sha256(trace.read_bytes()).hexdigest()!=c["trace_sha256"]:raise ValueError("trace checksum")
     with np.load(trace,allow_pickle=False) as z:a={k:z[k] for k in z.files}
     if effects_hash(a)!=c["effect_vector_sha256"]:raise ValueError("effect bytes checksum")

@@ -14,6 +14,7 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 def save_json(path, value):
+    if (os.getuid(),os.getgid())!=(2254,2254):raise RuntimeError("persistent outputs require UID/GID 2254:2254")
     path=Path(path); path.parent.mkdir(parents=True,exist_ok=True)
     with path.open("x") as f:
         json.dump(value,f,sort_keys=True,indent=2,allow_nan=False);f.write("\n")
@@ -57,6 +58,7 @@ def source_identity():
             "file_hashes":files}
 
 def run(args):
+    if (os.getuid(),os.getgid())!=(2254,2254):raise RuntimeError("workload must run as 2254:2254")
     output=Path(args.output)
     if output.exists() or output.with_suffix(".trace.npz").exists():
         raise FileExistsError("cell output is immutable")
@@ -68,6 +70,9 @@ def run(args):
         raise ValueError("source tape/seed binding failed")
     if sidecar.get("seed")!=args.seed or sidecar.get("source_tape_sha256")!=meta["tape_sha256"]:
         raise ValueError("frozen pair source/seed binding failed")
+    if sidecar.get("episode")!=meta["episode"]:raise ValueError("pair episode binding failed")
+    nominal=Path(args.pair_tape).parent/("nominal__seed_%04d.npz"%args.seed)
+    if not nominal.is_file() or sha(nominal)!=sidecar["source_nominal_npz_sha256"]:raise ValueError("nominal SHA binding failed")
     events={k:int(v) for k,v in meta["events"].items()}
     if sidecar.get("event_window")!={"E3":events["E3"],"E5":events["E5"]}:
         raise ValueError("frozen probe event binding failed")
@@ -75,7 +80,7 @@ def run(args):
         raise ValueError("physics contract changed")
     if args.mode=="same-frequency" and pair.frequency_left_hz!=pair.frequency_right_hz:
         raise ValueError("same-frequency needs its independently frozen equal-frequency tape")
-    task=None;stack=ExitStack();handle=None;started=time.perf_counter();records=[];commands=[]
+    task=None;stack=ExitStack();handle=None;lock=None;started=time.perf_counter();records=[];commands=[]
     try:
         task,kw=build_handover_block(str(args.robotwin_root),planner="mplib_screw")
         task.setup_demo(now_ep_num=int(meta["episode"]),seed=args.seed,**kw)
@@ -86,14 +91,19 @@ def run(args):
             raise ValueError("actual physics timestep is not 250 Hz")
         for i in range(len(pair)):
             step=int(pair.step[i]);active=events["E3"]<=step<=events["E5"]
+            if step==events["E3"] and args.mode.startswith("locked-"):
+                from stage2_robotwin.stage2g.intervention.arm_lock import apply as lock_arm
+                lock=stack.enter_context(lock_arm(task,args.mode.split("-")[1]))
             if step==events["E3"] and not args.without_grip:
                 from stage2_robotwin.stage2g.intervention.grip_force import apply
                 handle=stack.enter_context(apply(task,args.soft_arm,args.gamma))
             command={}; offsets={}
             for side in ("left","right"):
-                enabled=args.mode in ("dual","same-frequency") or args.mode=="single-"+side
+                enabled=args.mode in ("dual","same-frequency") or args.mode=="single-"+side or (args.mode.startswith("locked-") and side!=args.mode.split("-")[1])
                 pos=getattr(pair,side+"_position" if enabled else side+"_nominal_position")[i].copy()
                 vel=getattr(pair,side+"_velocity")[i].copy()
+                if active and lock is not None and side==lock.side:
+                    pos=lock.position.copy();vel=np.zeros_like(pos)
                 raw=getattr(pair,side+"_gripper")[i]
                 grip=None if np.isnan(raw).all() else tuple(float(v) for v in raw)
                 if handle is not None and active:grip=handle.route_gripper(side,grip)
@@ -103,6 +113,7 @@ def run(args):
                 offsets[side]=float(getattr(pair,side+"_probe_offset_m")[i]) if enabled else 0.
             task.scene.step()
             if active:
+                if lock is not None:lock.observe(task)
                 st=object_state(task); imp,counts=physical_contacts(task)
                 records.append(dict(step=step,object_position=np.asarray(st["pose"][:3]).copy(),
                                     object_velocity=np.asarray(st["linear_velocity"]).copy(),
@@ -137,7 +148,7 @@ def run(args):
                     task_success=success,dual_contact_fraction=float(dual.mean()),window_samples=len(records),
                     left_command_sha256=canonical_command_sha256(commands,"left"),
                     right_command_sha256=canonical_command_sha256(commands,"right"),
-                    grip_receipt=handle.receipt() if handle else None,without_grip=args.without_grip,
+                    grip_receipt=handle.receipt() if handle else None,lock_receipt=lock.receipt() if lock else None,without_grip=args.without_grip,
                     fresh_process=True,pid=os.getpid(),main_scene_restored=False,live_jacobian_used=False,
                     accepted=False,pai_job_created=False,uid=os.getuid(),gid=os.getgid(),trace_owner=[owner.st_uid,owner.st_gid],
                     source_identity=source_identity(),runtime_root=str(args.robotwin_root),wall_time_s=time.perf_counter()-started)
@@ -152,7 +163,7 @@ def main():
     for key in ("robotwin-root","pair-tape","source-tape","meta","output"):p.add_argument("--"+key,type=Path,required=True)
     p.add_argument("--seed",type=int,choices=(0,1),required=True)
     p.add_argument("--repeat",type=int,default=0)
-    p.add_argument("--mode",choices=("dual","single-left","single-right","none","same-frequency"),default="dual")
+    p.add_argument("--mode",choices=("dual","single-left","single-right","none","same-frequency","locked-left","locked-right"),default="dual")
     p.add_argument("--gamma",type=float,default=1.)
     p.add_argument("--soft-arm",choices=("left","right"),default="left")
     p.add_argument("--without-grip",action="store_true")

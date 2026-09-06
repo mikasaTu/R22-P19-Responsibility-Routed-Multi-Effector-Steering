@@ -109,7 +109,7 @@ def build_pairs(nominal, nominal_receipt, output_dir: Path, *, amplitudes=PROBE_
                 "left_max_predicted_error_m":float(max(abs(x["predicted_offset_m"]-x["requested_offset_m"]) for x in left_audit)),
                 "right_max_predicted_error_m":float(max(abs(x["predicted_offset_m"]-x["requested_offset_m"]) for x in right_audit)),
             }
-            receipt.update({"source_nominal_npz_sha256":nominal_receipt["nominal_npz_sha256"],"npz_sha256":pair_sha,"source_tape_sha256":nominal_receipt["source_tape_sha256"],"runtime_git":nominal_receipt["runtime_git"],"source_code_sha256":nominal_receipt["source_code_sha256"],"seed":nominal_receipt["seed"],"episode":nominal_receipt["episode"]})
+            receipt.update({"source_nominal_npz_sha256":nominal_receipt["nominal_npz_sha256"],"npz_sha256":pair_sha,"source_tape_sha256":nominal_receipt["source_tape_sha256"],"source_tape":nominal_receipt["source_tape"],"runtime_git":nominal_receipt["runtime_git"],"source_code_sha256":nominal_receipt["source_code_sha256"],"seed":nominal_receipt["seed"],"episode":nominal_receipt["episode"],"events":nominal_receipt["events"]})
             path.with_suffix(".json").write_text(json.dumps(receipt,indent=2,sort_keys=True)+"\n",encoding="utf-8"); out.append(path)
     return out
 

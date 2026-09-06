@@ -1,0 +1,135 @@
+# 角色与任务
+你在 dev14 上继续 R22-P19（repo: mikasaTu/R22-P19-Responsibility-Routed-Multi-Effector-Steering, main）。
+本次执行 Stage 2G / Step9 —— Authority Probe & Grip-Force Authority。只在 calibration seeds 0,1 上做。
+Stage 2F 的 144+10 矩阵作废，不要执行，理由见下。
+
+# 必读
+- stage2_robotwin/stage2f/ 全部（contract、三个 knob、gates.py、STEP7_PREFLIGHT.md、两个 smoke JSON）
+- stage2_robotwin/stage2e/reports/WITHDRAWAL_VALIDITY_REPORT.md 与 MECHANISM_REVERSE_EXPLANATION.md
+- stage2_robotwin/stage2e/withdrawal/common.py 的 contact_wrench_by_side
+- stage2_robotwin/stage2d/scripts/run_capacity_audit.py 的 _active_item
+- stage2_robotwin/stage2f/scripts/build_active_reference.py 与 run_authority_knob_cell.py
+
+# 已确定的前提（审计结论，不需重新论证，也不许推翻）
+1. Stage 2F 矩阵作废，四个独立原因：
+   (a) K2 是死钩子——真实关节 force_limit = 3.4028e38 (FLT_MAX)，乘任何 gamma 仍远高于实际力矩，
+       永不 binding；单测里 FakeJoint 用 force_limit=50 掩盖了它。
+   (b) G4 的 donor 判据与事件定义矛盾——配置里 E5 = donor_contact_lost_after_E4，
+       而 G4 要求 donor 在 E5 仍有接触；smoke 里名义 gamma=1.0 就是 false。
+   (c) G1 量的是 soft 臂平行冲量绝对积分；smoke 里它涨 73% 而 soft/receiver 份额 0.4554→0.4505
+       几乎不动，说明涨的是内力不是权威。
+   (d) G5 对 K1/K2 测的是跟踪误差：命令 target 跨 gamma 逐字节相同，
+       但 parallel_action_abs 在 17/17 个状态于 gamma=0.2 更大，方向与门相反。
+2. K1 的反向有确定机制：authority_override 把刚度与阻尼同乘 gamma，
+   阻尼比 zeta = D/(2*sqrt(I*K)) 变为 sqrt(gamma)*zeta，gamma=0.2 时只剩 0.447 倍，
+   欠阻尼导致峰值速度 +83%、冲量 x1.73。任何复用 K1 的地方必须改成刚度乘 gamma、阻尼乘 sqrt(gamma)。
+3. Stage 2E 已证明：闭链下改 target 不改物理效应；唯一改变物理效应的通道是 retention（夹爪）。
+   本步据此把夹持力作为权威旋钮，这不受 2E "会移除所有 channel" 那条反对意见约束，
+   因为本步要的正是整臂权威而非 channel-selective withdrawal。
+4. 不换 substrate：RoboTwin handover_block，planner mplib_screw，physics 250 Hz，
+   沿用 Stage 2D 的 active handover 版本。
+
+# 本步要判定的两个命题（顺序不可颠倒）
+P1（仪器）：双频差分参考探针能否给出一个可分离、可对调、可用地面真值恢复的权威占比。
+P2（旋钮）：在 P1 成立的前提下，缩放 soft 臂夹持力能否让权威占比单调下降，
+           且不靠掉物或脱手实现，且保留任务成功。
+P1 不成立就不要评估 P2。
+
+# 要实现的东西
+新建 stage2_robotwin/stage2g/{preregistration,probe,intervention,analysis,scripts,tests,reports,results}/
+
+1. probe/dual_frequency.py —— 双频差分探针
+   - 沿 e_perp 给左右臂注入 offset_side(t) = A * sin(2*pi*f_side*(t-E3)/250)，区间 E3..E5
+   - 与 Stage2F 同样的纪律：先做一次名义重放把整条命令 tape 冻成 npz + sidecar，
+     之后所有条件只读同一份字节；禁止 live Jacobian 生成（Stage2F v1 的教训）
+   - 频率对 (f_L,f_R) 取 (1.0,2.5) 与对调的 (2.5,1.0) 两套，各自单独冻结一条 tape
+   - 幅度 A 在 smoke 里试 0.003 / 0.005 / 0.008 m，按 gate 冻结一个值
+
+2. intervention/grip_force.py —— K4 夹持力权威旋钮，接口 apply(task, soft_arm, gamma)
+   - gamma=1 名义夹持力（必须逐字节 no-op），gamma→0 夹持力趋近松开阈值
+   - 只改 soft 臂夹爪，手臂关节的 stiffness/damping/force_limit/drive_mode 一律不动
+   - 在 finally 里精确复原并出 receipt；SapienSnapshot 不含这些属性，不要指望它还原
+   - 如果 RoboTwin 的夹爪接口只暴露开合位置而非力，就用夹爪目标开度做等价旋钮，
+     并在报告里写清楚实际改的是什么物理量，不要假装是力
+
+3. analysis/wrench_decomposition.py —— 净力/内力诊断
+   - 每步对每只手求它作用在物体上的 6D wrench：w_i = sum over contacts [f_c ; (p_c - c_obj) x f_c]
+   - w_ext = w_L + w_R（推动物体的那部分）；w_int = (w_L - w_R)/2（互相挤的那部分）
+   - 输出每步的 |w_int| / (|w_ext| + |w_int|)
+   - 对 Stage2F 的两个 smoke cell 追溯计算：柔顺化引起的 delta_w 有多大比例落在内力上
+   - 这一项只报告不设门，是机制解释用的
+
+4. analysis/authority_ratio.py —— 权威占比
+   - 取物体在 e_perp 上的位移序列，限定 E3..E5 窗口，去趋势 + Hann 窗 + FFT
+   - a_soft = A(f_soft) / (A(f_soft) + A(f_receiver))
+   - 同时输出各频点的相干性与整段 0.3-5 Hz 的噪声底
+
+# 实验矩阵
+seeds: calibration 0,1（held-out 2,3,5,6,7,8,9,10 本步禁止）
+fresh process per cell，随机启动顺序，main 场景不做 snapshot restore
+
+阶段 I（仪器验证，先跑，约 30 cell）
+- I-A 双频正常：两套频率对 x 2 seeds x 2 repeats
+- I-B 单臂探针：只给一侧注入 x 2 侧 x 2 seeds
+- I-C 地面真值：锁死一侧手臂关节（目标恒定 + 高刚度）x 2 侧 x 2 seeds
+- I-D 无探针空跑：x 2 seeds x 3 repeats（噪声底）
+- I-E 同频对照：两臂同频 x 2 seeds（验证分离不是伪影）
+
+阶段 II（旋钮，仅在阶段 I 全过后跑，48 cell）
+- grip gamma: 1.0, 0.8, 0.6, 0.4, 0.25, 0.15
+- x seeds{0,1} x soft_arm{left,right} x repeats{0,1}
+
+# 冻结 gate（跑之前写进 preregistration，跑完不许改）
+仪器（全部必须过，否则直接停）：
+- I1 分离度：f_L 与 f_R 处的位移谱峰均 >= 该频带噪声底中位数的 10 倍
+- I2 泄漏：单臂探针条件下，未注入频率处的幅值 <= 注入频率幅值的 0.10 倍
+- I3 对调一致：同一 (seed, soft_arm) 下，两套频率对给出的 a_soft 绝对差 <= 0.10
+- I4 地面真值：锁死一侧时，另一侧的 a >= 0.85
+- I5 非侵入：探针条件下 dual-contact fraction >= 0.95 且 task success >= 0.9
+
+旋钮（阶段 I 全过后才评估）：
+- A1 单调：Spearman(grip_gamma, a_soft) >= 0.9，每个 seed x soft_arm 组都要满足
+- A2 幅度：最低非退化 gamma 处的 a_soft <= 名义值的 0.6 倍，
+          且该差值 > 3 x (同条件两次 repeat 的 a_soft 绝对差的 P95)
+- A3 非退化：所有 gamma >= 0.15 时 dual-contact >= 0.95、物体未掉落、
+          物体相对夹爪滑移 < 5 mm、task success >= 0.8
+- A4 隔离：receiver 臂命令逐字节不变；探针 tape SHA 在同一 seed 内跨所有条件相同
+- A5 对照（只报告不设门）：同条件下用旧的 NaturalResponsibilityEstimator 算 rho_soft，
+          与 a_soft 并列，展示两者是否一致
+
+决策，写入 results/AUTHORITY_PROBE_DECISION.json：
+- 仪器门任一失败 → AUTHORITY_PROBE_INVALID，停线，不要提改任务或改 substrate
+- 仪器过、A1-A4 全过 → AUTHORITY_TRANSFER_SUPPORTED，冻结最大非极端 gamma 供 Step10
+- 仪器过、A1 或 A2 失败 → AUTHORITY_TRANSFER_NOT_SUPPORTED
+- 仪器过、A1/A2 过但 A3 失败 → AUTHORITY_TRANSFER_DEGENERATE
+
+# 禁止
+不建 PAI job、不训练、不跑 ACT/pi0.5/任何 learned estimator、不跑 closed-loop、
+不动 held-out seeds、不执行 Stage2F 的 144+10 矩阵、不覆盖任何既有 results 根、
+不换任务不换 benchmark。所有产物 accepted=false、pai_job_created=false。
+
+# 交付与 checkpoint（硬性，中间必须停）
+交付 1（现在做）：
+1. stage2g/preregistration/EXPERIMENT_CONTRACT.yaml，含上面全部 gate 数值、seed 契约、
+   两阶段矩阵、决策标签、幅度冻结规则
+2. 探针 + K4 + 两个 analysis 模块 + 单测。单测必须包含：
+   - gamma=1 与无旋钮基线逐字节一致
+   - 异常路径下夹爪属性精确复原
+   - FFT 在合成双频信号上能恢复已知幅度比（误差 < 0.02）
+   - 净力/内力分解在合成的纯内力（w_L = -w_R）与纯净力（w_L = w_R）上给出 1.0 与 0.0
+   - 重复 cell 的 effect vector 逐位一致性检查函数
+3. **重复性冒烟**：同 seed / 同条件跑两遍，比 effect vector 哈希。
+   Stage2F 从没验证过 repeat 决定性，而 A4 依赖它。不通过就先解决这个再谈别的。
+4. 幅度冒烟：0.003 / 0.005 / 0.008 m 各一个 cell，报告 I5 与谱峰信噪比，给出建议冻结值
+5. 停下，输出 stage2g/reports/STEP9_PREFLIGHT.md，等我确认
+
+交付 2（我确认后才做）：跑满阶段 I，评估仪器门；只有全过才继续阶段 II。
+产出 STEP9_EXPERIMENT_REPORT.md（DONE / KEY RESULT / WHAT WAS FALSIFIED / LIMITATION / NEXT）、
+AUTHORITY_PROBE_DECISION.json，并把 stage2f 与 stage2g 一起补进顶层 SHA256SUMS 和 README 的 current result
+（当前顶层还停在 STAGE2E_DIRECTION_STOPPED，stage2f 也没进顶层 manifest）。
+
+# 报告要求
+数值带 95% CI，推断单元是 episode，bootstrap 10000 次、seed 22019；
+样本量不足以估 CI 时明说不估，不要编。
+gate 失败照实写，不许换指标救结果。如果 a_soft 与旧的 rho_soft 结论相反，
+把两个都写出来并给出机制解释——这一条本身就是论文 A 的核心图。

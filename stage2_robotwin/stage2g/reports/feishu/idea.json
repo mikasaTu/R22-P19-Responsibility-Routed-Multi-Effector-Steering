@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "document": {
+      "content": "<title>R22-P19：Responsibility-Routed Multi-Effector Steering</title><h3>它想修什么错</h3><p>双臂或多指操作时，多个执行器可能各自产生局部合理动作，但组合后互相冲突。</p><p>例如双臂交接：</p><ul><li> 左臂仍认为自己负责控制物体； </li><li> 右臂已经开始接管； </li><li> 两臂同时施加不同方向的稳定力； </li><li> 结果产生内部应力或振荡。 </li></ul><h3>真正算法</h3><p>估计每个 effector 对物体运动的 counterfactual causal responsibility：</p><p>ρi=ObjectMotion−ObjectMotion without effector i</p><p>在 handoff 中连续转移 responsibility：</p><p>i∑​ρi=1</p><p>不是简单按：</p><ul><li> 距离； </li><li> 当前力大小； </li><li> 时间； </li><li> 固定 blending coefficient； </li></ul><p>来混合命令。</p><h3>直觉类比</h3><p>接力棒交接时，不是两个人同时用力拉，而是明确“谁现在真正承担控制棒的责任”，并连续完成责任转移。</p><h3>与 R18-P25 的区别</h3><ul><li> R18-P25：多个<b>动作 proposal</b> 如何聚合； </li><li> R22-P19：多个<b>真实执行器</b>之间如何转移对物体的控制责任。 </li></ul><p>它的 root hypothesis 明确强调 responsibility-conserving command transfer。</p>",
+      "document_id": "HgDKd1W3uo06dvxDkdYcHWYcnzh",
+      "revision_id": 2
+    },
+    "log_id": "20260907003143E53A0C420325FBD305C0"
+  },
+  "_notice": {
+    "update": {
+      "command": "lark-cli update",
+      "current": "1.0.32",
+      "latest": "1.0.93",
+      "message": "lark-cli 1.0.93 available, current 1.0.32, run: lark-cli update"
+    }
+  }
+}

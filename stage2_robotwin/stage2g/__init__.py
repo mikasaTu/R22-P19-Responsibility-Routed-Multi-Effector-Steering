@@ -1,1 +1,1 @@
-"""Stage 2G authority-probe utilities."""
+"""Step9 authority probe calibration diagnostics."""

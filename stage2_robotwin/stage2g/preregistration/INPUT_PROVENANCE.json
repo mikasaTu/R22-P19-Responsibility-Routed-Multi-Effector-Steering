@@ -1,0 +1,64 @@
+{
+  "source_base": "6f7a03e427f4c79b9ba318d75975657940d56dda",
+  "runtime_head": "266f3aadf505a4f7fe9af0faa41a20f5f47cd123",
+  "runtime_diff_sha256": "972f85496f52227c41c48a81ca7cb1921ad4f5add446893aea9cfe1495d0e0b2",
+  "runtime_status": [
+    " M envs/robot/planner.py"
+  ],
+  "accepted": false,
+  "pai_job_created": false,
+  "calibration_tapes": {
+    "0": {
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0000.npz",
+      "sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5",
+      "meta": {
+        "accepted": false,
+        "capture_wall_time_s": 60.64945593604352,
+        "donor": "left",
+        "episode": 0,
+        "events": {
+          "E0": 1148,
+          "E1": 3411,
+          "E2": 3411,
+          "E3": 3425,
+          "E4": 4083,
+          "E5": 4556,
+          "E6": 4570
+        },
+        "fresh_solver_history": true,
+        "receiver": "right",
+        "seed": 0,
+        "snapshot_restore_during_capture": false,
+        "steps": 5154,
+        "tape": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0000.npz",
+        "tape_sha256": "613c6ee56552a59a147119b25abbdc18973bfbae6695cc6a9124823a9b7f0dd5"
+      }
+    },
+    "1": {
+      "path": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0001.npz",
+      "sha256": "c8c39dff7cab457a2a7a161f02a9960e38415415d4fe71ce0d9df7bf2173028a",
+      "meta": {
+        "accepted": false,
+        "capture_wall_time_s": 30.057336536003277,
+        "donor": "left",
+        "episode": 1,
+        "events": {
+          "E0": 793,
+          "E1": 2738,
+          "E2": 2738,
+          "E3": 2752,
+          "E4": 3400,
+          "E5": 3882,
+          "E6": 3896
+        },
+        "fresh_solver_history": true,
+        "receiver": "right",
+        "seed": 1,
+        "snapshot_restore_during_capture": false,
+        "steps": 4462,
+        "tape": "/mnt/cpfs/zbl-cpfs-new/USERS/leon/logs/R22-P19/stage2c/expert-tapes-formal-v1/shard-gpu1/tapes/seed_0001.npz",
+        "tape_sha256": "c8c39dff7cab457a2a7a161f02a9960e38415415d4fe71ce0d9df7bf2173028a"
+      }
+    }
+  }
+}

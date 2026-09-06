@@ -1,0 +1,116 @@
+schema: r22p19.stage2g.authority_probe_contract.v1
+frozen_before_simulation: true
+base_commit: 6f7a03e427f4c79b9ba318d75975657940d56dda
+accepted: false
+pai_job_created: false
+task: {benchmark: RoboTwin, name: handover_block, planner: mplib_screw, physics_hz: 250, active_common_amplitude_m: 0.015}
+seed_contract:
+  calibration: [0, 1]
+  heldout_forbidden: [2, 3, 5, 6, 7, 8, 9, 10]
+premises:
+  stage2f_144_plus_10: VOID_DO_NOT_RUN
+  K2: FLT_MAX_force_limit_dead_hook
+  G4: donor_contact_at_E5_contradicts_donor_contact_lost_event
+  G1: absolute_parallel_impulse_not_authority
+  G5: fixed_targets_measure_tracking_error
+  K1: stiffness_gamma_damping_sqrt_gamma_if_reused
+  stage2e: target_edits_not_physical_effect_gripper_retention_is_effective
+hypotheses:
+  P1: separable_swappable_groundtruth_recoverable_frequency_authority_instrument
+  P2: grip_attenuation_monotonically_reduces_authority_without_degeneracy_and_preserves_success
+  order: P1_then_P2
+  P2_requires_all_P1_gates: true
+probe:
+  axis: e_perp
+  window: E3_through_E5_inclusive
+  offset: A*sin(2*pi*f_side*(step-E3)/250)
+  frequency_pairs_hz: [[1.0, 2.5], [2.5, 1.0]]
+  amplitude_candidates_m: [0.003, 0.005, 0.008]
+  nominal_replay: once_per_seed_freeze_base_commands_and_jacobian_mapping
+  freeze: npz_plus_sidecar_sha256_separate_per_frequency_pair
+  condition_runner_live_jacobian: forbidden
+  common_active_tape: Stage2D_active_handover
+amplitude_smoke:
+  seed: 0
+  frequency_pair_hz: [1.0, 2.5]
+  soft_arm: left
+  gamma: 1.0
+  cells_per_candidate: 1
+  freeze_rule: smallest_candidate_with_I5_proxy_pass_and_both_spectral_peak_to_noise_ratios_at_least_10
+  none_pass: NO_ELIGIBLE_AMPLITUDE_DO_NOT_FREEZE
+  one_episode_I5_proxy: dual_contact_at_least_0p95_and_task_success_true
+  not_full_I5_evidence: true
+repeat_smoke:
+  seed: 0
+  amplitude_m: 0.005
+  frequency_pair_hz: [1.0, 2.5]
+  gamma: 1.0
+  repeats: [0, 1]
+  compare: exact_finite_effect_vector_dtype_shape_bytes
+  exclude: [pid, paths, wall_time, log_order]
+  failure: repair_before_further_simulation
+matrix:
+  fresh_process_per_cell: true
+  randomized_launch_order_seed: 22019
+  main_scene_snapshot_restore: forbidden
+  stage_I:
+    I_A: {frequency_pairs: 2, seeds: [0, 1], repeats: [0, 1], cells: 8}
+    I_B: {enabled_sides: [left, right], seeds: [0, 1], frequency_pair_hz: [1.0, 2.5], repeats: 1, cells: 4}
+    I_C: {locked_sides: [left, right], seeds: [0, 1], frequency_pair_hz: [1.0, 2.5], repeats: 1, cells: 4, lock: constant_joint_target_plus_high_stiffness}
+    I_D: {probe_enabled: false, seeds: [0, 1], repeats: [0, 1, 2], cells: 6}
+    I_E: {frequency_pair_hz: [1.0, 1.0], seeds: [0, 1], repeats: 1, cells: 2}
+    total_cells: 24
+    count_note: enumerated_plan_is_24_original_approximately_30_is_not_an_extra_condition
+    finish_all_independent_cells_even_if_gate_fails: true
+  stage_II:
+    requires: all_I1_through_I5_pass_and_amplitude_frozen
+    gammas: [1.0, 0.8, 0.6, 0.4, 0.25, 0.15]
+    seeds: [0, 1]
+    soft_arms: [left, right]
+    repeats: [0, 1]
+    frequency_pair_hz: [1.0, 2.5]
+    total_cells: 48
+    finish_all_cells_even_if_A_gate_fails: true
+gates:
+  I1: {both_peak_to_noise_floor_median_min: 10}
+  I2: {uninjected_to_injected_amplitude_max: 0.10}
+  I3: {swapped_a_soft_absolute_difference_max: 0.10, every_seed_and_soft_arm: true}
+  I4: {unlocked_arm_authority_min: 0.85}
+  I5: {dual_contact_fraction_min: 0.95, task_success_rate_min: 0.9}
+  A1: {spearman_gamma_a_soft_min: 0.9, every_seed_and_soft_arm: true}
+  A2: {lowest_nondegenerate_a_over_nominal_max: 0.6, absolute_difference_strictly_greater_than_repeat_difference_p95_times: 3}
+  A3: {gamma_min: 0.15, dual_contact_fraction_min: 0.95, drop_allowed: false, relative_gripper_slip_m_strict_max: 0.005, task_success_rate_min: 0.8}
+  A4: {receiver_command_byte_identical: true, probe_tape_sha_identical_within_seed_across_grip_conditions: true}
+  A5: {report_only: true, compare: NaturalResponsibilityEstimator_rho_soft}
+analysis:
+  authority: detrend_linear_then_Hann_then_FFT
+  authority_formula: amplitude_soft_divided_by_sum_of_both_amplitudes
+  frequency_amplitude: nearest_FFT_bin_one_sided_Hann_coherent_gain_corrected
+  noise_band_hz: [0.3, 5.0]
+  noise_floor: median_native_FFT_bins_excluding_driven_frequency_mainlobes
+  coherence: report_estimator_segments_and_frequency_resolution_no_single_segment_identity
+  short_or_degenerate_windows: unestimable_no_fabricated_value
+  wrench: per_contact_signed_impulse_divided_by_dt_and_moment_about_object_center
+  net: w_left_plus_w_right
+  internal: half_w_left_minus_w_right
+  internal_ratio: norm_w_int_divided_by_norm_w_ext_plus_norm_w_int
+  wrench_diagnostic: report_only_no_gate
+  mixed_force_torque_norm: simulator_diagnostic_units_not_calibrated_physical_fraction
+  stage2f_retrospective: require_signed_3d_impulse_and_moment_otherwise_NOT_RECOVERABLE
+decision:
+  any_instrument_gate_fail: AUTHORITY_PROBE_INVALID
+  instrument_and_A1_A2_A3_A4_pass: AUTHORITY_TRANSFER_SUPPORTED
+  instrument_pass_A1_or_A2_fail: AUTHORITY_TRANSFER_NOT_SUPPORTED
+  instrument_A1_A2_pass_A3_fail: AUTHORITY_TRANSFER_DEGENERATE
+  isolation_failure: INVALID_ISOLATION_NO_SUPPORT
+  supported_freeze_rule: largest_non_extreme_gamma_satisfying_all_A1_A4
+statistics: {inference_unit: episode, confidence: 0.95, bootstrap_repetitions: 10000, bootstrap_seed: 22019, insufficient_episodes: do_not_estimate_CI}
+execution_checkpoint:
+  delivery_1: [preregistration, code, unit_tests, repeat_smoke, amplitude_smoke, STEP9_PREFLIGHT]
+  delivery_2_requires_explicit_confirmation: true
+  stop_request_source: user_attachment_mandatory_checkpoint
+forbidden: [PAI_job, training, ACT, pi0_5, learned_estimator, closed_loop, heldout, stage2f_matrix, overwrite_prior_results, task_change, substrate_change]
+feishu:
+  idea_node: WdKEw16UPiVugFkF6NWcowDtnqh
+  plan_node: OBx5wIYjriZC1pkF1XbcEFBEnph
+  report_node: RMacwbnw4iGkcikKHiLcTc89nRe
